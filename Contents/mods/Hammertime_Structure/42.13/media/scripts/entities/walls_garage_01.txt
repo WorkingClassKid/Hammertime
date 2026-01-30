@@ -1,0 +1,214 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity UI_GarageDoorGreen
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Garage Door Green,
+			Icon = ui_walls_garage_01_16,
+		}  
+        
+		entity GarageDoorGrey
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Garage Door Grey,
+			Icon = ui_walls_garage_01_50,
+		}   
+        
+		entity GarageDoorWooden
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Garage Door Wooden,
+			Icon = ui_walls_garage_01_0,
+		}       
+    }
+    
+    /* 
+    *  Garage Door Green
+    *  GarageDoorGreen
+    *  walls_garage_01_16
+    *  walls_garage_01_17
+    *  walls_garage_01_18
+    *  walls_garage_01_19
+    *  walls_garage_01_20
+    *  walls_garage_01_21
+    */ 
+    
+    entity GarageDoorGreen
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = UI_GarageDoorGreen,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isDoor = true,
+            isMultiTile = true,
+            dontNeedFrame = true,
+            /*LogicClass = WoodenDoor,*/
+            BreakSound = BreakDoor,
+            OnCreate = hammerBuildRecipeCode.GarageDoor.OnCreate,
+            face W
+            {
+                layer
+                {
+                    row = walls_garage_01_18,
+                    row = walls_garage_01_17,
+                    row = walls_garage_01_16,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_garage_01_19 walls_garage_01_20 walls_garage_01_21,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Doors,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.StoneBlock],
+            }
+        }
+    }
+    
+    
+    
+    /* 
+    *  Garage Door Grey
+    *  GarageDoorGrey
+    *  walls_garage_01_48
+    *  walls_garage_01_49
+    *  walls_garage_01_50
+    *  walls_garage_01_51
+    *  walls_garage_01_52
+    *  walls_garage_01_53
+    */ 
+    
+    entity GarageDoorGrey
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = GarageDoorGrey,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isDoor = true,
+            dontNeedFrame = true,
+            LogicClass = GarageDoor,
+            BreakSound = BreakDoor,
+            OnCreate = hammerBuildRecipeCode.GarageDoor.OnCreate,
+            face W
+            {
+                layer
+                {
+                    row = walls_garage_01_50,
+                    row = walls_garage_01_49,
+                    row = walls_garage_01_48,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_garage_01_51 walls_garage_01_52 walls_garage_01_53,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Doors,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.StoneBlock],
+            }
+        }
+    }
+        /* 
+    *  Garage Door Wooden
+    *  GarageDoorWooden
+    *  walls_garage_01_0
+    *  walls_garage_01_1
+    *  walls_garage_01_2
+    *  walls_garage_01_3
+    *  walls_garage_01_4
+    *  walls_garage_01_5
+    */ 
+    
+    entity GarageDoorWooden
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = GarageDoorWooden,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 600,
+            skillBaseHealth = 50,
+            isDoor = true,
+            dontNeedFrame = true,
+            LogicClass = GarageDoor,
+            BreakSound = BreakDoor,
+            OnCreate = hammerBuildRecipeCode.GarageDoor.OnCreate,
+            face W
+            {
+                layer
+                {
+                    row = walls_garage_01_2,
+                    row = walls_garage_01_1,
+                    row = walls_garage_01_0,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_garage_01_3 walls_garage_01_4 walls_garage_01_5,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Doors,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.StoneBlock],
+            }
+        }
+    }
+}

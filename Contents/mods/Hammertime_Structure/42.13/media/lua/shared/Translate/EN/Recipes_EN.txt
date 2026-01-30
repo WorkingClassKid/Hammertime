@@ -1,0 +1,55 @@
+Recipes_EN = {
+    BarnRedWall = "Barn Red Wall",
+    BarnRedPole = "Barn Red Pole",
+    BarnRedDoorFrame = "Barn Red Door Frame",
+    BarnRedWindowFrame = "Barn Red Window Frame",
+    
+    BlackVSlidingWindow = "Black Vertical Sliding Window",
+    
+    BlueBrickWall = "Blue Brick Wall",
+    BlueBrickPole = "Blue Brick Pole",
+    BlueBrickDoorFrame = "Blue Brick Door Frame",
+    BlueBrickWindowFrame = "Blue Brick Window Frame",
+    
+    BrownBrickWall = "Brown Brick Wall",
+    BrownBrickPole = "Brown Brick Pole",
+    BrownBrickDoorFrame = "Brown Brick Door Frame",
+    BrownBrickWindowFrame = "Brown Brick Window Frame",
+    
+    BrownGridsWindow = "Brown Grids Window",
+    
+    BrownWoodSidingWall = "Brown Wood Siding Wall",
+    BrownWoodSidingPole = "Brown Wood Siding Pole",
+    BrownWoodSidingDoorFrame = "Brown Wood Siding Door Frame",
+    BrownWoodSidingWindowFrame = "Brown Wood Siding Window Frame",
+    
+    GarageDoorGreen = "Garage Door Green",
+    GarageDoorGrey = "Garage Door Grey",
+    GarageDoorWooden = "Garage Door Wooden",
+    GarageDoorMetal = "Garage Door Metal",
+    GarageDoorRed = "Garage Door Red",
+    GarageDoorMetalWindows = "Garage Door Metal with Windows",
+    
+    
+    GrayBlockWall = "Gray Block Wall",
+    GrayBlockPole = "Gray Block Pole",
+    GrayBlockDoorFrame = "Gray Block Door Frame",
+    GrayBlockWindowFrame = "WGray Block Window Frame",
+    
+    OldChicagoBrickWall = "Old Chicago Brick Wall",
+    OldChicagoBrickPole = "Old Chicago Brick Pole",
+    OldChicagoBrickDoorFrame = "Old Chicago Brick Door Frame",
+    OldChicagoBrickWindowFrame = "Old Chicago Brick Window Frame",
+    
+    WhiteGridsWindow = "White Grids Window",
+    
+    WhiteVSlidingWindow = "White Vertical Sliding Window",
+    
+    WhiteWoodSidingWall = "White Wood Siding Wall",
+    WhiteWoodSidingPole = "White Wood Siding Pole",
+    WhiteWoodSidingDoorFrame = "White Wood Siding Door Frame",
+    WhiteWoodSidingWindowFrame = "White Wood Siding Window Frame",
+    
+
+
+}

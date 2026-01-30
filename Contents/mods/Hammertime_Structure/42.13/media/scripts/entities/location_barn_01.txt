@@ -1,0 +1,246 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity BarnRedWall
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Barn Red Wall,
+			Icon = ui_location_barn_01_0,
+		}       
+		entity BarnRedPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Barn Red Pole,
+			Icon = ui_location_barn_01_20,
+		}         
+        entity BarnRedDoorFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Barn Red Door Frame,
+			Icon = ui_location_barn_01_10,
+		}  
+        entity BarnRedWindowFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Barn Red Window Frame,
+			Icon = ui_location_barn_01_8,
+		}  
+    }
+    
+    
+    
+    /* 
+    *  Barn Red Wall
+    *  BarnRedWall
+    *  location_barn_01_0
+    *  location_barn_01_1
+    *  location_barn_01_3
+    */ 
+    
+    entity BarnRedWall
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = BarnRedWall,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 500,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            LogicClass = WoodenWall,
+            previousStage = WoodenWallFrame;MetalWallFrame,
+            BreakSound = ZombieThumpWoodCollapse,
+            face W
+            {
+                layer
+                {
+                    row = location_barn_01_0,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = location_barn_01_1,
+                }
+            }
+            corner = location_barn_01_3,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Carpentry,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_craft_NeedsWallframeDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+        
+    /* 
+    *  Barn Red Pole 
+    *  BarnRedPole
+    *  location_barn_01_20
+    */
+    
+    entity BarnRedPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = BarnRedPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 500,
+            isPole = true,
+            face SINGLE
+            {
+                layer
+                {
+                    row = location_barn_01_20,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Carpentry,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_craft_NeedsWallframeDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Barn Red Door Frame
+    *  BarnRedDoorFrame
+    *  location_barn_01_10
+    *  location_barn_01_11
+    *  location_barn_01_3
+    */ 
+    
+    entity BarnRedDoorFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = BarnRedDoorFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 500,
+            skillBaseHealth = 50,
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = location_barn_01_10,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = location_barn_01_11,
+                }
+            }
+            corner = location_barn_01_3,           
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Carpentry,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:30,
+            Tooltip = Tooltip_craft_doorFrameDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 3 [Base.Plank],
+                item 6 [Base.Nails],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Barn Red Window Frame
+    *  BarnRedWindowFrame
+    *  location_barn_01_8
+    *  location_barn_01_9
+    */ 
+    
+    entity BarnRedWindowFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = BarnRedWindowFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 500,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            previousStage = WoodenWallFrame;MetalWallFrame,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = location_barn_01_8,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = location_barn_01_9,
+                }
+            }
+            corner = location_barn_01_3,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Carpentry,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:30,
+            Tooltip = Tooltip_craft_NeedsWallframeDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+    ¸   }  
+    }
+    
+/* END BASE */
+}    

@@ -1,0 +1,311 @@
+module Base
+{
+
+    	xuiSkin default
+	{
+        entity BlackSlidingWindow
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Black Sliding Window,
+			Icon = ui_fixtures_windows_01_57,
+		}  
+        
+        entity BlackVSlidingWindow
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Black Vertical Sliding Window,
+			Icon = ui_fixtures_windows_01_32,
+		}  
+        
+    	entity BrownGridsWindow
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Brown Grids Window,
+			Icon = ui_fixtures_windows_01_16,
+		}  
+        
+		entity WhiteGridsWindow
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Grids Window,
+			Icon = ui_fixtures_windows_01_8,
+		} 
+        
+        entity WhiteVSlidingWindow
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Vertical Sliding Window,
+			Icon = ui_fixtures_windows_01_24,
+		}  
+    }
+    
+
+    /* 
+    *  Black Sliding Window
+    *  BlackSlidingWindow
+    *  fixtures_windows_01_56
+    *  fixtures_windows_01_57
+    */ 
+    
+    entity BlackSlidingWindow
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = BlackSlidingWindow,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            needWindowFrame = true,
+            OnCreate = BuildRecipeCode.windowGlass.OnCreate,
+            face W
+            {
+                layer
+                {
+                    row = fixtures_windows_01_56,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_windows_01_57,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 50,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:15,
+            category = Windows,
+            Tags = Carpentry;Window,
+            Tooltip = Tooltip_craft_WindowDesc,
+            inputs
+            {
+                item 4 [Base.GlassPanel],
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+
+
+    /* 
+    *  Black Vertical Sliding Window
+    *  BlackVSlidingWindow
+    *  fixtures_windows_01_32
+    *  fixtures_windows_01_33
+    */ 
+    
+    entity BlackVSlidingWindow
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = BlackVSlidingWindow,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            needWindowFrame = true,
+            OnCreate = BuildRecipeCode.windowGlass.OnCreate,
+            face W
+            {
+                layer
+                {
+                    row = fixtures_windows_01_32,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_windows_01_33,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 50,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:15,
+            category = Windows,
+            Tags = Carpentry;Window,
+            Tooltip = Tooltip_craft_WindowDesc,
+            inputs
+            {
+                item 4 [Base.GlassPanel],
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+
+    
+    /* 
+    *  Brown Grids Window
+    *  BrownGridsWindow
+    *  fixtures_windows_01_16
+    *  fixtures_windows_01_17
+    */ 
+    
+    entity BrownGridsWindow
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = BrownGridsWindow,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            needWindowFrame = true,
+            OnCreate = BuildRecipeCode.windowGlass.OnCreate,
+            face W
+            {
+                layer
+                {
+                    row = fixtures_windows_01_16,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_windows_01_17,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 50,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:15,
+            category = Windows,
+            Tags = Carpentry;Window,
+            Tooltip = Tooltip_craft_WindowDesc,
+            inputs
+            {
+                item 4 [Base.GlassPanel],
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+
+
+    
+    /* 
+    *  White Grids Window
+    *  WhiteGridsWindow
+    *  fixtures_windows_01_8
+    *  fixtures_windows_01_9
+    */ 
+    
+    entity WhiteGridsWindow
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = WhiteGridsWindow,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            needWindowFrame = true,
+            OnCreate = BuildRecipeCode.windowGlass.OnCreate,
+            face W
+            {
+                layer
+                {
+                    row = fixtures_windows_01_8,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_windows_01_9,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 50,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:15,
+            category = Windows,
+            Tags = Carpentry;Window,
+            Tooltip = Tooltip_craft_WindowDesc,
+            inputs
+            {
+                item 4 [Base.GlassPanel],
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+    
+    /* 
+    *  White Vertical Sliding Window
+    *  WhiteVSlidingWindow
+    *  fixtures_windows_01_24
+    *  fixtures_windows_01_25
+    */ 
+    
+    entity WhiteVSlidingWindow
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = WhiteVSlidingWindow,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            needWindowFrame = true,
+            OnCreate = BuildRecipeCode.windowGlass.OnCreate,
+            face W
+            {
+                layer
+                {
+                    row = fixtures_windows_01_24,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_windows_01_25,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 50,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:15,
+            category = Windows,
+            Tags = Carpentry;Window,
+            Tooltip = Tooltip_craft_WindowDesc,
+            inputs
+            {
+                item 4 [Base.GlassPanel],
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+}

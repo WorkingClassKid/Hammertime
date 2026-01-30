@@ -1,0 +1,110 @@
+module Base
+{
+    	xuiSkin default
+	{
+        entity ES_WoodenShelfBookcase
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Wooden Shelf Bookcase,
+			Icon = ui_furniture_shelving_01_10,
+		}
+        entity ES_WoodenShelfBookcaseCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Wooden Shelf Bookcase Corner,
+			Icon = ui_furniture_shelving_01_8,
+		}          
+    }     
+    
+    /* 
+    *  Wooden Shelf Bookcase
+    *  WoodenShelfBookcase
+    *  furniture_shelving_01_10
+    *  furniture_shelving_01_9
+    */ 
+    
+    entity WoodenShelfBookcase
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_WoodenShelfBookcase,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = furniture_shelving_01_10,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = furniture_shelving_01_9,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 150,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:50,
+            category = Furniture,
+            Tooltip = Tooltip_craft_bookcaseDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+    
+    
+    
+    /* 
+    *  Wooden Shelf Bookcase Corner
+    *  WoodenShelfBookcaseCorner
+    *  furniture_shelving_01_8
+    */ 
+    
+    entity WoodenShelfBookcaseCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_WoodenShelfBookcaseCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = furniture_shelving_01_8,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 150,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:50,
+            category = Storage,
+            Tooltip = Tooltip_craft_bookcaseDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+}

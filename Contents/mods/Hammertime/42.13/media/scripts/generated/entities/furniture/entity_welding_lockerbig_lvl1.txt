@@ -1,0 +1,67 @@
+/** Change the CraftRecipe category to Storage from the PZ original (Furniture) */
+
+
+module Base
+{
+    entity Metal_LockerBig_Lvl1
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_LockerBig_Lvl1,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            canBePadlocked = true,
+            face W
+            {
+                layer
+                {
+                    row = crafted_05_16,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = crafted_05_17,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_05_18,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = crafted_05_19,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            OnAddToMenu = metalLockedBigLvl1Test,
+            timedAction = BuildMetalStructureMedium,
+            time = 50,
+            NeedToBeLearn = true,
+            SkillRequired = MetalWelding:3,
+            xpAward = MetalWelding:30,
+            category = Storage,
+            Tags = Furniture;Storage,
+            Tooltip = Tooltip_craft_lockerDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 4 [Base.SmallSheetMetal],
+                item 8 [Base.MetalPipe],
+                item 2 [Base.Hinge],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

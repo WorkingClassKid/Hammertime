@@ -1,0 +1,83 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity RedToolsCabinetSmall
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Red Tools Cabinet Small,
+			Icon = ui_location_business_machinery_01_32,
+		}
+    }    
+    
+    /* 
+    *  RedTools Cabinet Small
+    *  RedToolsCabinetSmall
+    *  location_business_machinery_01_
+    */   
+    
+    entity RedToolsCabinetSmall
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = RedToolsCabinetSmall,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 200,
+            isThumpable = true,
+            canBePadlocked = true,
+            face S
+            {
+                layer
+                {
+                    row = location_business_machinery_01_32,
+                }
+            }
+            
+            face N
+            {
+                layer
+                {
+                    row = location_business_machinery_01_34,
+                }
+            }
+            
+            face E
+            {
+                layer
+                {
+                    row = location_business_machinery_01_33,
+                }
+            }
+            
+            face W
+            {
+                layer
+                {
+                    row = location_business_machinery_01_35,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 200,
+            SkillRequired = MetalWelding:4,
+            xpAward = MetalWelding:50,
+            category = Storage,
+            Tags = Welding;Storage,
+            Tooltip = Tooltip_craft_crateDesc,
+       inputs
+            {
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 2 [Base.SmallSheetMetal],
+                item 1 [Base.SheetMetal],
+                item 2 [Base.ScrapMetal],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+version = 1
+tileset
+{
+    file = edit_ddd_RUS_House_Furnace
+    size = 8,8
+    id = 80
+    // edit_ddd_RUS_House_Furnace_27
+    tile
+    {
+        xy = 2,4
+        BlocksPlacement = 
+        CanScrap = 
+        ContainerCapacity = 150
+        ContainerPosition = Low
+        CustomName = Oven
+        Facing = W
+        GroupName = Crafted
+        IsMoveAble = 
+        IsoType = IsoFireplace
+        Material = MetalPlates
+        Material2 = MetalScrap
+        Material3 = MetalScrap
+        MaterialType = Metal_Light
+        PickUpTool = Hammer
+        PickUpWeight = 400
+        PlaceTool = Hammer
+        container = woodstove
+    }
+}    

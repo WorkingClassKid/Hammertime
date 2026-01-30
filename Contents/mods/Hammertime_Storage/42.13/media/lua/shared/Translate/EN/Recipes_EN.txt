@@ -1,0 +1,20 @@
+Recipes_EN = {
+    BlackWoodenShelf = "Black Wooden Shelf",
+    WhiteWoodenShelf = "WhiteWooden Shelf",
+    
+    CrateMilitaryGray = "Military Crate Gray",
+    CrateMilitaryGreen = "Military Crate Green",
+    
+    LongBookcase= "Long Bookcase",
+    
+    RedToolsCabinetSmall = "Red Tools Cabinet Small",
+    
+    LargeMetalShelves = "Large Metal Shelves"
+    
+    RedToolsCabinetSmall = "Red Tools Cabinet Small",
+    
+    WhiteWoodenBookcase = "Wooden White Bookcase",
+
+    WoodenShelfBookcase = "Wooden Shelf Bookcase",
+    WoodenShelfBookcaseCorner = "Wooden Shelf Bookcase Corner",
+}

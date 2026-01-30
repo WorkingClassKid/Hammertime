@@ -1,0 +1,245 @@
+module Base
+{
+    	xuiSkin default
+	{
+        
+        entity RockMasonryWall
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Rock Masonry  Wall,
+			Icon = ui_walls_exterior_house_02_0,
+		}       
+		entity RockMasonryPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Rock Masonry  Pole,
+			Icon = ui_walls_exterior_house_02_3,
+		}         
+        entity RockMasonryDoorFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Rock Masonry  Door Frame,
+			Icon = ui_walls_exterior_house_02_10,
+		}  
+        entity RockMasonryWindowFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Rock Masonry  Window Frame,
+			Icon = ui_walls_exterior_house_02_8,
+		}  
+ 
+    }
+    
+    /* 
+    *  Rock Masonry  Wall
+    *  RockMasonryWall
+    *  walls_exterior_house_02_1
+    *  walls_exterior_house_02_2
+    *  walls_exterior_house_02_3
+    */ 
+    
+    entity RockMasonryWall
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = RockMasonryWall,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            LogicClass = WoodenWall,
+            OnCreate = BuildRecipeCode.canBePlastered.OnCreate,
+            BreakSound = ZombieThumpWoodCollapse,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_0,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_1,
+                }
+            }
+            corner = walls_exterior_house_02_3,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Masonry,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_WallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        }
+    }
+        
+    /* 
+    *  Rock Masonry Pole 
+    *  RockMasonryPole
+    *  walls_exterior_house_02_3
+    */
+    
+    entity RockMasonryPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = RockMasonryPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            isPole = true,
+            face SINGLE
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_3,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Masonry,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_WallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 1 tags[base:concrete] flags[DontRecordInput],
+                item 2 [Base.ClayBrick],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Rock Masonry  Door Frame
+    *  RockMasonryDoorFrame
+    *  walls_exterior_house_02_10
+    *  walls_exterior_house_02_11
+    *  walls_exterior_house_02_3
+    */ 
+    
+    entity RockMasonryDoorFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = RockMasonryDoorFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_10,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_11,
+                }
+            }
+            corner = walls_exterior_house_02_3,           
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Masonry,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_WallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Rock Masonry  Window Frame
+    *  RockMasonryWindowFrame
+    *  walls_exterior_house_02_8
+    *  walls_exterior_house_02_9
+    *  walls_exterior_house_02_3
+    */ 
+    
+    entity RockMasonryWindowFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = RockMasonryWindowFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_8,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_9,
+                }
+            }
+            corner = walls_exterior_house_02_3,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Masonry,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_WallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        } 
+    }
+/* END BASE */
+}    

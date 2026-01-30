@@ -1,0 +1,8 @@
+version=1
+id=3648242404
+title=[B42.13] Hammertime - Another PZ Building mod
+description=Hammertime - Another PZ Building mod
+description=
+description=Tested on B42.13.1 SP/MP
+tags=Build 42
+visibility=unlisted

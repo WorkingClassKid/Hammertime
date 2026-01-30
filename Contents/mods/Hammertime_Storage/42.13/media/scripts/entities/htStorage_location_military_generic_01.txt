@@ -1,0 +1,188 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity CrateMilitaryGray
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Military Crate Gray,
+			Icon = ui_location_military_generic_01_8,
+		}
+        entity CrateMilitaryGreen
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Military Crate Green,
+			Icon = ui_location_military_generic_01_0,
+		}
+        entity MilitaryLocker
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Military Locker,
+			Icon = ui_location_military_generic_01_22,
+		}
+    }    
+    
+    /* 
+    *  Military Crate Gray
+    *  CrateMilitaryGray
+    *  location_military_generic_01_8
+    */   
+    
+    entity CrateMilitaryGray
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = CrateMilitaryGray,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 200,
+            isThumpable = true,
+            canBePadlocked = true,
+            face S
+            {
+                layer
+                {
+                    row = location_military_generic_01_8,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 100,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:70,
+            category = Storage,
+            Tags = Carpentry;Storage,
+            Tooltip = Tooltip_craft_crateDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+    
+    
+    
+    /* 
+    *  Military Crate Green
+    *  CrateMilitaryGreen
+    *  location_military_generic_01_0
+    */   
+    
+    entity CrateMilitaryGreen
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = CrateMilitaryGreen,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 200,
+            isThumpable = true,
+            canBePadlocked = true,
+            face S
+            {
+                layer
+                {
+                    row = location_military_generic_01_0,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 100,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:70,
+            category = Storage,
+            Tags = Carpentry;Storage,
+            Tooltip = Tooltip_craft_crateDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Military Locker
+    *  MilitaryLocker
+    *  location_military_generic_01_22
+    *  location_military_generic_01_23
+    *  location_military_generic_01_30
+    *  location_military_generic_01_31
+    */ 
+    
+    entity MilitaryLocker
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = MilitaryLocker,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 300,
+            isThumpable = true,
+            canBePadlocked = true,
+            face W
+            {
+                layer
+                {
+                    row = location_military_generic_01_31,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = location_military_generic_01_23,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = location_military_generic_01_30,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = location_military_generic_01_22,
+                }
+            } 
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 350,
+            SkillRequired = MetalWelding:5,
+            xpAward = MetalWelding:50,
+            category = Storage,
+            Tags = Welding;Storage,
+            Tooltip = Tooltip_craft_barrelOvenDesc2222,
+            inputs
+            {
+                item 5 [Base.BlowTorch] flags[DontRecordInput],
+                item 3 [Base.SmallSheetMetal],
+                item 3 [Base.SheetMetal],
+                item 1 [Base.ScrapMetal],
+                item 5 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

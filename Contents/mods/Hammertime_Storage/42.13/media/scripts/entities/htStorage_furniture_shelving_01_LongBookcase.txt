@@ -1,0 +1,89 @@
+module Base
+{
+    	xuiSkin default
+	{
+        entity ES_LongBookcase
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Long Bookcase,
+			Icon = ui_furniture_shelving_01_16,
+		}
+    }    
+    
+   /* 
+    *  Long Bookcase
+    *  LongBookcase
+    *  furniture_shelving_01_16
+    *  furniture_shelving_01_17
+    *  furniture_shelving_01_18
+    *  furniture_shelving_01_20
+    *  furniture_shelving_01_21
+    *  furniture_shelving_01_22
+    *  furniture_shelving_01_48
+    *  furniture_shelving_01_49
+    *  furniture_shelving_01_50
+    *  furniture_shelving_01_52
+    *  furniture_shelving_01_53
+    *  furniture_shelving_01_54
+    */ 
+    
+    entity LongBookcase
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_LongBookcase,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = furniture_shelving_01_22,
+                    row = furniture_shelving_01_21,
+                    row = furniture_shelving_01_20,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = furniture_shelving_01_16 furniture_shelving_01_17 furniture_shelving_01_18,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = furniture_shelving_01_48 furniture_shelving_01_49 furniture_shelving_01_50,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = furniture_shelving_01_54,
+                    row = furniture_shelving_01_53,
+                    row = furniture_shelving_01_52,
+                }
+            }            
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 150,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:50,
+            category = Storage,
+            Tooltip = Tooltip_craft_bookcaseDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 6 [Base.Plank],
+                item 6 [Base.Nails],
+            }
+        }
+    }
+}

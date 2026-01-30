@@ -1,0 +1,1206 @@
+module Base
+{
+    	xuiSkin default
+	{
+        
+        entity OldChicagoBrickWall
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Old Chicago Brick Wall,
+			Icon = ui_walls_exterior_house_01_52,
+		}       
+		entity OldChicagoBrickPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Old Chicago Brick Pole,
+			Icon = ui_walls_exterior_house_01_55,
+		}         
+        entity OldChicagoBrickDoorFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Old Chicago Brick Door Frame,
+			Icon = ui_walls_exterior_house_01_62,
+		}  
+        entity OldChicagoBrickWindowFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Old Chicago Brick Window Frame,
+			Icon = ui_walls_exterior_house_01_60,
+		}  
+        
+        
+        
+		entity BlueBrickWall
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Blue Brick Wall,
+			Icon = ui_walls_exterior_house_01_0,
+		}       
+		entity BlueBrickPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Blue Brick Pole,
+			Icon = ui_walls_exterior_house_01_3,
+		}         
+        entity BlueBrickDoorFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Blue Brick Door Frame,
+			Icon = ui_walls_exterior_house_01_10,
+		}  
+        entity BlueBrickWindowFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Blue Brick Window Frame,
+			Icon = ui_walls_exterior_house_01_8,
+		}  
+        
+        
+        
+        
+        entity BrownBrickWall
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Brown Brick Wall,
+			Icon = ui_walls_exterior_house_01_16,
+		}       
+		entity BrownBrickPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Brown Brick Pole,
+			Icon = ui_walls_exterior_house_01_19,
+		}         
+        entity BrownBrickDoorFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Brown Brick Door Frame,
+			Icon = ui_walls_exterior_house_01_26,
+		}  
+        entity BrownBrickWindowFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Brown Brick Window Frame,
+			Icon = ui_walls_exterior_house_01_24,
+		}  
+        
+
+
+        entity WhiteWoodSidingWall
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Wood Siding Wall,
+			Icon = ui_walls_exterior_house_01_32,
+		}       
+		entity WhiteWoodSidingPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Wood Siding Pole,
+			Icon = ui_walls_exterior_house_01_35,
+		}         
+        entity WhiteWoodSidingDoorFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Wood Siding Door Frame,
+			Icon = ui_walls_exterior_house_01_42,
+		}  
+        entity WhiteWoodSidingWindowFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Wood Siding Window Frame,
+			Icon = ui_walls_exterior_house_01_40,
+		}
+        
+        
+        
+        entity BrownWoodSidingWall
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Brown Wood Siding Wall,
+			Icon = ui_walls_exterior_house_01_48,
+		}       
+		entity BrownWoodSidingPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Brown Wood Siding Pole,
+			Icon = ui_walls_exterior_house_01_22,
+		}         
+        entity BrownWoodSidingDoorFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Brown Wood Siding Door Frame,
+			Icon = ui_walls_exterior_house_01_58,
+		}  
+        entity BrownWoodSidingWindowFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Brown Wood Siding Window Frame,
+			Icon = ui_walls_exterior_house_01_56,
+		}  
+    }
+    
+    
+    /* 
+    *  Old Chicago Brick Wall
+    *  OldChicagoBrickWall
+    *  walls_exterior_house_01_52
+    *  walls_exterior_house_01_53
+    *  walls_exterior_house_01_55
+    */ 
+    
+    entity OldChicagoBrickWall
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = OldChicagoBrickWall,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            LogicClass = WoodenWall,
+            OnCreate = BuildRecipeCode.canBePlastered.OnCreate,
+            BreakSound = ZombieThumpWoodCollapse,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_52,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_53,
+                }
+            }
+            corner = walls_exterior_house_01_55,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Masonry,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        }
+    }
+        
+    /* 
+    *  Old Chicago Brick Pole 
+    *  OldChicagoBrickPole
+    *  walls_exterior_house_01_55
+    */
+    
+    entity OldChicagoBrickPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = OldChicagoBrickPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            isPole = true,
+            face SINGLE
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_55,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Masonry,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 1 tags[base:concrete] flags[DontRecordInput],
+                item 2 [Base.ClayBrick],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Old Chicago Brick Door Frame
+    *  OldChicagoBrickDoorFrame
+    *  walls_exterior_house_01_62
+    *  walls_exterior_house_01_63
+    *  walls_exterior_house_01_55
+    */ 
+    
+    entity OldChicagoBrickDoorFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = OldChicagoBrickDoorFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_62,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_63,
+                }
+            }
+            corner = walls_exterior_house_01_55,           
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Masonry,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Old Chicago Brick Window Frame
+    *  OldChicagoBrickWindowFrame
+    *  walls_exterior_house_01_60
+    *  walls_exterior_house_01_61
+    *  walls_exterior_house_01_55
+    */ 
+    
+    entity OldChicagoBrickWindowFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = OldChicagoBrickWindowFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_60,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_61,
+                }
+            }
+            corner = walls_exterior_house_01_55,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Masonry,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        } 
+    }
+    
+    
+    
+    /* 
+    *  Blue Brick Wall
+    *  BlueBrickWall
+    *  walls_exterior_house_01_0
+    *  walls_exterior_house_01_1
+    *  walls_exterior_house_01_3
+    */ 
+    
+    entity BlueBrickWall
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = BlueBrickWall,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            LogicClass = WoodenWall,
+            OnCreate = BuildRecipeCode.canBePlastered.OnCreate,
+            BreakSound = ZombieThumpWoodCollapse,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_0,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_1,
+                }
+            }
+            corner = walls_exterior_house_01_3,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Masonry,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        }
+    }
+        
+    /* 
+    *  Blue Brick Pole 
+    *  BlueBrickPole
+    *  walls_exterior_house_01_3
+    */
+    
+    entity BlueBrickPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = BlueBrickPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            isPole = true,
+            face SINGLE
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_3,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Masonry,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 1 tags[base:concrete] flags[DontRecordInput],
+                item 2 [Base.ClayBrick],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Blue Brick Door Frame
+    *  BlueBrickDoorFrame
+    *  walls_exterior_house_01_3
+    *  walls_exterior_house_01_10
+    *  walls_exterior_house_01_11
+    */ 
+    
+    entity BlueBrickDoorFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = BlueBrickDoorFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_10,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_11,
+                }
+            }
+            corner = walls_exterior_house_01_3,           
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Masonry,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Blue Brick Window Frame
+    *  BlueBrickWindowFrame
+    *  walls_exterior_house_01_3
+    *  walls_exterior_house_01_8
+    *  walls_exterior_house_01_9
+    */ 
+    
+    entity BlueBrickWindowFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = BlueBrickWindowFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_8,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_9,
+                }
+            }
+            corner = walls_exterior_house_01_3,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Masonry,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        } 
+    }
+     /* 
+    *  Brown Brick Wall
+    *  BrownBrickWall
+    *  walls_exterior_house_01_16
+    *  walls_exterior_house_01_17
+    *  walls_exterior_house_01_19
+    */ 
+    
+    entity BrownBrickWall
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = BrownBrickWall,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            LogicClass = WoodenWall,
+            OnCreate = BuildRecipeCode.canBePlastered.OnCreate,
+            BreakSound = ZombieThumpWoodCollapse,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_16,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_17,
+                }
+            }
+            corner = walls_exterior_house_01_19,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Masonry,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        }
+    }
+        
+    /* 
+    *  Brown Brick Pole 
+    *  BrownBrickPole
+    *  walls_exterior_house_01_19
+    */
+    
+    entity BrownBrickPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = BrownBrickPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            isPole = true,
+            face SINGLE
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_19,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Masonry,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 1 tags[base:concrete] flags[DontRecordInput],
+                item 2 [Base.ClayBrick],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Brown Brick Door Frame
+    *  BrownBrickDoorFrame
+    *  walls_exterior_house_01_26
+    *  walls_exterior_house_01_27
+    *  walls_exterior_house_01_19
+    */ 
+    
+    entity BrownBrickDoorFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = BrownBrickDoorFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_26,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_27,
+                }
+            }
+            corner = walls_exterior_house_01_19,           
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Masonry,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Brown Brick Window Frame
+    *  BrownBrickWindowFrame
+    *  walls_exterior_house_01_24
+    *  walls_exterior_house_01_25
+    *  walls_exterior_house_01_19
+    */ 
+    
+    entity BrownBrickWindowFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = BrownBrickWindowFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_24,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_25,
+                }
+            }
+            corner = walls_exterior_house_01_19,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Masonry,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        } 
+    }
+    
+    
+    
+    /* 
+    *  White Wood Siding Wall
+    *  WhiteWoodSidingWall
+    *  walls_exterior_house_01_32
+    *  walls_exterior_house_01_33
+    *  walls_exterior_house_01_35
+    */ 
+    
+    entity WhiteWoodSidingWall
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = WhiteWoodSidingWall,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 500,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            LogicClass = WoodenWall,
+            previousStage = WoodenWallFrame;MetalWallFrame,
+            BreakSound = ZombieThumpWoodCollapse,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_32,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_33,
+                }
+            }
+            corner = walls_exterior_house_01_35,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Carpentry,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_craft_NeedsWallframeDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+        
+    /* 
+    *  White Wood Siding Pole 
+    *  WhiteWoodSidingPole
+    *  walls_exterior_house_01_35
+    */
+    
+    entity WhiteWoodSidingPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = WhiteWoodSidingPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 500,
+            isPole = true,
+            face SINGLE
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_35,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Carpentry,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_craft_NeedsWallframeDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  White Wood Siding Door Frame
+    *  WhiteWoodSidingDoorFrame
+    *  walls_exterior_house_01_42
+    *  walls_exterior_house_01_43
+    *  walls_exterior_house_01_35
+    */ 
+    
+    entity WhiteWoodSidingDoorFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = WhiteWoodSidingDoorFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 500,
+            skillBaseHealth = 50,
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_42,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_43,
+                }
+            }
+            corner = walls_exterior_house_01_35,           
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Carpentry,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:30,
+            Tooltip = Tooltip_craft_doorFrameDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 3 [Base.Plank],
+                item 6 [Base.Nails],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  White Wood Siding Window Frame
+    *  WhiteWoodSidingWindowFrame
+    *  walls_exterior_house_01_40
+    *  walls_exterior_house_01_41
+    *  walls_exterior_house_01_33
+    */ 
+    
+    entity WhiteWoodSidingWindowFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = WhiteWoodSidingWindowFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 500,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            previousStage = WoodenWallFrame;MetalWallFrame,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_40,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_41,
+                }
+            }
+            corner = walls_exterior_house_01_33,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Carpentry,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:30,
+            Tooltip = Tooltip_craft_NeedsWallframeDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+    ¸   }  
+    }
+    /* 
+    *  Brown Wood Siding Wall
+    *  BrownWoodSidingWall
+    *  walls_exterior_house_01_22
+    *  walls_exterior_house_01_48
+    *  walls_exterior_house_01_49
+    */ 
+    
+    entity BrownWoodSidingWall
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = BrownWoodSidingWall,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 500,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            LogicClass = WoodenWall,
+            previousStage = WoodenWallFrame;MetalWallFrame,
+            BreakSound = ZombieThumpWoodCollapse,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_48,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_49,
+                }
+            }
+            corner = walls_exterior_house_01_22,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Carpentry,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_craft_NeedsWallframeDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+        
+    /* 
+    *  Brown Wood Siding Pole 
+    *  BrownWoodSidingPole
+    *  walls_exterior_house_01_22
+    */
+    
+    entity BrownWoodSidingPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = BrownWoodSidingPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 500,
+            isPole = true,
+            face SINGLE
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_22,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Carpentry,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_craft_NeedsWallframeDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Brown Wood Siding Door Frame
+    *  BrownWoodSidingDoorFrame
+    *  walls_exterior_house_01_58
+    *  walls_exterior_house_01_59
+    *  walls_exterior_house_01_22
+    */ 
+    
+    entity BrownWoodSidingDoorFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = BrownWoodSidingDoorFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 500,
+            skillBaseHealth = 50,
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_58,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_59,
+                }
+            }
+            corner = walls_exterior_house_01_22,           
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Carpentry,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:30,
+            Tooltip = Tooltip_craft_doorFrameDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 3 [Base.Plank],
+                item 6 [Base.Nails],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Brown Wood Siding Window Frame
+    *  BrownWoodSidingWindowFrame
+    *  walls_exterior_house_01_56
+    *  walls_exterior_house_01_57
+    *  walls_exterior_house_01_22
+    */ 
+    
+    entity BrownWoodSidingWindowFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = BrownWoodSidingWindowFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 500,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            previousStage = WoodenWallFrame;MetalWallFrame,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_56,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_57,
+                }
+            }
+            corner = walls_exterior_house_01_22,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Carpentry,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:30,
+            Tooltip = Tooltip_craft_NeedsWallframeDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+    ¸   }  
+    }
+/* END BASE */
+}    
