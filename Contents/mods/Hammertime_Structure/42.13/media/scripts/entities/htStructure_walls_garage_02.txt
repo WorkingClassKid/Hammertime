@@ -49,7 +49,6 @@ module Base
             skillBaseHealth = 50,
             isDoor = true,
             dontNeedFrame = true,
-            LogicClass = GarageDoor,
             BreakSound = BreakDoor,
             OnCreate = hammerBuildRecipeCode.GarageDoor.OnCreate,
             face W
@@ -71,17 +70,20 @@ module Base
         }
         component CraftRecipe
         {
-            timedAction = BuildWallNoTool,
+            timedAction = BuildWallMetal,
             time = 200,
             category = Doors,
-            SkillRequired = Masonry:3,
-            xpAward = Masonry:50,
-            Tooltip = Tooltip_craft_brickWallDesc,
+            SkillRequired = Woodwork:5;MetalWelding:4,
+            xpAward = Woodwork:50;MetalWelding:40,
+            Tooltip = Tooltip_craft_metalDoorDesc,
             inputs
             {
-                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
-                item 2 tags[base:concrete] flags[DontRecordInput],
-                item 4 [Base.StoneBlock],
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 2 [Base.SheetMetal],
+                item 2 [Base.MetalBar],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+                item 2 [Base.Hinge],
+                item 1 [Base.Doorknob],
             }
         }
     }
@@ -113,7 +115,6 @@ module Base
             skillBaseHealth = 50,
             isDoor = true,
             dontNeedFrame = true,
-            LogicClass = GarageDoor,
             BreakSound = BreakDoor,
             OnCreate = hammerBuildRecipeCode.GarageDoor.OnCreate,
             face W
@@ -135,17 +136,20 @@ module Base
         }
         component CraftRecipe
         {
-            timedAction = BuildWallNoTool,
+            timedAction = BuildWallMetal,
             time = 200,
             category = Doors,
-            SkillRequired = Masonry:3,
-            xpAward = Masonry:50,
-            Tooltip = Tooltip_craft_brickWallDesc,
+            SkillRequired = Woodwork:5;MetalWelding:4,
+            xpAward = Woodwork:50;MetalWelding:40,
+            Tooltip = Tooltip_craft_metalDoorDesc,
             inputs
             {
-                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
-                item 2 tags[base:concrete] flags[DontRecordInput],
-                item 4 [Base.StoneBlock],
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 2 [Base.SheetMetal],
+                item 2 [Base.MetalBar],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+                item 2 [Base.Hinge],
+                item 1 [Base.Doorknob],
             }
         }
     }
@@ -174,7 +178,6 @@ module Base
             skillBaseHealth = 50,
             isDoor = true,
             dontNeedFrame = true,
-            LogicClass = GarageDoor,
             BreakSound = BreakDoor,
             OnCreate = hammerBuildRecipeCode.GarageDoor.OnCreate,
             face W
@@ -196,17 +199,20 @@ module Base
         }
         component CraftRecipe
         {
-            timedAction = BuildWallNoTool,
+            timedAction = BuildWallMetal,
             time = 200,
             category = Doors,
-            SkillRequired = Masonry:3,
-            xpAward = Masonry:50,
-            Tooltip = Tooltip_craft_brickWallDesc,
+            SkillRequired = Woodwork:5;MetalWelding:4,
+            xpAward = Woodwork:50;MetalWelding:40,
+            Tooltip = Tooltip_craft_metalDoorDesc,
             inputs
             {
-                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
-                item 2 tags[base:concrete] flags[DontRecordInput],
-                item 4 [Base.StoneBlock],
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 2 [Base.SheetMetal],
+                item 2 [Base.MetalBar],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+                item 2 [Base.Hinge],
+                item 1 [Base.Doorknob],
             }
         }
     }

@@ -1,0 +1,82 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_CommercialSteelDoor
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Commercial Steel Door,
+			Icon = ui_fixtures_doors_01_56,
+		}
+    }    
+    
+   /* 
+    *  Commercial Steel Door
+    *  CommercialSteelDoor
+    *  fixtures_doors_01_56
+    *  fixtures_doors_01_57
+    *  fixtures_doors_01_58
+    *  fixtures_doors_01_59
+    */ 
+    
+    
+    entity CommercialSteelDoor
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_CommercialSteelDoor,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            skillBaseHealth = 350,
+            BreakSound = BreakDoor,
+            face W
+            {
+                layer
+                {
+                    row = fixtures_doors_01_56,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_doors_01_57,
+                }
+            }
+            face W_OPEN
+            {
+                layer
+                {
+                    row = fixtures_doors_01_58,
+                }
+            }
+            face N_OPEN
+            {
+                layer
+                {
+                    row = fixtures_doors_01_59,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallMetal,
+            time = 200,
+            category = Doors,
+            SkillRequired = Woodwork:5;MetalWelding:3,
+            xpAward = Woodwork:50;MetalWelding:40,
+            Tooltip = Tooltip_craft_metalDoorDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 2 [Base.SheetMetal],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+                item 2 [Base.Hinge],
+                item 1 [Base.Doorknob],
+            }
+        }
+    }
+}

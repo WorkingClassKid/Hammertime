@@ -1,0 +1,68 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_BlackFrameSingleBed
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Black Frame Single Bed,
+			Icon = ui_furniture_bedding_01_0,
+		}
+    }    
+    
+   /* 
+    *  Black Frame Single Bed
+    *  BlackFrameSingleBed
+    *  furniture_bedding_01_0
+    *  furniture_bedding_01_1
+    *  furniture_bedding_01_2
+    *  furniture_bedding_01_3
+    */ 
+    
+    entity BlackFrameSingleBed
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_BlackFrameSingleBed,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = furniture_bedding_01_1,
+                    row = furniture_bedding_01_0, 
+                }
+            }
+            
+            face S
+            {
+                layer
+                {
+                    row = furniture_bedding_01_2 furniture_bedding_01_3,
+                }
+            }
+          
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 50,
+            SkillRequired = Woodwork:4,
+            xpAward = Woodwork:40,
+            category = Furniture,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_bedDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 6 [Base.Plank],
+                item 4 [Base.Nails],
+                item 1 [Base.Mattress],
+            }
+        }
+    }
+}

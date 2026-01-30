@@ -1,0 +1,67 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_LargeOakTable
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Large Oak Table,
+			Icon = ui_furniture_tables_high_01_32,
+		}
+    }    
+    
+   /* 
+    *  Large Oak Table
+    *  LargeOakTable
+    *  furniture_tables_high_01_32
+    *  furniture_tables_high_01_33
+    *  furniture_tables_high_01_34
+    *  furniture_tables_high_01_35
+    */ 
+    
+    entity LargeOakTable
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_LargeOakTable,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = furniture_tables_high_01_33,
+                    row = furniture_tables_high_01_32, 
+                }
+            }
+            
+            face S
+            {
+                layer
+                {
+                    row = furniture_tables_high_01_34 furniture_tables_high_01_35,
+                }
+            }
+          
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 50,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:50,
+            category = Furniture,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_tableDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+}

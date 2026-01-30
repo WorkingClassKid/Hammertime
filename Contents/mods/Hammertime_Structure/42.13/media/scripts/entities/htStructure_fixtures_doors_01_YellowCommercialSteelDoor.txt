@@ -1,0 +1,82 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_YellowCommercialSteelDoor
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Yellow Commercial Steel Door,
+			Icon = ui_fixtures_doors_01_64,
+		}
+    }    
+    
+   /* 
+    *  Yellow Commercial Steel Door
+    *  YellowCommercialSteelDoor
+    *  fixtures_doors_01_64
+    *  fixtures_doors_01_65
+    *  fixtures_doors_01_66
+    *  fixtures_doors_01_67
+    */
+    
+    
+    entity YellowCommercialSteelDoor
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_YellowCommercialSteelDoor,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            skillBaseHealth = 350,
+            BreakSound = BreakDoor,
+            face W
+            {
+                layer
+                {
+                    row = fixtures_doors_01_64,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_doors_01_65,
+                }
+            }
+            face W_OPEN
+            {
+                layer
+                {
+                    row = fixtures_doors_01_66,
+                }
+            }
+            face N_OPEN
+            {
+                layer
+                {
+                    row = fixtures_doors_01_67,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallMetal,
+            time = 200,
+            category = Doors,
+            SkillRequired = Woodwork:5;MetalWelding:3,
+            xpAward = Woodwork:50;MetalWelding:40,
+            Tooltip = Tooltip_craft_metalDoorDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 2 [Base.SheetMetal],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+                item 2 [Base.Hinge],
+                item 1 [Base.Doorknob],
+            }
+        }
+    }
+}

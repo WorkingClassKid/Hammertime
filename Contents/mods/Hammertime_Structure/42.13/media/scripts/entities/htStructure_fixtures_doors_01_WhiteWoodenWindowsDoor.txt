@@ -1,0 +1,83 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_WhiteWoodenWindowsDoor
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Wooden Windows Door,
+			Icon = ui_fixtures_doors_01_44,
+		}
+    }    
+    
+   /* 
+    *  White Wooden Windows Door
+    *  WhiteWoodenWindowsDoor
+    *  fixtures_doors_01_40
+    *  fixtures_doors_01_41
+    *  fixtures_doors_01_42
+    *  fixtures_doors_01_43
+    */ 
+    
+    
+    entity WhiteWoodenWindowsDoor
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_WhiteWoodenWindowsDoor,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            skillBaseHealth = 300,
+            BreakSound = BreakDoor,
+            face W
+            {
+                layer
+                {
+                    row = fixtures_doors_01_44,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_doors_01_45,
+                }
+            }
+            face W_OPEN
+            {
+                layer
+                {
+                    row = fixtures_doors_01_46,
+                }
+            }
+            face N_OPEN
+            {
+                layer
+                {
+                    row = fixtures_doors_01_47,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Doors,
+            SkillRequired = Woodwork:7,
+            xpAward = Woodwork:70,
+            Tooltip = Tooltip_craft_woodenDoorDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 2 [Base.GlassPanel],
+                item 4 [Base.Nails],
+                item 2 [Base.Hinge],
+                item 1 [Base.Doorknob],
+            }
+        }
+    }
+}

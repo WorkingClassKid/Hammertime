@@ -1,0 +1,84 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_BlackCommercialGlassDoor
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Black Commercial Glass Door,
+			Icon = ui_fixtures_doors_01_48,
+		}
+    }    
+    
+   /* 
+    *  Black Commercial Glass Door
+    *  BlackCommercialGlassDoor
+    *  fixtures_doors_01_48
+    *  fixtures_doors_01_49
+    *  fixtures_doors_01_50
+    *  fixtures_doors_01_51
+    */ 
+    
+    
+    entity BlackCommercialGlassDoor
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_BlackCommercialGlassDoor,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            skillBaseHealth = 275,
+            BreakSound = BreakDoor,
+            face W
+            {
+                layer
+                {
+                    row = fixtures_doors_01_48,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_doors_01_49,
+                }
+            }
+            face W_OPEN
+            {
+                layer
+                {
+                    row = fixtures_doors_01_50,
+                }
+            }
+            face N_OPEN
+            {
+                layer
+                {
+                    row = fixtures_doors_01_51,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallMetal,
+            time = 200,
+            category = Doors,
+            SkillRequired = Woodwork:5;MetalWelding:3,
+            xpAward = Woodwork:50;MetalWelding:40,
+            Tooltip = Tooltip_craft_metalDoorDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 3 [Base.SmallSheetMetal],
+                item 4 [Base.GlassPanel],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+                item 2 [Base.Hinge],
+                item 1 [Base.Doorknob],
+
+            }
+        }
+    }
+}

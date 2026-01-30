@@ -1,0 +1,82 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_BrownBeigeCabinetCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Brown and Beige Cabinet Corner,
+			Icon = ui_fixtures_counters_01_0,
+		}
+    }    
+    
+   /* 
+    *  Brown Beige Cabinet Corner
+    *  BrownBeigeCabinetCorner
+    *  fixtures_counters_01_0
+    *  fixtures_counters_01_2
+    *  fixtures_counters_01_4
+    *  fixtures_counters_01_6
+    */ 
+    
+    
+    entity BrownBeigeCabinetCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_BrownBeigeCabinetCorner ,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 100,
+            skillBaseHealth = 20,
+            face S
+            {
+                layer
+                {
+                    row = fixtures_counters_01_4,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = fixtures_counters_01_2,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_counters_01_0,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = fixtures_counters_01_6,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Kitchen Cabinets,
+            SkillRequired = Woodwork:7,
+            xpAward = Woodwork:70,
+            Tooltip = Tooltip_ht_KitchenCabinet,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 6 [Base.Plank],
+                item 6 [Base.Nails],
+                item 2 [Base.Hinge],
+                item 1 [Base.Doorknob],
+            }
+        }
+    }
+}
