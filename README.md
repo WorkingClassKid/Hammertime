@@ -35,4 +35,4 @@ Windows: %userprofile%\Zomboid\console.txt
 Mac/Linux: $User\Zomboid\console.txt
 
 ## Huge Thanks to:
-- Roxane on the [url=https://discord.com/invite/SReMnbV4V7]PZ Community Discord[/url] 
+- Roxane on the [https://discord.com/invite/SReMnbV4V7][PZ Community Discord] 
