@@ -20,7 +20,7 @@ Tested on B42.13.2 SP/MP
 
 ## Special Request
 
-For special requests, please open a request on our [https://github.com/WorkingClassKid/Hammertime/issues][GitHub] page as a new issue.
+For special requests, please open a request on our (Github)[https://github.com/WorkingClassKid/Hammertime/issues] page as a new issue.
 
 ## Known issues
 - The character sits next to certain chairs after building them.
