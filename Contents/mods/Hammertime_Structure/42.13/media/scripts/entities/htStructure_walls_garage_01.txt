@@ -75,7 +75,7 @@ module Base
             category = Doors,
             SkillRequired = Woodwork:5;MetalWelding:4,
             xpAward = Woodwork:50;MetalWelding:40,
-            Tooltip = Tooltip_craft_metalDoorDesc,
+            Tooltip = Tooltip_ht_GarageDoor,
             inputs
             {
                 item 4 [Base.BlowTorch] flags[DontRecordInput],
@@ -141,7 +141,7 @@ module Base
             category = Doors,
             SkillRequired = Woodwork:5;MetalWelding:4,
             xpAward = Woodwork:50;MetalWelding:40,
-            Tooltip = Tooltip_craft_metalDoorDesc,
+            Tooltip = Tooltip_ht_GarageDoor,
             inputs
             {
                 item 4 [Base.BlowTorch] flags[DontRecordInput],
@@ -204,7 +204,7 @@ module Base
             category = Doors,
             SkillRequired = Woodwork:5;MetalWelding:4,
             xpAward = Woodwork:50;MetalWelding:40,
-            Tooltip = Tooltip_craft_metalDoorDesc,
+            Tooltip = Tooltip_ht_GarageDoor,
             inputs
             {
                 item 4 [Base.BlowTorch] flags[DontRecordInput],
