@@ -66,19 +66,6 @@ function hammerBuildRecipeCode.GarageDoor.OnCreate(params)
     print("coords:", x, y, z)
 
 
-    sendServerCommand("HammerTime_Client", "CreateGarageDoor", {
-        x = x,
-        y = y,
-        z = z,
-        sprite = thumpable:getSprite():getName(),
-        north = thumpable:getNorth(),
-        name = "Garage Door to remove",
-        health = thumpable:getHealth() or 500,
-        keyId = thumpable:getKeyId() or -1,
-        modData = thumpable:getModData() or {},
-    })
-
-
     print("---- AFTER SPECIAL OBJECTS ON SQUARE ----")
     local square = params.thumpable and params.thumpable:getSquare()
     local list = square:getSpecialObjects()
