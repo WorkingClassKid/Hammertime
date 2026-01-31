@@ -4,7 +4,7 @@ Hammertime is a mod designed to enrich the building experience in Project Zomboi
 
 The goal is simple: fill the lack of diversity in the vanilla content and finally offer real options to build, furnish, and customize your base.
 
-##Vanilla‑friendly - No external dependencies
+## Vanilla‑friendly - No external dependencies
 
 No external dependencies, no weird mechanics — Hammertime stays deliberately vanilla‑friendly to ensure maximum compatibility and long‑term updates.
 
