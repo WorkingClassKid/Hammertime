@@ -23,7 +23,7 @@ Tested on B42.13.2 SP/MP
 
 ## Special Request
 
-For special requests, please open a request on our page as a new issue.
+For special requests, you can use the Discussions page.
 
 ## Known issues
 - The character sits next to certain chairs after building them.
@@ -34,7 +34,9 @@ Quick fix: You can pick up the chair and place it back down, and it will work as
 Upload your __complete console.txt file__, along with any other relevant information, and add a description of your issue on our page as a new issue.
 
 ### Where can I find my console.txt file?
+
 Windows: %userprofile%\Zomboid\console.txt
+
 Mac/Linux: $User\Zomboid\console.txt
 
 ## Huge Thanks to:
