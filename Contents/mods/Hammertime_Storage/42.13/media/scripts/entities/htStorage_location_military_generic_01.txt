@@ -2,19 +2,19 @@ module Base
 {
     	xuiSkin default
 	{
-		entity CrateMilitaryGray
+		entity ES_htCrateMilitaryGray
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Military Crate Gray,
 			Icon = ui_location_military_generic_01_8,
 		}
-        entity CrateMilitaryGreen
+        entity ES_htCrateMilitaryGreen
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Military Crate Green,
 			Icon = ui_location_military_generic_01_0,
 		}
-        entity MilitaryLocker
+        entity ES_htMilitaryLocker
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Military Locker,
@@ -24,16 +24,16 @@ module Base
     
     /* 
     *  Military Crate Gray
-    *  CrateMilitaryGray
+    *  htCrateMilitaryGray
     *  location_military_generic_01_8
     */   
     
-    entity CrateMilitaryGray
+    entity htCrateMilitaryGray
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = CrateMilitaryGray,
+            entityStyle = ES_htCrateMilitaryGray,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -71,16 +71,16 @@ module Base
     
     /* 
     *  Military Crate Green
-    *  CrateMilitaryGreen
+    *  htCrateMilitaryGreen
     *  location_military_generic_01_0
     */   
     
-    entity CrateMilitaryGreen
+    entity htCrateMilitaryGreen
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = CrateMilitaryGreen,
+            entityStyle = ES_htCrateMilitaryGreen,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -117,19 +117,19 @@ module Base
     
     /* 
     *  Military Locker
-    *  MilitaryLocker
+    *  htMilitaryLocker
     *  location_military_generic_01_22
     *  location_military_generic_01_23
     *  location_military_generic_01_30
     *  location_military_generic_01_31
     */ 
     
-    entity MilitaryLocker
+    entity htMilitaryLocker
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = MilitaryLocker,
+            entityStyle = ES_htMilitaryLocker,
             uiEnabled = false,
         }
         component SpriteConfig

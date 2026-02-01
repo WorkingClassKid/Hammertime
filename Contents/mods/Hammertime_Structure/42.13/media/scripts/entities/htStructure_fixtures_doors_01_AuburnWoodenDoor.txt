@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_AuburnWoodenDoor
+        entity ES_htAuburnWoodenDoor
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Auburn Wooden Door,
@@ -12,7 +12,7 @@ module Base
     
    /* 
     *  Auburn Wooden Door
-    *  AuburnWoodenDoor
+    *  htAuburnWoodenDoor
     *  fixtures_doors_01_12
     *  fixtures_doors_01_13
     *  fixtures_doors_01_14
@@ -20,12 +20,12 @@ module Base
     */ 
     
     
-    entity AuburnWoodenDoor
+    entity htAuburnWoodenDoor
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_AuburnWoodenDoor,
+            entityStyle = ES_htAuburnWoodenDoor,
             uiEnabled = false,
         }
         component SpriteConfig

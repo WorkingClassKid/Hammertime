@@ -2,21 +2,21 @@ module Base
 {
     	xuiSkin default
 	{
-		entity GarageDoorMetal
+		entity ES_htGarageDoorMetal
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Garage Door Metal,
 			Icon = ui_walls_garage_02_0,
 		}  
         
-		entity GarageDoorMetalWindows
+		entity ES_htGarageDoorMetalWindows
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Garage Metal with Windows,
 			Icon = ui_walls_garage_02_50,
 		}   
         
-		entity GarageDoorRed
+		entity ES_htGarageDoorRed
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Garage Door Red,
@@ -26,7 +26,7 @@ module Base
     
     /* 
     *  Garage Door Metal
-    *  GarageDoorMetal
+    *  htGarageDoorMetal
     *  walls_garage_02_0
     *  walls_garage_02_1
     *  walls_garage_02_2
@@ -35,12 +35,12 @@ module Base
     *  walls_garage_02_5
     */ 
     
-    entity GarageDoorMetal
+    entity htGarageDoorMetal
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = GarageDoorMetal,
+            entityStyle = ES_htGarageDoorMetal,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -92,7 +92,7 @@ module Base
     
     /* 
     *  Garage Door Metal Window
-    *  GarageDoorMetalWindows
+    *  htGarageDoorMetalWindows
     *  walls_garage_02_48
     *  walls_garage_02_49
     *  walls_garage_02_50
@@ -101,12 +101,12 @@ module Base
     *  walls_garage_02_53
     */ 
     
-    entity GarageDoorMetalWindows
+    entity htGarageDoorMetalWindows
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = GarageDoorMetalWindows,
+            entityStyle = ES_htGarageDoorMetalWindows,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -155,7 +155,7 @@ module Base
     }
         /* 
     *  Garage Door Red
-    *  GarageDoorRed
+    *  htGarageDoorRed
     *  walls_garage_02_32
     *  walls_garage_02_33
     *  walls_garage_02_34
@@ -164,12 +164,12 @@ module Base
     *  walls_garage_02_37
     */ 
     
-    entity GarageDoorRed
+    entity htGarageDoorRed
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = GarageDoorRed,
+            entityStyle = ES_htGarageDoorRed,
             uiEnabled = false,
         }
         component SpriteConfig

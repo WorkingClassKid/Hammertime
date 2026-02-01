@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_WhiteWoodenBookcase
+        entity ES_htWhiteWoodenBookcase
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= White Wooden Bookcase,
@@ -12,19 +12,19 @@ module Base
     
    /* 
     *  White Wooden Bookcase
-    *  WhiteWoodenBookcase
+    *  htWhiteWoodenBookcase
     *  furniture_shelving_01_44
     *  furniture_shelving_01_45
     *  furniture_shelving_01_46
     *  furniture_shelving_01_47
     */ 
     
-    entity WhiteWoodenBookcase
+    entity htWhiteWoodenBookcase
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_WhiteWoodenBookcase,
+            entityStyle = ES_htWhiteWoodenBookcase,
             uiEnabled = false,
         }
         component SpriteConfig

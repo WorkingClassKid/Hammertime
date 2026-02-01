@@ -1,0 +1,85 @@
+module Base
+{
+    	xuiSkin default
+	{
+        entity ES_htMagazineStand
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Magazine Stand,
+			Icon = ui_location_shop_generic_01_24,
+		}
+    }    
+    
+   /* 
+    *  Magazine Stand
+    *  htMagazineStand
+    *  location_shop_generic_01_24
+    *  location_shop_generic_01_25
+    *  location_shop_generic_01_26
+    *  location_shop_generic_01_27
+    *  location_shop_generic_01_104
+    *  location_shop_generic_01_105
+    *  location_shop_generic_01_106
+    *  location_shop_generic_01_107
+    */ 
+    
+    entity htMagazineStand
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htMagazineStand,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = location_shop_generic_01_27,
+                    row = location_shop_generic_01_26,
+
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = location_shop_generic_01_105,
+                    row = location_shop_generic_01_104,
+
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = location_shop_generic_01_25 location_shop_generic_01_24,
+                }
+            }        
+            face N
+            {
+                layer
+                {
+                    row = location_shop_generic_01_106 location_shop_generic_01_107,
+                }
+            }              
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Storage,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:40,
+            Tooltip = Tooltip_ht_MagazineStand,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 6 [Base.Plank],
+                item 10 [Base.Nails],
+            }
+    ¸   }
+    }
+}

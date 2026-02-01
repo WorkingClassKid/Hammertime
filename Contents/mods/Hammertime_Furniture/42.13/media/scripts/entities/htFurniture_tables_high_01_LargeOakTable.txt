@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_LargeOakTable
+        entity ES_htLargeOakTable
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Large Oak Table,
@@ -12,19 +12,19 @@ module Base
     
    /* 
     *  Large Oak Table
-    *  LargeOakTable
+    *  htLargeOakTable
     *  furniture_tables_high_01_32
     *  furniture_tables_high_01_33
     *  furniture_tables_high_01_34
     *  furniture_tables_high_01_35
     */ 
     
-    entity LargeOakTable
+    entity htLargeOakTable
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_LargeOakTable,
+            entityStyle = ES_htLargeOakTable,
             uiEnabled = false,
         }
         component SpriteConfig

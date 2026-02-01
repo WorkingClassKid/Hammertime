@@ -1,0 +1,9 @@
+ItemName_EN = {
+    ItemName_Base.htChestFreezer = "Chest Freezer",
+
+    ItemName_Base.htStoveChrome = "Stove Chrome",
+    ItemName_Base.htStoveGreen = "Stove Green",
+    ItemName_Base.htStoveGrey = "Stove Grey",
+    ItemName_Base.htStoveIndustrial = "Stove Industrial",
+    ItemName_Base.htStoveRed = "Stove Red",
+}

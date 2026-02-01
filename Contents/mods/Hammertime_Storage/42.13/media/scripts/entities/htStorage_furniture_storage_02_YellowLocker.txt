@@ -1,0 +1,81 @@
+module Base
+{
+    	xuiSkin default
+	{
+        entity ES_htYellowLocker
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Yellow Locker,
+			Icon = ui_furniture_storage_02_12,
+		}
+    }    
+    
+   /* 
+    *  Yellow Locker
+    *  htYellowLocker
+    *  furniture_storage_02_12
+    *  furniture_storage_02_13
+    *  furniture_storage_02_14
+    *  furniture_storage_02_15
+    */ 
+    
+    entity htYellowLocker
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htYellowLocker,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = furniture_storage_02_12,
+
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = furniture_storage_02_13,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = furniture_storage_02_15,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = furniture_storage_02_14,
+                }
+            }            
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 50,
+            SkillRequired = MetalWelding:3,
+            xpAward = MetalWelding:30,
+            category = Storage,
+            Tags = Storage;Furniture,
+            Tooltip = Tooltip_craft_lockerDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 4 [Base.SmallSheetMetal],
+                item 8 [Base.MetalPipe],
+                item 2 [Base.Hinge],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

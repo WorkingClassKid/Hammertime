@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{
-		entity RedToolsCabinetSmall
+		entity ES_htRedToolsCabinetSmall
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Red Tools Cabinet Small,
@@ -12,16 +12,19 @@ module Base
     
     /* 
     *  RedTools Cabinet Small
-    *  RedToolsCabinetSmall
-    *  location_business_machinery_01_
+    *  htRedToolsCabinetSmall
+    *  location_business_machinery_01_32
+    *  location_business_machinery_01_33
+    *  location_business_machinery_01_34
+    *  location_business_machinery_01_35
     */   
     
-    entity RedToolsCabinetSmall
+    entity htRedToolsCabinetSmall
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = RedToolsCabinetSmall,
+            entityStyle = ES_htRedToolsCabinetSmall,
             uiEnabled = false,
         }
         component SpriteConfig

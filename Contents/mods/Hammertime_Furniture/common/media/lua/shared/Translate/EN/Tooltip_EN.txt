@@ -1,4 +1,5 @@
 Tooltip_EN = {
     Tooltip_ht_KitchenCabinet = "Choose from our selection of ready-built cabinets",
+    Tooltip_ht_Trashcans = "- Don’t leave your garbage lying around!",
 
 }

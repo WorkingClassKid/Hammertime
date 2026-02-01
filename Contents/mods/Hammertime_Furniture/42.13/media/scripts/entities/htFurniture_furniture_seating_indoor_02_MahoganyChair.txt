@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_MahoganyChair
+        entity ES_htMahoganyChair
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Mahogany Chair,
@@ -12,19 +12,19 @@ module Base
     
    /* 
     *  Mahogany Chair
-    *  MahoganyChair
+    *  htMahoganyChair
     *  furniture_seating_indoor_02_0
     *  furniture_seating_indoor_02_1
     *  furniture_seating_indoor_02_2
     *  furniture_seating_indoor_02_3
     */ 
     
-    entity MahoganyChair
+    entity htMahoganyChair
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_MahoganyChair,
+            entityStyle = ES_htMahoganyChair,
             uiEnabled = false,
         }
         component SpriteConfig

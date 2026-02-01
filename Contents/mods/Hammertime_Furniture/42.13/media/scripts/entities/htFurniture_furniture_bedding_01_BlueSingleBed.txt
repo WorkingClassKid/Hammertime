@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_BlueSingleBed
+        entity ES_htBlueSingleBed
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Blue Single Bed,
@@ -12,7 +12,7 @@ module Base
     
    /* 
     *  Blue Single Bed
-    *  BlueSingleBed
+    *  htBlueSingleBed
     *  furniture_bedding_01_8
     *  furniture_bedding_01_9
     *  furniture_bedding_01_10
@@ -23,12 +23,12 @@ module Base
     *  furniture_bedding_01_79
     */ 
     
-    entity BlueSingleBed
+    entity htBlueSingleBed
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_BlueSingleBed,
+            entityStyle = ES_htBlueSingleBed,
             uiEnabled = false,
         }
         component SpriteConfig

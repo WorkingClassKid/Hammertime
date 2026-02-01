@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_DarkCabinet
+        entity ES_htDarkCabinet
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Dark Cabinet,
@@ -12,7 +12,7 @@ module Base
     
    /* 
     *  Dark Cabinet
-    *  DarkCabinet
+    *  htDarkCabinet
     *  fixtures_counters_01_57
     *  fixtures_counters_01_59
     *  fixtures_counters_01_61
@@ -20,12 +20,12 @@ module Base
     */ 
     
     
-    entity DarkCabinet
+    entity htDarkCabinet
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_DarkCabinet,
+            entityStyle = ES_htDarkCabinet,
             uiEnabled = false,
         }
         component SpriteConfig

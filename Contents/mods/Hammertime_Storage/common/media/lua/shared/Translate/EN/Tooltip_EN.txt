@@ -1,0 +1,4 @@
+Tooltip_EN = {
+    Tooltip_ht_MagazineStand = "A beautiful magazine stand",
+
+}

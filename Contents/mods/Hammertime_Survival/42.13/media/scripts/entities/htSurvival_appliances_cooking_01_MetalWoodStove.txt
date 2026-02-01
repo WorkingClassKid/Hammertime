@@ -1,0 +1,85 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity ES_htMetalWoodStove
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Metal Wood Stove,
+			Icon = ui_appliances_cooking_01_19,
+		}         
+    }
+    
+    
+    
+    /* 
+    *  Metal Wood Stove
+    *  htMetalWoodStove
+    *  appliances_cooking_01_16
+    *  appliances_cooking_01_17
+    *  appliances_cooking_01_18
+    *  appliances_cooking_01_19
+    */ 
+    
+    entity htMetalWoodStove
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htMetalWoodStove,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            OnCreate = BuildRecipeCode.barrelOven.OnCreate,
+            face W
+            {
+                layer
+                {
+                    row = appliances_cooking_01_19,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = appliances_cooking_01_18,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = appliances_cooking_01_17,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = appliances_cooking_01_16,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 350,
+            SkillRequired = MetalWelding:6,
+            xpAward = MetalWelding:50,
+            category = Welding,
+            Tags = Welding,
+            Tooltip = Tooltip_craft_barrelOvenDesc,
+            inputs
+            {
+                item 5 [Base.BlowTorch] flags[DontRecordInput],
+                item 3 [Base.SmallSheetMetal],
+                item 3 [Base.SheetMetal],
+                item 1 [Base.ScrapMetal],
+                item 5 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+
+/* END BASE */
+}    

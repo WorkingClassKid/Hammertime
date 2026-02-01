@@ -1,0 +1,10 @@
+Recipes_EN = {
+    htMakeChestFreezer = "Make Chest Freezer",
+    
+    
+    htMakeStoveChrome = "Make Stove Chrome",
+    htMakeStoveGreen = "Make Stove Green",
+    htMakeStoveGrey = "Make Stove Grey",
+    htMakeStoveIndustrial = "Make Stove Industrial",
+    htMakeStoveRed = "Make Stove Red",
+}

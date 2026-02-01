@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_BrownBeigeCabinetCorner
+        entity ES_htBrownBeigeCabinetCorner
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Brown and Beige Cabinet Corner,
@@ -12,7 +12,7 @@ module Base
     
    /* 
     *  Brown Beige Cabinet Corner
-    *  BrownBeigeCabinetCorner
+    *  htBrownBeigeCabinetCorner
     *  fixtures_counters_01_0
     *  fixtures_counters_01_2
     *  fixtures_counters_01_4
@@ -20,12 +20,12 @@ module Base
     */ 
     
     
-    entity BrownBeigeCabinetCorner
+    entity htBrownBeigeCabinetCorner
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_BrownBeigeCabinetCorner ,
+            entityStyle = ES_htBrownBeigeCabinetCorner ,
             uiEnabled = false,
         }
         component SpriteConfig

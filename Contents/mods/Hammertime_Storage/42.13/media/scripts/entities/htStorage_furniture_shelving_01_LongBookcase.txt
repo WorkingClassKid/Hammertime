@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{
-        entity ES_LongBookcase
+        entity ES_htLongBookcase
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Long Bookcase,
@@ -12,7 +12,7 @@ module Base
     
    /* 
     *  Long Bookcase
-    *  LongBookcase
+    *  htLongBookcase
     *  furniture_shelving_01_16
     *  furniture_shelving_01_17
     *  furniture_shelving_01_18
@@ -27,12 +27,12 @@ module Base
     *  furniture_shelving_01_54
     */ 
     
-    entity LongBookcase
+    entity htLongBookcase
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_LongBookcase,
+            entityStyle = ES_htLongBookcase,
             uiEnabled = false,
         }
         component SpriteConfig

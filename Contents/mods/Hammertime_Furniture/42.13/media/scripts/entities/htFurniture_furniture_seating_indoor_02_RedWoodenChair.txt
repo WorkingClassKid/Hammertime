@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_RedWoodenChair
+        entity ES_htRedWoodenChair
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Red Wooden Chair,
@@ -12,19 +12,19 @@ module Base
     
    /* 
     *  Red Wooden Chair
-    *  RedWoodenChair
+    *  htRedWoodenChair
     *  furniture_seating_indoor_02_8
     *  furniture_seating_indoor_02_9
     *  furniture_seating_indoor_02_10
     *  furniture_seating_indoor_02_11
     */ 
     
-    entity RedWoodenChair
+    entity htRedWoodenChair
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_RedWoodenChair,
+            entityStyle = ES_htRedWoodenChair,
             uiEnabled = false,
         }
         component SpriteConfig

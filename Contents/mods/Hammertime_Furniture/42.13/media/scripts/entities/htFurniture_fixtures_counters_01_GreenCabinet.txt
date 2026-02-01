@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_GreenCabinet
+        entity ES_htGreenCabinet
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Green Cabinet,
@@ -12,7 +12,7 @@ module Base
     
    /* 
     *  Green Cabinet
-    *  GreenCabinet
+    *  htGreenCabinet
     *  fixtures_counters_01_65
     *  fixtures_counters_01_67
     *  fixtures_counters_01_69
@@ -20,12 +20,12 @@ module Base
     */ 
     
     
-    entity GreenCabinet
+    entity htGreenCabinet
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_GreenCabinet,
+            entityStyle = ES_htGreenCabinet,
             uiEnabled = false,
         }
         component SpriteConfig

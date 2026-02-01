@@ -1,0 +1,245 @@
+module Base
+{
+    	xuiSkin default
+	{
+        
+        entity ES_htBlueWoodSidingWall
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Blue Wood Siding Wall,
+			Icon = ui_walls_exterior_house_02_20,
+		}       
+		entity ES_htBlueWoodSidingPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Blue Wood Siding Pole,
+			Icon = ui_walls_exterior_house_02_23,
+		}         
+        entity ES_htBlueWoodSidingDoorFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Blue Wood Siding Frame,
+			Icon = ui_walls_exterior_house_02_30,
+		}  
+        entity ES_htBlueWoodSidingWindowFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Blue Wood Siding Window Frame,
+			Icon = ui_walls_exterior_house_02_28,
+		}  
+ 
+    }
+    
+    /* 
+    *  Blue Wood Siding Wall
+    *  htBlueWoodSidingWall
+    *  walls_exterior_house_02_20
+    *  walls_exterior_house_02_21
+    *  walls_exterior_house_02_23
+    */ 
+    
+    entity htBlueWoodSidingWall
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBlueWoodSidingWall,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            LogicClass = WoodenWall,
+            OnCreate = BuildRecipeCode.canBePlastered.OnCreate,
+            BreakSound = ZombieThumpWoodCollapse,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_20,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_21,
+                }
+            }
+            corner = walls_exterior_house_02_23,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Carpentry,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_craft_NeedsWallframeDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+        
+    /* 
+    *  Blue Wood Siding Pole 
+    *  htBlueWoodSidingPole
+    *  walls_exterior_house_02_23
+    */
+    
+    entity htBlueWoodSidingPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBlueWoodSidingPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            isPole = true,
+            face SINGLE
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_23,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Carpentry,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_craft_NeedsWallframeDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Blue Wood Siding Frame
+    *  htBlueWoodSidingDoorFrame
+    *  walls_exterior_house_02_30
+    *  walls_exterior_house_02_31
+    *  walls_exterior_house_02_23
+    */ 
+    
+    entity htBlueWoodSidingDoorFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBlueWoodSidingDoorFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_30,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_31,
+                }
+            }
+            corner = walls_exterior_house_02_23,           
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Carpentry,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:30,
+            Tooltip = Tooltip_craft_doorFrameDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 3 [Base.Plank],
+                item 6 [Base.Nails],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Blue Wood Siding Window Frame
+    *  htBlueWoodSidingWindowFrame
+    *  walls_exterior_house_02_28
+    *  walls_exterior_house_02_29
+    *  walls_exterior_house_02_23
+    */ 
+    
+    entity htBlueWoodSidingWindowFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBlueWoodSidingWindowFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_28,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_29,
+                }
+            }
+            corner = walls_exterior_house_02_23,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Carpentry,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:30,
+            Tooltip = Tooltip_craft_NeedsWallframeDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+    ¸   }
+    }
+/* END BASE */
+}    

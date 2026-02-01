@@ -2,13 +2,13 @@ module Base
 {
     	xuiSkin default
 	{
-        entity ES_WoodenShelfBookcase
+        entity ES_htWoodenShelfBookcase
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Wooden Shelf Bookcase,
 			Icon = ui_furniture_shelving_01_10,
 		}
-        entity ES_WoodenShelfBookcaseCorner
+        entity ES_htWoodenShelfBookcaseCorner
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Wooden Shelf Bookcase Corner,
@@ -18,17 +18,17 @@ module Base
     
     /* 
     *  Wooden Shelf Bookcase
-    *  WoodenShelfBookcase
+    *  htWoodenShelfBookcase
     *  furniture_shelving_01_10
     *  furniture_shelving_01_9
     */ 
     
-    entity WoodenShelfBookcase
+    entity htWoodenShelfBookcase
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_WoodenShelfBookcase,
+            entityStyle = ES_htWoodenShelfBookcase,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -69,16 +69,16 @@ module Base
     
     /* 
     *  Wooden Shelf Bookcase Corner
-    *  WoodenShelfBookcaseCorner
+    *  htWoodenShelfBookcaseCorner
     *  furniture_shelving_01_8
     */ 
     
-    entity WoodenShelfBookcaseCorner
+    entity htWoodenShelfBookcaseCorner
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_WoodenShelfBookcaseCorner,
+            entityStyle = ES_htWoodenShelfBookcaseCorner,
             uiEnabled = false,
         }
         component SpriteConfig

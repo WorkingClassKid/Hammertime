@@ -3,35 +3,35 @@ module Base
 
     	xuiSkin default
 	{
-        entity BlackSlidingWindow
+        entity ES_htBlackSlidingWindow
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Black Sliding Window,
 			Icon = ui_fixtures_windows_01_57,
 		}  
         
-        entity BlackVSlidingWindow
+        entity ES_htBlackVSlidingWindow
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Black Vertical Sliding Window,
 			Icon = ui_fixtures_windows_01_32,
 		}  
         
-    	entity BrownGridsWindow
+    	entity ES_htBrownGridsWindow
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Brown Grids Window,
 			Icon = ui_fixtures_windows_01_16,
 		}  
         
-		entity WhiteGridsWindow
+		entity ES_htWhiteGridsWindow
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= White Grids Window,
 			Icon = ui_fixtures_windows_01_8,
 		} 
         
-        entity WhiteVSlidingWindow
+        entity ES_htWhiteVSlidingWindow
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= White Vertical Sliding Window,
@@ -42,17 +42,17 @@ module Base
 
     /* 
     *  Black Sliding Window
-    *  BlackSlidingWindow
+    *  htBlackSlidingWindow
     *  fixtures_windows_01_56
     *  fixtures_windows_01_57
     */ 
     
-    entity BlackSlidingWindow
+    entity htBlackSlidingWindow
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = BlackSlidingWindow,
+            entityStyle = ES_htBlackSlidingWindow,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -96,17 +96,17 @@ module Base
 
     /* 
     *  Black Vertical Sliding Window
-    *  BlackVSlidingWindow
+    *  htBlackVSlidingWindow
     *  fixtures_windows_01_32
     *  fixtures_windows_01_33
     */ 
     
-    entity BlackVSlidingWindow
+    entity htBlackVSlidingWindow
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = BlackVSlidingWindow,
+            entityStyle = ES_htBlackVSlidingWindow,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -150,17 +150,17 @@ module Base
     
     /* 
     *  Brown Grids Window
-    *  BrownGridsWindow
+    *  htBrownGridsWindow
     *  fixtures_windows_01_16
     *  fixtures_windows_01_17
     */ 
     
-    entity BrownGridsWindow
+    entity htBrownGridsWindow
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = BrownGridsWindow,
+            entityStyle = ES_htBrownGridsWindow,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -205,17 +205,17 @@ module Base
     
     /* 
     *  White Grids Window
-    *  WhiteGridsWindow
+    *  htWhiteGridsWindow
     *  fixtures_windows_01_8
     *  fixtures_windows_01_9
     */ 
     
-    entity WhiteGridsWindow
+    entity htWhiteGridsWindow
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = WhiteGridsWindow,
+            entityStyle = ES_htWhiteGridsWindow,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -258,17 +258,17 @@ module Base
     
     /* 
     *  White Vertical Sliding Window
-    *  WhiteVSlidingWindow
+    *  htWhiteVSlidingWindow
     *  fixtures_windows_01_24
     *  fixtures_windows_01_25
     */ 
     
-    entity WhiteVSlidingWindow
+    entity htWhiteVSlidingWindow
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = WhiteVSlidingWindow,
+            entityStyle = ES_htWhiteVSlidingWindow,
             uiEnabled = false,
         }
         component SpriteConfig

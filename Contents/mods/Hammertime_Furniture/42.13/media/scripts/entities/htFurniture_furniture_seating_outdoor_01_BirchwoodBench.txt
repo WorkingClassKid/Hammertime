@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_BirchwoodBench
+        entity ES_htBirchwoodBench
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Birchwood Bench,
@@ -12,19 +12,19 @@ module Base
     
    /* 
     *  Birchwood Bench
-    *  BirchwoodBench
+    *  htBirchwoodBench
     *  furniture_seating_outdoor_01_32
     *  furniture_seating_outdoor_01_33
     *  furniture_seating_outdoor_01_34
     *  furniture_seating_outdoor_01_35
     */ 
     
-    entity BirchwoodBench
+    entity htBirchwoodBench
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_BirchwoodBench,
+            entityStyle = ES_htBirchwoodBench,
             uiEnabled = false,
         }
         component SpriteConfig

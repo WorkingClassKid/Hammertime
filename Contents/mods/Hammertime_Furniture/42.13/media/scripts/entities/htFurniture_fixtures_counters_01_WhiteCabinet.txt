@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_WhiteCabinet
+        entity ES_htWhiteCabinet
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= White Cabinet,
@@ -12,7 +12,7 @@ module Base
     
    /* 
     *  White Cabinet
-    *  WhiteCabinet
+    *  htWhiteCabinet
     *  fixtures_counters_01_73
     *  fixtures_counters_01_75
     *  fixtures_counters_01_77
@@ -20,12 +20,12 @@ module Base
     */ 
     
     
-    entity WhiteCabinet
+    entity htWhiteCabinet
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_WhiteCabinet,
+            entityStyle = ES_htWhiteCabinet,
             uiEnabled = false,
         }
         component SpriteConfig

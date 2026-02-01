@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_CommercialKitchenDoor
+        entity ES_htCommercialKitchenDoor
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Commercial Kitchen Door,
@@ -12,7 +12,7 @@ module Base
     
    /* 
     *  Commercial Kitchen Door
-    *  CommercialKitchenDoor
+    *  htCommercialKitchenDoor
     *  fixtures_doors_01_60
     *  fixtures_doors_01_61
     *  fixtures_doors_01_62
@@ -20,12 +20,12 @@ module Base
     */ 
     
     
-    entity CommercialKitchenDoor
+    entity htCommercialKitchenDoor
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_CommercialKitchenDoor,
+            entityStyle = ES_htCommercialKitchenDoor,
             uiEnabled = false,
         }
         component SpriteConfig

@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_BlackGlassDoor
+        entity ES_htBlackGlassDoor
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Black Glass Door,
@@ -12,7 +12,7 @@ module Base
     
    /* 
     *  Black Glass Door
-    *  BlackGlassDoor
+    *  htBlackGlassDoor
     *  fixtures_doors_01_40
     *  fixtures_doors_01_41
     *  fixtures_doors_01_42
@@ -20,12 +20,12 @@ module Base
     */ 
     
     
-    entity BlackGlassDoor
+    entity htBlackGlassDoor
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_BlackGlassDoor,
+            entityStyle = ES_htlackGlassDoor,
             uiEnabled = false,
         }
         component SpriteConfig

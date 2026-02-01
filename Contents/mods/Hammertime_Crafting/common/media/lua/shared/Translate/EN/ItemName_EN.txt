@@ -1,0 +1,5 @@
+ItemName_EN = {
+    ItemName_Base.htBlueCurtain = "Blue Curtain",
+    ItemName_Base.htBrownCurtain = "Brown Curtain",
+    ItemName_Base.htPinkCurtain = "Pink Curtain",
+}

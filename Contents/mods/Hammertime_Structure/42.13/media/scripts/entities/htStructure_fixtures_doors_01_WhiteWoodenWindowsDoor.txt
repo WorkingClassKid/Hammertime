@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_WhiteWoodenWindowsDoor
+        entity ES_htWhiteWoodenWindowsDoor
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= White Wooden Windows Door,
@@ -12,7 +12,7 @@ module Base
     
    /* 
     *  White Wooden Windows Door
-    *  WhiteWoodenWindowsDoor
+    *  htWhiteWoodenWindowsDoor
     *  fixtures_doors_01_40
     *  fixtures_doors_01_41
     *  fixtures_doors_01_42
@@ -20,12 +20,12 @@ module Base
     */ 
     
     
-    entity WhiteWoodenWindowsDoor
+    entity htWhiteWoodenWindowsDoor
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_WhiteWoodenWindowsDoor,
+            entityStyle = ES_htWhiteWoodenWindowsDoor,
             uiEnabled = false,
         }
         component SpriteConfig

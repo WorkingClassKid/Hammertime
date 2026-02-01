@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_RedOakCabinet
+        entity ES_htRedOakCabinet
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Red Oak Cabinet,
@@ -12,7 +12,7 @@ module Base
     
    /* 
     *  Red Oak Cabinet
-    *  RedOakCabinet
+    *  htRedOakCabinet
     *  fixtures_counters_01_49
     *  fixtures_counters_01_51
     *  fixtures_counters_01_53
@@ -20,12 +20,12 @@ module Base
     */ 
     
     
-    entity RedOakCabinet
+    entity htRedOakCabinet
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_RedOakCabinet,
+            entityStyle = ES_htRedOakCabinet,
             uiEnabled = false,
         }
         component SpriteConfig

@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_WoodenDarkCabinetCorner
+        entity ES_htWoodenDarkCabinetCorner
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Wooden Dark Cabinet Corner,
@@ -12,7 +12,7 @@ module Base
     
    /* 
     *  Wooden Dark Cabinet Corner
-    *  WoodenDarkCabinetCorner
+    *  htWoodenDarkCabinetCorner
     *  fixtures_counters_01_8
     *  fixtures_counters_01_10
     *  fixtures_counters_01_12
@@ -20,12 +20,12 @@ module Base
     */ 
     
     
-    entity WoodenDarkCabinetCorner
+    entity htWoodenDarkCabinetCorner
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_WoodenDarkCabinetCorner,
+            entityStyle = ES_htWoodenDarkCabinetCorner,
             uiEnabled = false,
         }
         component SpriteConfig

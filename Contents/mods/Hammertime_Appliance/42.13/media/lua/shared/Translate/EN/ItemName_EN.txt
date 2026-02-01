@@ -1,9 +1,0 @@
-ItemName_EN = {
-    ItemName_Base.ChestFreezer = "Chest Freezer",
-
-    ItemName_Base.StoveChrome = "Stove Chrome",
-    ItemName_Base.StoveGrey = "Stove Green",
-    ItemName_Base.StoveGrey = "Stove Grey",
-    ItemName_Base.StoveIndustrial = "Stove Industrial",
-    ItemName_Base.StoveRed = "Stove Red",
-}

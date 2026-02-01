@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_CommercialSteelDoor
+        entity ES_htCommercialSteelDoor
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Commercial Steel Door,
@@ -12,7 +12,7 @@ module Base
     
    /* 
     *  Commercial Steel Door
-    *  CommercialSteelDoor
+    *  htCommercialSteelDoor
     *  fixtures_doors_01_56
     *  fixtures_doors_01_57
     *  fixtures_doors_01_58
@@ -20,12 +20,12 @@ module Base
     */ 
     
     
-    entity CommercialSteelDoor
+    entity htCommercialSteelDoor
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_CommercialSteelDoor,
+            entityStyle = ES_htCommercialSteelDoor,
             uiEnabled = false,
         }
         component SpriteConfig

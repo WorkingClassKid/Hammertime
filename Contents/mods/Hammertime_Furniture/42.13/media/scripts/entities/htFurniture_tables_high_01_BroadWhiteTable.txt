@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_BroadWhiteTable
+        entity ES_htBroadWhiteTable
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Broad White Table,
@@ -12,19 +12,19 @@ module Base
     
    /* 
     *  Broad White Table
-    *  BroadWhiteTable
+    *  htBroadWhiteTable
     *  furniture_tables_high_01_36
     *  furniture_tables_high_01_37
     *  furniture_tables_high_01_38
     *  furniture_tables_high_01_39
     */ 
     
-    entity BroadWhiteTable
+    entity htBroadWhiteTable
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_BroadWhiteTable,
+            entityStyle = ES_htBroadWhiteTable,
             uiEnabled = false,
         }
         component SpriteConfig

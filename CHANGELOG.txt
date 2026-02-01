@@ -1,0 +1,57 @@
+
+********************
+01-02-2026
+********************
+
+Hammertime
+------------------
+=FIXES=
+- Fixed missing translation for the Tailoring item DisplayCategory used the item description (IGUI_ItemCat_Tailoring)
+
+
+Hammertime_Crafting
+------------------
+=NEW=
+- Blue Curtain
+- Brown Curtain
+- Pink Curtain
+
+
+Hammertime_Appliance
+------------------
+=FIXES=
+- Fixed missing translation for the green stove (Stove Green)
+
+
+Hammertime_Furniture
+------------------
+=NEW=
+- Trash cans (Round Garbage Bin, Public Garbage Bin, Green Garbage Bin, Steel Garbage Bin, Commercial Garbage Bin)
+- Simple Bed
+
+=FIXES=
+- Added missing SpritesConfig for W and N for Black Frame Single Bed
+
+
+Hammertime_Storage
+------------------
+=NEW=
+- Blue Locker
+- Yellow Locker
+- Magazine Stand
+
+
+Hammertime_Stucture
+------------------
+=NEW=
+- Sandstone Rock Masonry Wall
+- Gray Old Chicago Brick Wall
+- Blue Wood Siding Wall
+
+
+Other
+------------------
+- Moved all the translations for all sub-mods in their common folder
+- Updated representative pictures of each mod to show the new items/features for the workshop. Still not enought content in Hammertime_Crafting make it worth making an image.....
+- Fixed naming toponomy of many recipes, entities,items and filess to keep it standard for easy futur updating (Sorry if you loose something...it better now than later...)
+- Added the Hammertime (ht) identifier to all functions, recipes, entities, items and files to be sure they are unique to this mod (Sorry if you loose something...it better now than later...)

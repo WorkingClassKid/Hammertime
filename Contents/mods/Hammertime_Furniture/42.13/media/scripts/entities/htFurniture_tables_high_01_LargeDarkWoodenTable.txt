@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_LargeDarkWoodenTable
+        entity ES_htLargeDarkWoodenTable
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Large Dark Wooden Table,
@@ -12,19 +12,19 @@ module Base
     
    /* 
     *  Large Dark Wooden Table
-    *  LargeDarkWoodenTable
+    *  htLargeDarkWoodenTable
     *  furniture_tables_high_01_40
     *  furniture_tables_high_01_41
     *  furniture_tables_high_01_42
     *  furniture_tables_high_01_43
     */ 
     
-    entity LargeDarkWoodenTable
+    entity htLargeDarkWoodenTable
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_LargeDarkWoodenTable,
+            entityStyle = ES_htLargeDarkWoodenTable,
             uiEnabled = false,
         }
         component SpriteConfig

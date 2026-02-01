@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_BlackFrameSingleBed
+        entity ES_htBlackFrameSingleBed
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Black Frame Single Bed,
@@ -12,19 +12,23 @@ module Base
     
    /* 
     *  Black Frame Single Bed
-    *  BlackFrameSingleBed
+    *  htBlackFrameSingleBed
     *  furniture_bedding_01_0
     *  furniture_bedding_01_1
     *  furniture_bedding_01_2
     *  furniture_bedding_01_3
+    *  furniture_bedding_01_68
+    *  furniture_bedding_01_69
+    *  furniture_bedding_01_70
+    *  furniture_bedding_01_71
     */ 
     
-    entity BlackFrameSingleBed
+    entity htBlackFrameSingleBed
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_BlackFrameSingleBed,
+            entityStyle = ES_htBlackFrameSingleBed,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -38,11 +42,28 @@ module Base
                 }
             }
             
+            face W
+            {
+                layer
+                {
+                    row = furniture_bedding_01_69,
+                    row = furniture_bedding_01_68, 
+                }
+            }
+            
             face S
             {
                 layer
                 {
                     row = furniture_bedding_01_2 furniture_bedding_01_3,
+                }
+            }
+            
+            face N
+            {
+                layer
+                {
+                    row = furniture_bedding_01_70 furniture_bedding_01_71,
                 }
             }
           

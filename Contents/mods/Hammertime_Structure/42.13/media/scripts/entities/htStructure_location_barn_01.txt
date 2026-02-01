@@ -2,25 +2,25 @@ module Base
 {
     	xuiSkin default
 	{
-		entity BarnRedWall
+		entity ES_htBarnRedWall
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Barn Red Wall,
 			Icon = ui_location_barn_01_0,
 		}       
-		entity BarnRedPole
+		entity ES_htBarnRedPole
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Barn Red Pole,
 			Icon = ui_location_barn_01_20,
 		}         
-        entity BarnRedDoorFrame
+        entity ES_htBarnRedDoorFrame
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Barn Red Door Frame,
 			Icon = ui_location_barn_01_10,
 		}  
-        entity BarnRedWindowFrame
+        entity ES_htBarnRedWindowFrame
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Barn Red Window Frame,
@@ -32,18 +32,18 @@ module Base
     
     /* 
     *  Barn Red Wall
-    *  BarnRedWall
+    *  htBarnRedWall
     *  location_barn_01_0
     *  location_barn_01_1
     *  location_barn_01_3
     */ 
     
-    entity BarnRedWall
+    entity htBarnRedWall
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = BarnRedWall,
+            entityStyle = ES_htBarnRedWall,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -89,16 +89,16 @@ module Base
         
     /* 
     *  Barn Red Pole 
-    *  BarnRedPole
+    *  htBarnRedPole
     *  location_barn_01_20
     */
     
-    entity BarnRedPole
+    entity htBarnRedPole
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = BarnRedPole,
+            entityStyle = ES_htBarnRedPole,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -133,18 +133,18 @@ module Base
     
     /* 
     *  Barn Red Door Frame
-    *  BarnRedDoorFrame
+    *  htBarnRedDoorFrame
     *  location_barn_01_10
     *  location_barn_01_11
     *  location_barn_01_3
     */ 
     
-    entity BarnRedDoorFrame
+    entity htBarnRedDoorFrame
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = BarnRedDoorFrame,
+            entityStyle = ES_htBarnRedDoorFrame,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -189,17 +189,17 @@ module Base
     
     /* 
     *  Barn Red Window Frame
-    *  BarnRedWindowFrame
+    *  htBarnRedWindowFrame
     *  location_barn_01_8
     *  location_barn_01_9
     */ 
     
-    entity BarnRedWindowFrame
+    entity htBarnRedWindowFrame
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = BarnRedWindowFrame,
+            entityStyle = ES_htBarnRedWindowFrame,
             uiEnabled = false,
         }
         component SpriteConfig

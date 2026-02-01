@@ -3,21 +3,21 @@ module Base
     	xuiSkin default
 	{
 
-		entity ES_BlackWoodenShelf
+		entity ES_htBlackWoodenShelf
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Black Wooden Shelf,
 			Icon = ui_furniture_shelving_01_34,
 		}
         
-        entity ES_WhiteWoodenShelf
+        entity ES_htWhiteWoodenShelf
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= White Wooden Shelf,
 			Icon = ui_furniture_shelving_01_36,
 		}
         
-        entity ES_LargeMetalShelves
+        entity ES_htLargeMetalShelves
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Large Metal Shelves,
@@ -28,17 +28,17 @@ module Base
     
     /* 
     *  Black Wooden Shelf
-    *  BlackWoodenShelf
+    *  htBlackWoodenShelf
     *  furniture_shelving_01_34
     *  furniture_shelving_01_35
     */ 
     
-    entity BlackWoodenShelf
+    entity htBlackWoodenShelf
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_BlackWoodenShelf,
+            entityStyle = ES_htBlackWoodenShelf,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -78,17 +78,17 @@ module Base
     
     /* 
     *  White Wooden Shelf
-    *  WhiteWoodenShelf
+    *  htWhiteWoodenShelf
     *  furniture_shelving_01_36
     *  furniture_shelving_01_37
     */ 
     
-    entity WhiteWoodenShelf
+    entity htWhiteWoodenShelf
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_WhiteWoodenShelf,
+            entityStyle = ES_htWhiteWoodenShelf,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -130,19 +130,19 @@ module Base
     
     /* 
     *  Large Metal Shelves
-    *  LargeMetalShelves
+    *  htLargeMetalShelves
     *  furniture_shelving_01_24
     *  furniture_shelving_01_25
     *  furniture_shelving_01_26
     *  furniture_shelving_01_27
     */   
     
-    entity LargeMetalShelves
+    entity htLargeMetalShelves
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_LargeMetalShelves,
+            entityStyle = ES_htLargeMetalShelves,
             uiEnabled = false,
         }
         component SpriteConfig

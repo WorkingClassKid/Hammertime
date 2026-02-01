@@ -2,7 +2,7 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_DarkCommercialDoor
+        entity ES_htDarkCommercialDoor
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Dark Commercial Door,
@@ -12,7 +12,7 @@ module Base
     
    /* 
     *  Dark Commercial Door
-    *  DarkCommercialDoor
+    *  htDarkCommercialDoor
     *  fixtures_doors_01_20
     *  fixtures_doors_01_21
     *  fixtures_doors_01_22
@@ -20,12 +20,12 @@ module Base
     */ 
     
     
-    entity DarkCommercialDoor
+    entity htDarkCommercialDoor
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_DarkCommercialDoor,
+            entityStyle = ES_htDarkCommercialDoor,
             uiEnabled = false,
         }
         component SpriteConfig

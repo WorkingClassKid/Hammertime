@@ -1,0 +1,38 @@
+module Base {
+
+    /* 
+    *  Blue Curtain
+    *  htBlueCurtain
+    */ 
+    
+    item htBlueCurtain
+    {
+        DisplayCategory = Tailoring,
+        ItemType = base:moveable,
+        Icon = ui_fixtures_windows_curtains_01_31,
+        Weight = 1.0,
+        WorldObjectSprite = fixtures_windows_curtains_01_31,
+    }
+  
+    craftRecipe htMakeBlueCurtain
+    {
+        timedAction = MakingElectrical,
+        time = 400,
+        SkillRequired = Tailoring:2,
+        Tags = AnySurfaceCraft,
+        Category = Tailoring,
+        xpAward = Tailoring:20,
+        AllowBatchCraft = false,
+        inputs
+        {
+            item 1 tags[base:scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 2 [Base.BurlapPiece;Base.FabricRoll_Cotton;Base.Sheet] flags[InheritColor] mappers[fabricType],
+            item 2 tags[base:thread],
+        }
+        outputs
+        {
+            item 1 Base.htBlueCurtain,
+        }
+    } 
+}

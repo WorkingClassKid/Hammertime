@@ -3,25 +3,25 @@ module Base
     	xuiSkin default
 	{
         
-        entity OldChicagoBrickWall
+        entity ES_htOldChicagoBrickWall
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Old Chicago Brick Wall,
 			Icon = ui_walls_exterior_house_01_52,
 		}       
-		entity OldChicagoBrickPole
+		entity ES_htOldChicagoBrickPole
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Old Chicago Brick Pole,
 			Icon = ui_walls_exterior_house_01_55,
 		}         
-        entity OldChicagoBrickDoorFrame
+        entity ES_htOldChicagoBrickDoorFrame
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Old Chicago Brick Door Frame,
 			Icon = ui_walls_exterior_house_01_62,
 		}  
-        entity OldChicagoBrickWindowFrame
+        entity ES_htOldChicagoBrickWindowFrame
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Old Chicago Brick Window Frame,
@@ -30,25 +30,25 @@ module Base
         
         
         
-		entity BlueBrickWall
+		entity ES_htBlueBrickWall
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Blue Brick Wall,
 			Icon = ui_walls_exterior_house_01_0,
 		}       
-		entity BlueBrickPole
+		entity ES_htBlueBrickPole
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Blue Brick Pole,
 			Icon = ui_walls_exterior_house_01_3,
 		}         
-        entity BlueBrickDoorFrame
+        entity ES_htBlueBrickDoorFrame
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Blue Brick Door Frame,
 			Icon = ui_walls_exterior_house_01_10,
 		}  
-        entity BlueBrickWindowFrame
+        entity ES_htBlueBrickWindowFrame
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Blue Brick Window Frame,
@@ -58,25 +58,25 @@ module Base
         
         
         
-        entity BrownBrickWall
+        entity ES_htBrownBrickWall
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Brown Brick Wall,
 			Icon = ui_walls_exterior_house_01_16,
 		}       
-		entity BrownBrickPole
+		entity ES_htBrownBrickPole
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Brown Brick Pole,
 			Icon = ui_walls_exterior_house_01_19,
 		}         
-        entity BrownBrickDoorFrame
+        entity ES_htBrownBrickDoorFrame
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Brown Brick Door Frame,
 			Icon = ui_walls_exterior_house_01_26,
 		}  
-        entity BrownBrickWindowFrame
+        entity ES_htBrownBrickWindowFrame
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Brown Brick Window Frame,
@@ -85,25 +85,25 @@ module Base
         
 
 
-        entity WhiteWoodSidingWall
+        entity ES_htWhiteWoodSidingWall
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= White Wood Siding Wall,
 			Icon = ui_walls_exterior_house_01_32,
 		}       
-		entity WhiteWoodSidingPole
+		entity ES_htWhiteWoodSidingPole
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= White Wood Siding Pole,
 			Icon = ui_walls_exterior_house_01_35,
 		}         
-        entity WhiteWoodSidingDoorFrame
+        entity ES_htWhiteWoodSidingDoorFrame
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= White Wood Siding Door Frame,
 			Icon = ui_walls_exterior_house_01_42,
 		}  
-        entity WhiteWoodSidingWindowFrame
+        entity ES_htWhiteWoodSidingWindowFrame
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= White Wood Siding Window Frame,
@@ -112,25 +112,25 @@ module Base
         
         
         
-        entity BrownWoodSidingWall
+        entity ES_htBrownWoodSidingWall
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Brown Wood Siding Wall,
 			Icon = ui_walls_exterior_house_01_48,
 		}       
-		entity BrownWoodSidingPole
+		entity ES_htBrownWoodSidingPole
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Brown Wood Siding Pole,
 			Icon = ui_walls_exterior_house_01_22,
 		}         
-        entity BrownWoodSidingDoorFrame
+        entity ES_htBrownWoodSidingDoorFrame
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Brown Wood Siding Door Frame,
 			Icon = ui_walls_exterior_house_01_58,
 		}  
-        entity BrownWoodSidingWindowFrame
+        entity ES_htBrownWoodSidingWindowFrame
 		{
 			LuaWindowClass = ISEntityWindow,
 			DisplayName	= Brown Wood Siding Window Frame,
@@ -141,18 +141,18 @@ module Base
     
     /* 
     *  Old Chicago Brick Wall
-    *  OldChicagoBrickWall
+    *  htOldChicagoBrickWall
     *  walls_exterior_house_01_52
     *  walls_exterior_house_01_53
     *  walls_exterior_house_01_55
     */ 
     
-    entity OldChicagoBrickWall
+    entity htOldChicagoBrickWall
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = OldChicagoBrickWall,
+            entityStyle = ES_htOldChicagoBrickWall,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -198,16 +198,16 @@ module Base
         
     /* 
     *  Old Chicago Brick Pole 
-    *  OldChicagoBrickPole
+    *  htOldChicagoBrickPole
     *  walls_exterior_house_01_55
     */
     
-    entity OldChicagoBrickPole
+    entity htOldChicagoBrickPole
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = OldChicagoBrickPole,
+            entityStyle = ES_htOldChicagoBrickPole,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -242,18 +242,18 @@ module Base
     
     /* 
     *  Old Chicago Brick Door Frame
-    *  OldChicagoBrickDoorFrame
+    *  htOldChicagoBrickDoorFrame
     *  walls_exterior_house_01_62
     *  walls_exterior_house_01_63
     *  walls_exterior_house_01_55
     */ 
     
-    entity OldChicagoBrickDoorFrame
+    entity htOldChicagoBrickDoorFrame
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = OldChicagoBrickDoorFrame,
+            entityStyle = ES_htOldChicagoBrickDoorFrame,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -298,18 +298,18 @@ module Base
     
     /* 
     *  Old Chicago Brick Window Frame
-    *  OldChicagoBrickWindowFrame
+    *  htOldChicagoBrickWindowFrame
     *  walls_exterior_house_01_60
     *  walls_exterior_house_01_61
     *  walls_exterior_house_01_55
     */ 
     
-    entity OldChicagoBrickWindowFrame
+    entity htOldChicagoBrickWindowFrame
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = OldChicagoBrickWindowFrame,
+            entityStyle = ES_htOldChicagoBrickWindowFrame,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -355,18 +355,18 @@ module Base
     
     /* 
     *  Blue Brick Wall
-    *  BlueBrickWall
+    *  htBlueBrickWall
     *  walls_exterior_house_01_0
     *  walls_exterior_house_01_1
     *  walls_exterior_house_01_3
     */ 
     
-    entity BlueBrickWall
+    entity htBlueBrickWall
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = BlueBrickWall,
+            entityStyle = ES_htBlueBrickWall,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -412,16 +412,16 @@ module Base
         
     /* 
     *  Blue Brick Pole 
-    *  BlueBrickPole
+    *  htBlueBrickPole
     *  walls_exterior_house_01_3
     */
     
-    entity BlueBrickPole
+    entity htBlueBrickPole
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = BlueBrickPole,
+            entityStyle = ES_htBlueBrickPole,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -456,18 +456,18 @@ module Base
     
     /* 
     *  Blue Brick Door Frame
-    *  BlueBrickDoorFrame
+    *  htBlueBrickDoorFrame
     *  walls_exterior_house_01_3
     *  walls_exterior_house_01_10
     *  walls_exterior_house_01_11
     */ 
     
-    entity BlueBrickDoorFrame
+    entity htBlueBrickDoorFrame
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = BlueBrickDoorFrame,
+            entityStyle = ES_htBlueBrickDoorFrame,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -512,18 +512,18 @@ module Base
     
     /* 
     *  Blue Brick Window Frame
-    *  BlueBrickWindowFrame
+    *  htBlueBrickWindowFrame
     *  walls_exterior_house_01_3
     *  walls_exterior_house_01_8
     *  walls_exterior_house_01_9
     */ 
     
-    entity BlueBrickWindowFrame
+    entity htBlueBrickWindowFrame
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = BlueBrickWindowFrame,
+            entityStyle = ES_htBlueBrickWindowFrame,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -566,18 +566,18 @@ module Base
     }
      /* 
     *  Brown Brick Wall
-    *  BrownBrickWall
+    *  htBrownBrickWall
     *  walls_exterior_house_01_16
     *  walls_exterior_house_01_17
     *  walls_exterior_house_01_19
     */ 
     
-    entity BrownBrickWall
+    entity htBrownBrickWall
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = BrownBrickWall,
+            entityStyle = ES_htBrownBrickWall,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -623,16 +623,16 @@ module Base
         
     /* 
     *  Brown Brick Pole 
-    *  BrownBrickPole
+    *  htBrownBrickPole
     *  walls_exterior_house_01_19
     */
     
-    entity BrownBrickPole
+    entity htBrownBrickPole
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = BrownBrickPole,
+            entityStyle = ES_htBrownBrickPole,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -667,18 +667,18 @@ module Base
     
     /* 
     *  Brown Brick Door Frame
-    *  BrownBrickDoorFrame
+    *  htBrownBrickDoorFrame
     *  walls_exterior_house_01_26
     *  walls_exterior_house_01_27
     *  walls_exterior_house_01_19
     */ 
     
-    entity BrownBrickDoorFrame
+    entity htBrownBrickDoorFrame
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = BrownBrickDoorFrame,
+            entityStyle = ES_htBrownBrickDoorFrame,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -723,18 +723,18 @@ module Base
     
     /* 
     *  Brown Brick Window Frame
-    *  BrownBrickWindowFrame
+    *  htBrownBrickWindowFrame
     *  walls_exterior_house_01_24
     *  walls_exterior_house_01_25
     *  walls_exterior_house_01_19
     */ 
     
-    entity BrownBrickWindowFrame
+    entity htBrownBrickWindowFrame
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = BrownBrickWindowFrame,
+            entityStyle = ES_htBrownBrickWindowFrame,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -780,18 +780,18 @@ module Base
     
     /* 
     *  White Wood Siding Wall
-    *  WhiteWoodSidingWall
+    *  htWhiteWoodSidingWall
     *  walls_exterior_house_01_32
     *  walls_exterior_house_01_33
     *  walls_exterior_house_01_35
     */ 
     
-    entity WhiteWoodSidingWall
+    entity htWhiteWoodSidingWall
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = WhiteWoodSidingWall,
+            entityStyle = ES_htWhiteWoodSidingWall,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -837,16 +837,16 @@ module Base
         
     /* 
     *  White Wood Siding Pole 
-    *  WhiteWoodSidingPole
+    *  htWhiteWoodSidingPole
     *  walls_exterior_house_01_35
     */
     
-    entity WhiteWoodSidingPole
+    entity htWhiteWoodSidingPole
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = WhiteWoodSidingPole,
+            entityStyle = ES_htWhiteWoodSidingPole,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -881,18 +881,18 @@ module Base
     
     /* 
     *  White Wood Siding Door Frame
-    *  WhiteWoodSidingDoorFrame
+    *  htWhiteWoodSidingDoorFrame
     *  walls_exterior_house_01_42
     *  walls_exterior_house_01_43
     *  walls_exterior_house_01_35
     */ 
     
-    entity WhiteWoodSidingDoorFrame
+    entity htWhiteWoodSidingDoorFrame
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = WhiteWoodSidingDoorFrame,
+            entityStyle = ES_htWhiteWoodSidingDoorFrame,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -937,18 +937,18 @@ module Base
     
     /* 
     *  White Wood Siding Window Frame
-    *  WhiteWoodSidingWindowFrame
+    *  htWhiteWoodSidingWindowFrame
     *  walls_exterior_house_01_40
     *  walls_exterior_house_01_41
     *  walls_exterior_house_01_33
     */ 
     
-    entity WhiteWoodSidingWindowFrame
+    entity htWhiteWoodSidingWindowFrame
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = WhiteWoodSidingWindowFrame,
+            entityStyle = ES_htWhiteWoodSidingWindowFrame,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -992,18 +992,18 @@ module Base
     }
     /* 
     *  Brown Wood Siding Wall
-    *  BrownWoodSidingWall
+    *  htBrownWoodSidingWall
     *  walls_exterior_house_01_22
     *  walls_exterior_house_01_48
     *  walls_exterior_house_01_49
     */ 
     
-    entity BrownWoodSidingWall
+    entity htBrownWoodSidingWall
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = BrownWoodSidingWall,
+            entityStyle = ES_htBrownWoodSidingWall,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -1049,16 +1049,16 @@ module Base
         
     /* 
     *  Brown Wood Siding Pole 
-    *  BrownWoodSidingPole
+    *  htBrownWoodSidingPole
     *  walls_exterior_house_01_22
     */
     
-    entity BrownWoodSidingPole
+    entity htBrownWoodSidingPole
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = BrownWoodSidingPole,
+            entityStyle = ES_htBrownWoodSidingPole,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -1093,18 +1093,18 @@ module Base
     
     /* 
     *  Brown Wood Siding Door Frame
-    *  BrownWoodSidingDoorFrame
+    *  htBrownWoodSidingDoorFrame
     *  walls_exterior_house_01_58
     *  walls_exterior_house_01_59
     *  walls_exterior_house_01_22
     */ 
     
-    entity BrownWoodSidingDoorFrame
+    entity htBrownWoodSidingDoorFrame
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = BrownWoodSidingDoorFrame,
+            entityStyle = ES_htBrownWoodSidingDoorFrame,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -1149,18 +1149,18 @@ module Base
     
     /* 
     *  Brown Wood Siding Window Frame
-    *  BrownWoodSidingWindowFrame
+    *  htBrownWoodSidingWindowFrame
     *  walls_exterior_house_01_56
     *  walls_exterior_house_01_57
     *  walls_exterior_house_01_22
     */ 
     
-    entity BrownWoodSidingWindowFrame
+    entity htBrownWoodSidingWindowFrame
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = BrownWoodSidingWindowFrame,
+            entityStyle = ES_htBrownWoodSidingWindowFrame,
             uiEnabled = false,
         }
         component SpriteConfig

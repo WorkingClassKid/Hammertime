@@ -1,7 +1,0 @@
-Recipes_EN = {
-    MakeGeneratorOld = "Make Generator Old",
-    MakeGeneratorLectroMax = "Make Generator Lectro-Max",
-    MakeGeneratorPremium = "Make Generator Premium",
-    
-    MetalWoodStove = "Metal Wood Stove",
-}

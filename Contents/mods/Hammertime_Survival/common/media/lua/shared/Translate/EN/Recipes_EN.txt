@@ -1,0 +1,7 @@
+Recipes_EN = {
+    htMakeGeneratorOld = "Make Generator Old",
+    htMakeGeneratorLectroMax = "Make Generator Lectro-Max",
+    htMakeGeneratorPremium = "Make Generator Premium",
+    
+    htMetalWoodStove = "Metal Wood Stove",
+}
