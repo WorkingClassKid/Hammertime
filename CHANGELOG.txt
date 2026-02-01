@@ -1,3 +1,8 @@
+********************
+01-02-2026 - Hotfix 1
+********************
+- Fixed wrong component UiConfig > entityStyle for BlackGlassDoor entities script
+- Fixed wrong component UiConfig > entityStyle for WhiteWoodenDoor entities script
 
 ********************
 01-02-2026

@@ -25,7 +25,7 @@ module Base
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_WhiteWoodenDoor,
+            entityStyle = ES_htWhiteWoodenDoor,
             uiEnabled = false,
         }
         component SpriteConfig
