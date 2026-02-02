@@ -53,7 +53,7 @@ module Base
             time = 50,
             SkillRequired = Woodwork:5,
             xpAward = Woodwork:50,
-            category = Furniture,
+            category = Tables,
             Tags = Carpentry;Furniture,
             Tooltip = Tooltip_craft_tableDesc,
             inputs

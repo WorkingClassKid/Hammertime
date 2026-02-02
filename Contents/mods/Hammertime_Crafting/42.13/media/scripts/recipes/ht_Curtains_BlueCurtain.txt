@@ -7,7 +7,7 @@ module Base {
     
     item htBlueCurtain
     {
-        DisplayCategory = Tailoring,
+        DisplayCategory = Curtains,
         ItemType = base:moveable,
         Icon = ui_fixtures_windows_curtains_01_31,
         Weight = 1.0,
@@ -20,7 +20,7 @@ module Base {
         time = 400,
         SkillRequired = Tailoring:2,
         Tags = AnySurfaceCraft,
-        Category = Tailoring,
+        Category = Curtains,
         xpAward = Tailoring:20,
         AllowBatchCraft = false,
         inputs

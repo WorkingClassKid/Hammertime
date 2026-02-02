@@ -72,7 +72,7 @@ module Base
         {
             timedAction = BuildWallMetal,
             time = 200,
-            category = Doors,
+            category = Doors_Garage,
             SkillRequired = Woodwork:5;MetalWelding:4,
             xpAward = Woodwork:50;MetalWelding:40,
             Tooltip = Tooltip_ht_GarageDoor,
@@ -138,7 +138,7 @@ module Base
         {
             timedAction = BuildWallMetal,
             time = 200,
-            category = Doors,
+            category = Doors_Garage,
             SkillRequired = Woodwork:5;MetalWelding:4,
             xpAward = Woodwork:50;MetalWelding:40,
             Tooltip = Tooltip_ht_GarageDoor,
@@ -201,7 +201,7 @@ module Base
         {
             timedAction = BuildWallMetal,
             time = 200,
-            category = Doors,
+            category = Doors_Garage,
             SkillRequired = Woodwork:5;MetalWelding:4,
             xpAward = Woodwork:50;MetalWelding:40,
             Tooltip = Tooltip_ht_GarageDoor,

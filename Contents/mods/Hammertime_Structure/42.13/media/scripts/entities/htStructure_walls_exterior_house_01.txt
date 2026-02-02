@@ -183,7 +183,7 @@ module Base
         {
             timedAction = BuildWallNoTool,
             time = 200,
-            category = Masonry,
+            category = Walls,
             SkillRequired = Masonry:3,
             xpAward = Masonry:50,
             Tooltip = Tooltip_craft_brickWallDesc,
@@ -226,7 +226,7 @@ module Base
         {
             timedAction = BuildWallNoTool,
             time = 200,
-            category = Masonry,
+            category = Walls_Pole,
             SkillRequired = Masonry:3,
             xpAward = Masonry:50,
             Tooltip = Tooltip_craft_brickWallDesc,
@@ -282,7 +282,7 @@ module Base
         {
             timedAction = BuildWallNoTool,
             time = 200,
-            category = Masonry,
+            category = Walls_Door_Frame,
             SkillRequired = Masonry:3,
             xpAward = Masonry:50,
             Tooltip = Tooltip_craft_brickWallDesc,
@@ -338,7 +338,7 @@ module Base
         {
             timedAction = BuildWallNoTool,
             time = 200,
-            category = Masonry,
+            category = Walls_Window_Frame,
             SkillRequired = Masonry:3,
             xpAward = Masonry:50,
             Tooltip = Tooltip_craft_brickWallDesc,
@@ -397,7 +397,7 @@ module Base
         {
             timedAction = BuildWallNoTool,
             time = 200,
-            category = Masonry,
+            category = Walls,
             SkillRequired = Masonry:3,
             xpAward = Masonry:50,
             Tooltip = Tooltip_craft_brickWallDesc,
@@ -440,7 +440,7 @@ module Base
         {
             timedAction = BuildWallNoTool,
             time = 200,
-            category = Masonry,
+            category = Walls_Pole,
             SkillRequired = Masonry:3,
             xpAward = Masonry:50,
             Tooltip = Tooltip_craft_brickWallDesc,
@@ -496,7 +496,7 @@ module Base
         {
             timedAction = BuildWallNoTool,
             time = 200,
-            category = Masonry,
+            category = Walls_Door_Frame,
             SkillRequired = Masonry:3,
             xpAward = Masonry:50,
             Tooltip = Tooltip_craft_brickWallDesc,
@@ -552,7 +552,7 @@ module Base
         {
             timedAction = BuildWallNoTool,
             time = 200,
-            category = Masonry,
+            category = Walls_Window_Frame,
             SkillRequired = Masonry:3,
             xpAward = Masonry:50,
             Tooltip = Tooltip_craft_brickWallDesc,
@@ -608,7 +608,7 @@ module Base
         {
             timedAction = BuildWallNoTool,
             time = 200,
-            category = Masonry,
+            category = Walls,
             SkillRequired = Masonry:3,
             xpAward = Masonry:50,
             Tooltip = Tooltip_craft_brickWallDesc,
@@ -651,7 +651,7 @@ module Base
         {
             timedAction = BuildWallNoTool,
             time = 200,
-            category = Masonry,
+            category = Walls_Pole,
             SkillRequired = Masonry:3,
             xpAward = Masonry:50,
             Tooltip = Tooltip_craft_brickWallDesc,
@@ -707,7 +707,7 @@ module Base
         {
             timedAction = BuildWallNoTool,
             time = 200,
-            category = Masonry,
+            category = Walls_Door_Frame,
             SkillRequired = Masonry:3,
             xpAward = Masonry:50,
             Tooltip = Tooltip_craft_brickWallDesc,
@@ -763,7 +763,7 @@ module Base
         {
             timedAction = BuildWallNoTool,
             time = 200,
-            category = Masonry,
+            category = Walls_Window_Frame,
             SkillRequired = Masonry:3,
             xpAward = Masonry:50,
             Tooltip = Tooltip_craft_brickWallDesc,
@@ -822,7 +822,7 @@ module Base
         {
             timedAction = BuildWallHammer,
             time = 200,
-            category = Carpentry,
+            category = Walls,
             SkillRequired = Woodwork:6,
             xpAward = Woodwork:20,
             Tooltip = Tooltip_craft_NeedsWallframeDesc,
@@ -865,7 +865,7 @@ module Base
         {
             timedAction = BuildWallHammer,
             time = 200,
-            category = Carpentry,
+            category = Walls_Pole,
             SkillRequired = Woodwork:6,
             xpAward = Woodwork:20,
             Tooltip = Tooltip_craft_NeedsWallframeDesc,
@@ -921,7 +921,7 @@ module Base
         {
             timedAction = BuildWallHammer,
             time = 200,
-            category = Carpentry,
+            category = Walls_Door_Frame,
             SkillRequired = Woodwork:6,
             xpAward = Woodwork:30,
             Tooltip = Tooltip_craft_doorFrameDesc,
@@ -978,7 +978,7 @@ module Base
         {
             timedAction = BuildWallHammer,
             time = 200,
-            category = Carpentry,
+            category = Walls_Window_Frame,
             SkillRequired = Woodwork:6,
             xpAward = Woodwork:30,
             Tooltip = Tooltip_craft_NeedsWallframeDesc,
@@ -1034,7 +1034,7 @@ module Base
         {
             timedAction = BuildWallHammer,
             time = 200,
-            category = Carpentry,
+            category = Walls,
             SkillRequired = Woodwork:6,
             xpAward = Woodwork:20,
             Tooltip = Tooltip_craft_NeedsWallframeDesc,
@@ -1077,7 +1077,7 @@ module Base
         {
             timedAction = BuildWallHammer,
             time = 200,
-            category = Carpentry,
+            category = Walls_Pole,
             SkillRequired = Woodwork:6,
             xpAward = Woodwork:20,
             Tooltip = Tooltip_craft_NeedsWallframeDesc,
@@ -1133,7 +1133,7 @@ module Base
         {
             timedAction = BuildWallHammer,
             time = 200,
-            category = Carpentry,
+            category = Walls_Door_Frame,
             SkillRequired = Woodwork:6,
             xpAward = Woodwork:30,
             Tooltip = Tooltip_craft_doorFrameDesc,
@@ -1190,7 +1190,7 @@ module Base
         {
             timedAction = BuildWallHammer,
             time = 200,
-            category = Carpentry,
+            category = Walls_Window_Frame,
             SkillRequired = Woodwork:6,
             xpAward = Woodwork:30,
             Tooltip = Tooltip_craft_NeedsWallframeDesc,

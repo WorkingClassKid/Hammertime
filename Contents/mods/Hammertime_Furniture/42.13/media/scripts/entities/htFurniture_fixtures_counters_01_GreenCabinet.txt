@@ -65,7 +65,7 @@ module Base
         {
             timedAction = BuildWallHammer,
             time = 200,
-            category = Kitchen Cabinets,
+            category = Cabinets_Base,
             SkillRequired = Woodwork:7,
             xpAward = Woodwork:70,
             Tooltip = Tooltip_ht_KitchenCabinet,

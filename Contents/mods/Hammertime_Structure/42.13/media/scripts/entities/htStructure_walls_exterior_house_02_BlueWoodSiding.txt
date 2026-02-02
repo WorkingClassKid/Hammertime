@@ -74,7 +74,7 @@ module Base
         {
             timedAction = BuildWallHammer,
             time = 200,
-            category = Carpentry,
+            category = Walls,
             SkillRequired = Woodwork:6,
             xpAward = Woodwork:20,
             Tooltip = Tooltip_craft_NeedsWallframeDesc,
@@ -117,7 +117,7 @@ module Base
         {
             timedAction = BuildWallHammer,
             time = 200,
-            category = Carpentry,
+            category = Walls_Pole,
             SkillRequired = Woodwork:6,
             xpAward = Woodwork:20,
             Tooltip = Tooltip_craft_NeedsWallframeDesc,
@@ -132,7 +132,7 @@ module Base
     
     
     /* 
-    *  Blue Wood Siding Frame
+    *  Blue Wood Siding Door Frame
     *  htBlueWoodSidingDoorFrame
     *  walls_exterior_house_02_30
     *  walls_exterior_house_02_31
@@ -173,7 +173,7 @@ module Base
         {
             timedAction = BuildWallHammer,
             time = 200,
-            category = Carpentry,
+            category = Walls_Door_Frame,
             SkillRequired = Woodwork:6,
             xpAward = Woodwork:30,
             Tooltip = Tooltip_craft_doorFrameDesc,
@@ -229,7 +229,7 @@ module Base
         {
             timedAction = BuildWallHammer,
             time = 200,
-            category = Carpentry,
+            category = Walls_Window_Frame,
             SkillRequired = Woodwork:6,
             xpAward = Woodwork:30,
             Tooltip = Tooltip_craft_NeedsWallframeDesc,

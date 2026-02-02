@@ -1,0 +1,26 @@
+module Base {
+
+    /* 
+    *  htVersion
+    */ 
+    
+
+    craftRecipe htVersion
+    {
+        timedAction = MakingElectrical,
+        time = 1,
+        SkillRequired = Carpentry:10,
+        Tags = AnySurfaceCraft,
+        AllowBatchCraft = false,
+        inputs
+        {
+            item 2026 [Base.WristWatch_Left_ClassicMilitary], /* Year */
+            item 02 [Base.WristWatch_Left_ClassicGold], /* Month */
+            item 02 [Base.WristWatch_Left_Expensive], /* Day */
+        }
+        outputs
+        {
+            item 0 Base.AlarmClock2, /* Hotfix */
+        }
+    } 
+}

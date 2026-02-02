@@ -1,0 +1,55 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htLightRoundTable
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Light Round Table,
+			Icon = ui_furniture_tables_high_01_7,
+		}
+    }    
+    
+   /* 
+    *  Light Round Table
+    *  htLightRoundTable
+    *  furniture_tables_high_01_7
+    */ 
+    
+    entity htLightRoundTable
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htLightRoundTable,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = furniture_tables_high_01_7,
+                }
+            }
+          
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 50,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:50,
+            category = Tables,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_tableDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+}

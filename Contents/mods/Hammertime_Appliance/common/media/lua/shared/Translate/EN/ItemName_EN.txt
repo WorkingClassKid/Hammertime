@@ -1,5 +1,12 @@
 ItemName_EN = {
     ItemName_Base.htChestFreezer = "Chest Freezer",
+    
+    ItemName_Base.htBlueFridge = "Blue Fridge",
+    ItemName_Base.htGrayFridge = "Gray Fridge",
+    ItemName_Base.htGreenFridge = "Green Fridge",
+    ItemName_Base.htRedFridge = "Red Fridge",
+    ItemName_Base.htWhiteFridgeFreezerDown = "White Fridge with Freezer Down",
+    ItemName_Base.htWhiteFridgeFreezerUp = "White Fridge with Freezer Up",
 
     ItemName_Base.htStoveChrome = "Stove Chrome",
     ItemName_Base.htStoveGreen = "Stove Green",

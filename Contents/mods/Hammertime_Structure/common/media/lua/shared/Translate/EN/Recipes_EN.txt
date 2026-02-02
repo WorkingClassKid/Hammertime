@@ -34,7 +34,7 @@ Recipes_EN = {
     GrayBlockWall = "Gray Block Wall",
     GrayBlockPole = "Gray Block Pole",
     GrayBlockDoorFrame = "Gray Block Door Frame",
-    GrayBlockWindowFrame = "WGray Block Window Frame",
+    GrayBlockWindowFrame = "Gray Block Window Frame",
     
     OldChicagoBrickWall = "Old Chicago Brick Wall",
     OldChicagoBrickPole = "Old Chicago Brick Pole",

@@ -74,7 +74,7 @@ module Base
         {
             timedAction = BuildWallNoTool,
             time = 200,
-            category = Masonry,
+            category = Walls,
             SkillRequired = Masonry:3,
             xpAward = Masonry:50,
             Tooltip = Tooltip_craft_brickWallDesc,
@@ -117,7 +117,7 @@ module Base
         {
             timedAction = BuildWallNoTool,
             time = 200,
-            category = Masonry,
+            category = Walls_Pole,
             SkillRequired = Masonry:3,
             xpAward = Masonry:50,
             Tooltip = Tooltip_craft_brickWallDesc,
@@ -173,7 +173,7 @@ module Base
         {
             timedAction = BuildWallNoTool,
             time = 200,
-            category = Masonry,
+            category = Walls_Door_Frame,
             SkillRequired = Masonry:3,
             xpAward = Masonry:50,
             Tooltip = Tooltip_craft_brickWallDesc,
@@ -230,7 +230,7 @@ module Base
         {
             timedAction = BuildWallNoTool,
             time = 200,
-            category = Masonry,
+            category = Walls_Window_Frame,
             SkillRequired = Masonry:3,
             xpAward = Masonry:50,
             Tooltip = Tooltip_craft_brickWallDesc,

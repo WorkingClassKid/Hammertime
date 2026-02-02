@@ -1,6 +1,12 @@
 Recipes_EN = {
     htMakeChestFreezer = "Make Chest Freezer",
     
+    htMakeBlueFridge = "Make Blue Fridge",
+    htMakeGrayFridge = "Make Gray Fridge",
+    htMakeGreenFridge = "Make Green Fridge",
+    htMakeRedFridge = "Make Red Fridge",
+    htMakeWhiteFridgeFreezerDown = "Make White Fridge with Freezer Down",
+    htMakeWhiteFridgeFreezerUp = "Make White Fridge with Freezer Up",
     
     htMakeStoveChrome = "Make Stove Chrome",
     htMakeStoveGreen = "Make Stove Green",

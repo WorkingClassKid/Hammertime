@@ -1,11 +1,85 @@
 ********************
-01-02-2026 - Hotfix 1
+2026-02-02
+********************
+
+Hammertime
+------------------
+- Added a small recipe to allow users to easily check the mod version when asking for support (Crafting menu > search for htVersion)
+  - The input of the recipe is the mod version and the output is the hotfix number if any.
+
+Hammertime_Appliance
+------------------
+=NEW=
+- Blue Fridge
+- Gray Fridge
+- Green Fridge
+- Red Fridge
+- White Fridge with freezer down
+- White Fridge with freezer up
+
+
+Hammertime_Crafting
+------------------
+=NEW=
+- Beige Curtain
+- Black Curtain
+- Gray Curtain
+- Green Curtain
+- White Curtain
+- Long Beige Curtain
+- Long Gray Curtain
+- Long White Curtain
+
+=TWEAKS=
+- Moved all curtains from Tailoring category to Curtains
+
+=FIXES=
+- Fixed translation error for the Make Brown Curtain recipe
+
+
+Hammertime_Furniture
+------------------
+=NEW=
+- Dark Round Table
+- Light Round Table
+- Oak Round Table
+- Round Table
+
+=TWEAKS=
+- All tables are now in the Tables category (Exept vanilla one...will be moved in next update)
+- Kitchen Cabinets are now located in the Cabinets_Base category (Exept vanilla one...will be moved in next update)
+
+Hammertime_Storage
+------------------
+=NEW=
+- Clothing Rack
+- Clothing Stand
+
+
+Hammertime_Structure
+------------------
+=NEW=
+- Beige Wood Siding Wall
+
+=TWEAKS=
+- Moved all garage doors from Doors category to Doors_Garage
+- Walls are now stored in the Walls / Walls_Pole / Walls_Door_Frame / Walls_Window_Frame / Walls_Frame categories.
+
+Other
+------------------
+- Updated representative pictures for each mod to showcase new items/features on the workshop.
+
+
+
+
+********************
+2026-02-01 - Hotfix 1
 ********************
 - Fixed wrong component UiConfig > entityStyle for BlackGlassDoor entities script
 - Fixed wrong component UiConfig > entityStyle for WhiteWoodenDoor entities script
 
 ********************
-01-02-2026
+2026-02-01
 ********************
 
 Hammertime
@@ -46,7 +120,7 @@ Hammertime_Storage
 - Magazine Stand
 
 
-Hammertime_Stucture
+Hammertime_Structure
 ------------------
 =NEW=
 - Sandstone Rock Masonry Wall
@@ -56,7 +130,7 @@ Hammertime_Stucture
 
 Other
 ------------------
-- Moved all the translations for all sub-mods in their common folder
-- Updated representative pictures of each mod to show the new items/features for the workshop. Still not enought content in Hammertime_Crafting make it worth making an image.....
-- Fixed naming toponomy of many recipes, entities,items and filess to keep it standard for easy futur updating (Sorry if you loose something...it better now than later...)
-- Added the Hammertime (ht) identifier to all functions, recipes, entities, items and files to be sure they are unique to this mod (Sorry if you loose something...it better now than later...)
+- Moved all translations for all sub‑mods into their common folder
+- Updated representative pictures for each mod to showcase new items/features on the workshop. Still not enough content in Hammertime_Crafting to justify an image…
+- Fixed naming taxonomy for many recipes, entities, items, and files to keep everything standardized for easier future updates (Sorry if you lose something… better now than later…)
+- Added the Hammertime (ht) identifier to all functions, recipes, entities, items, and files to ensure they are unique to this mod (Sorry if you lose something… better now than later…)

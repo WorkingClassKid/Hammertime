@@ -1,5 +1,14 @@
 Recipes_EN = {
+    Recipe_htMakeBeigeCurtain = "Make Beige Curtain",
+    Recipe_htMakeBlackCurtain = "Make Black Curtain",
     Recipe_htMakeBlueCurtain = "Make Blue Curtain",
-    Recipe_htMakeBrownCurtain = "Make Blue Curtain",
+    Recipe_htMakeBrownCurtain = "Make Brown Curtain",
+    Recipe_htMakeGrayCurtain = "Make Gray Curtain",
+    Recipe_htMakeGreenCurtain = "Make Green Curtain",
     Recipe_htMakePinkCurtain = "Make Pink Curtain",
+    Recipe_htMakeWhiteCurtain = "Make White Curtain",
+    
+    Recipe_htMakeLongBeigeCurtain = "Make Long Beige Curtain",
+    Recipe_htMakeLongGrayCurtain = "Make Long Gray Curtain",
+    Recipe_htMakeLongWhiteCurtain = "Make Long White Curtain",
 }
