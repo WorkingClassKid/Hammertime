@@ -1,4 +1,50 @@
 ********************
+2026-02-06
+********************
+
+Hammertime_Structure
+------------------
+
+=NEW=
+- Beige Wooden Stairs
+- Black Metal Stairs
+- Brown Metal Stairs
+- Brown Rustic Brick Wall
+- Brown Wooden Stairs
+- Crafted Wooden Stairs
+- Dark Concrete Railings
+- Gray Brick Wall
+- Green Brick Wall
+- Green Wood Siding Wall
+- Hardwood Stairs
+- Pink Wood Siding Wall
+- Red Rustic Brick Wall
+- Sahara Light Brick Wall
+- Steel Railings
+- White Concrete Railings
+- White Wooden Railings
+- White Wooden Stairs
+- Wood And Steel Railings
+
+=TWEAKS=
+- New category: Stairs
+- Moved all vanilla stairs to the Stairs category
+- Updated the vanilla image for stairs in the building menu to fit Hammertime look and feel
+
+=FIXES=
+- Updated the image ui_fixtures_railings_01_24.png to display it in the same orientation as the others 
+- Added many missing/wrong tooltips
+- Fixed typos in many recipes
+
+
+
+Other
+------------------
+- Updated representative pictures for Hammertime_Structure to showcase new items/features on the workshop.
+
+
+
+********************
 2026-02-05
 ********************
 

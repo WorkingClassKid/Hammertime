@@ -16,7 +16,7 @@ module Base {
         {
             item 2026 [Base.WristWatch_Left_ClassicMilitary], /* Year */
             item 02 [Base.WristWatch_Left_ClassicGold], /* Month */
-            item 05 [Base.WristWatch_Left_Expensive], /* Day */
+            item 06 [Base.WristWatch_Left_Expensive], /* Day */
         }
         outputs
         {

@@ -1,0 +1,245 @@
+module Base
+{
+    	xuiSkin default
+	{
+        
+        entity ES_htBrownRusticBrickWall
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Brown Rustic Brick Wall,
+			Icon = ui_walls_exterior_house_02_96,
+		}       
+		entity ES_htBrownRusticBrickPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Brown Rustic Brick Pole,
+			Icon = ui_walls_exterior_house_02_99,
+		}         
+        entity ES_htBrownRusticBrickDoorFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Brown Rustic Brick Door Frame,
+			Icon = ui_walls_exterior_house_02_106,
+		}  
+        entity ES_htBrownRusticBrickWindowFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Brown Rustic Brick Window Frame,
+			Icon = ui_walls_exterior_house_02_104,
+		}  
+ 
+    }
+    
+    /* 
+    *  Brown Rustic Brick Wall
+    *  htBrownRusticBrickWall
+    *  walls_exterior_house_02_96
+    *  walls_exterior_house_02_97
+    *  walls_exterior_house_02_99
+    */ 
+    
+    entity htBrownRusticBrickWall
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBrownRusticBrickWall,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            LogicClass = WoodenWall,
+            OnCreate = BuildRecipeCode.canBePlastered.OnCreate,
+            BreakSound = ZombieThumpWoodCollapse,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_96,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_97,
+                }
+            }
+            corner = walls_exterior_house_02_99,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Walls,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        }
+    }
+        
+    /* 
+    *  Brown Rustic Brick Pole 
+    *  htBrownRusticBrickPole
+    *  walls_exterior_house_02_99
+    */
+    
+    entity htBrownRusticBrickPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBrownRusticBrickPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            isPole = true,
+            face SINGLE
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_99,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Walls_Pole,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_ht_WallPole,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 1 tags[base:concrete] flags[DontRecordInput],
+                item 2 [Base.ClayBrick],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Brown Rustic Brick Door Frame
+    *  htBrownRusticBrickDoorFrame
+    *  walls_exterior_house_02_106
+    *  walls_exterior_house_02_107
+    *  walls_exterior_house_02_99
+    */ 
+    
+    entity htBrownRusticBrickDoorFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBrownRusticBrickDoorFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_106,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_107,
+                }
+            }
+            corner = walls_exterior_house_02_99,           
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Walls_Door_Frame,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Brown Rustic Brick Window Frame
+    *  htBrownRusticBrickWindowFrame
+    *  walls_exterior_house_02_104
+    *  walls_exterior_house_02_105
+    *  walls_exterior_house_02_99
+    */ 
+    
+    entity htBrownRusticBrickWindowFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBrownRusticBrickWindowFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_104,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_105,
+                }
+            }
+            corner = walls_exterior_house_02_99,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Walls_Window_Frame,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_woodenFrameDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        } 
+    }
+/* END BASE */
+}    

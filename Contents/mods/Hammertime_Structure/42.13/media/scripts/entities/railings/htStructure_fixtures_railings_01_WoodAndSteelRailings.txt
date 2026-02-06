@@ -1,0 +1,118 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity ES_htWoodAndSteelRailings
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Wood And Steel Railings,
+			Icon = ui_fixtures_railings_01_28,
+		}       
+     
+        entity ES_htWoodAndSteelRailingsCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Wood And Steel Railings Corner,
+			Icon = ui_fixtures_railings_01_30,
+		}  
+    }
+    
+    
+    
+    /* 
+    *  Wood And Steel Railings
+    *  htWoodAndSteelRailings
+    *  fixtures_railings_01_28
+    *  fixtures_railings_01_29
+    *  fixtures_railings_01_27
+    */ 
+    
+    entity htWoodAndSteelRailings
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWoodAndSteelRailings,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face W
+            {
+                layer
+                {
+                    row = fixtures_railings_01_28,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_railings_01_29,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Railings,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_ht_Railings,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 2 [Base.WoodenStick2],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+        
+    
+    /* 
+    *  Wood And Steel Railings Corner
+    *  htWoodAndSteelRailingsCorner
+    *  fixtures_railings_01_30
+    */ 
+    
+    entity htWoodAndSteelRailingsCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWoodAndSteelRailingsCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = fixtures_railings_01_30,
+                }
+            }      
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Railings,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:30,
+            Tooltip = Tooltip_ht_Railings,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 3 [Base.Plank],
+                item 3 [Base.WoodenStick2],
+                item 6 [Base.Nails],
+            }
+        }
+    }
+    
+    
+/* END BASE */
+}    

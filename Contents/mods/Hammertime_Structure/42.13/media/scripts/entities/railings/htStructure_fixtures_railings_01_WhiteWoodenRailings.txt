@@ -1,0 +1,171 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity ES_htWhiteWoodenRailings
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Wooden Railings,
+			Icon = ui_fixtures_railings_01_64,
+		}       
+		entity ES_htWhiteWoodenRailingsSmallPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Wooden Railings Small Pole,
+			Icon = ui_fixtures_railings_01_67,
+		}         
+        entity ES_htWhiteWoodenRailingsCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Wooden Railings Corner,
+			Icon = ui_fixtures_railings_01_66,
+		}  
+    }
+    
+    
+    
+    /* 
+    *  White Wooden Railings
+    *  htWhiteWoodenRailings
+    *  fixtures_railings_01_64
+    *  fixtures_railings_01_65
+    */ 
+    
+    entity htWhiteWoodenRailings
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWhiteWoodenRailings,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face W
+            {
+                layer
+                {
+                    row = fixtures_railings_01_64,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_railings_01_65,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Railings,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_ht_Railings,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 2 [Base.WoodenStick2],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+        
+    /* 
+    *  White Wooden Railings Small Pole
+    *  htWhiteWoodenRailingsSmallPole
+    *  fixtures_railings_01_67
+    *  fixtures_railings_01_72
+    */
+    
+    entity htWhiteWoodenRailingsSmallPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWhiteWoodenRailingsSmallPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face W
+            {
+                layer
+                {
+                    row = fixtures_railings_01_67,
+                }
+            }            
+            face N
+            {
+                layer
+                {
+                    row = fixtures_railings_01_72,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Railings_Pole,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_ht_Railings,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  White Wooden Railings Corner
+    *  htWhiteWoodenRailingsCorner
+    *  fixtures_railings_01_66
+    */ 
+    
+    entity htWhiteWoodenRailingsCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWhiteWoodenRailingsCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = fixtures_railings_01_66,
+                }
+            }      
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Railings,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:30,
+            Tooltip = Tooltip_ht_Railings,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 3 [Base.Plank],
+                item 3 [Base.WoodenStick2],
+                item 6 [Base.Nails],
+            }
+        }
+    }
+    
+    
+/* END BASE */
+}    

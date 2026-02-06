@@ -1,0 +1,83 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htDarkCommercialDoor
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Dark Commercial Door,
+			Icon = ui_fixtures_doors_01_20,
+		}
+    }    
+    
+   /* 
+    *  Dark Commercial Door
+    *  htDarkCommercialDoor
+    *  fixtures_doors_01_20
+    *  fixtures_doors_01_21
+    *  fixtures_doors_01_22
+    *  fixtures_doors_01_23
+    */ 
+    
+    
+    entity htDarkCommercialDoor
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htDarkCommercialDoor,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            skillBaseHealth = 300,
+            BreakSound = BreakDoor,
+            face W
+            {
+                layer
+                {
+                    row = fixtures_doors_01_20,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_doors_01_21,
+                }
+            }
+            face W_OPEN
+            {
+                layer
+                {
+                    row = fixtures_doors_01_22,
+                }
+            }
+            face N_OPEN
+            {
+                layer
+                {
+                    row = fixtures_doors_01_23,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallMetal,
+            time = 200,
+            category = Doors,
+            SkillRequired = Woodwork:5;MetalWelding:3,
+            xpAward = Woodwork:50;MetalWelding:40,
+            Tooltip = Tooltip_craft_metalDoorDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 3 [Base.SmallSheetMetal],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+                item 2 [Base.Hinge],
+                item 1 [Base.Doorknob],
+                item 2 [Base.GlassPanel],
+            }
+        }
+    }
+}

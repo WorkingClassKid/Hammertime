@@ -1,0 +1,71 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_htCraftedWoodenStairs
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Crafted Wooden Stairs,
+			Icon		= ui_fixtures_stairs_01_64,
+		}
+	}
+    
+    /* 
+    *  Crafted Wooden Stairs
+    *  htCraftedWoodenStairs
+    *  fixtures_stairs_01_64
+    *  fixtures_stairs_01_65
+    *  fixtures_stairs_01_66
+    *  fixtures_stairs_01_72
+    *  fixtures_stairs_01_73
+    *  fixtures_stairs_01_74
+    */ 
+    
+    entity htCraftedWoodenStairs
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htCraftedWoodenStairs,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            OnCreate = BuildRecipeCode.stairs.OnCreate,
+            OnIsValid = BuildRecipeCode.stairs.OnIsValid,
+            health = 150,
+            skillBaseHealth = 50,
+            face S
+            {
+                layer
+                {
+                    row = fixtures_stairs_01_66 fixtures_stairs_01_65 fixtures_stairs_01_64,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = fixtures_stairs_01_74,
+                    row = fixtures_stairs_01_73,
+                    row = fixtures_stairs_01_72,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:60,
+            category = Stairs,
+            Tooltip = Tooltip_craft_stairsDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 13 [Base.Plank],
+                item 8 [Base.Nails],
+            }
+        }
+    }
+}

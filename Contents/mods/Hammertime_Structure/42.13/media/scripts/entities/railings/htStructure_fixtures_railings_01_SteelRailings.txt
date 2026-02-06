@@ -1,0 +1,118 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity ES_htSteelRailings
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Steel Railings,
+			Icon = ui_fixtures_railings_01_36,
+		}             
+        entity ES_htSteelRailingsCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Steel Railings Corner,
+			Icon = ui_fixtures_railings_01_38,
+		}  
+    }
+    
+    
+    
+    /* 
+    *  Steel Railings
+    *  htSteelRailings
+    *  fixtures_railings_01_36
+    *  fixtures_railings_01_37
+    */ 
+    
+    entity htSteelRailings
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htSteelRailings,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face W
+            {
+                layer
+                {
+                    row = fixtures_railings_01_36,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_railings_01_37,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 200,
+            SkillRequired = MetalWelding:3,
+            xpAward = MetalWelding:50,
+            category = Railings,
+            Tags = Welding;Railings,
+            Tooltip = Tooltip_craft_crateDesc,
+       inputs
+            {
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 3 [Base.SteelBar],
+                item 2 [Base.ScrapMetal],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+          
+    
+    /* 
+    *  Steel Railings Corner
+    *  htSteelRailingsCorner
+    *  fixtures_railings_01_38
+    */ 
+    
+    entity htSteelRailingsCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htSteelRailingsCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = fixtures_railings_01_38,
+                }
+            }      
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 200,
+            SkillRequired = MetalWelding:3,
+            xpAward = MetalWelding:50,
+            category = Railings,
+            Tags = Welding;Railings,
+            Tooltip = Tooltip_craft_crateDesc,
+       inputs
+            {
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 4 [Base.SteelBar],
+                item 3 [Base.ScrapMetal],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+    
+    
+/* END BASE */
+}    

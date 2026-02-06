@@ -1,0 +1,245 @@
+module Base
+{
+    	xuiSkin default
+	{
+        
+        entity ES_htGreenBrickWall
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Green Brick Wall,
+			Icon = ui_walls_exterior_house_02_52,
+		}       
+		entity ES_htGreenBrickPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Green Brick Pole,
+			Icon = ui_walls_exterior_house_02_55,
+		}         
+        entity ES_htGreenBrickDoorFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Green Brick Door Frame,
+			Icon = ui_walls_exterior_house_02_62,
+		}  
+        entity ES_htGreenBrickWindowFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Green Brick Window Frame,
+			Icon = ui_walls_exterior_house_02_60,
+		}  
+ 
+    }
+    
+    /* 
+    *  Green Brick Wall
+    *  htGreenBrickWall
+    *  walls_exterior_house_02_52
+    *  walls_exterior_house_02_53
+    *  walls_exterior_house_02_55
+    */ 
+    
+    entity htGreenBrickWall
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htGreenBrickWall,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            LogicClass = WoodenWall,
+            OnCreate = BuildRecipeCode.canBePlastered.OnCreate,
+            BreakSound = ZombieThumpWoodCollapse,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_52,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_53,
+                }
+            }
+            corner = walls_exterior_house_02_55,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Walls,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        }
+    }
+        
+    /* 
+    *  Green Brick Pole 
+    *  htGreenBrickPole
+    *  walls_exterior_house_02_55
+    */
+    
+    entity htGreenBrickPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htGreenBrickPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            isPole = true,
+            face SINGLE
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_55,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Walls_Pole,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_ht_WallPole,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 1 tags[base:concrete] flags[DontRecordInput],
+                item 2 [Base.ClayBrick],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Green Brick Frame
+    *  htGreenBrickDoorFrame
+    *  walls_exterior_house_02_62
+    *  walls_exterior_house_02_63
+    *  walls_exterior_house_02_51
+    */ 
+    
+    entity htGreenBrickDoorFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htGreenBrickDoorFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_62,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_63,
+                }
+            }
+            corner = walls_exterior_house_02_55,           
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Walls_Door_Frame,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Green Brick Window Frame
+    *  htGreenBrickWindowFrame
+    *  walls_exterior_house_02_60
+    *  walls_exterior_house_02_61
+    *  walls_exterior_house_02_51
+    */ 
+    
+    entity htGreenBrickWindowFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htGreenBrickWindowFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_60,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_61,
+                }
+            }
+            corner = walls_exterior_house_02_55,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Walls_Window_Frame,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_woodenFrameDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        } 
+    }
+/* END BASE */
+}    

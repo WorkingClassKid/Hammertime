@@ -1,0 +1,72 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_htBlackMetalStairs
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Black Metal Stairs,
+			Icon		= ui_fixtures_stairs_01_0,
+		}
+	}
+    
+    /* 
+    *  Black Metal Stairs
+    *  htBlackMetalStairs
+    *  fixtures_stairs_01_0
+    *  fixtures_stairs_01_1
+    *  fixtures_stairs_01_2
+    *  fixtures_stairs_01_8
+    *  fixtures_stairs_01_9
+    *  fixtures_stairs_01_10
+    */ 
+    
+    entity htBlackMetalStairs
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBlackMetalStairs,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            OnCreate = BuildRecipeCode.stairs.OnCreate,
+            OnIsValid = BuildRecipeCode.stairs.OnIsValid,
+            health = 150,
+            skillBaseHealth = 50,
+            face S
+            {
+                layer
+                {
+                    row = fixtures_stairs_01_2 fixtures_stairs_01_1 fixtures_stairs_01_0,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = fixtures_stairs_01_10,
+                    row = fixtures_stairs_01_9,
+                    row = fixtures_stairs_01_8,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallMetal,
+            time = 200,
+            category = Stairs,
+            SkillRequired = MetalWelding:7,
+            xpAward = MetalWelding:60,
+            Tooltip = Tooltip_craft_stairsDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 4 [Base.MetalBar],
+                item 6 [Base.SmallSheetMetal],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}
