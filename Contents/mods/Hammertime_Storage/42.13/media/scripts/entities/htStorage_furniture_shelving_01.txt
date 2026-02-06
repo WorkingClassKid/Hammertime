@@ -62,7 +62,7 @@ module Base
         {
             timedAction = BuildWoodenStructureSmall,
             time = 50,
-            SkillRequired = Woodwork:5,
+            SkillRequired = Woodwork:2,
             xpAward = Woodwork:50,
             category = Storage,
             Tags = Carpentry;Storage,
@@ -113,7 +113,7 @@ module Base
         {
             timedAction = BuildWoodenStructureSmall,
             time = 50,
-            SkillRequired = Woodwork:5,
+            SkillRequired = Woodwork:2,
             xpAward = Woodwork:50,
             category = Storage,
             Tags = Carpentry;Storage,

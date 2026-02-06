@@ -5,4 +5,4 @@ description=Hammertime
 loadModBefore=\Hammertime_Container,\Hammertime_Furniture,\Hammertime_Structure,\Hammertime_Survival
 pzversion=42.13.1
 versionMin=42.13.1
-modversion=0.0.1
+incompatible=\Neat_Building,\Neat_Crafting,\BuildingCraft,\Buildables_Expansion

@@ -1,4 +1,35 @@
 ********************
+2026-02-05
+********************
+
+Hammertime
+------------------
+- Added some construction related mods as incompatible in mod.info
+
+Hammertime_Storage
+------------------
+=NEW=
+- Beige Double Shelf
+- Hardwood Double Shelf
+- Shop Wooden Shelves
+
+=TWEAKS=
+- Modified carpentry level requirement for all shelf and double shelf from 5 to 2.
+
+Hammertime_Structure
+------------------
+=NEW=
+- New categories: Railings, Railings_Pole
+- Wooden Railings 
+- Light Autumn Brick Wall
+
+Other
+------------------
+- Updated representative pictures for Hammertime_Storage and Hammertime_Structure to showcase new items/features on the workshop.
+
+
+
+********************
 2026-02-02
 ********************
 

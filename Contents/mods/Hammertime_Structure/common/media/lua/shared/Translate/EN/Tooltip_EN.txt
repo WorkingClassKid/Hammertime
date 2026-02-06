@@ -1,4 +1,5 @@
 Tooltip_EN = {
     Tooltip_ht_GarageDoor = "Choose from our selection of ready-built Garage Doors",
+    Tooltip_ht_Railings = "Secure your patio with a railing!",
 
 }

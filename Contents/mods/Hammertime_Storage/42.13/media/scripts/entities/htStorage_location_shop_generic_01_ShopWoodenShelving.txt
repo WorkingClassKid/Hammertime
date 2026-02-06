@@ -1,0 +1,83 @@
+module Base
+{
+    	xuiSkin default
+	{
+        entity ES_htShopWoodenShelving
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Shop Wooden Shelving,
+			Icon = ui_location_shop_generic_01_72,
+		}
+    }    
+    
+   /* 
+    *  Shop Wooden Shelving
+    *  htShopWoodenShelving
+    *  location_shop_generic_01_72
+    *  location_shop_generic_01_73
+    *  location_shop_generic_01_74
+    *  location_shop_generic_01_75
+    *  location_shop_generic_01_76
+    *  location_shop_generic_01_77
+    *  location_shop_generic_01_78
+    *  location_shop_generic_01_79
+    */ 
+    
+    entity htShopWoodenShelving
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htShopWoodenShelving,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = location_shop_generic_01_75,
+                    row = location_shop_generic_01_74,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = location_shop_generic_01_72 location_shop_generic_01_73,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = location_shop_generic_01_76 location_shop_generic_01_77,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = location_shop_generic_01_79,
+                    row = location_shop_generic_01_78,
+                }
+            }            
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 150,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:50,
+            category = Storage,
+            Tooltip = Tooltip_craft_bookcaseDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 8 [Base.Plank],
+                item 10 [Base.Nails],
+            }
+        }
+    }
+}
