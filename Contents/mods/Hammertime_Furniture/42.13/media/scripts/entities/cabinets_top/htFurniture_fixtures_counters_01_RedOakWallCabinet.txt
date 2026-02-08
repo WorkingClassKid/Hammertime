@@ -1,0 +1,83 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htRedOakWallCabinet
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Red Oak Wall Cabinet,
+			Icon = ui_ht_vanilla_fixtures_counters_01_top_16,
+		}
+    }    
+    
+   /* 
+    *  Red Oak Wall Cabinet
+    *  htRedOakWallCabinet
+    *  ht_vanilla_fixtures_counters_01_top_16
+    *  ht_vanilla_fixtures_counters_01_top_17
+    *  ht_vanilla_fixtures_counters_01_top_18
+    *  ht_vanilla_fixtures_counters_01_top_19
+    */ 
+    
+    
+    entity htRedOakWallCabinet
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htRedOakWallCabinet,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+
+            OnIsValid = hammerBuildRecipeCode.WallCabinet.OnIsValid,
+
+            face S
+            {
+                layer
+                {
+                    row = ht_vanilla_fixtures_counters_01_top_17,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = ht_vanilla_fixtures_counters_01_top_16,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = ht_vanilla_fixtures_counters_01_top_18,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = ht_vanilla_fixtures_counters_01_top_19,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Cabinets_Wall,
+            SkillRequired = Woodwork:7,
+            xpAward = Woodwork:70,
+            Tooltip = Tooltip_ht_KitchenCabinet,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+                item 2 [Base.Hinge],
+                item 1 [Base.Doorknob],
+            }
+        }
+    }
+}

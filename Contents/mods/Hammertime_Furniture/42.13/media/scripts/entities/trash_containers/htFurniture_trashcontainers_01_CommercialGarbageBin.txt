@@ -1,0 +1,64 @@
+module Base
+{
+    	xuiSkin default
+	{
+        entity ES_htCommercialGarbageBin
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Commercial Garbage Bin,
+			Icon = ui_trashcontainers_01_18,
+		}
+    }    
+    
+    /* 
+    *  Commercial Garbage Bin
+    *  htCommercialGarbageBin
+    *  trashcontainers_01_18
+    *  trashcontainers_01_19
+    */ 
+    
+    entity htCommercialGarbageBin
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htCommercialGarbageBin,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = trashcontainers_01_18,
+
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = trashcontainers_01_19,
+
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 50,
+            SkillRequired = MetalWelding:1,
+            xpAward = MetalWelding:30,
+            category = Furniture,
+            Tags = Furniture,
+            Tooltip = Tooltip_ht_Trashcans,
+            inputs
+            {
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 2 [Base.SmallSheetMetal],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htBlueSingleBed
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Blue Single Bed,
+			Icon = ui_furniture_bedding_01_8,
+		}
+    }    
+    
+   /* 
+    *  Blue Single Bed
+    *  htBlueSingleBed
+    *  furniture_bedding_01_8
+    *  furniture_bedding_01_9
+    *  furniture_bedding_01_10
+    *  furniture_bedding_01_11
+    *  furniture_bedding_01_76
+    *  furniture_bedding_01_77
+    *  furniture_bedding_01_78
+    *  furniture_bedding_01_79
+    */ 
+    
+    entity htBlueSingleBed
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBlueSingleBed,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = furniture_bedding_01_9,
+                    row = furniture_bedding_01_8, 
+                }
+            }
+            
+            face W
+            {
+                layer
+                {
+                    row = furniture_bedding_01_77,
+                    row = furniture_bedding_01_76, 
+                }
+            }
+            
+            face S
+            {
+                layer
+                {
+                    row = furniture_bedding_01_10 furniture_bedding_01_11,
+                }
+            }
+            
+            face N
+            {
+                layer
+                {
+                    row = furniture_bedding_01_78 furniture_bedding_01_79,
+                }
+            }
+          
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 50,
+            SkillRequired = Woodwork:4,
+            xpAward = Woodwork:40,
+            category = Furniture,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_bedDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 6 [Base.Plank],
+                item 4 [Base.Nails],
+                item 1 [Base.Mattress],
+            }
+        }
+    }
+}

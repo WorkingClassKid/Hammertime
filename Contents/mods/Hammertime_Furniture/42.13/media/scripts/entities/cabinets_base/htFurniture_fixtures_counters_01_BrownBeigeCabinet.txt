@@ -1,0 +1,83 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htBrownBeigeCabinet
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Brown and Beige Cabinet,
+			Icon = ui_fixtures_counters_01_1,
+		}
+    }    
+    
+   /* 
+    *  Brown Beige Cabinet
+    *  htBrownBeigeCabinet
+    *  fixtures_counters_01_1
+    *  fixtures_counters_01_3
+    *  fixtures_counters_01_5
+    *  fixtures_counters_01_7
+    */ 
+    
+    
+    entity htBrownBeigeCabinet
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBrownBeigeCabinet,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+        
+         setIsThumpable = false,
+         
+            face S
+            {
+                layer
+                {
+                    row = ht_vanilla_fixtures_counters_01_base_1,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = ht_vanilla_fixtures_counters_01_base_0,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = ht_vanilla_fixtures_counters_01_base_2,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = ht_vanilla_fixtures_counters_01_base_3,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Cabinets_Base,
+            SkillRequired = Woodwork:7,
+            xpAward = Woodwork:70,
+            Tooltip = Tooltip_ht_KitchenCabinet,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 6 [Base.Plank],
+                item 6 [Base.Nails],
+                item 2 [Base.Hinge],
+                item 1 [Base.Doorknob],
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htOakRoundTable
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Oak Round Table,
+			Icon = ui_furniture_tables_high_01_6,
+		}
+    }    
+    
+   /* 
+    *  Oak Round Table
+    *  htOakRoundTable
+    *  furniture_tables_high_01_6
+    */ 
+    
+    entity htOakRoundTable
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htOakRoundTable,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = furniture_tables_high_01_6,
+                }
+            }
+          
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 50,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:50,
+            category = Tables,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_tableDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htRedWoodenChair
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Red Wooden Chair,
+			Icon = ui_furniture_seating_indoor_02_8,
+		}
+    }    
+    
+   /* 
+    *  Red Wooden Chair
+    *  htRedWoodenChair
+    *  furniture_seating_indoor_02_8
+    *  furniture_seating_indoor_02_9
+    *  furniture_seating_indoor_02_10
+    *  furniture_seating_indoor_02_11
+    */ 
+    
+    entity htRedWoodenChair
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htRedWoodenChair,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_02_9,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_02_11,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_02_8,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_02_10,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 50,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:60,
+            category = Furniture,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_chairDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+}

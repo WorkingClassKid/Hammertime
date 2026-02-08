@@ -1,4 +1,48 @@
 ********************
+2026-02-08
+********************
+
+Hammertime
+------------------
+- Added htPrint function in 42.13/media/lua/shared/htLuaUtils.lua to only print debug informations when debug mode is on
+
+- Added a ton of comments and debug code to 42.13/media/lua/server/BuildRecipeCode/hammerBuildRecipeCode.lua so new contributors (and clueless new PZ modders like me) can finally understand how PZ modding and Hammertime works.
+  - Also, God told me there’s a special place in hell reserved for developers who refuse to comment their code because they think they’re part of some golden coding elite.
+
+- New spritesheet (hammertime (Tiledef 3100)) aimed at repairing broken vanilla tiles, adding new tile variants, and potentially reviving deprecated mods in the future.
+  - Added and fixed broken wall cabinets from vanilla as ht_vanilla_fixtures_counters_01_top
+  - Added and fixed broken wall cabinets corners from vanilla as ht_vanilla_fixtures_counters_01_top_corner
+  
+- New hammertimeBuildRecipeCode : hammerBuildRecipeCode.WallCabinet.OnIsValid(params)
+  - By default, PZ doesn’t allow any needToBeAgainstWall placement over objects classified as IsoThumpable (which includes most player‑built structures). This script is a modified version of the vanilla needToBeAgainstWall logic from ISBuildIsoEntity.lua, allowing players to place a Cabinet_Wall on top of a crafted Cabinet_Base.
+  
+- New hammertimeBuildRecipeCode : hammerBuildRecipeCode.WallCabinetCorner.OnIsValid(params)
+  - Same things as hammerBuildRecipeCode.WallCabinet.OnIsValid(params) but allow walls with WallNW flag for building Cabinet_Wall corner
+
+Hammertime_Furniture
+------------------
+=NEW=
+- New category: Cabinets_Wall (Cabinets_Base are the lower cabinets, and Cabinets_Wall are the upper or wall cabinets.) 
+- Beige Wall Cabinet
+- Dark Wall Cabinet
+- Green Wall Cabinet
+- Hardwood Wall Cabinet
+- Steel Wall Cabinet
+- Walnut Wall Cabinet
+- White Wall Cabinet
+- Wooden Wall Cabinet
+
+=TWEAKS=
+- Remade the trash cans ui icons.
+
+
+Other
+------------------
+- Updated representative pictures for Hammertime_Furniture to showcase new items/features on the workshop.
+
+
+
+********************
 2026-02-06
 ********************
 

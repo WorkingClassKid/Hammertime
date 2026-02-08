@@ -1,0 +1,66 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htBirchwoodBench
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Birchwood Bench,
+			Icon = ui_furniture_seating_outdoor_01_32,
+		}
+    }    
+    
+   /* 
+    *  Birchwood Bench
+    *  htBirchwoodBench
+    *  furniture_seating_outdoor_01_32
+    *  furniture_seating_outdoor_01_33
+    *  furniture_seating_outdoor_01_34
+    *  furniture_seating_outdoor_01_35
+    */ 
+    
+    entity htBirchwoodBench
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBirchwoodBench,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = furniture_seating_outdoor_01_35,
+                    row = furniture_seating_outdoor_01_34, 
+                }
+            }
+            
+            face S
+            {
+                layer
+                {
+                    row = furniture_seating_outdoor_01_32 furniture_seating_outdoor_01_33,
+                }
+            }
+          
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 150,
+            SkillRequired = Woodwork:3,
+            xpAward = Woodwork:50,
+            category = Furniture,
+            Tooltip = Tooltip_craft_benchDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+}

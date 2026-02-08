@@ -1,0 +1,82 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htWhiteCabinetCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Cabinet Corner,
+			Icon = ui_fixtures_counters_01_72,
+		}
+    }    
+    
+   /* 
+    *  White Cabinet Corner
+    *  htWhiteCabinetCorner
+    *  fixtures_counters_01_72
+    *  fixtures_counters_01_74
+    *  fixtures_counters_01_76
+    *  fixtures_counters_01_78
+    */ 
+    
+    
+    entity htWhiteCabinetCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWhiteCabinetCorner ,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 100,
+            skillBaseHealth = 20,
+            face S
+            {
+                layer
+                {
+                    row = fixtures_counters_01_76,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = fixtures_counters_01_74,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_counters_01_72,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = fixtures_counters_01_78,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Cabinets_Base,
+            SkillRequired = Woodwork:7,
+            xpAward = Woodwork:70,
+            Tooltip = Tooltip_ht_KitchenCabinet,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 6 [Base.Plank],
+                item 6 [Base.Nails],
+                item 2 [Base.Hinge],
+                item 1 [Base.Doorknob],
+            }
+        }
+    }
+}
