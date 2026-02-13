@@ -34,7 +34,7 @@ module Base
             timedAction = BuildMetalStructureScrap,
             time = 200,
             NeedToBeLearn = true,
-            category = Welding,
+            category = Fences,
             SkillRequired = MetalWelding:3,
             xpAward = MetalWelding:30,
             Tooltip = Tooltip_craft_metalFenceDesc,

@@ -1,0 +1,163 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity ES_htCheapWoodenFences
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Cheap Wooden Fences,
+			Icon = ui_fencing_01_120,
+		}       
+		entity ES_htCheapWoodenFencesPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Cheap Wooden Fences Pole,
+			Icon = ui_fencing_01_123,
+		}         
+        entity ES_htCheapWoodenFencesCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Cheap Wooden Fences Corner,
+			Icon = ui_fencing_01_122,
+		}  
+    }
+    
+    
+    
+    /* 
+    *  Cheap Wooden Fences
+    *  htCheapWoodenFences
+    *  fencing_01_121
+    *  fencing_01_120
+    */ 
+    
+    entity htCheapWoodenFences
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htCheapWoodenFences,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face W
+            {
+                layer
+                {
+                    row = fencing_01_121,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fencing_01_120,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Fences,
+            SkillRequired = Woodwork:2,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_ht_Fences,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 2 [Base.WoodenStick2],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+        
+    /* 
+    *  Cheap Wooden Fences Pole
+    *  htCheapWoodenFencesPole
+    *  fencing_01_123
+    */
+    
+    entity htCheapWoodenFencesPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htCheapWoodenFencesPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = fencing_01_123,
+                }
+            }            
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Fences_Pole,
+            SkillRequired = Woodwork:2,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_ht_Fences,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Cheap Wooden Fences Corner
+    *  htCheapWoodenFencesCorner
+    *  fencing_01_122
+    */ 
+    
+    entity htCheapWoodenFencesCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htCheapWoodenFencesCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = fencing_01_122,
+                }
+            }      
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Fences,
+            SkillRequired = Woodwork:2,
+            xpAward = Woodwork:30,
+            Tooltip = Tooltip_ht_Fences,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 3 [Base.Plank],
+                item 3 [Base.WoodenStick2],
+                item 6 [Base.Nails],
+            }
+        }
+    }
+    
+    
+/* END BASE */
+}    

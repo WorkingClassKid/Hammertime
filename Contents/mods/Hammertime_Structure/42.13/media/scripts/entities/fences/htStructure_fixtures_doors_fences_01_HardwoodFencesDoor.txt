@@ -1,0 +1,84 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htHardwoodFencesDoor
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Hardwood Fences Door,
+			Icon = ui_fixtures_doors_fences_01_4,
+		}
+    }    
+    
+   /* 
+    *  Hardwood Fences Door
+    *  htHardwoodFencesDoor
+    *  fixtures_doors_fences_01_4
+    *  fixtures_doors_fences_01_5
+    *  fixtures_doors_fences_01_6
+    *  fixtures_doors_fences_01_7
+    */ 
+    
+    
+    entity htHardwoodFencesDoor
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htHardwoodFencesDoor,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            skillBaseHealth = 300,
+            dontNeedFrame = true,
+            BreakSound = BreakDoor,
+            face W
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_4,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_5,
+                }
+            }
+            face W_OPEN
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_6,
+                }
+            }
+            face N_OPEN
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_7,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Fences_Door,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_ht_Fences,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 3 [Base.Plank],
+                item 4 [Base.Nails],
+                item 2 [Base.Hinge],
+                item 1 [Base.Doorknob],
+            }
+        }        
+
+    }
+}

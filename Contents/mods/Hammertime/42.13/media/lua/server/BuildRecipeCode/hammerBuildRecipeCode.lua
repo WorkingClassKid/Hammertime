@@ -109,7 +109,8 @@ function hammerBuildRecipeCode.GarageDoor.OnCreate(params)
     --end
     --htPrint("---- END AFTER SPECIAL OBJECTS ON SQUARE -----")
 
-    -- We return objectAlreadyTransmitted = true to tell the vanilla building script (media\lua\server\BuildingObjects\ISBuildIsoEntity.lua (line 784)) that the information as already been sent to the client dans not send the IsoThumpable to the client
+    -- We return objectAlreadyTransmitted = true to tell the vanilla building script (media\lua\server\BuildingObjects\ISBuildIsoEntity.lua (line 784)) 
+    -- that the information as already been sent to the client dans not send the IsoThumpable to the client
     return { objectAlreadyTransmitted = true }
 end
 

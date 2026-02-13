@@ -1,0 +1,231 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity ES_htChainlinkFences
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Chainlink Fences,
+			Icon = ui_fencing_01_25,
+		}     
+		entity ES_htChainlinkWPoleFences
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Chainlink Fences w/ Pole,
+			Icon = ui_fencing_01_24,
+		}  
+		entity ES_htChainlinkFencesPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Chainlink Fences Pole,
+			Icon = ui_fencing_01_29,
+		}         
+        entity ES_htChainlinkFencesCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Chainlink Fences Corner,
+			Icon = ui_fencing_01_28,
+		}  
+    }
+    
+    
+    
+    /* 
+    *  Chainlink Fences
+    *  htChainlinkFences
+    *  fencing_01_25
+    *  fencing_01_26
+    */ 
+    
+    entity htChainlinkFences
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htChainlinkFences,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face W
+            {
+                layer
+                {
+                    row = fencing_01_25,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fencing_01_26,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallMetal,
+            time = 200,
+            NeedToBeLearn = true,
+            category = Fences,
+            SkillRequired = MetalWelding:3,
+            xpAward = MetalWelding:30,
+            Tooltip = Tooltip_ht_Fences,
+            inputs
+            {
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 1 [Base.ScrapMetal],
+                item 2 [Base.Wire],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+    
+    
+    
+    /* 
+    *  Chainlink Fences w/ Pole
+    *  htChainlinkWPoleFences
+    *  fencing_01_24
+    *  fencing_01_27
+    */ 
+    
+    entity htChainlinkWPoleFences
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htChainlinkWPoleFences,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face W
+            {
+                layer
+                {
+                    row = fencing_01_27,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fencing_01_24,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallMetal,
+            time = 200,
+            NeedToBeLearn = true,
+            category = Fences,
+            SkillRequired = MetalWelding:3,
+            xpAward = MetalWelding:30,
+            Tooltip = Tooltip_craft_BigWiredFenceDesc,
+            inputs
+            {
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 2 [Base.MetalPipe],
+                item 2 [Base.ScrapMetal],
+                item 2 [Base.Wire],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+    
+    
+        
+    /* 
+    *  Chainlink Fences Pole
+    *  htChainlinkFencesPole
+    *  fencing_01_29
+    */
+    
+    entity htChainlinkFencesPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htChainlinkFencesPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            isThumpable = false,
+            face W
+            {
+                layer
+                {
+                    row = fencing_01_29,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallMetal,
+            time = 200,
+            NeedToBeLearn = true,
+            category = Fences_Pole,
+            SkillRequired = MetalWelding:3,
+            xpAward = MetalWelding:30,
+            Tooltip = Tooltip_craft_BigWiredFenceDesc,
+            inputs
+            {
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 2 [Base.MetalPipe],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+    
+    
+    
+    /* 
+    *  Chainlink Fences Corner
+    *  htChainlinkFencesCorner
+    *  fencing_01_28
+    */ 
+    
+    entity htChainlinkFencesCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htChainlinkFencesCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = fencing_01_28,
+                }
+            }      
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallMetal,
+            time = 200,
+            NeedToBeLearn = true,
+            category = Fences,
+            SkillRequired = MetalWelding:3,
+            xpAward = MetalWelding:30,
+            Tooltip = Tooltip_craft_BigWiredFenceDesc,
+            inputs
+            {
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 3 [Base.MetalPipe],
+                item 2 [Base.ScrapMetal],
+                item 2 [Base.Wire],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+    
+    
+/* END BASE */
+}    

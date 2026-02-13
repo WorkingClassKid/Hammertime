@@ -1,0 +1,223 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity ES_htBarbedWireFences
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Barbed Wire Fences,
+			Icon = ui_fencing_01_20,
+		}     
+		entity ES_htBarbedWireWPoleFences
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Barbed Wire Fences w/ Pole,
+			Icon = ui_fencing_01_16,
+		}  
+		entity ES_htBarbedWireFencesPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Barbed Wire Fences Pole,
+			Icon = ui_fencing_01_19,
+		}         
+        entity ES_htBarbedWireFencesCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Barbed Wire Fences Corner,
+			Icon = ui_fencing_01_18,
+		}  
+    }
+    
+    
+    
+    /* 
+    *  Barbed Wire Fences
+    *  htBarbedWireFences
+    *  fencing_01_23
+    *  fencing_01_24
+    */ 
+    
+    entity htBarbedWireFences
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBarbedWireFences,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face W
+            {
+                layer
+                {
+                    row = fencing_01_20,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fencing_01_21,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 200,
+            SkillRequired = MetalWelding:4,
+            xpAward = MetalWelding:50,
+            category = Fences_Low,
+            Tags = Welding;Fences_Low,
+            Tooltip = Tooltip_ht_Fences,
+			inputs
+            {
+				item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+				item 2 [Base.BarbedWire],
+            }
+        }
+    }
+    
+    
+    
+    /* 
+    *  Barbed Wire Fences w/ Pole
+    *  htBarbedWireWPoleFences
+    *  fencing_01_16
+    *  fencing_01_17
+    */ 
+    
+    entity htBarbedWireWPoleFences
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBarbedWireWPoleFences,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face W
+            {
+                layer
+                {
+                    row = fencing_01_16,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fencing_01_17,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 200,
+            SkillRequired = MetalWelding:4,
+            xpAward = MetalWelding:50,
+            category = Fences,
+            Tags = Welding;Fences_Low,
+            Tooltip = Tooltip_ht_Fences,
+			inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 2 [Base.BarbedWire],
+            }
+        }
+    }
+    
+    
+        
+    /* 
+    *  Barbed Wire Fences Pole
+    *  htBarbedWireFencesPole
+    *  fencing_01_19
+    */
+    
+    entity htBarbedWireFencesPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBarbedWireFencesPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            isThumpable = false,
+            face W
+            {
+                layer
+                {
+                    row = fencing_01_19,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureSmall,
+            time = 200,
+            xpAward = Woodwork:4,
+            category = Fences_Pole,
+            Tags = Carpentry,
+            Tooltip = Tooltip_craft_woodenStakeDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+            }
+        }
+    }
+    
+    
+    
+    /* 
+    *  Barbed Wire Fences Corner
+    *  htBarbedWireFencesCorner
+    *  fencing_01_18
+    */ 
+    
+    entity htBarbedWireFencesCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBarbedWireFencesCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = fencing_01_18,
+                }
+            }      
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 200,
+            SkillRequired = MetalWelding:4;Woodwork:5,
+            xpAward = MetalWelding:50,
+            category = Fences_Low,
+            Tags = Welding;Fences_Low,
+            Tooltip = Tooltip_ht_Fences,
+			inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 3 [Base.BarbedWire],
+            }
+        }
+    }
+    
+    
+/* END BASE */
+}    

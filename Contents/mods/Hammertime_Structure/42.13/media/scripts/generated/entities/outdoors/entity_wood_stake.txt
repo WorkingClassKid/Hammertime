@@ -1,5 +1,5 @@
 /*
-* OVERWRITE PZ DEFAULT BARBED WIRE FENCES
+* OVERWRITE PZ DEFAULT WOODSTAKE
 * This file is overwritten 
 * See htStructure_fencing_01_BarbedWireFences.txt entities
 */

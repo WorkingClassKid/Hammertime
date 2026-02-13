@@ -32,7 +32,7 @@ module Base
         {
             timedAction = BuildWallHammer,
             time = 200,
-            category = Masonry,
+            category = Fences,
             SkillRequired = Masonry:5,
             xpAward = Masonry:50,
             Tooltip = Tooltip_craft_brickFenceDesc,

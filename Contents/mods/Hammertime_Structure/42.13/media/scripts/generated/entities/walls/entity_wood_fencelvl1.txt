@@ -33,7 +33,7 @@ module Base
             OnAddToMenu = woodenFenceLvl1Test,
             timedAction = BuildWoodenStructureSmall,
             time = 200,
-            category = Carpentry,
+            category = Fences,
             SkillRequired = Woodwork:3,
             xpAward = Woodwork:30,
             Tooltip = Tooltip_craft_woodenFenceDesc,

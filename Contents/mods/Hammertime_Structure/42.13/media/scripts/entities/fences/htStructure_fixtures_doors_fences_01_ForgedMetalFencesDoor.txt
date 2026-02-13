@@ -1,0 +1,84 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htForgedMetalFencesDoor
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Forged Metal Fences Door,
+			Icon = ui_fixtures_doors_fences_01_0,
+		}
+    }    
+    
+   /* 
+    *  Forged Metal Fences Door
+    *  htForgedMetalFencesDoor
+    *  fixtures_doors_fences_01_0
+    *  fixtures_doors_fences_01_1
+    *  fixtures_doors_fences_01_2
+    *  fixtures_doors_fences_01_3
+    */ 
+    
+    
+    entity htForgedMetalFencesDoor
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htForgedMetalFencesDoor,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            skillBaseHealth = 300,
+            dontNeedFrame = true,
+            BreakSound = BreakDoor,
+            face W
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_0,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_1,
+                }
+            }
+            face W_OPEN
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_2,
+                }
+            }
+            face N_OPEN
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_3,
+                }
+            }
+        }        
+        component CraftRecipe
+        {
+            timedAction = BuildWallMetal,
+            time = 200,
+            category = Fences_Door,
+            SkillRequired = MetalWelding:5,
+            xpAward = MetalWelding:30,
+            Tooltip = Tooltip_ht_Fences,
+            inputs
+            {
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 3 [Base.SteelBar],
+                item 2 [Base.ScrapMetal],
+                item 2 [Base.Hinge],
+                item 1 [Base.Doorknob],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

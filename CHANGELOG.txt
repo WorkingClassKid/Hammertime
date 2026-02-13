@@ -1,4 +1,31 @@
 ********************
+2026-02-13
+********************
+
+Hammertime_Structure
+------------------
+= NEW =
+- Barbed Wired Fences
+- Chainlink Fences
+- Cheap Wooden Fences
+- Forged Metal Fences
+- Hardwood Fences
+- White Wooden Fences
+
+=TWEAKS=
+- New categories added: Fences, Fences_Pole, Fences_Door
+- Overwrote vanilla entity_wood_stake.txt, replaced with htStructure_fencing_01_BarbedWireFences.txt
+- Overwrote vanilla entity_wood_fencebarbedwirelvl1.txt, replaced with htStructure_fencing_01_BarbedWireFences.txt
+- Overwrote vanilla entity_metal_smallwirefence.txt, replaced with htStructure_fencing_01_ChainlinkFences.txt
+- Overwrote vanilla entity_wood_fencegate.txt, replaced with htStructure_fixtures_doors_fences_01_HardwoodFencesDoor.txt
+- Moved all vanilla fence items into their appropriate new categories
+
+Other
+------------------
+- Updated representative pictures for Hammertime_Structure to showcase new items/features on the workshop.
+
+
+********************
 2026-02-08
 ********************
 

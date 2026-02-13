@@ -1,0 +1,167 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity ES_htForgedMetalFences
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Forged Metal Fences,
+			Icon = ui_fencing_01_1,
+		}       
+		entity ES_htForgedMetalFencesPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Forged Metal Fences Pole,
+			Icon = ui_fencing_01_0,
+		}         
+        entity ES_htForgedMetalFencesCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Forged Metal Fences Corner,
+			Icon = ui_fencing_01_3,
+		}  
+    }
+    
+    
+    
+    /* 
+    *  Forged Metal Fences
+    *  htForgedMetalFences
+    *  fencing_01_1
+    *  fencing_01_2
+    */ 
+    
+    entity htForgedMetalFences
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htForgedMetalFences,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face W
+            {
+                layer
+                {
+                    row = fencing_01_2,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fencing_01_1,
+                }
+            }
+        }
+component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 200,
+            SkillRequired = MetalWelding:5,
+            xpAward = MetalWelding:50,
+            category = Fences,
+            Tags = Welding;Fences_Low,
+            Tooltip = Tooltip_ht_Fences,
+			inputs
+            {
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 3 [Base.SteelBar],
+                item 2 [Base.ScrapMetal],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+        
+    /* 
+    *  Forged Metal Fences Pole
+    *  htForgedMetalFencesPole
+    *  fencing_01_0
+    */
+    
+    entity htForgedMetalFencesPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htForgedMetalFencesPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = fencing_01_0,
+                }
+            }            
+        }
+		component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 200,
+            SkillRequired = MetalWelding:5,
+            xpAward = MetalWelding:50,
+            category = Fences_Pole,
+            Tags = Welding;Fences_Low,
+            Tooltip = Tooltip_ht_Fences,
+			inputs
+            {
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 1 [Base.SteelBar],
+                item 3 [Base.ScrapMetal],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Forged Metal Fences Corner
+    *  htForgedMetalFencesCorner
+    *  fencing_01_3
+    */ 
+    
+    entity htForgedMetalFencesCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htForgedMetalFencesCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = fencing_01_3,
+                }
+            }      
+        }
+		component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 200,
+            SkillRequired = MetalWelding:5,
+            xpAward = MetalWelding:50,
+            category = Fences,
+            Tags = Welding;Fences_Low,
+            Tooltip = Tooltip_ht_Fences,
+			inputs
+            {
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 4 [Base.SteelBar],
+                item 4 [Base.ScrapMetal],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+    
+    
+/* END BASE */
+}    
