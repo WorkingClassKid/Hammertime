@@ -3,3 +3,26 @@
 * This file is overwritten 
 * See htStructure_fencing_01_BarbedWireFences.txt entities
 */
+module Base
+{
+    entity WoodStake
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_Wood_Stake,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            isThumpable = false,
+            face W
+            {
+                layer
+                {
+                    row = fencing_01_190,
+                }
+            }
+        }
+    }
+}

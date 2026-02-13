@@ -1,4 +1,19 @@
 ********************
+2026-02-13 - Hotfix 2
+********************
+- Fixing some vanilla files overwriting for: 
+   - entity_metal_wirefencegatesmall.txt
+   
+********************
+2026-02-13 - Hotfix 1
+********************
+- Fixing some vanilla files overwriting for: 
+   - entity_wood_stake.txt
+   - entity_wood_fencebarbedwirelvl1.txt
+   - entity_metal_smallwirefence.txt
+   - entity_wood_fencegate.txt
+
+********************
 2026-02-13
 ********************
 

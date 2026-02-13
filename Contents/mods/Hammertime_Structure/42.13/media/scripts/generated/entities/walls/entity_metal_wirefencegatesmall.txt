@@ -3,3 +3,49 @@
 * This file is overwritten 
 * See htStructure_fixtures_doors_fences_01_ChainlinkFencesDoor.txt entities
 */
+module Base
+{
+    entity MetalWireFenceGateSmall
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_MetalWireFenceGateSmall,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            skillBaseHealth = 300,
+            dontNeedFrame = true,
+            BreakSound = BreakDoor,
+            face W
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_160,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_170,
+                }
+            }
+            face W_OPEN
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_180,
+                }
+            }
+            face N_OPEN
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_190,
+                }
+            }
+        }
+    }
+}

@@ -3,3 +3,35 @@
 * This file is overwritten 
 * See htStructure_fencing_01_BarbedWireFences.txt entities
 */
+module Base
+{
+    entity BarbedWireFence
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_BarbedWireFence,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+			obsolete = true,
+            health = 100,
+            skillBaseHealth = 20,
+            face W
+            {
+                layer
+                {
+                    row = fencing_01_200,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fencing_01_210,
+                }
+            }
+        }
+    }
+}

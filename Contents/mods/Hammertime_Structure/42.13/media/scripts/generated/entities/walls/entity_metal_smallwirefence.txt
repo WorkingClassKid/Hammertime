@@ -4,3 +4,37 @@
 * See htStructure_fencing_01_ChainlinkFences.txt entities
 */
 
+module Base
+{
+    entity MetalSmallWireFence
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_MetalSmallWireFence,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            LogicClass = WoodenWall,
+            health = 200,
+            skillBaseHealth = 20,
+            face W
+            {
+                layer
+                {
+                    row = fencing_01_260,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fencing_01_250,
+                }
+            }
+            corner = fencing_01_290,
+        }
+
+    }
+}
