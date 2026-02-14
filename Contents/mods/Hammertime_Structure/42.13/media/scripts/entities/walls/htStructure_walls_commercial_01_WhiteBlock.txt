@@ -1,0 +1,247 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity ES_htWhiteBlockWall
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Block Wall,
+			Icon = ui_walls_commercial_01_48,
+		}       
+		entity ES_htWhiteBlockPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Block Pole,
+			Icon = ui_walls_commercial_01_51,
+		}         
+        entity ES_htWhiteBlockDoorFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Block Door Frame,
+			Icon = ui_walls_commercial_01_58,
+		}  
+        entity ES_htWhiteBlockWindowFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Block Window Frame,
+			Icon = ui_walls_commercial_01_56,
+		}  
+    }
+    
+    
+    
+    /* 
+    *  White Block Wall
+    *  htWhiteBlockall
+    *  walls_commercial_01_48
+    *  walls_commercial_01_49
+    *  walls_commercial_01_51
+    */ 
+    
+    entity htWhiteBlockWall
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWhiteBlockWall,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            LogicClass = WoodenWall,
+            OnCreate = BuildRecipeCode.canBePlastered.OnCreate,
+            BreakSound = ZombieThumpWoodCollapse,
+            face W
+            {
+                layer
+                {
+                    row = walls_commercial_01_48,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_commercial_01_49,
+                }
+            }
+            corner = walls_commercial_01_51,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Walls,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.StoneBlock],
+            }
+        }
+    }
+        
+    /* 
+    *  White Block Pole 
+    *  htWhiteBlockPole
+    *  walls_commercial_01_51
+    */
+    
+    entity htWhiteBlockPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWhiteBlockPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            isPole = true,
+            face SINGLE
+            {
+                layer
+                {
+                    row = walls_commercial_01_51,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Walls_Pole,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_ht_WallPole,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 1 tags[base:concrete] flags[DontRecordInput],
+                item 2 [Base.StoneBlock],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  White Block Door Frame
+    *  htWhiteBlockDoorFrame
+    *  walls_commercial_01_51
+    *  walls_commercial_01_58
+    *  walls_commercial_01_59
+    */ 
+    
+    entity htWhiteBlockDoorFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWhiteBlockDoorFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_commercial_01_58,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_commercial_01_59,
+                }
+            }
+            corner = walls_commercial_01_51,           
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Walls_Door_Frame,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.StoneBlock],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  White Block Window Frame
+    *  htWhiteBlockWindowFrame
+    *  walls_commercial_01_56
+    *  walls_commercial_01_57
+    *  walls_commercial_01_51
+    */ 
+    
+    entity htWhiteBlockWindowFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWhiteBlockWindowFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            previousStage = WoodenWallFrame;MetalWallFrame,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_commercial_01_56,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_commercial_01_57,
+                }
+            }
+            corner = walls_commercial_01_51,  
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Walls_Window_Frame,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_woodenFrameDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.StoneBlock],
+            }
+        }
+    }
+    
+/* END BASE */
+}    

@@ -1,7 +1,7 @@
 version=1
 id=3657204498
 title=[B42.13] Hammertime - Another PZ Building mod
-description=[h1]Hammertime[/h1]
+description=[img]https://raw.githubusercontent.com/WorkingClassKid/steam_images/main/Hammertime_Banner.png[/img]
 description=[h2]A building mod for those who actually want to… build.[/h2]
 description=Hammertime is a mod designed to enrich the building experience in Project Zomboid. Originally created for my multiplayer server, it adds a wide variety of new craftable items and structures, allowing players to progress in construction without having to tear apart every house in the county.
 description=
@@ -21,28 +21,33 @@ description=However, Hammertime should be compatible with all other mods that ar
 description=
 description=Tested on B42.13.2 SP/MP
 description=
-description=[h2]Special Request[/h2]
-description=
-description=For special requests, you can use the [b]Discussions[/b] page on our [url=https://github.com/WorkingClassKid/Hammertime/discussions]GitHub[/url] page.
-description=
 description=[h2]Known issues[/h2]
 description=- The character sits next to certain chairs after building them.
 description=Quick fix: You can pick up the chair and place it back down, and it will work as intended. (I’m still trying to figure out why)
 description=
-description=[h2]Submit a bug report[/h2]
-description=
-description=Upload your [b]complete console.txt file[/b], along with any other relevant information, and add a description of your issue on our [url=https://github.com/WorkingClassKid/Hammertime/issues]GitHub[/url] page as a new issue.
-description=
-description=[h3]Where can I find my console.txt file?[/h3]
-description=[b]Windows:[/b] %userprofile%\Zomboid\console.txt
-description=[b]Mac/Linux:[/b] $User\Zomboid\console.txt
-description=
+description=[h2]Submit a bug report and special request[/h2]
 description=[h3]About the comments section on Steam[/h3]
-description=The Steam comments section is not meant for reporting bugs, and it is very difficult to manage and track. [b]NO SUPPORT WILL BE PROVIDED IN THE STEAM COMMENTS SECTION[/b]. Please use our [url=https://github.com/WorkingClassKid/Hammertime/issues]GitHub[/url] page instead.
+description=The Steam comments section is not the place for reporting bugs or making requests, and it is very difficult to manage and track. [b]NO SUPPORT WILL BE PROVIDED IN THE STEAM COMMENTS SECTION[/b]. Please use our [url=https://github.com/WorkingClassKid/Hammertime]GitHub[/url] page or [url=https://discord.gg/v4DXUWAerB]Discord[/url] instead.
 description=
-description=[quote]If there is any disrespect in the comments section, it will simply be closed. Thank you for remaining polite and courteous.[/quote]
+description=[url=https://github.com/WorkingClassKid/Hammertime][img]https://raw.githubusercontent.com/WorkingClassKid/steam_images/main/Hammertime_Github.png[/img][/url]
+description=[url=https://discord.gg/v4DXUWAerB][img]https://raw.githubusercontent.com/WorkingClassKid/steam_images/main/Hammertime_Discord.png[/img][/url]
+description=
+description=[h2] Enjoying the mod? Support me with a ko-fi![/h2]
+description=[url=https://ko-fi.com/workingclasskid][img]https://raw.githubusercontent.com/WorkingClassKid/steam_images/main/Hammertime_Kofi.png[/img][/url]
 description=
 description=[h2]Huge Thanks to:[/h2]
 description=- Roxane on the [url=https://discord.com/invite/SReMnbV4V7]PZ Community Discord[/url]
+description=
+description=Workshop ID: 3657204498
+description=Mod ID: Hammertime
+description=Mod ID: Hammertime_Appliance
+description=Mod ID: Hammertime_Crafting
+description=Mod ID: Hammertime_Furniture
+description=Mod ID: Hammertime_Storage
+description=Mod ID: Hammertime_Structure
+description=Mod ID: Hammertime_Survival
+description=
+description=[quote]If there is any disrespect in the comments section, it will simply be closed. 
+description=Thank you for remaining polite and courteous.[/quote]
 tags=Build 42;Building;Multiplayer
 visibility=public

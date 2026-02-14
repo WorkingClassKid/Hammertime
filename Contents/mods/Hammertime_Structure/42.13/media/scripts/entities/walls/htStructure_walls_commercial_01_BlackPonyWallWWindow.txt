@@ -1,0 +1,172 @@
+module Base
+{
+    	xuiSkin default
+	{
+        
+        entity ES_htBlackPonyWallWWindow
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Black Pony Wall W/ Window,
+			Icon = ui_walls_commercial_01_112,
+		}       
+		entity ES_htBlackPonyWallWWindowPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Black Pony Wall W/ Window Pole,
+			Icon = ui_walls_commercial_01_115,
+		}         
+		entity ES_htBlackPonyWallWWindowCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Black Pony Wall W/ Window Corner,
+			Icon = ui_walls_commercial_01_114,
+		}
+    }
+    
+    /* 
+    *  Black Pony Wall W/ Window
+    *  htBlackPonyWallWWindow
+    *  walls_commercial_01_112
+    *  walls_commercial_01_113
+    *  walls_commercial_01_115
+    */ 
+    
+    entity htBlackPonyWallWWindow
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBlackPonyWallWWindow,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 500,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            LogicClass = WoodenWall,
+            OnCreate = BuildRecipeCode.canBePlastered.OnCreate,
+            BreakSound = ZombieThumpWoodCollapse,
+            face W
+            {
+                layer
+                {
+                    row = walls_commercial_01_112,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_commercial_01_113,
+                }
+            }
+            corner = walls_commercial_01_115,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 50,
+            SkillRequired = Woodwork:7,
+            xpAward = Woodwork:50,
+            category = Walls,
+            Tags = Carpentry;Walls,
+            Tooltip = Tooltip_ht_WindowWalls,
+            inputs
+            {
+                item 5 [Base.GlassPanel],
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+        
+    /* 
+    *  Black Pony Wall W/ Window Pole 
+    *  htBlackPonyWallWWindowPole
+    *  walls_commercial_01_115
+    */
+    
+    entity htBlackPonyWallWWindowPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBlackPonyWallWWindowPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 500,
+            isPole = true,
+            face SINGLE
+            {
+                layer
+                {
+                    row = walls_commercial_01_115,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Walls_Pole,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_ht_WallPole,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+     
+    
+    /* 
+    *  Black Pony Wall W/ Window Corner
+    *  htBlackPonyWallWWindowCorner
+    *  walls_commercial_01_114
+    */ 
+    
+    entity htBlackPonyWallWWindowCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBlackPonyWallWWindowCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = walls_commercial_01_114,
+                }
+            }      
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Walls,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:30,
+            Tooltip = Tooltip_ht_WindowWalls,
+            inputs
+            {
+                item 6 [Base.GlassPanel],
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+    
+/* END BASE */
+}    

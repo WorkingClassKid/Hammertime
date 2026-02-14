@@ -16,11 +16,11 @@ module Base {
         {
             item 2026 [Base.WristWatch_Left_ClassicMilitary], /* Year */
             item 02 [Base.WristWatch_Left_ClassicGold], /* Month */
-            item 13 [Base.WristWatch_Left_Expensive], /* Day */
+            item 14 [Base.WristWatch_Left_Expensive], /* Day */
         }
         outputs
         {
-            item 2 Base.AlarmClock2, /* Hotfix */
+            item 0 Base.AlarmClock2, /* Hotfix */
         }
     } 
 }

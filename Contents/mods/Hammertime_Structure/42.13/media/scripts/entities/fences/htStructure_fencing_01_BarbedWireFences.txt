@@ -68,7 +68,7 @@ module Base
             time = 200,
             SkillRequired = MetalWelding:4,
             xpAward = MetalWelding:50,
-            category = Fences_Low,
+            category = Fences,
             Tags = Welding;Fences_Low,
             Tooltip = Tooltip_ht_Fences,
 			inputs
@@ -206,7 +206,7 @@ module Base
             time = 200,
             SkillRequired = MetalWelding:4;Woodwork:5,
             xpAward = MetalWelding:50,
-            category = Fences_Low,
+            category = Fences,
             Tags = Welding;Fences_Low,
             Tooltip = Tooltip_ht_Fences,
 			inputs

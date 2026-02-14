@@ -1,8 +1,38 @@
 ********************
+2026-02-14
+********************
+
+Hammertime_Structure
+------------------
+= NEW =
+- Black Glass Railings
+- Black Commercial Wall
+- Black Pony Wall W/ Window
+- Black Window Wall
+- Black Window Wall W/ Sliding Window
+- Red Commercial Wall
+- Red Window Wall
+- Red Window Wall W/ Sliding Window
+- White Block Wall
+- Window Wall
+
+=FIXES=
+- Fixed category for Barbed Wire Fences Corner
+- Fixed category for Barbed Wire Fences
+
+Other
+------------------
+- Updated the mod workshop description.
+- Updated representative pictures for Hammertime_Structure to showcase new items/features on the workshop.
+
+
+
+********************
 2026-02-13 - Hotfix 2
 ********************
 - Fixing some vanilla files overwriting for: 
    - entity_metal_wirefencegatesmall.txt
+   
    
 ********************
 2026-02-13 - Hotfix 1
@@ -12,6 +42,7 @@
    - entity_wood_fencebarbedwirelvl1.txt
    - entity_metal_smallwirefence.txt
    - entity_wood_fencegate.txt
+
 
 ********************
 2026-02-13

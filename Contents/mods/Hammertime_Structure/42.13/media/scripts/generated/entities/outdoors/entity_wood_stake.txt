@@ -20,7 +20,7 @@ module Base
             {
                 layer
                 {
-                    row = fencing_01_190,
+                    row = overwrite_entity_wood_stake_6546513,
                 }
             }
         }

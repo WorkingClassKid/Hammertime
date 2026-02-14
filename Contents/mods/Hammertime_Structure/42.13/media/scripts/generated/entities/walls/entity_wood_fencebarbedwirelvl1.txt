@@ -22,7 +22,7 @@ module Base
             {
                 layer
                 {
-                    row = fencing_01_200,
+                    row = overwrite_entity_wood_fencebarbedwirelvl1_4654654654,
                 }
             }
             face N
