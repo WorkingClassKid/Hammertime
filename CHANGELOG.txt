@@ -1,4 +1,90 @@
 ********************
+2026-02-15
+********************
+
+Hammertime
+------------------
+= NEW =
+- Added Steel Safe from location_business_bank_01 to the hammertime tileset ht_vanilla_location_business_bank_01.
+
+Hammertime_Appliance
+------------------
+= NEW =
+- Charcoal BBQ
+- Propane BBQ
+- Small Fridge
+
+=TWEAKS=
+- Updated the recipes for all fridges
+
+
+Hammertime_Furniture
+------------------
+= NEW =
+- Beige Wardrobe
+- Fancy Dark Dresser
+- Fancy Dark Wardrobe
+- Fancy Oak Dresser
+- Fancy Oak Wardrobe
+- Fancy White Dresser
+- Fancy White Wardrobe
+- Light Wood Dresser
+- Light Wood Dresser W/ Mirror
+- Light Wood Dresser W/ Mirror And Lights
+- Light Wood Wardrobe
+- Wooden Wardrobe
+
+=TWEAKS=
+- New category: Dressers_Wardrobes
+- Moved all vanilla cabinets/counters to Cabinets_Base category
+
+
+Hammertime_Storage
+------------------
+= NEW =
+- Steel Safe (canBePadlocked = true)
+
+=TWEAKS=
+- Moved vanilla Wooden Crate from Furniture to Storage category (entity_carpentry_crate_lvl1.txt and entity_carpentry_crate_lvl2.txt)
+- Moved vanilla Metal Crate from Furniture to Storage category (entity_welding_crate_lvl1.txt and entity_welding_crate_lvl2.txt)
+- Moved vanilla Metal Locker from Furniture to Storage category (entity_welding_lockerbig_lvl1.txt and entity_welding_lockerbig_lvl2.txt)
+- Moved vanilla Double Wooden Shelves from Furniture to Storage category (entity_carpentry_shelvesdouble_lvl1.txt)
+- Moved vanilla Metal Shelves from Furniture to Storage category (entity_welding_shelves_lvl1.txt)
+- Moved vanilla Small Metal Locker from Furniture to Storage category (entity_welding_lockersmall_lvl1.txt and entity_welding_lockersmall_lvl2.txt)
+- Moved vanilla Wooden Bookcase from Furniture to Storage category (entity_carpentry_bookcase_lvl1.txt and entity_carpentry_bookcase_lvl2.txt)
+- Moved vanilla Small Wooden Bookcase from Furniture to Storage category (entity_carpentry_bookcasesmall_lvl1.txt and entity_carpentry_bookcasesmall_lvl2.txt)
+- Moved Wooden Shelf Bookcase from Furniture to Storage category
+- Moved vanilla Wooden Shelf from Furniture to Storage category (entity_carpentry_shelves_lvl1.txt and entity_carpentry_shelves_lvl2.txt)
+
+
+Hammertime_Structure
+------------------
+= NEW =
+- Birchwood Floor
+- Chestnut North Floor
+- Chestnut West Floor
+- Cinnamon North Floor
+- Cinnamon West Floor
+- Finewood Floor
+- Hardwood Floor
+- Oakwood Floor
+
+=TWEAKS=
+- New category: Floors
+- Moved all vanilla floors to the Floors category
+- Moved vanilla Wooden Windows from Furniture to Windows category
+- Fixed a typo for White Wall Cabinet Cornet
+
+
+Other
+------------------
+- Updated the LICENSE.md
+- Updated README.md
+- Updated representative pictures for udpated sub-mods to showcase new items/features on the workshop.
+
+
+
+********************
 2026-02-14
 ********************
 

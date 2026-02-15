@@ -18,7 +18,7 @@ module Base {
     {
         timedAction = MakingElectrical,
         time = 400,
-        SkillRequired = Electricity:3;MetalWelding:3,
+        SkillRequired = Electricity:3;MetalWelding:4,
         Tags = AnySurfaceCraft,
         Category = Appliance,
         xpAward = Electricity:65;MetalWelding:65,

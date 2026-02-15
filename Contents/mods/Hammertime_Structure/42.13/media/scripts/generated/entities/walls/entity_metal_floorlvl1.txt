@@ -25,7 +25,7 @@ module Base
         {
             timedAction = BuildLowMetal,
             time = 200,
-            category = Welding,
+            category = Floors,
             NeedToBeLearn = true,
             xpAward = MetalWelding:10,
             Tooltip = Tooltip_craft_MetalRoofDesc,

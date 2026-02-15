@@ -26,7 +26,7 @@ module Base
             OnAddToMenu = woodenFloorLvl2Test,
             timedAction = BuildLowHammer,
             time = 200,
-            category = Carpentry,
+            category = Floors,
             SkillRequired = Woodwork:2,
             xpAward = Woodwork:20,
             Tooltip = Tooltip_craft_woodenFloorDesc,

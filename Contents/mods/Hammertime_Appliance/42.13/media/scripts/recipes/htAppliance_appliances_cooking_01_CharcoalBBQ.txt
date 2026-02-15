@@ -1,0 +1,37 @@
+module Base {
+
+    /* 
+    *  htCharcoalBBQ
+    *  Base.htCharcoalBBQ
+    */ 
+    
+    item htCharcoalBBQ
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = ui_appliances_cooking_01_35,
+        Weight = 30.0,
+        WorldObjectSprite = appliances_cooking_01_35,
+    }
+  
+    craftRecipe htMakeCharcoalBBQ
+    {
+        timedAction = BuildMetalStructureMedium,
+        time = 400,
+        SkillRequired = MetalWelding:2,
+        Tags = AnySurfaceCraft,
+        Category = Appliance,
+        xpAward = MetalWelding:30,
+            inputs
+            {
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 4 [Base.SmallSheetMetal],
+                item 1 [Base.Hinge],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        outputs
+        {
+            item 1 Base.htCharcoalBBQ,
+        }
+    } 
+}

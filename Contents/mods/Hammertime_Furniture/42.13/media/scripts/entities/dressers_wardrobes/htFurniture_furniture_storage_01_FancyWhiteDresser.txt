@@ -1,0 +1,82 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htFancyWhiteDresser
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Fancy White Dresser,
+			Icon = ui_furniture_storage_01_8,
+		}
+    }    
+    
+   /* 
+    *  Fancy White Dresser
+    *  htFancyWhiteDresser
+    *  furniture_storage_01_8
+    *  furniture_storage_01_9
+    *  furniture_storage_01_10
+    *  furniture_storage_01_11
+    */ 
+    
+    entity htFancyWhiteDresser
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htFancyWhiteDresser,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = furniture_storage_01_8,
+                }
+            }
+            
+            face S
+            {
+                layer
+                {
+                    row = furniture_storage_01_9,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = furniture_storage_01_10,
+                }
+            }
+            
+            face N
+            {
+                layer
+                {
+                    row = furniture_storage_01_11,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 50,
+            SkillRequired = Woodwork:4,
+            xpAward = Woodwork:50,
+            category = Dressers_Wardrobes,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_tableDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+                item 2 [Base.Hinge],
+                item 2 [Base.Doorknob],
+            }
+        }
+    }
+}

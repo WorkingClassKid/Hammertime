@@ -1,0 +1,38 @@
+module Base {
+
+    /* 
+    *  htPropaneBBQ
+    *  Base.htPropaneBBQ
+    */ 
+    
+    item htPropaneBBQ
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = ui_appliances_cooking_01_45,
+        Weight = 30.0,
+        WorldObjectSprite = appliances_cooking_01_45,
+    }
+  
+    craftRecipe htMakePropaneBBQ
+    {
+        timedAction = BuildMetalStructureMedium,
+        time = 400,
+        SkillRequired = MetalWelding:4,
+        Tags = AnySurfaceCraft,
+        Category = Appliance,
+        xpAward = MetalWelding:30,
+            inputs
+            {
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 4 [Base.SheetMetal],
+                item 2 [Base.MetalPipe],
+                item 1 [Base.Hinge],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        outputs
+        {
+            item 1 Base.htPropaneBBQ,
+        }
+    } 
+}

@@ -1,0 +1,88 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htWoodenWardrobe
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Wooden Wardrobe,
+			Icon = ui_furniture_storage_01_36,
+		}
+    }    
+    
+   /* 
+    *  Wooden Wardrobe
+    *  htWoodenWardrobe
+    *  furniture_storage_01_36
+    *  furniture_storage_01_37
+    *  furniture_storage_01_38
+    *  furniture_storage_01_39
+    *  furniture_storage_02_20
+    *  furniture_storage_02_21
+    *  furniture_storage_02_22
+    *  furniture_storage_02_23 
+    */ 
+    
+    entity htWoodenWardrobe
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWoodenWardrobe,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = furniture_storage_01_37,
+                    row = furniture_storage_01_36, 
+                }
+            }
+            
+            face S
+            {
+                layer
+                {
+                    row = furniture_storage_01_38 furniture_storage_01_39,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = furniture_storage_02_21,
+                    row = furniture_storage_02_20, 
+                }
+            }
+            
+            face N
+            {
+                layer
+                {
+                    row = furniture_storage_02_22 furniture_storage_02_23,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 50,
+            SkillRequired = Woodwork:7,
+            xpAward = Woodwork:50,
+            category = Dressers_Wardrobes,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_tableDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 6 [Base.Plank],
+                item 6 [Base.Nails],
+                item 2 [Base.Hinge],
+                item 2 [Base.Doorknob],
+            }
+        }
+    }
+}

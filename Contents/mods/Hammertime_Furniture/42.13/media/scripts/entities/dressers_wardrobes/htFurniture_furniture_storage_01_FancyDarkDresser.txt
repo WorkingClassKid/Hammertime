@@ -1,0 +1,82 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htFancyDarkDresser
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Fancy Dark Dresser,
+			Icon = ui_furniture_storage_01_32,
+		}
+    }    
+    
+   /* 
+    *  Fancy Dark Dresser
+    *  htFancyDarkDresser
+    *  furniture_storage_01_32
+    *  furniture_storage_01_33
+    *  furniture_storage_01_34
+    *  furniture_storage_01_35
+    */ 
+    
+    entity htFancyDarkDresser
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htFancyDarkDresser,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = furniture_storage_01_32,
+                }
+            }
+            
+            face S
+            {
+                layer
+                {
+                    row = furniture_storage_01_33,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = furniture_storage_01_34,
+                }
+            }
+            
+            face N
+            {
+                layer
+                {
+                    row = furniture_storage_01_35,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 50,
+            SkillRequired = Woodwork:4,
+            xpAward = Woodwork:50,
+            category = Dressers_Wardrobes,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_tableDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+                item 2 [Base.Hinge],
+                item 2 [Base.Doorknob],
+            }
+        }
+    }
+}
