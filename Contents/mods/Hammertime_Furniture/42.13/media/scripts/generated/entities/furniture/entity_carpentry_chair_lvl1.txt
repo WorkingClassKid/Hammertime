@@ -1,70 +1,58 @@
+/*
+* OVERWRITE PZ DEFAULT Wooden Chair
+* 
+* - Changed CraftRecipe category from Furniture to Seating_Indoor
+*/
+
+
 module Base
 {
-    	xuiSkin default
-	{       
-        entity ES_htRedWoodenChair
-		{
-			LuaWindowClass = ISEntityWindow,
-			DisplayName	= Red Wooden Chair,
-			Icon = ui_furniture_seating_indoor_02_8,
-		}
-    }    
-    
-   /* 
-    *  Red Wooden Chair
-    *  htRedWoodenChair
-    *  furniture_seating_indoor_02_8
-    *  furniture_seating_indoor_02_9
-    *  furniture_seating_indoor_02_10
-    *  furniture_seating_indoor_02_11
-    */ 
-    
-    entity htRedWoodenChair
+    entity Wood_Chair_Lvl1
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_htRedWoodenChair,
+            entityStyle = ES_Wood_Chair_Lvl1,
             uiEnabled = false,
         }
         component SpriteConfig
         {
-			isThumpable = false,
             face S
             {
                 layer
                 {
-                    row = furniture_seating_indoor_02_9,
+                    row = carpentry_01_36,
                 }
             }
             face N
             {
                 layer
                 {
-                    row = furniture_seating_indoor_02_11,
+                    row = carpentry_01_37,
                 }
             }
             face E
             {
                 layer
                 {
-                    row = furniture_seating_indoor_02_8,
+                    row = carpentry_01_38,
                 }
             }
             face W
             {
                 layer
                 {
-                    row = furniture_seating_indoor_02_10,
+                    row = carpentry_01_39,
                 }
             }
         }
         component CraftRecipe
         {
+            OnAddToMenu = woodenChairLvl1Test,
             timedAction = BuildWoodenStructureMedium,
             time = 50,
-            SkillRequired = Woodwork:6,
-            xpAward = Woodwork:60,
+            SkillRequired = Woodwork:1,
+            xpAward = Woodwork:10,
             category = Seating_Indoor,
             Tags = Carpentry;Furniture,
             Tooltip = Tooltip_craft_chairDesc,

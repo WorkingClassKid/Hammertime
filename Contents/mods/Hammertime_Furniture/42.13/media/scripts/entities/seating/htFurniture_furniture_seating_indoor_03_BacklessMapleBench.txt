@@ -1,0 +1,69 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htBacklessMapleBench
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Backless Maple Bench,
+			Icon = ui_furniture_seating_indoor_03_0,
+		}
+    }    
+    
+   /* 
+    *  Backless Maple Bench
+    *  htBacklessMapleBench
+    *  furniture_seating_indoor_03_0
+    *  furniture_seating_indoor_03_1
+    *  furniture_seating_indoor_03_2
+    *  furniture_seating_indoor_03_3
+    */ 
+    
+    entity htBacklessMapleBench
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBacklessMapleBench,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+			isThumpable = false,
+            face E
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_03_3,
+                    row = furniture_seating_indoor_03_2, 
+                }
+            }
+            
+            face S
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_03_0 furniture_seating_indoor_03_1,
+                }
+            }          
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 150,
+            SkillRequired = Woodwork:3;MetalWelding:2,
+            xpAward = Woodwork:30;MetalWelding:30,
+            category = Seating_Outdoor,
+            Tooltip = Tooltip_craft_benchDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 3 [Base.Plank],
+                item 3 [Base.Nails],
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 3 [Base.SteelBar],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

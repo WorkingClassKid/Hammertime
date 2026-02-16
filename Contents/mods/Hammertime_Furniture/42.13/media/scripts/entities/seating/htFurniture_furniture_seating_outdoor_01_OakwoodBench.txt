@@ -2,29 +2,29 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_htBirchwoodBench
+        entity ES_htOakwoodBench
 		{
 			LuaWindowClass = ISEntityWindow,
-			DisplayName	= Birchwood Bench,
-			Icon = ui_furniture_seating_outdoor_01_32,
+			DisplayName	= Oakwood Bench,
+			Icon = ui_furniture_seating_outdoor_01_20,
 		}
     }    
     
    /* 
-    *  Birchwood Bench
-    *  htBirchwoodBench
-    *  furniture_seating_outdoor_01_32
-    *  furniture_seating_outdoor_01_33
-    *  furniture_seating_outdoor_01_34
-    *  furniture_seating_outdoor_01_35
+    *  Oakwood Bench
+    *  htOakwoodBench
+    *  furniture_seating_outdoor_01_20
+    *  furniture_seating_outdoor_01_21
+    *  furniture_seating_outdoor_01_22
+    *  furniture_seating_outdoor_01_23
     */ 
     
-    entity htBirchwoodBench
+    entity htOakwoodBench
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_htBirchwoodBench,
+            entityStyle = ES_htOakwoodBench,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -34,8 +34,8 @@ module Base
             {
                 layer
                 {
-                    row = furniture_seating_outdoor_01_35,
-                    row = furniture_seating_outdoor_01_34, 
+                    row = furniture_seating_outdoor_01_23,
+                    row = furniture_seating_outdoor_01_22, 
                 }
             }
             
@@ -43,7 +43,7 @@ module Base
             {
                 layer
                 {
-                    row = furniture_seating_outdoor_01_32 furniture_seating_outdoor_01_33,
+                    row = furniture_seating_outdoor_01_20 furniture_seating_outdoor_01_21,
                 }
             }
           

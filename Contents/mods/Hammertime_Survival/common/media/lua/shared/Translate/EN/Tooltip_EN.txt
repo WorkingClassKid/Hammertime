@@ -1,0 +1,4 @@
+Tooltip_EN = {
+    Tooltip_ht_ManualWaterPump = "Your source of natural water!",
+
+}

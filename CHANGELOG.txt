@@ -1,3 +1,39 @@
+Hammertime_Furniture
+------------------
+= NEW =
+- Backless Maple Bench
+- Fancy Outdoor Bench
+- Oakwood Bench
+- White Birch Bench
+- Wooden Bench
+
+= FIXES =
+- Fixed bug where the character sits next to certain chairs after building them.
+
+= TWEAKS =
+- New categories: Seating_Indoor, Seating_Outdoor
+- Moved all vanilla seating items to Seating_Indoor/Seating_Outdoor categories
+
+
+Hammertime_Structure
+------------------
+= TWEAKS =
+- Moved all vanilla high tables to the Tables category
+
+
+Hammertime_Survival
+------------------
+= NEW =
+- Manual Water Pump
+
+
+Other
+------------------
+- Updated the mod workshop description.
+- Updated README.md
+- Updated representative pictures for udpated sub-mods to showcase new items/features on the workshop.
+
+
 ********************
 2026-02-15
 ********************

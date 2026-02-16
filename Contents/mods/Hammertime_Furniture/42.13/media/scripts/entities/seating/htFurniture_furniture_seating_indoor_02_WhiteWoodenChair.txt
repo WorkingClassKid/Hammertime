@@ -29,6 +29,7 @@ module Base
         }
         component SpriteConfig
         {
+			isThumpable = false,
             face S
             {
                 layer
@@ -64,7 +65,7 @@ module Base
             time = 50,
             SkillRequired = Woodwork:6,
             xpAward = Woodwork:60,
-            category = Furniture,
+            category = Seating_Indoor,
             Tags = Carpentry;Furniture,
             Tooltip = Tooltip_craft_chairDesc,
             inputs

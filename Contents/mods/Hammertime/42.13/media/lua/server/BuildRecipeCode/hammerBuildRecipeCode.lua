@@ -2,7 +2,7 @@ hammerBuildRecipeCode = hammerBuildRecipeCode or {}
 hammerBuildRecipeCode.GarageDoor = {}
 hammerBuildRecipeCode.WallCabinet = {}
 hammerBuildRecipeCode.WallCabinetCorner = {}
-
+hammerBuildRecipeCode.Seating = {}
 --
 -- DEBUG: We can inspect the contents of the params variable using this snippet.
 -- Place the snipplet as the first line of any functions in this file and be sure to have PZ debug mode on
