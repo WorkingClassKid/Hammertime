@@ -1,0 +1,83 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htFoldingChair
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Folding Chair,
+			Icon = ui_furniture_seating_indoor_01_60,
+		}
+    }    
+    
+   /* 
+    *  Folding Chair
+    *  htFoldingChair
+    *  furniture_seating_indoor_01_60
+    *  furniture_seating_indoor_01_61
+    *  furniture_seating_indoor_01_62
+    *  furniture_seating_indoor_01_63
+    */ 
+    
+    entity htFoldingChair
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htFoldingChair,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+			isThumpable = false,
+            face E
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_01_61,
+                }
+            }
+            
+            face S
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_01_60,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_01_63, 
+                }
+            }
+            
+            face N
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_01_62,
+                }
+            }
+          
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 150,
+            SkillRequired = MetalWelding:1,
+            xpAward = MetalWelding:20,
+            category = Seating_Indoor,
+            Tooltip = Tooltip_craft_benchDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 2 [Base.SteelBar],
+                item 2 [Base.SmallSheetMetal],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

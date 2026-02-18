@@ -1,0 +1,84 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htYellowSquareArmchair
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Yellow Square Armchair,
+			Icon = ui_furniture_seating_indoor_03_28,
+		}
+    }    
+    
+   /* 
+    *  Yellow Square Armchair
+    *  htYellowSquareArmchair
+    *  furniture_seating_indoor_03_28
+    *  furniture_seating_indoor_03_29
+    *  furniture_seating_indoor_03_30
+    *  furniture_seating_indoor_03_31
+    */ 
+    
+    entity htYellowSquareArmchair
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htYellowSquareArmchair,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+			isThumpable = false,
+			face E
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_03_29,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_03_28,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_03_30,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_03_31,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 300,
+            SkillRequired = Woodwork:8;Tailoring:4,
+            xpAward = Woodwork:60;Tailoring:40,
+            category = Seating_Indoor,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_chairDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[base:scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+				item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+                item 2 [Base.Plank],
+                item 2 tags[base:normalpillow],
+				item 1 [Base.BurlapPiece;Base.FabricRoll_Cotton;Base.Sheet] flags[InheritColor] mappers[fabricType],
+				item 2 tags[base:thread],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+}

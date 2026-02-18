@@ -1,3 +1,46 @@
+********************
+2026-02-18
+********************
+
+Hammertime_Furniture
+------------------
+= NEW =
+- Beach Chair
+- Blue Armchair
+- Blue Plastic Chair
+- Brown Armchair
+- Gray Chair
+- Gray Lazy Chair
+- Gray Plastic Chair
+- Gray Rattan Chair
+- Green Armchair
+- Green Wooden Chair
+- Fancy Black Leather Chair
+- Fancy Black And White Striped Chair
+- Fancy Pink Chair
+- Fancy Yellow Striped Chair
+- Folding Chair
+- Off-White Armchair
+- Orange Square Armchair
+- Purple Rattan Chair
+- Red Chair
+- Sturdy Bench
+- Yellow Square Armchair
+- White Lazy Chair
+- White Square Armchair
+
+
+Other
+------------------
+- Added BuildablePump mod as incompatible in Hammertime mod.info
+- Added Eggon's All Doors Are Yours B42+ mod as incompatible in Hammertime mod.info
+- Updated representative pictures for udpated sub-mods to showcase new items/features on the workshop.
+
+
+********************
+2026-02-16
+********************
+
 Hammertime_Furniture
 ------------------
 = NEW =

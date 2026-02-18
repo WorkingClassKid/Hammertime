@@ -1,0 +1,84 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htFancyBlackLeatherChair
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Fancy Black Leather Chair,
+			Icon = ui_furniture_seating_indoor_03_100,
+		}
+    }    
+    
+   /* 
+    *  Fancy Black Leather Chair
+    *  htFancyBlackLeatherChair
+    *  furniture_seating_indoor_03_100
+    *  furniture_seating_indoor_03_101
+    *  furniture_seating_indoor_03_102
+    *  furniture_seating_indoor_03_103
+    */
+    
+    entity htFancyBlackLeatherChair
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htFancyBlackLeatherChair,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+			isThumpable = false,
+			face E
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_03_100,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_03_101,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_03_103,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_03_102,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 300,
+            SkillRequired = Woodwork:8;Tailoring:6,
+            xpAward = Woodwork:60;Tailoring:40,
+            category = Seating_Indoor,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_chairDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[base:scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+				item 1 tags[base:sewingneedle] mode:keep flags[MayDegrade],
+                item 2 [Base.Plank],
+                item 2 tags[base:normalpillow],
+				item 2 tags[base:leatherfurtannedmedium],
+				item 2 tags[base:thread],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+}

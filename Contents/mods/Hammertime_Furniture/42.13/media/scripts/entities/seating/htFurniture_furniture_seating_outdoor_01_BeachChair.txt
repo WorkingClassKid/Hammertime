@@ -1,0 +1,90 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htBeachChair
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Beach Chair,
+			Icon = ui_furniture_seating_outdoor_01_24,
+		}
+    }    
+    
+   /* 
+    *  Beach Chair
+    *  htBeachChair
+    *  furniture_seating_outdoor_01_24
+    *  furniture_seating_outdoor_01_25
+    *  furniture_seating_outdoor_01_26
+    *  furniture_seating_outdoor_01_27
+    *  furniture_seating_outdoor_01_28
+    *  furniture_seating_outdoor_01_29
+    *  furniture_seating_outdoor_01_30
+    *  furniture_seating_outdoor_01_31
+    */ 
+    
+    entity htBeachChair
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBeachChair,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+			isThumpable = false,
+            face E
+            {
+                layer
+                {
+                    row = furniture_seating_outdoor_01_26 furniture_seating_outdoor_01_27, 
+                }
+            }
+            
+            face S
+            {
+                layer
+                {
+                    row = furniture_seating_outdoor_01_25,
+                    row = furniture_seating_outdoor_01_24,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = furniture_seating_outdoor_01_30 furniture_seating_outdoor_01_31, 
+                }
+            }
+            
+            face N
+            {
+                layer
+                {
+                    row = furniture_seating_outdoor_01_29,
+                    row = furniture_seating_outdoor_01_28,
+                }
+            }
+          
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 150,
+            xpAward = Woodwork:10;Tailoring:10,
+            category = Seating_Outdoor,
+            Tooltip = Tooltip_craft_benchDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[base:scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+				item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+                item 2 [Base.LongStick],
+                item 1 [Base.BurlapPiece;Base.FabricRoll_Cotton;Base.Sheet] flags[InheritColor] mappers[fabricType],
+                item 2 [Base.Screws],
+				item 2 tags[base:thread],
+            }
+        }
+    }
+}

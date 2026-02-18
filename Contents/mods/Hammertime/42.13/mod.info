@@ -7,4 +7,4 @@ pzversion=42.13.1
 versionMin=42.13.1
 pack=hammertime
 tiledef=hammertime 3100
-incompatible=\Neat_Building,\Neat_Crafting,\BuildingCraft,\Buildables_Expansion
+incompatible=\Neat_Building,\Neat_Crafting,\BuildingCraft,\Buildables_Expansion,\BuildablePump,\eggonsaday42
