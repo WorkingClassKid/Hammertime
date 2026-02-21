@@ -2,35 +2,44 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_htOakRoundTable
+        entity ES_htDarkConsoleTable
 		{
 			LuaWindowClass = ISEntityWindow,
-			DisplayName	= Oak Round Table,
-			Icon = ui_furniture_tables_high_01_6,
+			DisplayName	= Dark Console Table,
+			Icon = ui_furniture_tables_high_01_4,
 		}
     }    
     
    /* 
-    *  Oak Round Table
-    *  htOakRoundTable
-    *  furniture_tables_high_01_6
+    *  Dark Console Table
+    *  htDarkConsoleTable
+    *  furniture_tables_high_01_4
+    *  furniture_tables_high_01_5
     */ 
     
-    entity htOakRoundTable
+    entity htDarkConsoleTable
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_htOakRoundTable,
+            entityStyle = ES_htDarkConsoleTable,
             uiEnabled = false,
         }
         component SpriteConfig
         {
-            face SINGLE
+            face E
             {
                 layer
                 {
-                    row = furniture_tables_high_01_6,
+                    row = furniture_tables_high_01_5,
+                }
+            }
+            
+            face S
+            {
+                layer
+                {
+                    row = furniture_tables_high_01_4,
                 }
             }
           
@@ -38,17 +47,17 @@ module Base
         component CraftRecipe
         {
             timedAction = BuildWallHammer,
-            time = 50,
-            SkillRequired = Woodwork:5,
-            xpAward = Woodwork:50,
+            time = 250,
+            SkillRequired = Woodwork:2,
+            xpAward = Woodwork:20,
             category = Tables,
             Tags = Carpentry;Furniture,
             Tooltip = Tooltip_craft_tableDesc,
             inputs
             {
                 item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
-                item 4 [Base.Plank],
-                item 4 [Base.Nails],
+                item 3 [Base.Plank],
+                item 3 [Base.Nails],
             }
         }
     }

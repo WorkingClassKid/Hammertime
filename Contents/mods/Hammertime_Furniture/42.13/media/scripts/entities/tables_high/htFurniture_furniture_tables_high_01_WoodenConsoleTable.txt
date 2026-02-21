@@ -1,0 +1,64 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htWoodenConsoleTable
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Wooden Console Table,
+			Icon = ui_furniture_tables_high_01_21,
+		}
+    }    
+    
+   /* 
+    *  Wooden Console Table
+    *  htWoodenConsoleTable
+    *  furniture_tables_high_01_21
+    *  furniture_tables_high_01_22
+    */ 
+    
+    entity htWoodenConsoleTable
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWoodenConsoleTable,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = furniture_tables_high_01_22,
+                }
+            }
+            
+            face S
+            {
+                layer
+                {
+                    row = furniture_tables_high_01_21,
+                }
+            }
+          
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 250,
+            SkillRequired = Woodwork:2,
+            xpAward = Woodwork:20,
+            category = Tables,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_tableDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 3 [Base.Plank],
+                item 3 [Base.Nails],
+            }
+        }
+    }
+}

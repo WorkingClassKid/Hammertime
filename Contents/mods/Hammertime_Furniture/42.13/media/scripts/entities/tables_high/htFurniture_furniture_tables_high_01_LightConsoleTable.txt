@@ -2,29 +2,27 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_htLargeBrownTable
+        entity ES_htLightConsoleTable
 		{
 			LuaWindowClass = ISEntityWindow,
-			DisplayName	= Large Brown Table,
-			Icon = ui_furniture_tables_high_01_8,
+			DisplayName	= Light Console Table,
+			Icon = ui_furniture_tables_high_01_12,
 		}
     }    
     
    /* 
-    *  Large Brown Table
-    *  htLargeBrownTable
-    *  furniture_tables_high_01_8
-    *  furniture_tables_high_01_9
-    *  furniture_tables_high_01_10
-    *  furniture_tables_high_01_11
+    *  Light Console Table
+    *  htLightConsoleTable
+    *  furniture_tables_high_01_12
+    *  furniture_tables_high_01_13
     */ 
     
-    entity htLargeBrownTable
+    entity htLightConsoleTable
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_htLargeBrownTable,
+            entityStyle = ES_htLightConsoleTable,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -33,8 +31,7 @@ module Base
             {
                 layer
                 {
-                    row = furniture_tables_high_01_11,
-                    row = furniture_tables_high_01_10, 
+                    row = furniture_tables_high_01_12,
                 }
             }
             
@@ -42,7 +39,7 @@ module Base
             {
                 layer
                 {
-                    row = furniture_tables_high_01_8 furniture_tables_high_01_9,
+                    row = furniture_tables_high_01_13,
                 }
             }
           
@@ -50,17 +47,17 @@ module Base
         component CraftRecipe
         {
             timedAction = BuildWallHammer,
-            time = 50,
-            SkillRequired = Woodwork:5,
-            xpAward = Woodwork:50,
+            time = 250,
+            SkillRequired = Woodwork:2,
+            xpAward = Woodwork:20,
             category = Tables,
             Tags = Carpentry;Furniture,
             Tooltip = Tooltip_craft_tableDesc,
             inputs
             {
                 item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
-                item 4 [Base.Plank],
-                item 4 [Base.Nails],
+                item 3 [Base.Plank],
+                item 3 [Base.Nails],
             }
         }
     }

@@ -50,7 +50,7 @@ module Base
         component CraftRecipe
         {
             timedAction = BuildWallHammer,
-            time = 50,
+            time = 300,
             SkillRequired = Woodwork:5,
             xpAward = Woodwork:50,
             category = Tables,

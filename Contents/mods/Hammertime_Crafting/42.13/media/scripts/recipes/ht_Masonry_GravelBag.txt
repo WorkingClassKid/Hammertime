@@ -1,0 +1,28 @@
+module Base {
+
+    /* 
+    *  Make Gravel Bag
+    *  htMakeGravelBag
+    */ 
+    
+ 
+    craftRecipe htMakeGravelBag
+    {
+        timedAction = MakingElectrical,
+        time = 20,
+        Tags = AnySurfaceCraft,
+        Category = Masonry,
+        xpAward = Masonry:5,
+        AllowBatchCraft = true,
+        inputs
+        {
+			item 1 tags[base:clubhammer] mode:keep flags[MayDegradeLight],
+			item 1 tags[base:burlapbag],
+			item 5 tags[base:stone],
+        }
+        outputs
+        {
+            item 1 Base.Gravelbag,
+        }
+    } 
+}

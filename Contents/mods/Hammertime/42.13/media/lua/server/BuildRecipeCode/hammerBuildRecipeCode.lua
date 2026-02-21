@@ -2,7 +2,6 @@ hammerBuildRecipeCode = hammerBuildRecipeCode or {}
 hammerBuildRecipeCode.GarageDoor = {}
 hammerBuildRecipeCode.WallCabinet = {}
 hammerBuildRecipeCode.WallCabinetCorner = {}
-hammerBuildRecipeCode.Seating = {}
 --
 -- DEBUG: We can inspect the contents of the params variable using this snippet.
 -- Place the snipplet as the first line of any functions in this file and be sure to have PZ debug mode on
@@ -110,7 +109,7 @@ function hammerBuildRecipeCode.GarageDoor.OnCreate(params)
     --htPrint("---- END AFTER SPECIAL OBJECTS ON SQUARE -----")
 
     -- We return objectAlreadyTransmitted = true to tell the vanilla building script (media\lua\server\BuildingObjects\ISBuildIsoEntity.lua (line 784)) 
-    -- that the information as already been sent to the client dans not send the IsoThumpable to the client
+    -- that the information as already been sent to the client and not send the IsoThumpable to the client
     return { objectAlreadyTransmitted = true }
 end
 

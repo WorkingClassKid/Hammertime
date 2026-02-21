@@ -2,26 +2,27 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_htRoundTable
+        entity ES_htFancyTable
 		{
 			LuaWindowClass = ISEntityWindow,
-			DisplayName	= Round Table,
-			Icon = ui_furniture_tables_high_01_14,
+			DisplayName	= Fancy Table,
+			Icon = ui_furniture_tables_high_01_15,
 		}
     }    
     
    /* 
-    *  Round Table
-    *  htRoundTable
-    *  furniture_tables_high_01_14
+    *  Fancy Table
+    *  htFancyTable
+    *  furniture_tables_high_01_12
+    *  furniture_tables_high_01_13
     */ 
     
-    entity htRoundTable
+    entity htFancyTable
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_htRoundTable,
+            entityStyle = ES_htFancyTable,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -30,7 +31,7 @@ module Base
             {
                 layer
                 {
-                    row = furniture_tables_high_01_14,
+                    row = furniture_tables_high_01_15,
                 }
             }
           
@@ -38,9 +39,9 @@ module Base
         component CraftRecipe
         {
             timedAction = BuildWallHammer,
-            time = 50,
+            time = 250,
             SkillRequired = Woodwork:5,
-            xpAward = Woodwork:50,
+            xpAward = Woodwork:30,
             category = Tables,
             Tags = Carpentry;Furniture,
             Tooltip = Tooltip_craft_tableDesc,

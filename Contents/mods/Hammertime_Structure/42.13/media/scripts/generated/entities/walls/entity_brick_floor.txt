@@ -25,7 +25,7 @@ module Base
         {
             timedAction = BuildLowNoTool,
             time = 200,
-            category = Masonry,
+            category = Floors,
             xpAward = Masonry:10,
             Tooltip = Tooltip_craft_brickFloorDesc,
             inputs

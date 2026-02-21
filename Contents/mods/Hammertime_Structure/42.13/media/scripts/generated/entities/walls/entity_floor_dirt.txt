@@ -25,7 +25,7 @@ module Base
         {
             timedAction = EmptyBag,
             time = 100,
-            category = Outdoors,
+            category = Floors,
             Tooltip = Tooltip_craft_dirtFloorDesc,
             inputs
             {

@@ -2,47 +2,35 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_htLargeOakTable
+        entity ES_htOakRoundTable
 		{
 			LuaWindowClass = ISEntityWindow,
-			DisplayName	= Large Oak Table,
-			Icon = ui_furniture_tables_high_01_32,
+			DisplayName	= Oak Round Table,
+			Icon = ui_furniture_tables_high_01_6,
 		}
     }    
     
    /* 
-    *  Large Oak Table
-    *  htLargeOakTable
-    *  furniture_tables_high_01_32
-    *  furniture_tables_high_01_33
-    *  furniture_tables_high_01_34
-    *  furniture_tables_high_01_35
+    *  Oak Round Table
+    *  htOakRoundTable
+    *  furniture_tables_high_01_6
     */ 
     
-    entity htLargeOakTable
+    entity htOakRoundTable
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_htLargeOakTable,
+            entityStyle = ES_htOakRoundTable,
             uiEnabled = false,
         }
         component SpriteConfig
         {
-            face E
+            face SINGLE
             {
                 layer
                 {
-                    row = furniture_tables_high_01_33,
-                    row = furniture_tables_high_01_32, 
-                }
-            }
-            
-            face S
-            {
-                layer
-                {
-                    row = furniture_tables_high_01_34 furniture_tables_high_01_35,
+                    row = furniture_tables_high_01_6,
                 }
             }
           
@@ -50,7 +38,7 @@ module Base
         component CraftRecipe
         {
             timedAction = BuildWallHammer,
-            time = 50,
+            time = 300,
             SkillRequired = Woodwork:5,
             xpAward = Woodwork:50,
             category = Tables,

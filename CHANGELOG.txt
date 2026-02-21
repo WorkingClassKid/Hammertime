@@ -1,4 +1,46 @@
 ********************
+2026-02-21
+********************
+Hammertime
+------------------
+= NEW =
+- Added prison cell door frame from location_community_police_01 to the hammertime tileset ht_vanilla_location_community_police_01 because they are not configured as a door frame by default.
+
+Hammertime_Crafting
+------------------
+= NEW =
+- Make Gravel Bag
+
+Hammertime_Furniture
+------------------
+= NEW =
+- Dark Console Table
+- Fancy Table
+- Light Console Table
+- Wooden Console Table
+
+Hammertime_Structure
+------------------
+= NEW =
+- Cobblestone W/ Moss 1
+- Cobblestone W/ Moss 2
+- Cobblestone W/ Moss 3
+- Cobblestone W/ Moss 4
+- Prison Cell Wall
+- Prison Cell Door
+- Prison Cell Window
+
+= TWEAKS =
+- Moved vanilla Tile Floor from Masonry to Floors category
+- Moved vanilla Dirt Floor from Outdoor to Floors category
+- Moved vanilla Gravel Floor from Outdoor to Floors category
+- Moved vanilla Sand Floor from Outdoor to Floors category
+
+Other
+------------------
+- Updated representative pictures for udpated sub-mods to showcase new items/features on the workshop.
+
+********************
 2026-02-18
 ********************
 

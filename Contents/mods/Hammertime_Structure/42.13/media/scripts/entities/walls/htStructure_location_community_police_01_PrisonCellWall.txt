@@ -1,0 +1,232 @@
+module Base
+{
+    	xuiSkin default
+	{
+        
+        entity ES_htPrisonCellWall
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Prison Cell Wall,
+			Icon = ui_location_community_police_01_0,
+		}       
+		entity ES_htPrisonCellWallPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Prison Cell Wall Pole,
+			Icon = ui_location_community_police_01_3,
+		}         
+        entity ES_htPrisonCellWallDoorFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Prison Cell Wall Door Frame,
+			Icon = ui_location_community_police_01_10,
+		}  
+		entity ES_htPrisonCellWallCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Prison Cell Wall Corner,
+			Icon = ui_location_community_police_01_2,
+		}  
+
+    }
+    
+    /* 
+    *  Prison Cell Wall
+    *  htPrisonCellWall
+    *  location_community_police_01_0
+    *  location_community_police_01_1
+    *  location_community_police_01_3
+    */ 
+    
+    entity htPrisonCellWall
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htPrisonCellWall,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 1000
+            skillBaseHealth = 50,
+            isThumpable = true,
+            LogicClass = WoodenWall,
+            BreakSound = ZombieThumpWoodCollapse,
+            face W
+            {
+                layer
+                {
+                    row = location_community_police_01_0,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = location_community_police_01_1,
+                }
+            }
+            corner = location_community_police_01_3,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallMetal,
+            time = 400,
+            category = Walls,
+            SkillRequired = MetalWelding:4,
+            xpAward = MetalWelding:10,
+            Tooltip = Tooltip_ht_PrisonCellWalls,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 6 [Base.MetalBar],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+        
+    /* 
+    *  Prison Cell Wall Pole 
+    *  htPrisonCellWallPole
+    *  location_community_police_01_3
+    */
+    
+    entity htPrisonCellWallPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htPrisonCellWallPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 1000,
+            isPole = true,
+            face SINGLE
+            {
+                layer
+                {
+                    row = location_community_police_01_3,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Walls_Pole,
+            SkillRequired = MetalWelding:3,
+            xpAward = MetalWelding:10,
+            Tooltip = Tooltip_ht_WallPole,
+            inputs
+            {
+                item 1 [Base.BlowTorch] flags[DontRecordInput],
+                item 1 [Base.MetalBar],
+                item 1 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Prison Cell Wall Door Frame
+    *  htPrisonCellWallDoorFrame
+    *  location_community_police_01_10
+    *  location_community_police_01_11
+    *  location_community_police_01_3
+    */ 
+    
+    entity htPrisonCellWallDoorFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htPrisonCellWallDoorFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 1000,
+            skillBaseHealth = 50,
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = ht_vanilla_location_community_police_01_0,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = ht_vanilla_location_community_police_01_1,
+                }
+            }
+            corner = location_community_police_01_3,           
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 400,
+            category = Walls_Door_Frame,
+            SkillRequired = MetalWelding:4,
+            xpAward = MetalWelding:20,
+            Tooltip = Tooltip_ht_PrisonCellWalls,
+            inputs
+            {
+                item 1 [Base.BlowTorch] flags[DontRecordInput],
+                item 4 [Base.MetalBar],
+                item 1 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+        /* 
+    *  Prison Cell Wall Corner
+    *  htPrisonCellWallCorner
+    *  location_community_police_01_2
+    */ 
+    
+    entity htPrisonCellWallCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htPrisonCellWallCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 1000,
+            skillBaseHealth = 50,
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face SINGLE
+            {
+                layer
+                {
+                    row = location_community_police_01_2,
+                }
+            }        
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 400,
+            category = Walls,
+            SkillRequired = MetalWelding:4,
+            xpAward = MetalWelding:20,
+            Tooltip = Tooltip_ht_GarageDoor,
+            inputs
+            {
+                item 1 [Base.BlowTorch] flags[DontRecordInput],
+                item 7 [Base.MetalBar],
+                item 1 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+/* END BASE */
+}    

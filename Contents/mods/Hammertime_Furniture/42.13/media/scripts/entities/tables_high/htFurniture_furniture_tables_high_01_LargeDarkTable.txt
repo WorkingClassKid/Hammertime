@@ -2,29 +2,29 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_htLargeDarkWoodenTable
+        entity ES_htLargeDarkTable
 		{
 			LuaWindowClass = ISEntityWindow,
-			DisplayName	= Large Dark Wooden Table,
-			Icon = ui_furniture_tables_high_01_30,
+			DisplayName	= Large Dark Table,
+			Icon = ui_furniture_tables_high_01_17,
 		}
     }    
     
    /* 
-    *  Large Dark Wooden Table
-    *  htLargeDarkWoodenTable
-    *  furniture_tables_high_01_40
-    *  furniture_tables_high_01_41
-    *  furniture_tables_high_01_42
-    *  furniture_tables_high_01_43
+    *  Large Dark Table
+    *  htLargeDarkTable
+    *  furniture_tables_high_01_17
+    *  furniture_tables_high_01_18
+    *  furniture_tables_high_01_19
+    *  furniture_tables_high_01_20
     */ 
     
-    entity htLargeDarkWoodenTable
+    entity htLargeDarkTable
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_htLargeDarkWoodenTable,
+            entityStyle = ES_htLargeDarkTable,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -33,8 +33,8 @@ module Base
             {
                 layer
                 {
-                    row = furniture_tables_high_01_43,
-                    row = furniture_tables_high_01_42, 
+                    row = furniture_tables_high_01_18,
+                    row = furniture_tables_high_01_17, 
                 }
             }
             
@@ -42,7 +42,7 @@ module Base
             {
                 layer
                 {
-                    row = furniture_tables_high_01_40 furniture_tables_high_01_41,
+                    row = furniture_tables_high_01_19 furniture_tables_high_01_20,
                 }
             }
           
@@ -50,7 +50,7 @@ module Base
         component CraftRecipe
         {
             timedAction = BuildWallHammer,
-            time = 50,
+            time = 300,
             SkillRequired = Woodwork:5,
             xpAward = Woodwork:50,
             category = Tables,
