@@ -1,0 +1,99 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htBlackFrameDoubleBed
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Black Frame Double Bed,
+			Icon = ui_furniture_bedding_01_4,
+		}
+    }    
+    
+   /* 
+    *  Black Frame Double Bed
+    *  htBlackFrameDoubleBed
+    *  furniture_bedding_01_4
+    *  furniture_bedding_01_5
+    *  furniture_bedding_01_6
+    *  furniture_bedding_01_7
+    *  furniture_bedding_01_12
+    *  furniture_bedding_01_13
+    *  furniture_bedding_01_14
+    *  furniture_bedding_01_15
+    *  furniture_bedding_01_72
+    *  furniture_bedding_01_73
+    *  furniture_bedding_01_74
+    *  furniture_bedding_01_75
+    *  furniture_bedding_01_80
+    *  furniture_bedding_01_81
+    *  furniture_bedding_01_82
+    *  furniture_bedding_01_83
+    */ 
+    
+    entity htBlackFrameDoubleBed
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBlackFrameDoubleBed,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = furniture_bedding_01_14 furniture_bedding_01_15,
+                    row = furniture_bedding_01_12 furniture_bedding_01_13, 
+                }
+            }
+            
+            face N
+            {
+                layer
+                {
+                    row = furniture_bedding_01_5 furniture_bedding_01_7,
+                    row = furniture_bedding_01_4 furniture_bedding_01_6, 
+                }
+            }
+            
+            face W
+            {
+                layer
+                {
+                    row = furniture_bedding_01_82 furniture_bedding_01_83,
+                    row = furniture_bedding_01_80 furniture_bedding_01_81, 
+                }
+            }
+            
+            face S
+            {
+                layer
+                {
+                    row = furniture_bedding_01_73 furniture_bedding_01_75,
+                    row = furniture_bedding_01_72 furniture_bedding_01_74, 
+                }
+            }
+          
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            SkillRequired = Woodwork:8,
+            xpAward = Woodwork:50,
+            category = Beds,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_bedDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 8 [Base.Plank],
+                item 6 [Base.Nails],
+                item 1 [Base.Mattress],
+            }
+        }
+    }
+}

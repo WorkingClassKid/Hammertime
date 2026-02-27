@@ -2,29 +2,29 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_htDarkOakTable
+        entity ES_htFancyLongWoodenLowTable
 		{
 			LuaWindowClass = ISEntityWindow,
-			DisplayName	= Dark Oak Table,
-			Icon = ui_furniture_tables_high_01_0,
+			DisplayName	= Fancy Long Wooden Low Table,
+			Icon = ui_furniture_tables_low_01_4,
 		}
     }    
     
    /* 
-    *  Dark Oak Table
-    *  htDarkOakTable
-    *  furniture_tables_high_01_0
-    *  furniture_tables_high_01_1
-    *  furniture_tables_high_01_2
-    *  furniture_tables_high_01_3
+    *  Fancy Long Wooden Low Table
+    *  htFancyLongWoodenLowTable
+    *  furniture_tables_low_01_4
+    *  furniture_tables_low_01_5
+    *  furniture_tables_low_01_6
+    *  furniture_tables_low_01_7
     */ 
     
-    entity htDarkOakTable
+    entity htFancyLongWoodenLowTable
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_htDarkOakTable,
+            entityStyle = ES_htFancyLongWoodenLowTable,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -33,8 +33,8 @@ module Base
             {
                 layer
                 {
-                    row = furniture_tables_high_01_3,
-                    row = furniture_tables_high_01_2, 
+                    row = furniture_tables_low_01_7,
+                    row = furniture_tables_low_01_6, 
                 }
             }
             
@@ -42,7 +42,7 @@ module Base
             {
                 layer
                 {
-                    row = furniture_tables_high_01_0 furniture_tables_high_01_1,
+                    row = furniture_tables_low_01_4 furniture_tables_low_01_5,
                 }
             }
           
@@ -51,8 +51,8 @@ module Base
         {
             timedAction = BuildWallHammer,
             time = 300,
-            SkillRequired = Woodwork:5,
-            xpAward = Woodwork:50,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:20,
             category = Tables,
             Tags = Carpentry;Furniture,
             Tooltip = Tooltip_craft_tableDesc,

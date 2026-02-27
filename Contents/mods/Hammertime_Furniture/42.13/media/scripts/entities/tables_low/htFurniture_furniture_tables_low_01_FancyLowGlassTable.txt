@@ -2,29 +2,29 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_htDarkOakTable
+        entity ES_htFancyLowGlassTable
 		{
 			LuaWindowClass = ISEntityWindow,
-			DisplayName	= Dark Oak Table,
-			Icon = ui_furniture_tables_high_01_0,
+			DisplayName	= Fancy Low Glass Table,
+			Icon = ui_furniture_tables_low_01_8,
 		}
     }    
     
    /* 
-    *  Dark Oak Table
-    *  htDarkOakTable
-    *  furniture_tables_high_01_0
-    *  furniture_tables_high_01_1
-    *  furniture_tables_high_01_2
-    *  furniture_tables_high_01_3
+    *  Fancy Low Glass Table
+    *  htFancyLowGlassTable
+    *  furniture_tables_low_01_8
+    *  furniture_tables_low_01_9
+    *  furniture_tables_low_01_10
+    *  furniture_tables_low_01_11
     */ 
     
-    entity htDarkOakTable
+    entity htFancyLowGlassTable
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_htDarkOakTable,
+            entityStyle = ES_htFancyLowGlassTable,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -33,8 +33,8 @@ module Base
             {
                 layer
                 {
-                    row = furniture_tables_high_01_3,
-                    row = furniture_tables_high_01_2, 
+                    row = furniture_tables_low_01_11,
+                    row = furniture_tables_low_01_10, 
                 }
             }
             
@@ -42,7 +42,7 @@ module Base
             {
                 layer
                 {
-                    row = furniture_tables_high_01_0 furniture_tables_high_01_1,
+                    row = furniture_tables_low_01_8 furniture_tables_low_01_9,
                 }
             }
           
@@ -51,7 +51,7 @@ module Base
         {
             timedAction = BuildWallHammer,
             time = 300,
-            SkillRequired = Woodwork:5,
+            SkillRequired = Woodwork:7,
             xpAward = Woodwork:50,
             category = Tables,
             Tags = Carpentry;Furniture,
@@ -59,8 +59,9 @@ module Base
             inputs
             {
                 item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
-                item 4 [Base.Plank],
-                item 4 [Base.Nails],
+                item 2 [Base.GlassPanel],
+                item 3 [Base.Plank],
+                item 3 [Base.Nails],
             }
         }
     }

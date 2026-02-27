@@ -13,4 +13,5 @@ Recipes_EN = {
     Recipe_htMakeLongWhiteCurtain = "Make Long White Curtain",
     
     Recipe_htMakeGravelBag = "Make Gravel Bag",
+    Recipe_htMakeSandBag = "Make Sand Bag",
 }

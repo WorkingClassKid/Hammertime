@@ -1,4 +1,60 @@
 ********************
+2026-02-27
+********************
+
+Hammertime_Crafting
+------------------
+= NEW =
+- Make Sand Bag
+
+
+Hammertime_Furniture
+------------------
+= NEW =
+- Black Frame Double Bed
+- Black Low Modern Table
+- Brown Low Table
+- Fancy Long Wooden Low Table
+- Fancy Low Table
+- Fancy Low Glass Table
+- Light Low Table
+- Mahogany Double Bed
+- Maple Double Bed
+- White Low Table
+- Wooden Low Table
+
+= TWEAKS = 
+- New category: Beds
+- New category: Garbage_Bins
+- Moved all trash cans to Garbage_Bins category
+- Moved all beds from Furnitures to Beds category
+- Moved vanilla Wooden Table with Drawer from Furnitures to Tables category
+- Moved vanilla Small Wooden Table from Furnitures to Tables category
+
+= FIXES =
+- Fixed display name for Dark Oak Table
+- Updated the image of Blue Single Bed, Simple Bed and Black Frame Single Bed to display it in the same orientation as the others 
+
+
+Hammertime_Storage
+------------------
+= TWEAKS =
+- Moved vanilla Crude Wooden Bookcase from Furnitures to Storage category
+
+
+Hammertime_Structure
+------------------
+= NEW =
+- Metal Fences Double Door
+- Metal Fences Double Door W/ Pole
+
+
+Other
+------------------
+- Updated representative pictures for udpated sub-mods to showcase new items/features on the workshop.
+
+
+********************
 2026-02-21
 ********************
 Hammertime

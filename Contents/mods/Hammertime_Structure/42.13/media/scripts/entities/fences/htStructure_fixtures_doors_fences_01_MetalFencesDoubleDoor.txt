@@ -1,0 +1,89 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htMetalFencesDoubleDoor
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Metal Fences Double Door,
+			Icon = ui_fixtures_doors_fences_01_120,
+		}
+    }    
+    
+    /* 
+    *  Metal Fences Double Door
+    *  htMetalFencesDoubleDoor
+    *  fixtures_doors_fences_01_120
+    *  fixtures_doors_fences_01_121
+    *  fixtures_doors_fences_01_122
+    *  fixtures_doors_fences_01_123
+    *  fixtures_doors_fences_01_124
+    *  fixtures_doors_fences_01_125
+    *  fixtures_doors_fences_01_126
+    *  fixtures_doors_fences_01_127
+    */ 
+    
+    
+    entity htMetalFencesDoubleDoor
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htMetalFencesDoubleDoor,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            skillBaseHealth = 300,
+            dontNeedFrame = true,
+            BreakSound = BreakDoor,
+            face W
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_121,
+                    row = fixtures_doors_fences_01_120,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_122 fixtures_doors_fences_01_123,
+                }
+            }
+            face W_OPEN
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_124 fixtures_doors_fences_01_125,
+                }
+            }
+            face N_OPEN
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_127,
+                    row = fixtures_doors_fences_01_126,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            SkillRequired = MetalWelding:4,
+            xpAward = MetalWelding:50,
+            category = Fences_Door,
+            Tags = Welding;Fences_Low,
+            Tooltip = Tooltip_ht_Fences,
+            inputs
+            {
+                item 3 [Base.BlowTorch] flags[DontRecordInput],
+                item 4 [Base.MetalPipe],
+                item 3 [Base.WeldingRods] flags[DontRecordInput],
+                item 2 [Base.Hinge],
+            }
+        }
+    }
+}

@@ -50,7 +50,7 @@ module Base
             time = 50,
             SkillRequired = MetalWelding:1,
             xpAward = MetalWelding:30,
-            category = Furniture,
+            category = Garbage_Bins,
             Tags = Furniture,
             Tooltip = Tooltip_ht_Trashcans,
             inputs

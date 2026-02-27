@@ -2,29 +2,29 @@ module Base
 {
     	xuiSkin default
 	{       
-        entity ES_htDarkOakTable
+        entity ES_htWoodenLowTable
 		{
 			LuaWindowClass = ISEntityWindow,
-			DisplayName	= Dark Oak Table,
-			Icon = ui_furniture_tables_high_01_0,
+			DisplayName	= Wooden Low Table,
+			Icon = ui_furniture_tables_low_01_0,
 		}
     }    
     
    /* 
-    *  Dark Oak Table
-    *  htDarkOakTable
-    *  furniture_tables_high_01_0
-    *  furniture_tables_high_01_1
-    *  furniture_tables_high_01_2
-    *  furniture_tables_high_01_3
+    *  Wooden Low Table
+    *  htWoodenLowTable
+    *  furniture_tables_low_01_0
+    *  furniture_tables_low_01_1
+    *  furniture_tables_low_01_14
+    *  furniture_tables_low_01_15
     */ 
     
-    entity htDarkOakTable
+    entity htWoodenLowTable
     {
         component UiConfig
         {
             xuiSkin = default,
-            entityStyle = ES_htDarkOakTable,
+            entityStyle = ES_htWoodenLowTable,
             uiEnabled = false,
         }
         component SpriteConfig
@@ -33,8 +33,8 @@ module Base
             {
                 layer
                 {
-                    row = furniture_tables_high_01_3,
-                    row = furniture_tables_high_01_2, 
+                    row = furniture_tables_low_01_1,
+                    row = furniture_tables_low_01_0, 
                 }
             }
             
@@ -42,7 +42,7 @@ module Base
             {
                 layer
                 {
-                    row = furniture_tables_high_01_0 furniture_tables_high_01_1,
+                    row = furniture_tables_low_01_14 furniture_tables_low_01_15,
                 }
             }
           
@@ -51,16 +51,16 @@ module Base
         {
             timedAction = BuildWallHammer,
             time = 300,
-            SkillRequired = Woodwork:5,
-            xpAward = Woodwork:50,
+            SkillRequired = Woodwork:3,
+            xpAward = Woodwork:20,
             category = Tables,
             Tags = Carpentry;Furniture,
             Tooltip = Tooltip_craft_tableDesc,
             inputs
             {
                 item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
-                item 4 [Base.Plank],
-                item 4 [Base.Nails],
+                item 3 [Base.Plank],
+                item 3 [Base.Nails],
             }
         }
     }

@@ -18,7 +18,7 @@ hammerBuildRecipeCode.WallCabinetCorner = {}
 -- hammerBuildRecipeCode.GarageDoor.OnCreate(params)
 --
 -- By default, PZ spawn every structure build by a player using an entities script as an IsoThumpable.
--- Because of this, Garage Doors entities script didn't work "out of the box" because they spawn as IsoThumpable and the game expect and IsoDoor to get it works.
+-- Because of this, Garage Doors entities script didn't work "out of the box" because they spawn as IsoThumpable and the game expect an IsoDoor to get it works.
 -- To get garage doors working, we need to create an IsoDoor for the garage door and be sure that the IsoThumpable is deleted from the square and never sent to the client.
 
 function hammerBuildRecipeCode.GarageDoor.OnCreate(params)
@@ -37,7 +37,7 @@ function hammerBuildRecipeCode.GarageDoor.OnCreate(params)
     -- Debug print the thumpable and the new garageDoor if we are in Debug mode
     htPrint("thumpable variable:", thumpable)
     htPrint("garageDoor variable:", garageDoor)
-    -- Debut print the ModData of garageDoor if we are in Debug mode
+    -- Debug print the ModData of garageDoor if we are in Debug mode
     htPrint("---- garageDoor MODDATA DUMP ----")
         for k, v in pairs(md) do
             htPrint("   ", k, "=", tostring(v))

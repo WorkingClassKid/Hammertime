@@ -1,0 +1,28 @@
+module Base {
+
+    /* 
+    *  Make Sand Bag
+    *  htMakeSandBag
+    */ 
+    
+ 
+    craftRecipe htMakeSandBag
+    {
+        timedAction = MakingElectrical,
+        time = 100,
+        Tags = AnySurfaceCraft,
+        Category = Masonry,
+        xpAward = Masonry:5,
+        AllowBatchCraft = true,
+        inputs
+        {
+			item 1 [Base.Base.Strainer] mode:keep flags[MayDegradeLight],
+			item 1 tags[base:holddirt],
+			item 4 [Base.Dirtbag],
+        }
+        outputs
+        {
+            item 1 Base.Sandbag,
+        }
+    } 
+}
