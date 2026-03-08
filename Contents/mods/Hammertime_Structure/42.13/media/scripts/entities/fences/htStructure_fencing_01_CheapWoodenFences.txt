@@ -68,8 +68,7 @@ module Base
             {
                 item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
                 item 2 [Base.Plank],
-                item 2 [Base.WoodenStick2],
-                item 4 [Base.Nails],
+                item 2 [Base.Nails],
             }
         }
     }
@@ -152,7 +151,6 @@ module Base
             {
                 item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
                 item 3 [Base.Plank],
-                item 3 [Base.WoodenStick2],
                 item 6 [Base.Nails],
             }
         }

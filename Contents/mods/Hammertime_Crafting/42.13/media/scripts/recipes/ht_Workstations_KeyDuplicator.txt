@@ -1,0 +1,37 @@
+module Base
+{
+    craftRecipe htCopyBuildingKey
+    {
+        time = 230,
+        OnCreate = RecipeCodeOnCreate.copyKey,
+        OnTest = hammerCraftRecipeCode.KeyDuplicator.OnTest,
+        Tags = KeyDuplicator,
+        timedAction = Making,
+        inputs
+        {
+            item 1 tags[base:buildingkey] mode:keep,
+            item 1 [Base.Key_Blank] flags[Prop2],
+        }
+        outputs
+        {
+            item 1 Base.Key1,
+        }
+    }
+    craftRecipe htCopyCarKey
+    {
+        time = 230,
+        OnCreate = hammerCraftRecipeCode.CopyCarKey.OnCreate,
+        OnTest = hammerCraftRecipeCode.KeyDuplicator.OnTest,
+        Tags = KeyDuplicator,
+        timedAction = Making,
+        inputs
+        {
+            item 1 tags[base:carkey] mode:keep,
+            item 1 [Base.Key_Blank] flags[Prop2],
+        }
+        outputs
+        {
+            item 1 Base.CarKey,
+        }
+    }
+}

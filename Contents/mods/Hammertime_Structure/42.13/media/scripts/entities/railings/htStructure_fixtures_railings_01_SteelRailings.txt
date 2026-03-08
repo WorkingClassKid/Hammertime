@@ -61,6 +61,7 @@ module Base
             Tooltip = Tooltip_craft_crateDesc,
        inputs
             {
+				item 1 tags[base:weldingmask] mode:keep,
                 item 2 [Base.BlowTorch] flags[DontRecordInput],
                 item 3 [Base.SteelBar],
                 item 2 [Base.ScrapMetal],
@@ -105,6 +106,7 @@ module Base
             Tooltip = Tooltip_craft_crateDesc,
        inputs
             {
+				item 1 tags[base:weldingmask] mode:keep,
                 item 2 [Base.BlowTorch] flags[DontRecordInput],
                 item 4 [Base.SteelBar],
                 item 3 [Base.ScrapMetal],

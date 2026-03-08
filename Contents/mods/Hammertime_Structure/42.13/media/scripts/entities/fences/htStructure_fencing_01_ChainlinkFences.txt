@@ -66,13 +66,12 @@ module Base
         {
             timedAction = BuildWallMetal,
             time = 200,
-            NeedToBeLearn = true,
             category = Fences,
             SkillRequired = MetalWelding:3,
             xpAward = MetalWelding:30,
             Tooltip = Tooltip_ht_Fences,
             inputs
-            {
+            {	item 1 tags[base:weldingmask] mode:keep,
                 item 2 [Base.BlowTorch] flags[DontRecordInput],
                 item 1 [Base.ScrapMetal],
                 item 2 [Base.Wire],
@@ -119,13 +118,13 @@ module Base
         {
             timedAction = BuildWallMetal,
             time = 200,
-            NeedToBeLearn = true,
             category = Fences,
             SkillRequired = MetalWelding:3,
             xpAward = MetalWelding:30,
             Tooltip = Tooltip_craft_BigWiredFenceDesc,
             inputs
             {
+				item 1 tags[base:weldingmask] mode:keep,
                 item 2 [Base.BlowTorch] flags[DontRecordInput],
                 item 2 [Base.MetalPipe],
                 item 2 [Base.ScrapMetal],
@@ -166,13 +165,13 @@ module Base
         {
             timedAction = BuildWallMetal,
             time = 200,
-            NeedToBeLearn = true,
             category = Fences_Pole,
             SkillRequired = MetalWelding:3,
             xpAward = MetalWelding:30,
             Tooltip = Tooltip_craft_BigWiredFenceDesc,
             inputs
             {
+				item 1 tags[base:weldingmask] mode:keep,
                 item 2 [Base.BlowTorch] flags[DontRecordInput],
                 item 2 [Base.MetalPipe],
                 item 2 [Base.WeldingRods] flags[DontRecordInput],
@@ -210,13 +209,13 @@ module Base
         {
             timedAction = BuildWallMetal,
             time = 200,
-            NeedToBeLearn = true,
             category = Fences,
             SkillRequired = MetalWelding:3,
             xpAward = MetalWelding:30,
             Tooltip = Tooltip_craft_BigWiredFenceDesc,
             inputs
             {
+				item 1 tags[base:weldingmask] mode:keep,
                 item 2 [Base.BlowTorch] flags[DontRecordInput],
                 item 3 [Base.MetalPipe],
                 item 2 [Base.ScrapMetal],

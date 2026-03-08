@@ -80,6 +80,7 @@ module Base
             inputs
             {
                 item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[base:weldingmask] mode:keep,
                 item 3 [Base.BlowTorch] flags[DontRecordInput],
                 item 4 [Base.MetalPipe],
                 item 3 [Base.WeldingRods] flags[DontRecordInput],

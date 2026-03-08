@@ -1,0 +1,5 @@
+Tooltip_EN = {
+    Tooltip_ht_KeyDuplicator = "Precision Duplication, Guaranteed Security.",
+    Tooltip_ht_MetalBandSaw = "Cut your metal like a pro!",
+
+}

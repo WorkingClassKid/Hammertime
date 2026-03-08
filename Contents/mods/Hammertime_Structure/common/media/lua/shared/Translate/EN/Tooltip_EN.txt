@@ -11,5 +11,7 @@ Tooltip_EN = {
     
     Tooltip_ht_WindowWalls = "If you see the zombies, they see you too.",
     
-    Tooltip_ht_PrisonCellWalls = "Solid prison cell wall to keep the zombies away."",
+    Tooltip_ht_PrisonCellWalls = "Solid prison cell wall to keep the zombies away.",
+    
+    Tooltip_ht_HESCO_Lvl2 = "Can only be built on top of a HESCO Barriver Lvl 1",
 }

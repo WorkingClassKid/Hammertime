@@ -78,6 +78,7 @@ module Base
             Tooltip = Tooltip_ht_GarageDoor,
             inputs
             {
+				item 1 tags[base:weldingmask] mode:keep,
                 item 4 [Base.BlowTorch] flags[DontRecordInput],
                 item 2 [Base.SheetMetal],
                 item 2 [Base.MetalBar],
@@ -144,6 +145,7 @@ module Base
             Tooltip = Tooltip_ht_GarageDoor,
             inputs
             {
+				item 1 tags[base:weldingmask] mode:keep,
                 item 4 [Base.BlowTorch] flags[DontRecordInput],
                 item 2 [Base.SheetMetal],
                 item 2 [Base.MetalBar],
@@ -207,6 +209,7 @@ module Base
             Tooltip = Tooltip_ht_GarageDoor,
             inputs
             {
+				item 1 tags[base:weldingmask] mode:keep,
                 item 4 [Base.BlowTorch] flags[DontRecordInput],
                 item 2 [Base.SheetMetal],
                 item 2 [Base.MetalBar],

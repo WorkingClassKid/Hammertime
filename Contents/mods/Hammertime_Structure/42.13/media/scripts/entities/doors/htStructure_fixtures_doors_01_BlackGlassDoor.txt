@@ -70,7 +70,8 @@ module Base
             xpAward = Woodwork:70,
             Tooltip = Tooltip_craft_woodenDoorDesc,
             inputs
-            {
+            {	
+				item 1 tags[base:weldingmask] mode:keep,
                 item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
                 item 4 [Base.Plank],
                 item 4 [Base.GlassPanel],

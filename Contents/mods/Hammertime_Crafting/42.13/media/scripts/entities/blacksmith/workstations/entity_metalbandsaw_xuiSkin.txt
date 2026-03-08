@@ -1,0 +1,18 @@
+/*
+* OVERWRITE PZ DEFAULT
+* 
+* - Changed Icon from Item_Hacksaw to ui_industry_02_264 to fit hammertime
+*/
+
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_MetalBandsaw
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = Metal Bandsaw,
+            Icon = ui_industry_02_264,
+        }
+    }
+}

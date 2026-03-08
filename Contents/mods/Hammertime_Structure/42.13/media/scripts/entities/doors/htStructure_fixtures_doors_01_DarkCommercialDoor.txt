@@ -71,6 +71,7 @@ module Base
             Tooltip = Tooltip_craft_metalDoorDesc,
             inputs
             {
+				item 1 tags[base:weldingmask] mode:keep,
                 item 4 [Base.BlowTorch] flags[DontRecordInput],
                 item 3 [Base.SmallSheetMetal],
                 item 4 [Base.WeldingRods] flags[DontRecordInput],

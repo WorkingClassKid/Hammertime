@@ -72,6 +72,7 @@ module Base
             Tooltip = Tooltip_ht_Fences,
             inputs
             {
+				item 1 tags[base:weldingmask] mode:keep,
                 item 2 [Base.BlowTorch] flags[DontRecordInput],
                 item 3 [Base.SteelBar],
                 item 2 [Base.ScrapMetal],

@@ -67,7 +67,7 @@ module Base
             time = 350,
             SkillRequired = MetalWelding:6,
             xpAward = MetalWelding:50,
-            category = Welding,
+            category = Metalworking,
             Tags = Welding,
             Tooltip = Tooltip_craft_barrelOvenDesc,
             inputs

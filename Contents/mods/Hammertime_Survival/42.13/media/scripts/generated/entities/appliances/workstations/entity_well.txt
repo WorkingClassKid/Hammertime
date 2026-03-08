@@ -1,0 +1,65 @@
+/*
+* OVERWRITE PZ DEFAULT
+* 
+* - Added a CraftRecipe for the Well
+*/
+
+module Base
+{
+    entity Well
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_Well,
+            uiEnabled = false,
+        }
+        component FluidContainer
+        {
+            ContainerName = Well,
+            Capacity = 10000.0,
+            RainFactor = 0.1,
+            FillsWithCleanWater = true,
+            HiddenAmount = true,
+            InitialPercentMin = 0.2,
+            InitialPercentMax = 1.0,
+            Fluids
+            {
+                fluid = Water:1.0,
+            }
+            whitelist
+            {
+                fluid = Water,
+            }
+        }
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = camping_01_16,
+                }
+            }
+        }
+       component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 550,
+            SkillRequired = Masonry:6;Woodwork:3,
+            xpAward = Masonry:40;Woodwork:40,
+            category = Outdoors,
+            Tags = Survival;Outdoors,
+            Tooltip = Tooltip_ht_ManualWaterPump,
+            inputs
+            {
+				item 1 [Base.PickAxe] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 15 tags[base:stone],
+                item 3 [Base.WoodenStick2],
+                item 1 tags[base:bucket],
+                item 1 tags[base:rope],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+}

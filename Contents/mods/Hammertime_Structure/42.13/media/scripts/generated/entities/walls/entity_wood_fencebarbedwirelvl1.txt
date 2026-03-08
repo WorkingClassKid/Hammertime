@@ -3,6 +3,7 @@
 * This file is overwritten 
 * See htStructure_fencing_01_BarbedWireFences.txt entities
 */
+
 module Base
 {
     entity BarbedWireFence
@@ -16,20 +17,18 @@ module Base
         component SpriteConfig
         {
 			obsolete = true,
-            health = 100,
-            skillBaseHealth = 20,
             face W
             {
                 layer
                 {
-                    row = overwrite_entity_wood_fencebarbedwirelvl1_4654654654,
+                    row = ht_vanilla_overwrite_fix_01_1,
                 }
             }
             face N
             {
                 layer
                 {
-                    row = fencing_01_210,
+                    row = ht_vanilla_overwrite_fix_01_2,
                 }
             }
         }

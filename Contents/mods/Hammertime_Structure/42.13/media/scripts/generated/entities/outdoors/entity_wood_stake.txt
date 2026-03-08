@@ -20,7 +20,7 @@ module Base
             {
                 layer
                 {
-                    row = overwrite_entity_wood_stake_6546513,
+                    row = ht_vanilla_overwrite_fix_01_3,
                 }
             }
         }

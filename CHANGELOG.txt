@@ -1,4 +1,61 @@
 ********************
+2026-03-08
+********************
+
+Hammertime
+------------------
+= TWEAKS =
+- New category: Metalworking
+- Updated some tiles definitions
+- Added the vanilla key duplicator to the hammertime tileset to modify the BlockPlacement=true to BlockPlacement=false
+- Added the vanilla HESCO Barriers to the hammertime tileset in ht_vanilla_fencing_01
+
+
+Hammertime_Crafting
+------------------
+= NEW =
+- Copy Car Key (using a key duplicator)
+- Copy House Key (using a key duplicator)
+- Metal Bandsaw
+- Key Duplicator
+
+
+Hammertime_Structure
+------------------
+= NEW =
+- Concrete High Fences
+- Fancy Wooden High Fences
+- Wooden High Fences
+- Sand HESCO Barrier
+- Gravel HESCO Barrier
+- Dirt HESCO Barrier
+
+= BALANCE =
+- Updated the recipe for Cheap Wooden Fences
+- Added Welding Mask as a requirement in many recipes
+
+= FIXES =
+- Invalid SpriteConfig object! scripted object = BarbedWireFence (https://discordapp.com/channels/1472249520263008277/1472666091523412162)
+- Invalid SpriteConfig object! scripted object = WoodStake (https://discordapp.com/channels/1472249520263008277/1472666091523412162)
+
+
+Hammertime_Survival
+------------------
+= NEW =
+- Water Well
+
+= TWEAKS =
+- Metal Wood Stove moved from Welding category to Metalworking
+- Metal Barrel Oven moved from Welding category to Metalworking
+
+
+Other
+------------------
+- Updated representative pictures for udpated sub-mods to showcase new items/features on the workshop.
+
+
+
+********************
 2026-02-27
 ********************
 
