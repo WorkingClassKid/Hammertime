@@ -30,7 +30,7 @@ Hammertime is __not compatible with other construction mods__, since at some poi
 
 However, Hammertime should be compatible with all other mods that are not related to construction.
 
-Tested on Tested on B42.14.0 SP/MP, B42.13.2 SP/MP
+Tested on B42.15 SP/MP
 
 ## Special Request
 
