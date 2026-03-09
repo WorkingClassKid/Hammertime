@@ -1,0 +1,598 @@
+tileset
+{
+    file = location_military_generic_01
+    size = 8,16
+    id = 190
+    // location_military_generic_01_0
+    tile
+    {
+        xy = 0,0
+        BlocksPlacement = 
+        ContainerCapacity = 50
+        ContainerPosition = Low
+        CustomName = Crate
+        GroupName = Military
+        IsLow = 
+        IsMoveAble = 
+        IsStackable = 
+        IsTable = 
+        PickUpWeight = 75
+        Surface = 32
+        container = militarycrate
+        solidtrans = 
+    }
+    // location_military_generic_01_1
+    tile
+    {
+        xy = 1,0
+        BlocksPlacement = 
+        ContainerCapacity = 50
+        ContainerPosition = Low
+        CustomName = Crate
+        GroupName = Military
+        IsLow = 
+        IsMoveAble = 
+        IsStackable = 
+        IsTable = 
+        PickUpWeight = 75
+        Surface = 32
+        container = militarycrate
+        solidtrans = 
+    }
+    // location_military_generic_01_2
+    tile
+    {
+        xy = 2,0
+        BlocksPlacement = 
+        ContainerCapacity = 50
+        CustomName = Crate
+        GroupName = Military
+        IsLow = 
+        IsMoveAble = 
+        IsTable = 
+        MaterialType = Metal
+        PickUpWeight = 75
+        StackReplaceTileOffset = -2
+        Surface = 64
+        container = militarycrate
+        solidtrans = 
+    }
+    // location_military_generic_01_3
+    tile
+    {
+        xy = 3,0
+        BlocksPlacement = 
+        ContainerCapacity = 50
+        CustomName = Crate
+        GroupName = Military
+        IsLow = 
+        IsMoveAble = 
+        IsTable = 
+        MaterialType = Metal
+        PickUpWeight = 75
+        StackReplaceTileOffset = -2
+        Surface = 64
+        container = militarycrate
+        solidtrans = 
+    }
+    // location_military_generic_01_4
+    tile
+    {
+        xy = 4,0
+        BlocksPlacement = 
+        ContainerCapacity = 50
+        ContainerPosition = High
+        CustomName = Crate
+        GroupName = Military
+        IsLow = 
+        IsMoveAble = 
+        IsTable = 
+        PickUpWeight = 75
+        StackReplaceTileOffset = -4
+        Surface = 96
+        container = militarycrate
+        solidtrans = 
+    }
+    // location_military_generic_01_5
+    tile
+    {
+        xy = 5,0
+        BlocksPlacement = 
+        ContainerCapacity = 50
+        ContainerPosition = High
+        CustomName = Crate
+        GroupName = Military
+        IsLow = 
+        IsMoveAble = 
+        IsTable = 
+        PickUpWeight = 75
+        StackReplaceTileOffset = -4
+        Surface = 96
+        container = militarycrate
+        solidtrans = 
+    }
+    // location_military_generic_01_6
+    tile
+    {
+        xy = 6,0
+        BlocksPlacement = 
+        CanScrap = 
+        CustomItem = Base.Mov_LightGreenBarrel
+        CustomName = Barrel
+        Facing = N
+        GroupName = Light Green
+        IsLow = 
+        IsMoveAble = 
+        ItemHeight = 30
+        Material = MetalScrap
+        PickUpWeight = 150
+        solidtrans = 
+    }
+    // location_military_generic_01_7
+    tile
+    {
+        xy = 7,0
+        BlocksPlacement = 
+        CanScrap = 
+        CustomItem = Base.Mov_LightGreenBarrel
+        CustomName = Barrel
+        Facing = S
+        GroupName = Light Green
+        IsLow = 
+        IsMoveAble = 
+        ItemHeight = 30
+        Material = MetalScrap
+        PickUpWeight = 150
+        solidtrans = 
+    }
+    // location_military_generic_01_8
+    tile
+    {
+        xy = 0,1
+        BlocksPlacement = 
+        ContainerCapacity = 75
+        ContainerPosition = Low
+        CustomName = Crate
+        GroupName = Military
+        IsLow = 
+        IsMoveAble = 
+        IsStackable = 
+        IsTable = 
+        PickUpWeight = 75
+        Surface = 32
+        container = militarycrate
+        solidtrans = 
+    }
+    // location_military_generic_01_9
+    tile
+    {
+        xy = 1,1
+        BlocksPlacement = 
+        ContainerCapacity = 75
+        ContainerPosition = Low
+        CustomName = Crate
+        GroupName = Military
+        IsLow = 
+        IsMoveAble = 
+        IsStackable = 
+        IsTable = 
+        PickUpWeight = 75
+        Surface = 32
+        container = militarycrate
+        solidtrans = 
+    }
+    // location_military_generic_01_10
+    tile
+    {
+        xy = 2,1
+        BlocksPlacement = 
+        ContainerCapacity = 75
+        CustomName = Crate
+        GroupName = Military
+        IsLow = 
+        IsMoveAble = 
+        IsTable = 
+        MaterialType = Metal
+        PickUpWeight = 75
+        StackReplaceTileOffset = -2
+        Surface = 64
+        container = militarycrate
+        solidtrans = 
+    }
+    // location_military_generic_01_11
+    tile
+    {
+        xy = 3,1
+        BlocksPlacement = 
+        ContainerCapacity = 50
+        CustomName = Crate
+        GroupName = Military
+        IsLow = 
+        IsMoveAble = 
+        IsTable = 
+        MaterialType = Metal
+        PickUpWeight = 75
+        StackReplaceTileOffset = -2
+        Surface = 64
+        container = militarycrate
+        solidtrans = 
+    }
+    // location_military_generic_01_12
+    tile
+    {
+        xy = 4,1
+        BlocksPlacement = 
+        ContainerCapacity = 50
+        ContainerPosition = High
+        CustomName = Crate
+        GroupName = Military
+        IsLow = 
+        IsMoveAble = 
+        IsTable = 
+        PickUpWeight = 75
+        StackReplaceTileOffset = -4
+        Surface = 96
+        container = militarycrate
+        solidtrans = 
+    }
+    // location_military_generic_01_13
+    tile
+    {
+        xy = 5,1
+        BlocksPlacement = 
+        ContainerCapacity = 50
+        ContainerPosition = High
+        CustomName = Crate
+        GroupName = Military
+        IsLow = 
+        IsMoveAble = 
+        IsTable = 
+        PickUpWeight = 75
+        StackReplaceTileOffset = -4
+        Surface = 96
+        container = militarycrate
+        solidtrans = 
+    }
+    // location_military_generic_01_14
+    tile
+    {
+        xy = 6,1
+        BlocksPlacement = 
+        CanScrap = 
+        CustomItem = Base.Mov_DarkGreenBarrel
+        CustomName = Barrel
+        Facing = N
+        GroupName = Dark Green
+        IsLow = 
+        IsMoveAble = 
+        ItemHeight = 30
+        Material = MetalScrap
+        PickUpWeight = 150
+        solidtrans = 
+    }
+    // location_military_generic_01_15
+    tile
+    {
+        xy = 7,1
+        BlocksPlacement = 
+        CanScrap = 
+        CustomItem = Base.Mov_DarkGreenBarrel
+        CustomName = Barrel
+        Facing = S
+        GroupName = Dark Green
+        IsLow = 
+        IsMoveAble = 
+        ItemHeight = 30
+        Material = MetalScrap
+        PickUpWeight = 150
+        solidtrans = 
+    }
+    // location_military_generic_01_16
+    tile
+    {
+        xy = 0,2
+        AttachedToGlass = 
+        CustomName = Sign
+        Facing = S
+        ForceSingleItem = 
+        GroupName = Army Property
+        IsMoveAble = 
+        MoveType = WallObject
+        PickUpWeight = 10
+        SpriteGridPos = 0,0
+    }
+    // location_military_generic_01_17
+    tile
+    {
+        xy = 1,2
+        AttachedToGlass = 
+        CustomName = Sign
+        Facing = S
+        ForceSingleItem = 
+        GroupName = Army Property
+        IsMoveAble = 
+        MoveType = WallObject
+        PickUpWeight = 10
+        SpriteGridPos = 1,0
+    }
+    // location_military_generic_01_18
+    tile
+    {
+        xy = 2,2
+        AttachedToGlass = 
+        CustomName = Sign
+        Facing = S
+        GroupName = Property
+        IsMoveAble = 
+        MoveType = WallObject
+        PickUpWeight = 10
+    }
+    // location_military_generic_01_19
+    tile
+    {
+        xy = 3,2
+        AttachedToGlass = 
+        CustomName = Sign
+        Facing = S
+        ForceSingleItem = 
+        GroupName = Restricted Area
+        IsMoveAble = 
+        MoveType = WallObject
+        PickUpWeight = 10
+        SpriteGridPos = 0,0
+    }
+    // location_military_generic_01_20
+    tile
+    {
+        xy = 4,2
+        AttachedToGlass = 
+        CustomName = Sign
+        Facing = S
+        ForceSingleItem = 
+        GroupName = Restricted Area
+        IsMoveAble = 
+        MoveType = WallObject
+        PickUpWeight = 10
+        SpriteGridPos = 1,0
+    }
+    // location_military_generic_01_21
+    tile
+    {
+        xy = 5,2
+        AttachedToGlass = 
+        CustomName = Sign
+        Facing = S
+        GroupName = Warning
+        IsMoveAble = 
+        MoveType = WallObject
+        PickUpWeight = 10
+    }
+    // location_military_generic_01_22
+    tile
+    {
+        xy = 6,2
+        BlocksPlacement = 
+        CanScrap = 
+        CustomName = Locker
+        Facing = S
+        GroupName = Military
+        IsMoveAble = 
+        ItemHeight = 90
+        Material = MetalPlates
+        Material2 = MetalScrap
+        MaterialType = Metal
+        PickUpTool = Crowbar
+        PickUpWeight = 200
+        PlaceTool = Hammer
+        container = militarylocker
+        solidtrans = 
+    }
+    // location_military_generic_01_23
+    tile
+    {
+        xy = 7,2
+        BlocksPlacement = 
+        CanScrap = 
+        CustomName = Locker
+        Facing = E
+        GroupName = Military
+        IsMoveAble = 
+        ItemHeight = 90
+        Material = MetalPlates
+        Material2 = MetalScrap
+        MaterialType = Metal
+        PickUpTool = Crowbar
+        PickUpWeight = 200
+        PlaceTool = Hammer
+        container = militarylocker
+        solidtrans = 
+    }
+    // location_military_generic_01_24
+    tile
+    {
+        xy = 0,3
+        AttachedToGlass = 
+        CustomName = Sign
+        Facing = E
+        ForceSingleItem = 
+        GroupName = Army Property
+        IsMoveAble = 
+        MoveType = WallObject
+        PickUpWeight = 10
+        SpriteGridPos = 0,1
+    }
+    // location_military_generic_01_25
+    tile
+    {
+        xy = 1,3
+        AttachedToGlass = 
+        CustomName = Sign
+        Facing = E
+        ForceSingleItem = 
+        GroupName = Army Property
+        IsMoveAble = 
+        MoveType = WallObject
+        PickUpWeight = 10
+        SpriteGridPos = 0,0
+    }
+    // location_military_generic_01_26
+    tile
+    {
+        xy = 2,3
+        AttachedToGlass = 
+        CustomName = Sign
+        Facing = E
+        GroupName = Property
+        IsMoveAble = 
+        MoveType = WallObject
+        PickUpWeight = 10
+    }
+    // location_military_generic_01_27
+    tile
+    {
+        xy = 3,3
+        AttachedToGlass = 
+        CustomName = Sign
+        Facing = E
+        ForceSingleItem = 
+        GroupName = Restricted Area
+        IsMoveAble = 
+        MoveType = WallObject
+        PickUpWeight = 10
+        SpriteGridPos = 0,1
+    }
+    // location_military_generic_01_28
+    tile
+    {
+        xy = 4,3
+        AttachedToGlass = 
+        CustomName = Sign
+        Facing = E
+        ForceSingleItem = 
+        GroupName = Restricted Area
+        IsMoveAble = 
+        MoveType = WallObject
+        PickUpWeight = 10
+        SpriteGridPos = 0,0
+    }
+    // location_military_generic_01_29
+    tile
+    {
+        xy = 5,3
+        AttachedToGlass = 
+        CustomName = Sign
+        Facing = E
+        GroupName = Warning
+        IsMoveAble = 
+        MoveType = WallObject
+        PickUpWeight = 10
+    }
+    // location_military_generic_01_30
+    tile
+    {
+        xy = 6,3
+        BlocksPlacement = 
+        CanScrap = 
+        CustomName = Locker
+        Facing = N
+        GroupName = Military
+        IsMoveAble = 
+        ItemHeight = 90
+        Material = MetalPlates
+        Material2 = MetalScrap
+        MaterialType = Metal
+        PickUpTool = Crowbar
+        PickUpWeight = 200
+        PlaceTool = Hammer
+        container = militarylocker
+        solidtrans = 
+    }
+    // location_military_generic_01_31
+    tile
+    {
+        xy = 7,3
+        BlocksPlacement = 
+        CanScrap = 
+        CustomName = Locker
+        Facing = W
+        GroupName = Military
+        IsMoveAble = 
+        ItemHeight = 90
+        Material = MetalPlates
+        Material2 = MetalScrap
+        MaterialType = Metal
+        PickUpTool = Crowbar
+        PickUpWeight = 200
+        PlaceTool = Hammer
+        container = militarylocker
+        solidtrans = 
+    }
+    // location_military_generic_01_64
+    tile
+    {
+        xy = 0,8
+        MaterialType = Metal
+    }
+    // location_military_generic_01_65
+    tile
+    {
+        xy = 1,8
+        MaterialType = Metal
+    }
+    // location_military_generic_01_66
+    tile
+    {
+        xy = 2,8
+        MaterialType = Metal
+    }
+    // location_military_generic_01_67
+    tile
+    {
+        xy = 3,8
+        MaterialType = Metal
+    }
+    // location_military_generic_01_68
+    tile
+    {
+        xy = 4,8
+        CustomName = Target
+        Facing = S
+        GroupName = Silhouette
+        IsMoveAble = 
+        MoveType = WallObject
+        PickUpWeight = 10
+    }
+    // location_military_generic_01_69
+    tile
+    {
+        xy = 5,8
+        CustomName = Target
+        Facing = S
+        GroupName = Circular
+        IsMoveAble = 
+        MoveType = WallObject
+        PickUpWeight = 10
+    }
+    // location_military_generic_01_70
+    tile
+    {
+        xy = 6,8
+        CustomName = Target
+        Facing = E
+        GroupName = Silhouette
+        IsMoveAble = 
+        MoveType = WallObject
+        PickUpWeight = 10
+    }
+    // location_military_generic_01_71
+    tile
+    {
+        xy = 7,8
+        CustomName = Target
+        Facing = E
+        GroupName = Circular
+        IsMoveAble = 
+        MoveType = WallObject
+        PickUpWeight = 10
+    }
+}

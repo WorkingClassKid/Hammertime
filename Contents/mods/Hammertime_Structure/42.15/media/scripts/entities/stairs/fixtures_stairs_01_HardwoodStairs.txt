@@ -1,0 +1,71 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_htHardwoodStairs
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Hardwood Stairs,
+			Icon		= ui_fixtures_stairs_01_16,
+		}
+	}
+    
+    /* 
+    *  Hardwood Stairs
+    *  htHardwoodStairs
+    *  fixtures_stairs_01_16
+    *  fixtures_stairs_01_17
+    *  fixtures_stairs_01_18
+    *  fixtures_stairs_01_24
+    *  fixtures_stairs_01_25
+    *  fixtures_stairs_01_26
+    */ 
+    
+    entity htHardwoodStairs
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htHardwoodStairs,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            OnCreate = BuildRecipeCode.stairs.OnCreate,
+            OnIsValid = BuildRecipeCode.stairs.OnIsValid,
+            health = 150,
+            skillBaseHealth = 50,
+            face S
+            {
+                layer
+                {
+                    row = fixtures_stairs_01_18 fixtures_stairs_01_17 fixtures_stairs_01_16,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = fixtures_stairs_01_26,
+                    row = fixtures_stairs_01_25,
+                    row = fixtures_stairs_01_24,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            SkillRequired = Woodwork:8,
+            xpAward = Woodwork:60,
+            category = Stairs,
+            Tooltip = Tooltip_craft_stairsDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 13 [Base.Plank],
+                item 8 [Base.Nails],
+            }
+        }
+    }
+}

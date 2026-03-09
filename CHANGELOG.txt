@@ -1,6 +1,16 @@
 ********************
-2026-03-08
+2026-03-09
 ********************
+- Updated sub-mods to PZ 42.15.
+
+- Support ended for PZ 42.14.x and PZ 42.13.x No more updates will be made for PZ 42.14 and PZ 42.13.
+  Files for 42.13 and 42.14 will remain in the mod for a while to let you continue your current save games.
+  Once these files are removed, you will still be able to manually download the version of your choice via GitHub.
+
+
+************************************************************
+2026-03-08  -- LAST VERSION WITH UPDATES FOR PZ 42.14 / 42.13
+************************************************************
 
 Hammertime
 ------------------

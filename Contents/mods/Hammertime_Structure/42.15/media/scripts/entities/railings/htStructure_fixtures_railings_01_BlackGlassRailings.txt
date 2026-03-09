@@ -1,0 +1,165 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity ES_htBlackGlassRailings
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Black Glass Railings,
+			Icon = ui_walls_commercial_01_28,
+		}       
+		entity ES_htBlackGlassRailingsSmallPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Black Glass Railings Small Pole,
+			Icon = ui_walls_commercial_01_31,
+		}         
+        entity ES_htBlackGlassRailingsCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Black Glass Railings Corner,
+			Icon = ui_walls_commercial_01_30,
+		}  
+    }
+    
+    
+    
+    /* 
+    *  Black Glass Railings
+    *  htBlackGlassRailings
+    *  walls_commercial_01_28
+    *  walls_commercial_01_29
+    *  walls_commercial_01_31
+    */ 
+    
+    entity htBlackGlassRailings
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBlackGlassRailings,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face W
+            {
+                layer
+                {
+                    row = walls_commercial_01_28,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_commercial_01_29,
+                }
+            }
+            corner = walls_commercial_01_31,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Railings,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_ht_Railings,
+            inputs
+            {
+                item 3 [Base.GlassPanel],
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+        
+    /* 
+    *  Black Glass Railings Small Pole
+    *  htBlackGlassRailingsSmallPole
+    *  walls_commercial_01_31
+    */
+    
+    entity htBlackGlassRailingsSmallPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBlackGlassRailingsSmallPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = walls_commercial_01_31,
+                }
+            }            
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Railings_Pole,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_ht_Railings,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Black Glass Railings Corner
+    *  htBlackGlassRailingsCorner
+    *  walls_commercial_01_30
+    */ 
+    
+    entity htBlackGlassRailingsCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBlackGlassRailingsCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = walls_commercial_01_30,
+                }
+            }      
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Railings,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:30,
+            Tooltip = Tooltip_ht_Railings,
+            inputs
+            {
+                item 6 [Base.GlassPanel],
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+    
+    
+/* END BASE */
+}    

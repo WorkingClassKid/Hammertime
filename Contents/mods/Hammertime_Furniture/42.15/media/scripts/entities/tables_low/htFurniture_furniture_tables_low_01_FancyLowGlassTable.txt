@@ -1,0 +1,68 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htFancyLowGlassTable
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Fancy Low Glass Table,
+			Icon = ui_furniture_tables_low_01_8,
+		}
+    }    
+    
+   /* 
+    *  Fancy Low Glass Table
+    *  htFancyLowGlassTable
+    *  furniture_tables_low_01_8
+    *  furniture_tables_low_01_9
+    *  furniture_tables_low_01_10
+    *  furniture_tables_low_01_11
+    */ 
+    
+    entity htFancyLowGlassTable
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htFancyLowGlassTable,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = furniture_tables_low_01_11,
+                    row = furniture_tables_low_01_10, 
+                }
+            }
+            
+            face S
+            {
+                layer
+                {
+                    row = furniture_tables_low_01_8 furniture_tables_low_01_9,
+                }
+            }
+          
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 300,
+            SkillRequired = Woodwork:7,
+            xpAward = Woodwork:50,
+            category = Tables,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_tableDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.GlassPanel],
+                item 3 [Base.Plank],
+                item 3 [Base.Nails],
+            }
+        }
+    }
+}

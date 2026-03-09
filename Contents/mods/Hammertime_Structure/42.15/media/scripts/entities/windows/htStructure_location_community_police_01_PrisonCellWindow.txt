@@ -1,0 +1,68 @@
+module Base
+{
+
+    	xuiSkin default
+	{
+        entity ES_htPrisonCellWindow
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Prison Cell Window,
+			Icon = ui_location_community_police_01_40,
+		}         
+    }
+    
+
+    /* 
+    *  Prison Cell Window
+    *  htPrisonCellWindow
+    *  location_community_police_01_40
+    *  location_community_police_01_41
+    */ 
+    
+    entity htPrisonCellWindow
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htPrisonCellWindow,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+			health = 1000
+            skillBaseHealth = 50,
+            needWindowFrame = true,
+            face W
+            {
+                layer
+                {
+                    row = location_community_police_01_40,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = location_community_police_01_41,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 200,
+            SkillRequired = MetalWelding:4,
+            xpAward = MetalWelding:10,
+            category = Windows,
+            Tags = Carpentry;Window,
+            Tooltip = Tooltip_craft_WindowDesc,
+            inputs
+            {
+				item 1 tags[base:weldingmask] mode:keep,
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 3 [Base.MetalBar],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

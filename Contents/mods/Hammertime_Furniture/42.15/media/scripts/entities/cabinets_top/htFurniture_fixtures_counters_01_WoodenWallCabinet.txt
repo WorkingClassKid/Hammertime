@@ -1,0 +1,83 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htWoodenWallCabinet
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Wooden Wall Cabinet,
+			Icon = ui_ht_vanilla_fixtures_counters_01_top_4,
+		}
+    }    
+    
+   /* 
+    *  Wooden Wall Cabinet
+    *  htWoodenWallCabinet
+    *  ht_vanilla_fixtures_counters_01_top_4
+    *  ht_vanilla_fixtures_counters_01_top_5
+    *  ht_vanilla_fixtures_counters_01_top_6
+    *  ht_vanilla_fixtures_counters_01_top_7
+    */ 
+    
+    
+    entity htWoodenWallCabinet
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWoodenWallCabinet,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+
+            OnIsValid = hammerBuildRecipeCode.WallCabinet.OnIsValid,
+
+            face S
+            {
+                layer
+                {
+                    row = ht_vanilla_fixtures_counters_01_top_5,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = ht_vanilla_fixtures_counters_01_top_4,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = ht_vanilla_fixtures_counters_01_top_6,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = ht_vanilla_fixtures_counters_01_top_7,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Cabinets_Wall,
+            SkillRequired = Woodwork:7,
+            xpAward = Woodwork:70,
+            Tooltip = Tooltip_ht_KitchenCabinet,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+                item 2 [Base.Hinge],
+                item 1 [Base.Doorknob],
+            }
+        }
+    }
+}

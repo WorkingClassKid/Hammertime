@@ -1,0 +1,163 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity ES_htWhiteConcreteRailings
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Concrete Railings,
+			Icon = ui_fixtures_railings_01_112,
+		}       
+     	entity ES_htWhiteConcreteRailingsPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Concrete Railings Pole,
+			Icon = ui_fixtures_railings_01_115,
+		} 
+        entity ES_htWhiteConcreteRailingsCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Concrete Railings Corner,
+			Icon = ui_fixtures_railings_01_114,
+		}  
+    }
+    
+    
+    
+    /* 
+    *  White Concrete Railings
+    *  htWhiteConcreteRailings
+    *  fixtures_railings_01_112
+    *  fixtures_railings_01_113
+    */ 
+    
+    entity htWhiteConcreteRailings
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWhiteConcreteRailings,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face W
+            {
+                layer
+                {
+                    row = fixtures_railings_01_112,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_railings_01_113,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Railings,
+            SkillRequired = Masonry:2,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_ht_Railings,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 2 [Base.SteelBar],
+            }
+        }
+    }
+       
+
+    /* 
+    *  White Concrete Railings Pole
+    *  htWhiteConcreteRailingsPole
+    *  fixtures_railings_01_115
+    */
+    
+    entity htWhiteConcreteRailingsPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWhiteConcreteRailingsPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = fixtures_railings_01_115,
+                }
+            }            
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Railings_Pole,
+            SkillRequired = Masonry:2,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_ht_Railings,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 1 tags[base:concrete] flags[DontRecordInput],
+                item 1 [Base.SteelBar],
+            }
+        }
+    }    
+    
+    
+    
+    /* 
+    *  White Concrete Railings Corner
+    *  htWhiteConcreteRailingsCorner
+    *  fixtures_railings_01_114
+    */ 
+    
+    entity htWhiteConcreteRailingsCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWhiteConcreteRailingsCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = fixtures_railings_01_114,
+                }
+            }      
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Railings,
+            SkillRequired = Masonry:2,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_ht_Railings,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 3 tags[base:concrete] flags[DontRecordInput],
+                item 3 [Base.SteelBar],
+            }
+        }
+    }
+    
+    
+/* END BASE */
+}    

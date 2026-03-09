@@ -1,0 +1,79 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htGrayChair
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Gray Chair,
+			Icon = ui_furniture_seating_indoor_01_52,
+		}
+    }    
+    
+   /* 
+    *  Gray Chair
+    *  htGrayChair
+    *  furniture_seating_indoor_01_52
+    *  furniture_seating_indoor_01_53
+    *  furniture_seating_indoor_01_54
+    *  furniture_seating_indoor_01_55
+    */ 
+    
+    entity htGrayChair
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htGrayChair,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+			isThumpable = false,
+            face S
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_01_54,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_01_55,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_01_53,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_01_52,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 50,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:60,
+            category = Seating_Indoor,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_chairDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+}

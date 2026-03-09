@@ -1,0 +1,7 @@
+name=Hammertime - Crafting
+id=Hammertime_Crafting
+description=Add some crafting recipes
+require=Hammertime
+loadModAfter=Hammertime
+pzversion=42.15
+versionMin=42.15

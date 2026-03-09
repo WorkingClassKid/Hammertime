@@ -1,0 +1,245 @@
+module Base
+{
+    	xuiSkin default
+	{
+        
+        entity ES_htSaharaLightBrickWall
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Sahara Light Brick Wall,
+			Icon = ui_walls_exterior_house_02_84,
+		}       
+		entity ES_htSaharaLightBrickPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Sahara Light Brick Pole,
+			Icon = ui_walls_exterior_house_02_87,
+		}         
+        entity ES_htSaharaLightBrickDoorFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Sahara Light Brick Door Frame,
+			Icon = ui_walls_exterior_house_02_94,
+		}  
+        entity ES_htSaharaLightBrickWindowFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Sahara Light Brick Window Frame,
+			Icon = ui_walls_exterior_house_02_92,
+		}  
+ 
+    }
+    
+    /* 
+    *  Sahara Light Brick Wall
+    *  htSaharaLightBrickWall
+    *  walls_exterior_house_02_84
+    *  walls_exterior_house_02_85
+    *  walls_exterior_house_02_87
+    */ 
+    
+    entity htSaharaLightBrickWall
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htSaharaLightBrickWall,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            LogicClass = WoodenWall,
+            OnCreate = BuildRecipeCode.canBePlastered.OnCreate,
+            BreakSound = ZombieThumpWoodCollapse,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_84,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_85,
+                }
+            }
+            corner = walls_exterior_house_02_87,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Walls,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        }
+    }
+        
+    /* 
+    *  Sahara Light Brick Pole 
+    *  htSaharaLightBrickPole
+    *  walls_exterior_house_02_87
+    */
+    
+    entity htSaharaLightBrickPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htSaharaLightBrickPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            isPole = true,
+            face SINGLE
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_87,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Walls_Pole,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_ht_WallPole,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 1 tags[base:concrete] flags[DontRecordInput],
+                item 2 [Base.ClayBrick],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Sahara Light Brick Door Frame
+    *  htSaharaLightBrickDoorFrame
+    *  walls_exterior_house_02_94
+    *  walls_exterior_house_02_95
+    *  walls_exterior_house_02_67
+    */ 
+    
+    entity htSaharaLightBrickDoorFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htSaharaLightBrickDoorFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_94,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_95,
+                }
+            }
+            corner = walls_exterior_house_02_87,           
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Walls_Door_Frame,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_brickWallDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Sahara Light Brick Window Frame
+    *  htSaharaLightBrickWindowFrame
+    *  walls_exterior_house_02_92
+    *  walls_exterior_house_02_93
+    *  walls_exterior_house_02_67
+    */ 
+    
+    entity htSaharaLightBrickWindowFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htSaharaLightBrickWindowFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_92,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_93,
+                }
+            }
+            corner = walls_exterior_house_02_87,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Walls_Window_Frame,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_craft_woodenFrameDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        } 
+    }
+/* END BASE */
+}    

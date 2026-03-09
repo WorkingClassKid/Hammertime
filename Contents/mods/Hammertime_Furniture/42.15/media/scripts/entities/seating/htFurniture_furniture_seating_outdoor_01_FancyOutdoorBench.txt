@@ -1,0 +1,90 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htFancyOutdoorBench
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Fancy Outdoor Bench,
+			Icon = ui_furniture_seating_outdoor_01_8,
+		}
+    }    
+    
+   /* 
+    *  Fancy Outdoor Bench
+    *  htFancyOutdoorBench
+    *  furniture_seating_outdoor_01_8
+    *  furniture_seating_outdoor_01_9
+    *  furniture_seating_outdoor_01_10
+    *  furniture_seating_outdoor_01_11
+    *  furniture_seating_outdoor_01_12
+    *  furniture_seating_outdoor_01_13
+    *  furniture_seating_outdoor_01_14
+    *  furniture_seating_outdoor_01_15
+    */ 
+    
+    entity htFancyOutdoorBench
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htFancyOutdoorBench,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+			isThumpable = false,
+            face E
+            {
+                layer
+                {
+                    row = furniture_seating_outdoor_01_9,
+                    row = furniture_seating_outdoor_01_8, 
+                }
+            }
+            
+            face S
+            {
+                layer
+                {
+                    row = furniture_seating_outdoor_01_11 furniture_seating_outdoor_01_10,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = furniture_seating_outdoor_01_15,
+                    row = furniture_seating_outdoor_01_14, 
+                }
+            }
+            
+            face N
+            {
+                layer
+                {
+                    row = furniture_seating_outdoor_01_12 furniture_seating_outdoor_01_13,
+                }
+            }
+          
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 150,
+            SkillRequired = Woodwork:5;MetalWelding:3,
+            xpAward = Woodwork:50;MetalWelding:40,
+            category = Seating_Outdoor,
+            Tooltip = Tooltip_craft_benchDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 4 [Base.SteelBar],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

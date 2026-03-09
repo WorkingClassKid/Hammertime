@@ -1,0 +1,85 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htSteelWallCabinetCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Steel Wall Cabinet Corner,
+			Icon = ui_ht_vanilla_fixtures_counters_01_top_corner_12,
+		}
+    }    
+    
+   /* 
+    *  Steel Wall Cabinet Corner
+    *  htSteelWallCabinetCorner
+    *  ht_vanilla_fixtures_counters_01_top_corner_12
+    *  ht_vanilla_fixtures_counters_01_top_corner_13
+    *  ht_vanilla_fixtures_counters_01_top_corner_14
+    *  ht_vanilla_fixtures_counters_01_top_corner_15
+    */ 
+    
+    
+    entity htSteelWallCabinetCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htSteelWallCabinetCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+
+            OnIsValid = hammerBuildRecipeCode.WallCabinetCorner.OnIsValid,
+
+            face S
+            {
+                layer
+                {
+                    row = ht_vanilla_fixtures_counters_01_top_corner_13,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = ht_vanilla_fixtures_counters_01_top_corner_12,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = ht_vanilla_fixtures_counters_01_top_corner_14,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = ht_vanilla_fixtures_counters_01_top_corner_15,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 200,
+            SkillRequired = MetalWelding:4,
+            xpAward = MetalWelding:50,
+            category = Cabinets_Wall,
+            Tags = Welding;Cabinets,
+            Tooltip = Tooltip_ht_KitchenCabinet,
+       inputs
+            {
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 3 [Base.SmallSheetMetal],
+                item 4 [Base.Nails],
+                item 2 [Base.Hinge],
+                item 1 [Base.Doorknob],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

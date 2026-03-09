@@ -1,0 +1,86 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity ES_htManualWaterPump
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Manual Water Pump,
+			Icon = ui_camping_01_64,
+		}         
+    }
+    
+    
+    
+    /* 
+    *  Manual Water Pump
+    *  htManualWaterPump
+    *  camping_01_64
+    *  camping_01_65
+    *  camping_01_66
+    *  camping_01_67
+    */ 
+    
+    entity htManualWaterPump
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htManualWaterPump,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            OnCreate = BuildRecipeCode.barrelOven.OnCreate,
+            face W
+            {
+                layer
+                {
+                    row = camping_01_66,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = camping_01_67,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = camping_01_64,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = camping_01_65,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 350,
+            SkillRequired = MetalWelding:6,
+            xpAward = MetalWelding:50,
+            category = Outdoors,
+            Tags = Survival;Outdoors,
+            Tooltip = Tooltip_ht_ManualWaterPump,
+            inputs
+            {
+				item 1 [Base.PickAxe] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 5 [Base.BlowTorch] flags[DontRecordInput],
+                item 3 [Base.SmallSheetMetal],
+                item 4 [Base.SteelBar],
+                item 1 [Base.ScrapMetal],
+                item 5 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+
+/* END BASE */
+}    

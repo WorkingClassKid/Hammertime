@@ -1,0 +1,76 @@
+/*
+* OVERWRITE PZ DEFAULT
+* 
+* - Added a CraftRecipe
+*/
+
+module Base
+{
+    entity MetalBandsaw
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_MetalBandsaw,
+            uiEnabled = true,
+        }
+        component CraftBench
+        {
+            Recipes = MetalBandsaw,
+        }
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = industry_02_265,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = industry_02_264,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = industry_02_267,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = industry_02_266,
+                }
+            }
+        }
+       
+       component CraftRecipe
+		{
+			timedAction = MakingElectrical,
+			time = 400,
+			SkillRequired = Electricity:4;MetalWelding:6,
+			Tags = Metalworking,
+			Category = Metalworking,
+			xpAward = Electricity:40;MetalWelding:60,
+			Tooltip = Tooltip_ht_MetalBandSaw,
+			inputs
+			{
+				item 1 tags[base:screwdriver] mode:keep flags[MayDegradeVeryLight;Prop1],
+				item 1 tags[base:pliers] mode:keep flags[MayDegradeVeryLight],
+				item 1 tags[base:weldingmask] mode:keep,
+				item 4 tags[base:smallsheetmetal] mode:destroy flags[ItemCount],
+				item 2 [Base.ElectronicsScrap],
+				item 2 [Base.ElectricWire],
+				item 4 [Base.Screws],
+				item 2 [Base.HacksawBlade],
+				item 4 [Base.BlowTorch],
+			}
+		} 
+    }
+}

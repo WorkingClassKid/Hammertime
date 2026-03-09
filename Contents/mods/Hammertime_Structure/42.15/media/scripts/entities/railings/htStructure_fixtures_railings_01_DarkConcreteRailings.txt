@@ -1,0 +1,163 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity ES_htDarkConcreteRailings
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Dark Concrete Railings,
+			Icon = ui_fixtures_railings_01_116,
+		}       
+     	entity ES_htDarkConcreteRailingsPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Dark Concrete Railings Pole,
+			Icon = ui_fixtures_railings_01_119,
+		} 
+        entity ES_htDarkConcreteRailingsCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Dark Concrete Railings Corner,
+			Icon = ui_fixtures_railings_01_118,
+		}  
+    }
+    
+    
+    
+    /* 
+    *  Dark Concrete Railings
+    *  htDarkConcreteRailings
+    *  fixtures_railings_01_116
+    *  fixtures_railings_01_117
+    */ 
+    
+    entity htDarkConcreteRailings
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htDarkConcreteRailings,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face W
+            {
+                layer
+                {
+                    row = fixtures_railings_01_116,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_railings_01_117,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Railings,
+            SkillRequired = Masonry:2,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_ht_Railings,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 2 [Base.SteelBar],
+            }
+        }
+    }
+       
+
+    /* 
+    *  Dark Concrete Railings Pole
+    *  htDarkConcreteRailingsPole
+    *  fixtures_railings_01_119
+    */
+    
+    entity htDarkConcreteRailingsPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htDarkConcreteRailingsPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = fixtures_railings_01_119,
+                }
+            }            
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Railings_Pole,
+            SkillRequired = Masonry:2,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_ht_Railings,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[base:concrete] flags[DontRecordInput],
+                item 2 [Base.SteelBar],
+            }
+        }
+    }    
+    
+    
+    
+    /* 
+    *  Dark Concrete Railings Corner
+    *  htDarkConcreteRailingsCorner
+    *  fixtures_railings_01_118
+    */ 
+    
+    entity htDarkConcreteRailingsCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htDarkConcreteRailingsCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = fixtures_railings_01_118,
+                }
+            }      
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallNoTool,
+            time = 200,
+            category = Railings,
+            SkillRequired = Masonry:2,
+            xpAward = Masonry:50,
+            Tooltip = Tooltip_ht_Railings,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 3 tags[base:concrete] flags[DontRecordInput],
+                item 3 [Base.SteelBar],
+            }
+        }
+    }
+    
+    
+/* END BASE */
+}    

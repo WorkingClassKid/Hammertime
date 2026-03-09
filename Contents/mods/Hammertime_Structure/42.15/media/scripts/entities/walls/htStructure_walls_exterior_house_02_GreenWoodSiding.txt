@@ -1,0 +1,245 @@
+module Base
+{
+    	xuiSkin default
+	{
+        
+        entity ES_htGreenWoodSidingWall
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Green Wood Siding Wall,
+			Icon = ui_walls_exterior_house_02_81,
+		}       
+		entity ES_htGreenWoodSidingPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Green Wood Siding Pole,
+			Icon = ui_walls_exterior_house_02_83,
+		}         
+        entity ES_htGreenWoodSidingDoorFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Green Wood Siding Door Frame,
+			Icon = ui_walls_exterior_house_02_90,
+		}  
+        entity ES_htGreenWoodSidingWindowFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Green Wood Siding Window Frame,
+			Icon = ui_walls_exterior_house_02_88,
+		}  
+ 
+    }
+    
+    /* 
+    *  Green Wood Siding Wall
+    *  htGreenWoodSidingWall
+    *  walls_exterior_house_02_80
+    *  walls_exterior_house_02_81
+    *  walls_exterior_house_02_83
+    */ 
+    
+    entity htGreenWoodSidingWall
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htGreenWoodSidingWall,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            LogicClass = WoodenWall,
+            OnCreate = BuildRecipeCode.canBePlastered.OnCreate,
+            BreakSound = ZombieThumpWoodCollapse,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_80,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_81,
+                }
+            }
+            corner = walls_exterior_house_02_83,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Walls,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_craft_NeedsWallframeDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+        
+    /* 
+    *  Green Wood Siding Pole 
+    *  htGreenWoodSidingPole
+    *  walls_exterior_house_02_83
+    */
+    
+    entity htGreenWoodSidingPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htGreenWoodSidingPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            isPole = true,
+            face SINGLE
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_83,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Walls_Pole,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_ht_WallPole,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Green Wood Siding Door Frame
+    *  htGreenWoodSidingDoorFrame
+    *  walls_exterior_house_02_90
+    *  walls_exterior_house_02_91
+    *  walls_exterior_house_02_83
+    */ 
+    
+    entity htGreenWoodSidingDoorFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htGreenWoodSidingDoorFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_90,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_91,
+                }
+            }
+            corner = walls_exterior_house_02_83,           
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Walls_Door_Frame,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:30,
+            Tooltip = Tooltip_craft_doorFrameDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 3 [Base.Plank],
+                item 6 [Base.Nails],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Green Wood Siding Window Frame
+    *  htGreenWoodSidingWindowFrame
+    *  walls_exterior_house_02_88
+    *  walls_exterior_house_02_89
+    *  walls_exterior_house_02_83
+    */ 
+    
+    entity htGreenWoodSidingWindowFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htGreenWoodSidingWindowFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            skillBaseHealth = 50,
+            isThumpable = true,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_88,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_02_89,
+                }
+            }
+            corner = walls_exterior_house_02_83,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Walls_Window_Frame,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:30,
+            Tooltip = Tooltip_craft_NeedsWallframeDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+    ¸   }
+    }
+/* END BASE */
+}    

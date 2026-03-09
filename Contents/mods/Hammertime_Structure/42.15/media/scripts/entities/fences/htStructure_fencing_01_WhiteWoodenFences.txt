@@ -1,0 +1,161 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity ES_htWhiteWoodenFences
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Wooden Fences,
+			Icon = ui_fencing_01_4,
+		}       
+		entity ES_htWhiteWoodenFencesPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Wooden Fences Pole,
+			Icon = ui_fencing_01_7,
+		}         
+        entity ES_htWhiteWoodenFencesCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Wooden Fences Corner,
+			Icon = ui_fencing_01_6,
+		}  
+    }
+    
+    
+    
+    /* 
+    *  White Wooden Fences
+    *  htWhiteWoodenFences
+    *  fencing_01_4
+    *  fencing_01_5
+    */ 
+    
+    entity htWhiteWoodenFences
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWhiteWoodenFences,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face W
+            {
+                layer
+                {
+                    row = fencing_01_4,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fencing_01_5,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Fences,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_ht_Fences,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 3 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+        
+    /* 
+    *  White Wooden Fences Pole
+    *  htWhiteWoodenFencesPole
+    *  fencing_01_7
+    */
+    
+    entity htWhiteWoodenFencesPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWhiteWoodenFencesPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = fencing_01_7,
+                }
+            }            
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Fences_Pole,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_ht_Fences,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  White Wooden Fences Corner
+    *  htWhiteWoodenFencesCorner
+    *  fencing_01_6
+    */ 
+    
+    entity htWhiteWoodenFencesCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWhiteWoodenFencesCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = fencing_01_6,
+                }
+            }      
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Fences,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:30,
+            Tooltip = Tooltip_ht_Fences,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 6 [Base.Nails],
+            }
+        }
+    }
+    
+    
+/* END BASE */
+}    

@@ -1,0 +1,217 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity ES_htFancyWoodenHighFences
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Fancy Wooden High Fences,
+			Icon = ui_fencing_01_09,
+		}       
+		entity ES_htFancyWoodenHighFencesWPoleFences
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Fancy Wooden High Fences w/ Pole,
+			Icon = ui_fencing_01_08,
+		}
+		entity ES_htFancyWoodenHighFencesPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Fancy Wooden High Fences Pole,
+			Icon = ui_fencing_01_13,
+		}         
+        entity ES_htFancyWoodenHighFencesCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Fancy Wooden High Fences Corner,
+			Icon = ui_fencing_01_12,
+		}  
+    }
+    
+    
+    
+    /* 
+    *  Fancy Wooden High Fences
+    *  htFancyWoodenHighFences
+    *  fencing_01_9
+    *  fencing_01_10
+    */ 
+    
+    entity htFancyWoodenHighFences
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htFancyWoodenHighFences,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face W
+            {
+                layer
+                {
+                    row = fencing_01_10,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fencing_01_9,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Fences,
+            SkillRequired = Woodwork:7,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_ht_Fences,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Fancy Wooden High Fences w/ Pole
+    *  htHardwoodWPoleFences
+    *  fencing_01_8
+    *  fencing_01_11
+    */ 
+    
+    entity htHardwoodWPoleFences
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htHardwoodWPoleFences,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face W
+            {
+                layer
+                {
+                    row = fencing_01_11,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fencing_01_8,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Fences,
+            SkillRequired = Woodwork:7,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_ht_Fences,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 3 [Base.Plank],
+                item 5 [Base.Nails],
+            }
+        }
+    }
+        
+    /* 
+    *  Fancy Wooden High Fences Pole
+    *  htFancyWoodenHighFencesPole
+    *  fencing_01_13
+    */
+    
+    entity htFancyWoodenHighFencesPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htFancyWoodenHighFencesPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = fencing_01_13,
+                }
+            }            
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Fences_Pole,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_ht_Fences,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Fancy Wooden High Fences Corner
+    *  htFancyWoodenHighFencesCorner
+    *  fencing_01_12
+    */ 
+    
+    entity htFancyWoodenHighFencesCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htFancyWoodenHighFencesCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = fencing_01_12,
+                }
+            }      
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Fences,
+            SkillRequired = Woodwork:7,
+            xpAward = Woodwork:30,
+            Tooltip = Tooltip_ht_Fences,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 6 [Base.Nails],
+            }
+        }
+    }
+    
+    
+/* END BASE */
+}    

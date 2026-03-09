@@ -1,0 +1,36 @@
+/*
+* OVERWRITE PZ DEFAULT BARBED WIRE FENCES
+* This file is overwritten 
+* See htStructure_fencing_01_BarbedWireFences.txt entities
+*/
+
+module Base
+{
+    entity BarbedWireFence
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_BarbedWireFence,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+			obsolete = true,
+            face W
+            {
+                layer
+                {
+                    row = ht_vanilla_overwrite_fix_01_1,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = ht_vanilla_overwrite_fix_01_2,
+                }
+            }
+        }
+    }
+}

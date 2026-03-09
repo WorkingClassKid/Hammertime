@@ -1,0 +1,210 @@
+module Base {
+
+    /* 
+    *  htStoveChrome
+    *  Base.htStoveChrome
+    */ 
+    
+    item htStoveChrome
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = StoveChrome,
+        Weight = 40.0,
+        WorldObjectSprite = appliances_cooking_01_13,
+    }
+  
+    craftRecipe htMakeStoveChrome
+    {
+        timedAction = MakingElectrical,
+        time = 400,
+        SkillRequired = Electricity:3;MetalWelding:2,
+        Tags = AnySurfaceCraft,
+        Category = Appliance,
+        xpAward = Electricity:65;MetalWelding:65,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeVeryLight;Prop1],
+            item 1 tags[base:pliers] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[base:weldingmask] mode:keep,
+            item 2 tags[base:smallsheetmetal] mode:destroy flags[ItemCount],
+            item 4 [Base.ElectronicsScrap],
+            item 1 [Base.LightBulb],
+            item 2 [Base.ElectricWire],
+            item 4 [Base.Screws],
+            item 2 [Base.Wire],
+            item 2 [Base.BlowTorch],
+        }
+        outputs
+        {
+            item 1 Base.htStoveChrome,
+        }
+    } 
+    
+    
+    /* 
+    *  htStoveGreen
+    *  Base.htStoveGreen
+    */ 
+    
+    item htStoveGreen
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = StoveGreen,
+        Weight = 20.0,
+        WorldObjectSprite = appliances_cooking_01_0,
+    }
+  
+    craftRecipe htMakeStoveGreen
+    {
+        timedAction = MakingElectrical,
+        time = 400,
+        SkillRequired = Electricity:3;MetalWelding:2,
+        Tags = AnySurfaceCraft,
+        Category = Appliance,
+        xpAward = Electricity:65;MetalWelding:65,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeVeryLight;Prop1],
+            item 1 tags[base:pliers] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[base:weldingmask] mode:keep,
+            item 2 tags[base:smallsheetmetal] mode:destroy flags[ItemCount],
+            item 4 [Base.ElectronicsScrap],
+            item 1 [Base.LightBulb],
+            item 2 [Base.ElectricWire],
+            item 4 [Base.Screws],
+            item 2 [Base.Wire],
+            item 2 [Base.BlowTorch],
+        }
+        outputs
+        {
+            item 1 Base.htStoveGreen,
+        }
+    }
+    
+
+    /* 
+    *  htStoveGrey
+    *  Base.htStoveGrey
+    */ 
+    
+    item htStoveGrey
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = StoveGrey,
+        Weight = 20.0,
+        WorldObjectSprite = appliances_cooking_01_4,
+    }
+  
+    craftRecipe htMakeStoveGrey
+    {
+        timedAction = MakingElectrical,
+        time = 400,
+        SkillRequired = Electricity:3;MetalWelding:2,
+        Tags = AnySurfaceCraft,
+        Category = Appliance,
+        xpAward = Electricity:65;MetalWelding:65,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeVeryLight;Prop1],
+            item 1 tags[base:pliers] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[base:weldingmask] mode:keep,
+            item 2 tags[base:smallsheetmetal] mode:destroy flags[ItemCount],
+            item 4 [Base.ElectronicsScrap],
+            item 1 [Base.LightBulb],
+            item 2 [Base.ElectricWire],
+            item 4 [Base.Screws],
+            item 2 [Base.Wire],
+            item 2 [Base.BlowTorch],
+        }
+        outputs
+        {
+            item 1 Base.htStoveGrey,
+        }
+    }
+    
+    /* 
+    *  htStoveIndustrial 
+    *  Base.htStoveIndustrial
+    */ 
+    
+    item htStoveIndustrial
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = StoveIndustrial,
+        Weight = 20.0,
+        WorldObjectSprite = appliances_cooking_01_21,
+    }
+  
+    craftRecipe htMakeStoveIndustrial
+    {
+       timedAction = MakingElectrical,
+        time = 400,
+        SkillRequired = Electricity:3;MetalWelding:2,
+        Tags = AnySurfaceCraft,
+        Category = Appliance,
+        xpAward = Electricity:65;MetalWelding:65,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeVeryLight;Prop1],
+            item 1 tags[base:pliers] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[base:weldingmask] mode:keep,
+            item 2 tags[base:smallsheetmetal] mode:destroy flags[ItemCount],
+            item 4 [Base.ElectronicsScrap],
+            item 1 [Base.LightBulb],
+            item 2 [Base.ElectricWire],
+            item 4 [Base.Screws],
+            item 2 [Base.Wire],
+            item 2 [Base.BlowTorch],
+        }
+        outputs
+        {
+            item 1 Base.htStoveIndustrial,
+        }
+    } 
+    
+    /* 
+    *  htStoveRed
+    *  Base.htStoveRed
+    */ 
+    
+    item htStoveRed
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = StoveRed,
+        Weight = 20.0,
+        WorldObjectSprite = appliances_cooking_01_8,
+    }
+  
+    craftRecipe htMakeStoveRed
+    {
+        timedAction = MakingElectrical,
+        time = 400,
+        SkillRequired = Electricity:3;MetalWelding:2,
+        Tags = AnySurfaceCraft,
+        Category = Appliance,
+        xpAward = Electricity:65;MetalWelding:65,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeVeryLight;Prop1],
+            item 1 tags[base:pliers] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[base:weldingmask] mode:keep,
+            item 2 tags[base:smallsheetmetal] mode:destroy flags[ItemCount],
+            item 4 [Base.ElectronicsScrap],
+            item 1 [Base.LightBulb],
+            item 2 [Base.ElectricWire],
+            item 4 [Base.Screws],
+            item 2 [Base.Wire],
+            item 2 [Base.BlowTorch],
+        }
+        outputs
+        {
+            item 1 Base.htStoveRed,
+        }
+    }
+}
+    

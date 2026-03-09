@@ -1,0 +1,8 @@
+name=Hammertime - Survival
+poster=poster.png
+id=Hammertime_Survival
+description=Generator, Well, Barrel Stove...
+require=Hammertime
+loadModAfter=Hammertime
+pzversion=42.15
+versionMin=42.15

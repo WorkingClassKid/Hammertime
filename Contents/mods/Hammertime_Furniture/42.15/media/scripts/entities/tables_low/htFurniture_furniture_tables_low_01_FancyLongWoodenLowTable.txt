@@ -1,0 +1,67 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htFancyLongWoodenLowTable
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Fancy Long Wooden Low Table,
+			Icon = ui_furniture_tables_low_01_4,
+		}
+    }    
+    
+   /* 
+    *  Fancy Long Wooden Low Table
+    *  htFancyLongWoodenLowTable
+    *  furniture_tables_low_01_4
+    *  furniture_tables_low_01_5
+    *  furniture_tables_low_01_6
+    *  furniture_tables_low_01_7
+    */ 
+    
+    entity htFancyLongWoodenLowTable
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htFancyLongWoodenLowTable,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = furniture_tables_low_01_7,
+                    row = furniture_tables_low_01_6, 
+                }
+            }
+            
+            face S
+            {
+                layer
+                {
+                    row = furniture_tables_low_01_4 furniture_tables_low_01_5,
+                }
+            }
+          
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 300,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:20,
+            category = Tables,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_tableDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+}

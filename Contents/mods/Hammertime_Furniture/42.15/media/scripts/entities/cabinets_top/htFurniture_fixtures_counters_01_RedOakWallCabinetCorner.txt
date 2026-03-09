@@ -1,0 +1,83 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htRedOakWallCabinetCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Red Oak Wall Cabinet Corner,
+			Icon = ui_ht_vanilla_fixtures_counters_01_top_corner_16,
+		}
+    }    
+    
+   /* 
+    *  Red Oak Wall Cabinet Corner
+    *  htRedOakWallCabinetCorner
+    *  ht_vanilla_fixtures_counters_01_top_corner_16
+    *  ht_vanilla_fixtures_counters_01_top_corner_17
+    *  ht_vanilla_fixtures_counters_01_top_corner_18
+    *  ht_vanilla_fixtures_counters_01_top_corner_19
+    */ 
+    
+    
+    entity htRedOakWallCabinetCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htRedOakWallCabinetCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+
+            OnIsValid = hammerBuildRecipeCode.WallCabinetCorner.OnIsValid,
+
+            face S
+            {
+                layer
+                {
+                    row = ht_vanilla_fixtures_counters_01_top_corner_17,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = ht_vanilla_fixtures_counters_01_top_corner_16,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = ht_vanilla_fixtures_counters_01_top_corner_18,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = ht_vanilla_fixtures_counters_01_top_corner_19,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Cabinets_Wall,
+            SkillRequired = Woodwork:7,
+            xpAward = Woodwork:70,
+            Tooltip = Tooltip_ht_KitchenCabinet,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+                item 2 [Base.Hinge],
+                item 1 [Base.Doorknob],
+            }
+        }
+    }
+}

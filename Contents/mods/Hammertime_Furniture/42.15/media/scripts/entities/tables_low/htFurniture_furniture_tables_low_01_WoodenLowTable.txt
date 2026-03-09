@@ -1,0 +1,67 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htWoodenLowTable
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Wooden Low Table,
+			Icon = ui_furniture_tables_low_01_0,
+		}
+    }    
+    
+   /* 
+    *  Wooden Low Table
+    *  htWoodenLowTable
+    *  furniture_tables_low_01_0
+    *  furniture_tables_low_01_1
+    *  furniture_tables_low_01_14
+    *  furniture_tables_low_01_15
+    */ 
+    
+    entity htWoodenLowTable
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWoodenLowTable,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = furniture_tables_low_01_1,
+                    row = furniture_tables_low_01_0, 
+                }
+            }
+            
+            face S
+            {
+                layer
+                {
+                    row = furniture_tables_low_01_14 furniture_tables_low_01_15,
+                }
+            }
+          
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 300,
+            SkillRequired = Woodwork:3,
+            xpAward = Woodwork:20,
+            category = Tables,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_tableDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 3 [Base.Plank],
+                item 3 [Base.Nails],
+            }
+        }
+    }
+}

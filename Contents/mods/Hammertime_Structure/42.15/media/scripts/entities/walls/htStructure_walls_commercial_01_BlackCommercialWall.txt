@@ -1,0 +1,122 @@
+module Base
+{
+    	xuiSkin default
+	{
+        
+        entity ES_htBlackCommercialWall
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Black Commercial Wall,
+			Icon = ui_walls_commercial_01_40,
+		}       
+		entity ES_htBlackCommercialWallPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Black Commercial Wall Pole,
+			Icon = ui_walls_commercial_01_39,
+		}         
+    }
+    
+    /* 
+    *  Black Commercial Wall
+    *  htBlackCommercialWall
+    *  walls_commercial_01_40
+    *  walls_commercial_01_41
+    *  walls_commercial_01_39
+    */ 
+    
+    entity htBlackCommercialWall
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBlackCommercialWall,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 500
+            skillBaseHealth = 50,
+            isThumpable = true,
+            LogicClass = WoodenWall,
+            OnCreate = BuildRecipeCode.canBePlastered.OnCreate,
+            BreakSound = ZombieThumpWoodCollapse,
+            face W
+            {
+                layer
+                {
+                    row = walls_commercial_01_40,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_commercial_01_41,
+                }
+            }
+            corner = walls_commercial_01_39,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 50,
+            SkillRequired = Woodwork:7,
+            xpAward = Woodwork:50,
+            category = Walls,
+            Tags = Carpentry;Walls,
+            Tooltip = Tooltip_ht_WindowWalls,
+            inputs
+            {
+                item 5 [Base.GlassPanel],
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+        
+    /* 
+    *  Black Commercial Wall Pole 
+    *  htBlackCommercialWallPole
+    *  walls_commercial_01_39
+    */
+    
+    entity htBlackCommercialWallPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBlackCommercialWallPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            isPole = true,
+            face SINGLE
+            {
+                layer
+                {
+                    row = walls_commercial_01_39,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Walls_Pole,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_ht_WallPole,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+/* END BASE */
+}    

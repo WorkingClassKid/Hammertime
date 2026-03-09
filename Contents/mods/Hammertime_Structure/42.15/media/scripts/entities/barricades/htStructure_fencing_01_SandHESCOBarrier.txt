@@ -1,0 +1,115 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity ES_htSandHESCOBarrierLvl1
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Sand HESCO Barrier Lvl 1,
+			Icon = ui_ht_vanilla_fencing_01_0,
+		}     
+		entity ES_htSandHESCOBarrierLvl2
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Sand HESCO Barrier Lvl 2,
+			Icon = ui_ht_vanilla_fencing_01_0,
+		}     
+  
+    }
+    
+    
+    
+    /* 
+    *  Sand HESCO Barrier Lvl 1
+    *  htSandHESCOBarrierLvl1
+    *  ht_vanilla_fencing_01_0
+    */ 
+    
+    entity htSandHESCOBarrierLvl1
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htSandHESCOBarrierLvl1,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = ht_vanilla_fencing_01_0,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallMetal,
+            time = 200,
+            category = Barricades,
+            SkillRequired = MetalWelding:3,
+            xpAward = MetalWelding:30,
+            Tooltip = Tooltip_ht_Fences,
+            inputs
+            {
+				item 1 tags[base:weldingmask] mode:keep,
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 1 [Base.ScrapMetal],
+                item 4 tags[base:barstock],
+                item 2 [Base.BurlapPiece;Base.FabricRoll_Cotton;Base.Sheet],
+                item 8 [Base.Sandbag],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+    
+    /* 
+    *  Sand HESCO Barrier Lvl 2
+    *  htSandHESCOBarrierLvl2
+    *  ht_vanilla_fencing_01_1
+    */ 
+    
+    entity htSandHESCOBarrierLvl2
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htSandHESCOBarrierLvl2,
+            uiEnabled = false,
+        }
+        component SpriteConfig  
+        {
+        
+			OnIsValid = hammerBuildRecipeCode.HESCOBarrierLvl2.OnIsValid,
+			
+            face SINGLE
+            {
+                layer
+                {
+                    row = ht_vanilla_fencing_01_1,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallMetal,
+            time = 200,
+            category = Barricades,
+            SkillRequired = MetalWelding:3,
+            xpAward = MetalWelding:30,
+            Tooltip = Tooltip_ht_HESCO_Lvl2,
+            inputs
+            {
+				item 1 tags[base:weldingmask] mode:keep,
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 1 [Base.ScrapMetal],
+                item 4 tags[base:barstock],
+                item 2 [Base.BurlapPiece;Base.FabricRoll_Cotton;Base.Sheet], 
+                item 8 [Base.Sandbag],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }    
+/* END BASE */
+}    

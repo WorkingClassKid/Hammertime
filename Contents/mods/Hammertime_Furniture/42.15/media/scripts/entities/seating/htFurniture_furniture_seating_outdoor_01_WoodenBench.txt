@@ -1,0 +1,87 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htWoodenBench
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Wooden Bench,
+			Icon = ui_furniture_seating_outdoor_01_0,
+		}
+    }    
+    
+   /* 
+    *  Wooden Bench
+    *  htWoodenBench
+    *  furniture_seating_outdoor_01_0
+    *  furniture_seating_outdoor_01_1
+    *  furniture_seating_outdoor_01_2
+    *  furniture_seating_outdoor_01_3
+    *  furniture_seating_outdoor_01_4
+    *  furniture_seating_outdoor_01_5
+    *  furniture_seating_outdoor_01_6
+    *  furniture_seating_outdoor_01_7
+    */ 
+    
+    entity htWoodenBench
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWoodenBench,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+			isThumpable = false,
+            face E
+            {
+                layer
+                {
+                    row = furniture_seating_outdoor_01_3,
+                    row = furniture_seating_outdoor_01_2, 
+                }
+            }
+            
+            face S
+            {
+                layer
+                {
+                    row = furniture_seating_outdoor_01_0 furniture_seating_outdoor_01_1,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = furniture_seating_outdoor_01_7,
+                    row = furniture_seating_outdoor_01_6, 
+                }
+            }
+            
+            face N
+            {
+                layer
+                {
+                    row = furniture_seating_outdoor_01_4 furniture_seating_outdoor_01_5,
+                }
+            }
+          
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 150,
+            SkillRequired = Woodwork:4,
+            xpAward = Woodwork:50,
+            category = Seating_Outdoor,
+            Tooltip = Tooltip_craft_benchDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 6 [Base.Plank],
+                item 6 [Base.Nails],
+            }
+        }
+    }
+}

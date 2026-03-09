@@ -1,0 +1,213 @@
+module Base
+{
+    	xuiSkin default
+	{
+		entity ES_htConcreteHighFences
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Concrete High Fences,
+			Icon = ui_fencing_01_40,
+		}       
+		entity ES_htConcreteHighFencesWOpening
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Concrete High Fences w/ Opening,
+			Icon = ui_fencing_01_44,
+		}
+		entity ES_htConcreteHighFencesPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Concrete High Fences Pole,
+			Icon = ui_fencing_01_43,
+		}         
+        entity ES_htConcreteHighFencesCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Concrete High Fences Corner,
+			Icon = ui_fencing_01_42,
+		}  
+    }
+    
+    
+    
+    /* 
+    *  Concrete High Fences
+    *  htConcreteHighFences
+    *  fencing_01_40
+    *  fencing_01_41
+    */ 
+    
+    entity htConcreteHighFences
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htConcreteHighFences,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face W
+            {
+                layer
+                {
+                    row = fencing_01_40,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fencing_01_41,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+			timedAction = BuildWallNoTool,
+            time = 200,
+            category = Fences,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:20,
+            Tooltip = Tooltip_ht_Fences,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 3 tags[base:concrete] flags[DontRecordInput],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Concrete High Fences w/ Opening
+    *  htConcreteHighFencesWOpening
+    *  fencing_01_44
+    *  fencing_01_45
+    */ 
+    
+    entity htConcreteHighFencesWOpening
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htConcreteHighFencesWOpening,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face W
+            {
+                layer
+                {
+                    row = fencing_01_44,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fencing_01_45,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+			timedAction = BuildWallNoTool,
+            time = 200,
+            category = Fences,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:20,
+            Tooltip = Tooltip_ht_Fences,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 3 tags[base:concrete] flags[DontRecordInput],
+            }
+        }
+    }
+        
+    /* 
+    *  Concrete High Fences Pole
+    *  htConcreteHighFencesPole
+    *  fencing_01_43
+    */
+    
+    entity htConcreteHighFencesPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htConcreteHighFencesPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = fencing_01_43,
+                }
+            }            
+        }
+        component CraftRecipe
+        {
+			timedAction = BuildWallNoTool,
+            time = 200,
+            category = Fences_Pole,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:10,
+            Tooltip = Tooltip_ht_Fences,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 1 tags[base:concrete] flags[DontRecordInput],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Concrete High Fences Corner
+    *  htConcreteHighFencesCorner
+    *  fencing_01_42
+    */ 
+    
+    entity htConcreteHighFencesCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htConcreteHighFencesCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = fencing_01_42,
+                }
+            }      
+        }
+        component CraftRecipe
+        {
+			timedAction = BuildWallNoTool,
+            time = 200,
+            category = Fences,
+            SkillRequired = Masonry:3,
+            xpAward = Masonry:20,
+            Tooltip = Tooltip_ht_Fences,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 5 tags[base:concrete] flags[DontRecordInput],
+            }
+        }
+    }
+    
+    
+/* END BASE */
+}    

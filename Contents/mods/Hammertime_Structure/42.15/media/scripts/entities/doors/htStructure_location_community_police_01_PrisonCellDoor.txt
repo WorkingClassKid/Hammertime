@@ -1,0 +1,84 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htPrisonCellDoor
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Prison Cell Door,
+			Icon = ui_location_community_police_01_4,
+		}
+    }    
+    
+   /* 
+    *  Prison Cell Door
+    *  htPrisonCellDoor
+    *  location_community_police_01_4
+    *  location_community_police_01_5
+    *  location_community_police_01_6
+    *  location_community_police_01_7
+    */ 
+    
+    
+    entity htPrisonCellDoor
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htPrisonCellDoor,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 1000
+            skillBaseHealth = 150,
+            BreakSound = BreakDoor,
+            face W
+            {
+                layer
+                {
+                    row = location_community_police_01_4,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = location_community_police_01_5,
+                }
+            }
+            face W_OPEN
+            {
+                layer
+                {
+                    row = location_community_police_01_6,
+                }
+            }
+            face N_OPEN
+            {
+                layer
+                {
+                    row = location_community_police_01_7,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallMetal,
+            time = 300,
+            category = Doors,
+            SkillRequired = MetalWelding:4,
+            xpAward = MetalWelding:20,
+            Tooltip = Tooltip_craft_metalDoorDesc,
+            inputs
+            {
+				item 1 tags[base:weldingmask] mode:keep,
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 4 [Base.MetalBar],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+                item 2 [Base.Hinge],
+                item 1 [Base.Doorknob],
+            }
+        }
+    }
+}

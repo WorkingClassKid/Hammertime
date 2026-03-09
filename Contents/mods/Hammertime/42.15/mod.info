@@ -1,0 +1,10 @@
+name=Hammertime
+poster=poster.png
+id=Hammertime
+description=Hammertime
+loadModBefore=Hammertime_Container,Hammertime_Furniture,Hammertime_Structure,Hammertime_Survival
+pzversion=42.15
+versionMin=42.15
+pack=hammertime
+tiledef=hammertime 3100
+incompatible=Neat_Building,Neat_Crafting,BuildingCraft,Buildables_Expansion,BuildablePump,eggonsaday42

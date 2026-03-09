@@ -1,0 +1,237 @@
+module Base
+{
+    	xuiSkin default
+	{
+        
+        entity ES_htBlackWindowWall
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Black Window Wall,
+			Icon = ui_walls_commercial_01_16,
+		}       
+		entity ES_htBlackWindowWallPole
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Black Window Wall Pole,
+			Icon = ui_walls_commercial_01_19,
+		}         
+        entity ES_htBlackWindowWallDoorFrame
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Black Window Wall Door Frame,
+			Icon = ui_walls_commercial_01_26,
+		}  
+		entity ES_htBlackWindowWallCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Black Window Wall Corner,
+			Icon = ui_walls_commercial_01_18,
+		}  
+
+    }
+    
+    /* 
+    *  Black Window Wall
+    *  htBlackWindowWall
+    *  walls_commercial_01_16
+    *  walls_commercial_01_17
+    *  walls_commercial_01_19
+    */ 
+    
+    entity htBlackWindowWall
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBlackWindowWall,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 500
+            skillBaseHealth = 50,
+            isThumpable = true,
+            LogicClass = WoodenWall,
+            OnCreate = BuildRecipeCode.canBePlastered.OnCreate,
+            BreakSound = ZombieThumpWoodCollapse,
+            face W
+            {
+                layer
+                {
+                    row = walls_commercial_01_16,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_commercial_01_17,
+                }
+            }
+            corner = walls_commercial_01_19,
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 50,
+            SkillRequired = Woodwork:7,
+            xpAward = Woodwork:50,
+            category = Walls,
+            Tags = Carpentry;Walls,
+            Tooltip = Tooltip_ht_WindowWalls,
+            inputs
+            {
+                item 5 [Base.GlassPanel],
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+        
+    /* 
+    *  Black Window Wall Pole 
+    *  htBlackWindowWallPole
+    *  walls_commercial_01_19
+    */
+    
+    entity htBlackWindowWallPole
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBlackWindowWallPole,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 700,
+            isPole = true,
+            face SINGLE
+            {
+                layer
+                {
+                    row = walls_commercial_01_19,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Walls_Pole,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:20,
+            Tooltip = Tooltip_ht_WallPole,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+    
+    
+    /* 
+    *  Black Window Wall Door Frame
+    *  htBlackWindowWallDoorFrame
+    *  walls_commercial_01_26
+    *  walls_commercial_01_27
+    *  walls_commercial_01_19
+    */ 
+    
+    entity htBlackWindowWallDoorFrame
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBlackWindowWallDoorFrame,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 500,
+            skillBaseHealth = 50,
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face W
+            {
+                layer
+                {
+                    row = walls_commercial_01_26,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_commercial_01_27,
+                }
+            }
+            corner = walls_commercial_01_19,           
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Walls_Door_Frame,
+            SkillRequired = Woodwork:6,
+            xpAward = Woodwork:30,
+            Tooltip = Tooltip_craft_doorFrameDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.GlassPanel],
+                item 3 [Base.Plank],
+                item 6 [Base.Nails],
+            }
+        }
+    }
+        /* 
+    *  Black Window Wall Corner
+    *  htBlackWindowWallCorner
+    *  walls_commercial_01_18
+    */ 
+    
+    entity htBlackWindowWallCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBlackWindowWallCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            health = 500,
+            skillBaseHealth = 50,
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+            face SINGLE
+            {
+                layer
+                {
+                    row = walls_commercial_01_18,
+                }
+            }        
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Walls,
+            SkillRequired = Woodwork:7,
+            xpAward = Woodwork:30,
+            Tooltip = Tooltip_ht_WindowWalls,
+            inputs
+            {
+                item 6 [Base.GlassPanel],
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+/* END BASE */
+}    

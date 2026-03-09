@@ -1,0 +1,19 @@
+/*
+* OVERWRITE PZ DEFAULT
+* 
+* - Modified Icon to fit Hammertime (ui_camping_01_16)
+* - Modified DisplayName from Well to Water Well
+*/
+
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Well
+        {
+            LuaWindowClass = ISEntityTabWindow,
+            DisplayName = Water Well,
+            Icon = ui_camping_01_16,
+        }
+    }
+}

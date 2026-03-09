@@ -1,0 +1,64 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htLightConsoleTable
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Light Console Table,
+			Icon = ui_furniture_tables_high_01_12,
+		}
+    }    
+    
+   /* 
+    *  Light Console Table
+    *  htLightConsoleTable
+    *  furniture_tables_high_01_12
+    *  furniture_tables_high_01_13
+    */ 
+    
+    entity htLightConsoleTable
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htLightConsoleTable,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = furniture_tables_high_01_12,
+                }
+            }
+            
+            face S
+            {
+                layer
+                {
+                    row = furniture_tables_high_01_13,
+                }
+            }
+          
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 250,
+            SkillRequired = Woodwork:2,
+            xpAward = Woodwork:20,
+            category = Tables,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_tableDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 3 [Base.Plank],
+                item 3 [Base.Nails],
+            }
+        }
+    }
+}

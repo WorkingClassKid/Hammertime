@@ -1,0 +1,7 @@
+name=Hammertime - Appliance
+id=Hammertime_Appliance
+description=Stove, Clothes washer, Dryer...
+require=Hammertime
+loadModAfter=Hammertime
+pzversion=42.15
+versionMin=42.15

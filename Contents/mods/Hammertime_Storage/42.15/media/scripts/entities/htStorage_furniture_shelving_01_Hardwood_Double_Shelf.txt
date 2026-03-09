@@ -1,0 +1,81 @@
+module Base
+{
+    	xuiSkin default
+	{
+
+        entity ES_htHardwoodDoubleShelf
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Hardwood Double Shelf,
+			Icon = ui_furniture_shelving_01_1,
+		}
+    }   
+   
+   
+   /* 
+    *  Hardwood Double Shelf
+    *  htHardwoodDoubleShelf
+    *  furniture_shelving_01_1
+    *  furniture_shelving_01_2
+    *  furniture_shelving_01_3
+    *  furniture_shelving_01_4
+    */
+    
+    entity htHardwoodDoubleShelf
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htHardwoodDoubleShelf,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = furniture_shelving_01_2,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = furniture_shelving_01_3,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = furniture_shelving_01_1,
+                }
+            }  
+            face N
+            {
+                layer
+                {
+                    row = furniture_shelving_01_4,
+                }
+            }               
+        }
+        
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureSmall,
+            time = 50,
+            SkillRequired = Woodwork:2,
+            xpAward = Woodwork:50,
+            category = Storage,
+            Tags = Carpentry;Storage,
+            Tooltip = Tooltip_craft_NeedsWallDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+}

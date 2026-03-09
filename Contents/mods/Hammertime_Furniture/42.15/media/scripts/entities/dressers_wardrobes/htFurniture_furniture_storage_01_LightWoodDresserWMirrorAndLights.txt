@@ -1,0 +1,84 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htLightWoodDresserWMirrorAndLights
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Light Wood Dresser W/ Mirror And Lights,
+			Icon = ui_furniture_storage_01_64,
+		}
+    }    
+    
+   /* 
+    *  Light Wood Dresser W/ Mirror And Lights
+    *  htLightWoodDresserWMirrorAndLights
+    *  furniture_storage_01_64
+    *  furniture_storage_01_65
+    *  furniture_storage_01_66
+    *  furniture_storage_01_67
+    */ 
+    
+    entity htLightWoodDresserWMirrorAndLights
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htLightWoodDresserWMirrorAndLights,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = furniture_storage_01_66,
+                }
+            }
+            
+            face S
+            {
+                layer
+                {
+                    row = furniture_storage_01_67,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = furniture_storage_01_64,
+                }
+            }
+            
+            face N
+            {
+                layer
+                {
+                    row = furniture_storage_01_65,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 50,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:50,
+            category = Dressers_Wardrobes,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_tableDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 6 [Base.Plank],
+                item 2 [Base.LightBulb],
+				item 2 [Base.ElectricWire],
+                item 6 [Base.Nails],
+                item 2 [Base.Hinge],
+                item 2 [Base.Doorknob],
+            }
+        }
+    }
+}

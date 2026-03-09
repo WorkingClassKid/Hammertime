@@ -1,0 +1,56 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htFancyTable
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Fancy Table,
+			Icon = ui_furniture_tables_high_01_15,
+		}
+    }    
+    
+   /* 
+    *  Fancy Table
+    *  htFancyTable
+    *  furniture_tables_high_01_12
+    *  furniture_tables_high_01_13
+    */ 
+    
+    entity htFancyTable
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htFancyTable,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = furniture_tables_high_01_15,
+                }
+            }
+          
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 250,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:30,
+            category = Tables,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_tableDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+}

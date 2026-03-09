@@ -1,0 +1,66 @@
+module Base
+{
+    	xuiSkin default
+	{
+        entity ES_htClothingRack
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Clothing Rack,
+			Icon = ui_location_shop_generic_01_36,
+		}
+    }    
+    
+   /* 
+    *  Clothing Rack
+    *  htClothingRack
+    *  location_shop_generic_01_36
+    *  location_shop_generic_01_37
+    *  location_shop_generic_01_38
+    *  location_shop_generic_01_39
+    */ 
+    
+    entity htClothingRack
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htClothingRack,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = location_shop_generic_01_38 location_shop_generic_01_39,
+
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = location_shop_generic_01_37,
+                    row = location_shop_generic_01_36,
+                }
+            }           
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildMetalStructureMedium,
+            time = 50,
+            SkillRequired = MetalWelding:3,
+            xpAward = MetalWelding:30,
+            category = Storage,
+            Tags = Storage;Furniture,
+            Tooltip = Tooltip_craft_lockerDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 8 [Base.MetalPipe],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}
