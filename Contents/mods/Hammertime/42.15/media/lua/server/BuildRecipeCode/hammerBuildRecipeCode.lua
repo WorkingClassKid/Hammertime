@@ -120,16 +120,16 @@ end
 -- This function is a modified version of the vanilla needToBeAgainstWall logic from ISBuildIsoEntity.lua, allowing players to place a Cabinet_Wall on top of a crafted Cabinet_Base.
 --
 -- Return false if placed over a Cabinet_Base that don't have "Counter" setup as CustomName in the tilesheet def
--- Return false if the originalSq have a forbidenVanillaTiles on it
+-- Return false if the originalSq have a forbiddenVanillaTiles on it
 -- Return false if their is already a hammertime Cabinet_Wall of the tile. Hammertime crafted Cabinet_Wall have "WallCounter" as CustomName in the tilesheet def
--- Return true if Cabinet_Base have "Counter" setup as CustomName, their is no forbidenVanillaTiles on the square and it's against a wall
+-- Return true if Cabinet_Base have "Counter" setup as CustomName, their is no forbiddenVanillaTiles on the square and it's against a wall
 -- Return false for anything else (as pz default behavior)
 --
 function hammerBuildRecipeCode.WallCabinet.OnIsValid(params)
     htPrint("hammerBuildRecipeCode.WallCabinet.OnIsValid triggered | Server:", isServer(), "Client:", isClient())
     
     -- List of vanilla tile that have CustomName = Counter in the tilesheet def but we can't build a Cabinet_Wall on
-    local forbidenVanillaTiles = {
+    local forbiddenVanillaTiles = {
         "location_trailer_02_18",
         "furniture_shelving_01_1"
     }
@@ -162,15 +162,15 @@ function hammerBuildRecipeCode.WallCabinet.OnIsValid(params)
                 local sObj = originalSq:getObjects():get(j)
                 htPrint("Index:", j, "Object on Square:", sObj, "Type:", tostring(sObj:getObjectName()))
                 
-                -- Additionnal check against forbidentVanillaTiles 
-                -- Add an error if spriteName is in forbidenVanillaTiles
+                -- Additionnal check against forbiddentVanillaTiles
+                -- Add an error if spriteName is in forbiddenVanillaTiles
                 local sprite = sObj:getSprite()
                 local spriteName = sprite:getName()
                 htPrint("spriteName:", spriteName) 
                 if spriteName then
-                    for _, v in ipairs(forbidenVanillaTiles) do
+                    for _, v in ipairs(forbiddenVanillaTiles) do
                         if v == spriteName then
-                            htPrint("false forbidenVanillaTiles")
+                            htPrint("false forbiddenVanillaTiles")
                             errorCount = errorCount + 1
                             break
                         end
@@ -223,9 +223,9 @@ end
 -- Also solve and issue where you can't place a Cabinet_Wall corner in the top-left corner.
 --
 -- Return false if placed over a Cabinet_Base that don't have "Counter" setup as CustomName in the tilesheet def
--- Return false if the originalSq have a forbidenVanillaTiles on it
+-- Return false if the originalSq have a forbiddenVanillaTiles on it
 -- Return false if their is already a hammertime Cabinet_Wall of the tile. Hammertime crafted Cabinet_Wall have "WallCounter" as CustomName in the tilesheet def
--- Return true if Cabinet_Base have "Counter" setup as CustomName, their is no forbidenVanillaTiles on the square and it's against a wall
+-- Return true if Cabinet_Base have "Counter" setup as CustomName, their is no forbiddenVanillaTiles on the square and it's against a wall
 -- Return false for anything else (as pz default behavior)
 --
 
@@ -233,7 +233,7 @@ function hammerBuildRecipeCode.WallCabinetCorner.OnIsValid(params)
     htPrint("hammerBuildRecipeCode.WallCabinetCorner.OnIsValid triggered | Server:", isServer(), "Client:", isClient())
     
     -- List of vanilla tile that have CustomName = Counter in the tilesheet def but we can't build a Cabinet_Wall on
-    local forbidenVanillaTiles = {
+    local forbiddenVanillaTiles = {
         "location_trailer_02_18" 
     }
 
@@ -262,15 +262,15 @@ function hammerBuildRecipeCode.WallCabinetCorner.OnIsValid(params)
                 local sObj = originalSq:getObjects():get(j)
                 htPrint("Index:", j, "Object on Square:", sObj, "Type:", tostring(sObj:getObjectName()))
                 
-                -- Additionnal check against forbidentVanillaTiles 
-                -- Add an error if spriteName is in forbidenVanillaTiles
+                -- Additionnal check against forbiddentVanillaTiles
+                -- Add an error if spriteName is in forbiddenVanillaTiles
                 local sprite = sObj:getSprite()
                 local spriteName = sprite:getName()
                 htPrint("spriteName:", spriteName) 
                 if spriteName then
-                    for _, v in ipairs(forbidenVanillaTiles) do
+                    for _, v in ipairs(forbiddenVanillaTiles) do
                         if v == spriteName then
-                            htPrint("false forbidenVanillaTiles")
+                            htPrint("false forbiddenVanillaTiles")
                             errorCount = errorCount + 1
                             break
                         end

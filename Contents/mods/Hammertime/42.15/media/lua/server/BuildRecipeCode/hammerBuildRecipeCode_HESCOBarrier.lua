@@ -25,7 +25,7 @@ function hammerBuildRecipeCode.HESCOBarrierLvl2.OnIsValid(params)
     }
     
     -- List of level 2 HESCO Barrier as we don't want to build a level 2 barrier when their is already one on the square
-    local forbidenTiles = {
+    local forbiddenTiles = {
 		"ht_vanilla_fencing_01_1",
 		"ht_vanilla_fencing_01_3",
 		"ht_vanilla_fencing_01_5",
@@ -55,9 +55,9 @@ function hammerBuildRecipeCode.HESCOBarrierLvl2.OnIsValid(params)
             end 
             
             -- We check if their is already an HESCO Barrier Lvl 2 on the tile to prevent duplicate
-            for _, v in ipairs(forbidenTiles) do
+            for _, v in ipairs(forbiddenTiles) do
 				if v == spriteName then
-					htPrint("false forbidenTiles")
+					htPrint("false forbiddenTiles")
                     errorCount = errorCount + 1
                 end
             end
@@ -67,12 +67,12 @@ function hammerBuildRecipeCode.HESCOBarrierLvl2.OnIsValid(params)
     
     -- If errorCount > 0 the script will return false
     if (allowedTilesCheck > 0 and errorCount <= 0) then
-		htPrint("true hammerBuildRecipeCode.HESCOBarrierLvl2.OnIsValid (errorCount > 0)")
+		htPrint("true hammerBuildRecipeCode.HESCOBarrierLvl2.OnIsValid (errorCount < 0)")
         return true
              
    -- If errorCount > 0 the script return false
     else
-		htPrint("false hammerBuildRecipeCode.HESCOBarrierLvl2.OnIsValid")
+		htPrint("false hammerBuildRecipeCode.HESCOBarrierLvl2.OnIsValid (errorCount > 0)")
         return false
     end
             

@@ -8,7 +8,7 @@ function hammerBuildRecipeCode.KeyDuplicator.OnIsValid(params)
     htPrint("hammerBuildRecipeCode.KeyDuplicator.OnIsValid triggered | Server:", isServer(), "Client:", isClient())
     
     -- List of vanilla tile that have IsTable parameter in the tilesheet def but we can't build a Key Duplicator on
-    local forbidenVanillaTiles = {
+    local forbiddenVanillaTiles = {
     }
 
     local errorCount = 0 -- Set errorCount to 0
@@ -34,15 +34,15 @@ function hammerBuildRecipeCode.KeyDuplicator.OnIsValid(params)
                 local sObj = originalSq:getObjects():get(j)
                 htPrint("Index:", j, "Object on Square:", sObj, "Type:", tostring(sObj:getObjectName()))
                 
-                -- Additionnal check against forbidentVanillaTiles 
-                -- Add an error if spriteName is in forbidenVanillaTiles
+                -- Additionnal check against forbiddentVanillaTiles
+                -- Add an error if spriteName is in forbiddenVanillaTiles
                 local sprite = sObj:getSprite()
                 local spriteName = sprite:getName()
                 htPrint("spriteName:", spriteName) 
                 if spriteName then
-                    for _, v in ipairs(forbidenVanillaTiles) do
+                    for _, v in ipairs(forbiddenVanillaTiles) do
                         if v == spriteName then
-                            htPrint("false forbidenVanillaTiles")
+                            htPrint("false forbiddenVanillaTiles")
                             errorCount = errorCount + 1
                             break
                         end

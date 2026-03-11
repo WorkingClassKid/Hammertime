@@ -14,4 +14,14 @@
     "Tooltip_ht_PrisonCellWalls": "Solid prison cell wall to keep the zombies away.",
     
     "Tooltip_ht_HESCO_Lvl2": "Can only be built on top of a HESCO Barriver Lvl 1",
+
+    "Tooltip_ht_Eaves": " Eaves are the edges of a roof that extend past a house",
+
+    "Tooltip_ht_Roofing_Shingles": "Shingles roofs are the most popular residential roofing in North America",
+
+    "Tooltip_ht_Roofing_Glass": "Glass roofs are the best for your Greenhouse!",
+
+    "Tooltip_ht_Roofing_Metal": "Durable metal roofing panels",
+
+    "Tooltip_ht_Cobblestone_Floor": "Cobblestone roads are durable, historically significant, and environmentally friendly"
 }

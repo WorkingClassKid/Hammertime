@@ -1,3 +1,53 @@
+Hammertime
+------------------
+= NEW =
+- New hammertimeBuildRecipeCode for Eaves in Hammertime_Structure
+  - hammerBuildRecipeCode.Eaves.OnIsValid(params)
+  - hammerBuildRecipeCode.EavesCorner.OnIsValid(params)
+  - hammerBuildRecipeCode.EavesEnding.OnIsValid(params)
+
+= FIXES =
+- Fixed many typos
+
+Hammertime_Structure
+------------------
+= NEW =
+- Blue Shingles Eaves
+- Blue Shingles Roofing
+- Brown Metal Eaves
+- Brown Metal Roofing
+- Brown Shingles Eaves
+- Brown Shingles Roofing
+- Glass Eaves
+- Glass Roofing
+- Gray Shingles Eaves
+- Gray Shingles Roofing
+- Green Metal Eaves
+- Green Metal Roofing
+- Green Shingles Eaves
+- Green Shingles Roofing
+- Red Metal Eaves
+- Red Metal Roofing
+- White Metal Eaves
+- White Metal Roofing
+- Wooden Roofing
+- Wooden Shingles Eaves
+
+
+= TWEAKS =
+- New Category: Roofing
+- New Category: Roofing_Eave
+
+= FIXES =
+- Updated many wrong tooltips
+
+
+Other
+------------------
+- Updated representative pictures for udpated sub-mods to showcase new items/features on the workshop.
+- Updated workshop description.
+
+
 ********************
 2026-03-09
 ********************

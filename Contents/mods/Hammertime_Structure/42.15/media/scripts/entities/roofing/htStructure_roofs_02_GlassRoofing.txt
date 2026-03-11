@@ -1,0 +1,66 @@
+module Base
+{
+
+    xuiSkin default
+	{
+        entity ES_htGlassRoofing
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Glass Roofing,
+			Icon = ui_roofs_02_54,
+		}
+    }
+
+    /*
+    *  Glass Roofing
+    *  htGlassRoofing
+    *  roofs_02_54
+    *  roofs_02_55
+    */
+
+
+    entity htGlassRoofing
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htGlassRoofing,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            OnIsValid = BuildRecipeCode.floor.OnIsValid,
+            OnCreate = BuildRecipeCode.floor.OnCreate,
+            face W
+            {
+                layer
+                {
+                    row = roofs_02_54,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = roofs_02_55,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildLowHammer,
+            time = 200,
+            category = Roofing,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:5,
+            Tooltip = Tooltip_ht_Roofing_Glass,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.GlassPanel],
+                item 1 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+}

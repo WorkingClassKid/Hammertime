@@ -1,0 +1,187 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htGreenMetalEaves
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Green Metal Eaves,
+			Icon = ui_roofs_03_38,
+		}
+
+		entity ES_htGreenMetalEavesCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Green Metal Eaves Corner,
+			Icon = ui_roofs_03_52,
+		}
+
+		entity ES_htGreenMetalEavesEnding
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Green Metal Eaves Ending,
+			Icon = ui_roofs_03_62,
+		}
+
+    }    
+    
+    /*
+    *  Green Metal Eaves
+    *  htGreenMetalEaves
+    *  roofs_03_38
+    *  roofs_03_39
+    */ 
+    
+    
+    entity htGreenMetalEaves
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htGreenMetalEaves,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+
+            OnIsValid = hammerBuildRecipeCode.Eaves.OnIsValid,
+
+            face N
+            {
+                layer
+                {
+                    row = roofs_03_38,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = roofs_03_39,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Roofing_Eave,
+            SkillRequired = MetalWelding:2,
+            xpAward = MetalWelding:5,
+            Tooltip = Tooltip_ht_Eaves,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[base:pliers] mode:keep flags[MayDegradeVeryLight],
+                item 1 tags[base:smallsheetmetal] mode:destroy flags[ItemCount],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+
+    /*
+    *  Green Metal Eaves Corner
+    *  htGreenMetalEavesCorner
+    *  roofs_03_52
+    *  roofs_03_53
+    */
+
+    entity htGreenMetalEavesCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htGreenMetalEavesCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+
+            OnIsValid = hammerBuildRecipeCode.EavesCorner.OnIsValid,
+
+            face E
+            {
+                layer
+                {
+                    row = roofs_03_52,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = roofs_03_53,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Roofing_Eave,
+            SkillRequired = MetalWelding:2,
+            xpAward = MetalWelding:5,
+            Tooltip = Tooltip_ht_Eaves,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[base:pliers] mode:keep flags[MayDegradeVeryLight],
+                item 1 tags[base:smallsheetmetal] mode:destroy flags[ItemCount],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+
+/*
+    *  Green Metal Eaves Ending
+    *  htGreenMetalEavesEnding
+    *  roofs_03_62
+    *  roofs_03_63
+    */
+
+    entity htGreenMetalEavesEnding
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htGreenMetalEavesEnding,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+
+            OnIsValid = hammerBuildRecipeCode.EavesEnding.OnIsValid,
+
+            face N
+            {
+                layer
+                {
+                    row = roofs_03_62,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = roofs_03_63,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Roofing_Eave,
+            SkillRequired = MetalWelding:2,
+            xpAward = MetalWelding:5,
+            Tooltip = Tooltip_ht_Eaves,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[base:pliers] mode:keep flags[MayDegradeVeryLight],
+                item 1 tags[base:smallsheetmetal] mode:destroy flags[ItemCount],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+}

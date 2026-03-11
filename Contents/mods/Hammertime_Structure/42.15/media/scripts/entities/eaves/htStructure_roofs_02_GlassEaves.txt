@@ -1,0 +1,127 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htGlassEaves
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Glass Eaves,
+			Icon = ui_roofs_02_38,
+		}
+
+		entity ES_htGlassEavesCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Glass Eaves Corner,
+			Icon = ui_roofs_02_52,
+		}
+
+    }    
+    
+    /*
+    *  Glass Eaves
+    *  htGlassEaves
+    *  roofs_02_38
+    *  roofs_02_39
+    */ 
+    
+    
+    entity htGlassEaves
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htGlassEaves,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+
+            OnIsValid = hammerBuildRecipeCode.Eaves.OnIsValid,
+
+            face N
+            {
+                layer
+                {
+                    row = roofs_02_38,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = roofs_02_39,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Roofing_Eave,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:10,
+            Tooltip = Tooltip_ht_Eaves,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.GlassPanel],
+                item 1 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+
+    /*
+    *  Glass Eaves Corner
+    *  htGlassEavesCorner
+    *  roofs_02_52
+    *  roofs_02_53
+    */
+
+    entity htGlassEavesCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htGlassEavesCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+
+            OnIsValid = hammerBuildRecipeCode.EavesCorner.OnIsValid,
+
+            face E
+            {
+                layer
+                {
+                    row = roofs_02_52,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = roofs_02_53,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Roofing_Eave,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:10,
+            Tooltip = Tooltip_ht_Eaves,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.GlassPanel],
+                item 1 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+}

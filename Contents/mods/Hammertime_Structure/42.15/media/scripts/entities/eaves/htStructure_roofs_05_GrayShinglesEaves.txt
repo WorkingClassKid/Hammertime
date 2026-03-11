@@ -1,0 +1,184 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htGreenShinglesEaves
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Green Shingles Eaves,
+			Icon = ui_roofs_05_38,
+		}
+
+		entity ES_htGreenShinglesEavesCorner
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Green Shingles Eaves Corner,
+			Icon = ui_roofs_05_52,
+		}
+
+		entity ES_htGreenShinglesEavesEnding
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Green Shingles Eaves Ending,
+			Icon = ui_roofs_05_62,
+		}
+
+    }    
+    
+    /*
+    *  Green Shingles Eaves
+    *  htGreenShinglesEaves
+    *  roofs_05_38
+    *  roofs_05_39
+    */ 
+    
+    
+    entity htGreenShinglesEaves
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htGreenShinglesEaves,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+
+            OnIsValid = hammerBuildRecipeCode.Eaves.OnIsValid,
+
+            face N
+            {
+                layer
+                {
+                    row = roofs_05_38,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = roofs_05_39,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Roofing_Eave,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:10,
+            Tooltip = Tooltip_ht_Eaves,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+
+    /*
+    *  Green Shingles Eaves Corner
+    *  htGreenShinglesEavesCorner
+    *  roofs_05_52
+    *  roofs_05_53
+    */
+
+    entity htGreenShinglesEavesCorner
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htGreenShinglesEavesCorner,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+
+            OnIsValid = hammerBuildRecipeCode.EavesCorner.OnIsValid,
+
+            face E
+            {
+                layer
+                {
+                    row = roofs_05_52,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = roofs_05_53,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Roofing_Eave,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:10,
+            Tooltip = Tooltip_ht_Eaves,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+
+    /*
+    *  Green Shingles Eaves Ending
+    *  htGreenShinglesEavesEnding
+    *  roofs_05_62
+    *  roofs_05_63
+    */
+
+    entity htGreenShinglesEavesEnding
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htGreenShinglesEavesEnding,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+
+            OnIsValid = hammerBuildRecipeCode.EavesEnding.OnIsValid,
+
+            face N
+            {
+                layer
+                {
+                    row = roofs_05_62,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = roofs_05_63,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWallHammer,
+            time = 200,
+            category = Roofing_Eave,
+            SkillRequired = Woodwork:5,
+            xpAward = Woodwork:10,
+            Tooltip = Tooltip_ht_Eaves,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+}

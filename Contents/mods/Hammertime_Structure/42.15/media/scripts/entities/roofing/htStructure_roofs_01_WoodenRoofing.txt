@@ -1,0 +1,65 @@
+module Base
+{
+
+    xuiSkin default
+	{
+        entity ES_htWoodenRoofing
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Wooden Roofing,
+			Icon = ui_roofs_01_54,
+		}
+    }
+
+    /*
+    *  Wooden Roofing
+    *  htWoodenRoofing
+    *  roofs_01_54
+    *  roofs_01_55
+    */
+
+
+    entity htWoodenRoofing
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWoodenRoofing,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            OnIsValid = BuildRecipeCode.floor.OnIsValid,
+            OnCreate = BuildRecipeCode.floor.OnCreate,
+            face W
+            {
+                layer
+                {
+                    row = roofs_01_54,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = roofs_01_55,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildLowHammer,
+            time = 200,
+            category = Roofing,
+            SkillRequired = Woodwork:2,
+            xpAward = Woodwork:5,
+            Tooltip = Tooltip_ht_Roofing_Shingles,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.Plank],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+}
