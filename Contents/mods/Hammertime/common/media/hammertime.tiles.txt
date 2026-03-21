@@ -1,0 +1,2187 @@
+version = 1
+tileset
+{
+    file = ht_vanilla_fencing_01
+    size = 8,8
+    id = 7
+    // ht_vanilla_fencing_01_0
+    tile
+    {
+        xy = 0,0
+        BlocksPlacement = 
+        CanBreak = 
+        CustomName = Sand
+        GroupName = HESCOBarrier
+        IsLow = 
+        ItemHeight = 32
+        MinimumCarSpeedDmg = 20
+        StopCar = 
+        solid = 
+    }
+    // ht_vanilla_fencing_01_1
+    tile
+    {
+        xy = 1,0
+        CanBreak = 
+        CustomName = Sand
+        GroupName = HESCOBarrierLvl2
+        IsHigh = 
+        MinimumCarSpeedDmg = 20
+        StopCar = 
+        solid = 
+    }
+    // ht_vanilla_fencing_01_2
+    tile
+    {
+        xy = 2,0
+        BlocksPlacement = 
+        CanBreak = 
+        CustomName = Dirt
+        GroupName = HESCOBarrier
+        IsLow = 
+        ItemHeight = 32
+        MinimumCarSpeedDmg = 20
+        StopCar = 
+        solid = 
+    }
+    // ht_vanilla_fencing_01_3
+    tile
+    {
+        xy = 3,0
+        CanBreak = 
+        CustomName = Dirt
+        GroupName = HESCOBarrierLvl2
+        IsHigh = 
+        MinimumCarSpeedDmg = 20
+        StopCar = 
+        solid = 
+    }
+    // ht_vanilla_fencing_01_4
+    tile
+    {
+        xy = 4,0
+        BlocksPlacement = 
+        CanBreak = 
+        CustomName = Gravel
+        GroupName = HESCOBarrier
+        IsLow = 
+        ItemHeight = 32
+        MinimumCarSpeedDmg = 20
+        StopCar = 
+        solid = 
+    }
+    // ht_vanilla_fencing_01_5
+    tile
+    {
+        xy = 5,0
+        CanBreak = 
+        CustomName = Sand
+        GroupName = HESCOBarrierLvl2
+        IsHigh = 
+        MinimumCarSpeedDmg = 20
+        StopCar = 
+        solid = 
+    }
+}
+tileset
+{
+    file = ht_vanilla_fixtures_counters_01_top
+    size = 8,8
+    id = 1
+    // ht_vanilla_fixtures_counters_01_top_0
+    tile
+    {
+        xy = 0,0
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Hardwood
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_1
+    tile
+    {
+        xy = 1,0
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = S
+        GroupName = Hardwood
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_2
+    tile
+    {
+        xy = 2,0
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = N
+        GroupName = Hardwood
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_3
+    tile
+    {
+        xy = 3,0
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = W
+        GroupName = Hardwood
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_4
+    tile
+    {
+        xy = 4,0
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Wooden
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_5
+    tile
+    {
+        xy = 5,0
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = S
+        GroupName = Wooden
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_6
+    tile
+    {
+        xy = 6,0
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = N
+        GroupName = Wooden
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_7
+    tile
+    {
+        xy = 7,0
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = W
+        GroupName = Wooden
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_8
+    tile
+    {
+        xy = 0,1
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Beige
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_9
+    tile
+    {
+        xy = 1,1
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = S
+        GroupName = Beige
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_10
+    tile
+    {
+        xy = 2,1
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = N
+        GroupName = Beige
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_11
+    tile
+    {
+        xy = 3,1
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = W
+        GroupName = Beige
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_12
+    tile
+    {
+        xy = 4,1
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Steel
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_13
+    tile
+    {
+        xy = 5,1
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = S
+        GroupName = Steel
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_14
+    tile
+    {
+        xy = 6,1
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = N
+        GroupName = Steel
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_15
+    tile
+    {
+        xy = 7,1
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = W
+        GroupName = Steel
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_16
+    tile
+    {
+        xy = 0,2
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = RedOak
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_17
+    tile
+    {
+        xy = 1,2
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = S
+        GroupName = RedOak
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_18
+    tile
+    {
+        xy = 2,2
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = N
+        GroupName = RedOak
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_19
+    tile
+    {
+        xy = 3,2
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = W
+        GroupName = RedOak
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_20
+    tile
+    {
+        xy = 4,2
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Dark
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_21
+    tile
+    {
+        xy = 5,2
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = S
+        GroupName = Dark
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_22
+    tile
+    {
+        xy = 6,2
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = N
+        GroupName = Dark
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_23
+    tile
+    {
+        xy = 7,2
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = W
+        GroupName = Dark
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_24
+    tile
+    {
+        xy = 0,3
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Green
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_25
+    tile
+    {
+        xy = 1,3
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = S
+        GroupName = Green
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_26
+    tile
+    {
+        xy = 2,3
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = N
+        GroupName = Green
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_27
+    tile
+    {
+        xy = 3,3
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = W
+        GroupName = Green
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_28
+    tile
+    {
+        xy = 4,3
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = White
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_29
+    tile
+    {
+        xy = 5,3
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = S
+        GroupName = White
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_30
+    tile
+    {
+        xy = 6,3
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = N
+        GroupName = White
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_31
+    tile
+    {
+        xy = 7,3
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = W
+        GroupName = White
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_32
+    tile
+    {
+        xy = 0,4
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Walnut
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_33
+    tile
+    {
+        xy = 1,4
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = S
+        GroupName = Walnut
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_34
+    tile
+    {
+        xy = 2,4
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = N
+        GroupName = Walnut
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        Movement = HedgeHigh
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+        solidtrans = 
+    }
+    // ht_vanilla_fixtures_counters_01_top_35
+    tile
+    {
+        xy = 3,4
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = W
+        GroupName = Walnut
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+}
+tileset
+{
+    file = ht_vanilla_fixtures_counters_01_top_corner
+    size = 8,8
+    id = 2
+    // ht_vanilla_fixtures_counters_01_top_corner_0
+    tile
+    {
+        xy = 0,0
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Hardwood
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_1
+    tile
+    {
+        xy = 1,0
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Hardwood
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_2
+    tile
+    {
+        xy = 2,0
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = N
+        GroupName = Hardwood
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_3
+    tile
+    {
+        xy = 3,0
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Hardwood
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_4
+    tile
+    {
+        xy = 4,0
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Wooden
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_5
+    tile
+    {
+        xy = 5,0
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Wooden
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_6
+    tile
+    {
+        xy = 6,0
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = N
+        GroupName = Wooden
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_7
+    tile
+    {
+        xy = 7,0
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Wooden
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_8
+    tile
+    {
+        xy = 0,1
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Beige
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_9
+    tile
+    {
+        xy = 1,1
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Beige
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_10
+    tile
+    {
+        xy = 2,1
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = N
+        GroupName = Beige
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_11
+    tile
+    {
+        xy = 3,1
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Beige
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_12
+    tile
+    {
+        xy = 4,1
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Steel
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_13
+    tile
+    {
+        xy = 5,1
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Steel
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_14
+    tile
+    {
+        xy = 6,1
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = N
+        GroupName = Steel
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_15
+    tile
+    {
+        xy = 7,1
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Steel
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_16
+    tile
+    {
+        xy = 0,2
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = RedOak
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_17
+    tile
+    {
+        xy = 1,2
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = RedOak
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_18
+    tile
+    {
+        xy = 2,2
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = N
+        GroupName = RedOak
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_19
+    tile
+    {
+        xy = 3,2
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = RedOak
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_20
+    tile
+    {
+        xy = 4,2
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Dark
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_21
+    tile
+    {
+        xy = 5,2
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Dark
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_22
+    tile
+    {
+        xy = 6,2
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = N
+        GroupName = Dark
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_23
+    tile
+    {
+        xy = 7,2
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Dark
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_24
+    tile
+    {
+        xy = 0,3
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Green
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_25
+    tile
+    {
+        xy = 1,3
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Green
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_26
+    tile
+    {
+        xy = 2,3
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = N
+        GroupName = Green
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_27
+    tile
+    {
+        xy = 3,3
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Green
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_28
+    tile
+    {
+        xy = 4,3
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = White
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_29
+    tile
+    {
+        xy = 5,3
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = White
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_30
+    tile
+    {
+        xy = 6,3
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = N
+        GroupName = White
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_31
+    tile
+    {
+        xy = 7,3
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = White
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_32
+    tile
+    {
+        xy = 0,4
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Walnut
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_33
+    tile
+    {
+        xy = 1,4
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Walnut
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_34
+    tile
+    {
+        xy = 2,4
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = N
+        GroupName = Walnut
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+    // ht_vanilla_fixtures_counters_01_top_corner_35
+    tile
+    {
+        xy = 3,4
+        CanBreak = 
+        CanScrap = 
+        ContainerCapacity = 30
+        ContainerPosition = High
+        CustomName = WallCounter
+        Facing = E
+        GroupName = Hardwood
+        IsHigh = 
+        IsMoveAble = 
+        ItemHeight = 80
+        Material = Wood
+        Material2 = Nails
+        MoveType = WallObject
+        PickUpLevel = 3
+        PickUpTool = Hammer
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        container = counter
+    }
+}
+tileset
+{
+    file = ht_vanilla_location_business_bank_01
+    size = 8,8
+    id = 3
+    // ht_vanilla_location_business_bank_01_0
+    tile
+    {
+        xy = 0,0
+        BlocksPlacement = 
+        CanScrap = 
+        ContainerCapacity = 50
+        CustomName = SteelSafe
+        Facing = W
+        GroupName = SteelSafe
+        IsLow = 
+        IsTable = 
+        Material = MetalPlates
+        Material2 = MetalScrap
+        Material3 = Screws
+        Surface = 42
+        container = Safe
+        solidtrans = 
+    }
+    // ht_vanilla_location_business_bank_01_1
+    tile
+    {
+        xy = 1,0
+        BlocksPlacement = 
+        CanScrap = 
+        ContainerCapacity = 50
+        CustomName = SteelSafe
+        Facing = N
+        GroupName = SteelSafe
+        IsLow = 
+        IsTable = 
+        Material = MetalPlates
+        Material2 = MetalScrap
+        Material3 = Screws
+        Surface = 42
+        container = Safe
+        solidtrans = 
+    }
+    // ht_vanilla_location_business_bank_01_2
+    tile
+    {
+        xy = 2,0
+        BlocksPlacement = 
+        CanScrap = 
+        ContainerCapacity = 50
+        CustomName = SteelSafe
+        Facing = E
+        GroupName = SteelSafe
+        IsLow = 
+        IsTable = 
+        Material = MetalPlates
+        Material2 = MetalScrap
+        Material3 = Screws
+        Surface = 42
+        container = Safe
+        solidtrans = 
+    }
+    // ht_vanilla_location_business_bank_01_3
+    tile
+    {
+        xy = 3,0
+        BlocksPlacement = 
+        CanScrap = 
+        ContainerCapacity = 50
+        CustomName = SteelSafe
+        Facing = S
+        GroupName = SteelSafe
+        IsLow = 
+        IsTable = 
+        Material = MetalPlates
+        Material2 = MetalScrap
+        Material3 = Screws
+        Surface = 42
+        container = Safe
+        solidtrans = 
+    }
+}
+tileset
+{
+    file = ht_vanilla_location_community_police_01
+    size = 8,8
+    id = 4
+    // ht_vanilla_location_community_police_01_0
+    tile
+    {
+        xy = 0,0
+        DoorWallW = 
+        Facing = W
+        Material = MetalBars
+        Material2 = MetalBars
+        NoWallLighting = 
+        doorFrW = 
+        doorTrans = 
+        wall = 
+    }
+    // ht_vanilla_location_community_police_01_1
+    tile
+    {
+        xy = 1,0
+        DoorWallN = 
+        Facing = N
+        Material = MetalBars
+        Material2 = MetalBars
+        NoWallLighting = 
+        doorFrN = 
+        doorTrans = 
+        wall = 
+    }
+}
+tileset
+{
+    file = ht_vanilla_overwrite_fix_01
+    size = 8,8
+    id = 5
+}
+tileset
+{
+    file = ht_vanilla_roofs_01
+    size = 8,17
+    id = 8
+    // ht_vanilla_roofs_01_6
+    tile
+    {
+        xy = 6,0
+        BurntTile = roofs_burnt_01_6
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 1
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_6
+        WestRoofT = 
+        attachedN = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_01_7
+    tile
+    {
+        xy = 7,0
+        BurntTile = roofs_burnt_01_7
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 1
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_7
+        WestRoofT = 
+        attachedW = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_01_20
+    tile
+    {
+        xy = 4,2
+        BurntTile = roofs_burnt_01_20
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 1
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_20
+        WestRoofT = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_01_21
+    tile
+    {
+        xy = 5,2
+        BurntTile = roofs_burnt_01_21
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 1
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_21
+        WestRoofT = 
+        attachedE = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_01_22
+    tile
+    {
+        xy = 6,2
+        BurntTile = roofs_burnt_01_22
+        CanScrap = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 1
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_22
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_roofs_01_23
+    tile
+    {
+        xy = 7,2
+        BurntTile = roofs_burnt_01_23
+        CanScrap = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 1
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_23
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_roofs_01_30
+    tile
+    {
+        xy = 6,3
+        BurntTile = roofs_burnt_01_30
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 1
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_30
+        WestRoofT = 
+        attachedN = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_01_31
+    tile
+    {
+        xy = 7,3
+        BurntTile = roofs_burnt_01_31
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 1
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_31
+        WestRoofT = 
+        attachedW = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_01_38
+    tile
+    {
+        xy = 6,4
+        BurntTile = roofs_burnt_01_6
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 1
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_6
+        WestRoofT = 
+        attachedN = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_01_39
+    tile
+    {
+        xy = 7,4
+        BurntTile = roofs_burnt_01_7
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 1
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_7
+        WestRoofT = 
+        attachedW = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_01_52
+    tile
+    {
+        xy = 4,6
+        BurntTile = roofs_burnt_01_20
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 1
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_20
+        WestRoofT = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_01_53
+    tile
+    {
+        xy = 5,6
+        BurntTile = roofs_burnt_01_21
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 1
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_21
+        WestRoofT = 
+        attachedE = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_01_54
+    tile
+    {
+        xy = 6,6
+        BurntTile = roofs_burnt_01_22
+        CanScrap = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 1
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_22
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_roofs_01_55
+    tile
+    {
+        xy = 7,6
+        BurntTile = roofs_burnt_01_23
+        CanScrap = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 1
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_23
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+}
+tileset
+{
+    file = ht_vanilla_roofs_02
+    size = 8,16
+    id = 9
+}
+tileset
+{
+    file = ht_vanilla_roofs_03
+    size = 8,16
+    id = 10
+}
+tileset
+{
+    file = ht_vanilla_roofs_04 
+    size = 8,14
+    id = 11
+}
+tileset
+{
+    file = ht_vanilla_roofs_05
+    size = 8,22
+    id = 12
+}
+tileset
+{
+    file = ht_vanilla_roofs_06
+    size = 8,16
+    id = 13
+}
+tileset
+{
+    file = ht_vanilla_workstations_01
+    size = 8,8
+    id = 6
+    // ht_vanilla_workstations_01_0
+    tile
+    {
+        xy = 0,0
+        CustomName = Duplicator
+        Facing = S
+        GroupName = htDuplicator
+        IsMoveAble = 
+        IsSurfaceOffset = 
+        IsTableTop = 
+        Surface = 31
+    }
+    // ht_vanilla_workstations_01_1
+    tile
+    {
+        xy = 1,0
+        CustomName = Duplicator
+        Facing = E
+        GroupName = htDuplicator
+        IsMoveAble = 
+        IsSurfaceOffset = 
+        IsTableTop = 
+        Surface = 31
+    }
+    // ht_vanilla_workstations_01_2
+    tile
+    {
+        xy = 2,0
+        CustomName = Duplicator
+        Facing = N
+        GroupName = htDuplicator
+        IsMoveAble = 
+        IsSurfaceOffset = 
+        IsTableTop = 
+        Surface = 31
+    }
+    // ht_vanilla_workstations_01_3
+    tile
+    {
+        xy = 3,0
+        CustomName = Duplicator
+        Facing = W
+        GroupName = htDuplicator
+        IsMoveAble = 
+        IsSurfaceOffset = 
+        IsTableTop = 
+        Surface = 31
+    }
+}

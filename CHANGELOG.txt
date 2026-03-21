@@ -1,3 +1,83 @@
+********************
+2026-03-21
+********************
+
+Hammertime
+------------------
+= TWEAKS =
+- Added all vanilla roof tiles to the Hammertime tilesheet to allow them to be disassembled.
+
+
+Hammertime_Appliance
+------------------
+= FIXES =
+- Fixed ItemName.json translations
+
+
+Hammertime_Crafting
+------------------
+= FIXES =
+- Fixed ItemName.json translations
+- Fixed recipes.json translations
+
+
+Hammertime_Furniture
+------------------
+= NEW =
+- Neon Open Sign
+- Antique Outdoor Lamp
+- Fancy Outdoor Lamp
+- Modern Outdoor Lamp
+- Oval Outdoor Lamp
+- Round Outdoor Lamp
+- Blue Lamp
+- Gray Lamp
+- Red Lamp
+- Stripped Lamp
+- White Lamp
+- Dark Wall Lamp
+- Fancy Wall Lamp
+- Pink Wall Lamp
+- Blue Desk Lamp
+- Gray Desk Lamp
+- Yellow Desk Lamp
+- Small Blue Desk Lamp
+- Small Red And Blue Desk Lamp
+- Small White Desk Lamp
+- Gray Swing Arm Desk Lamp
+- Red Swing Arm Desk Lamp
+- Blue Glass Desk Lamp
+- Green Glass Desk Lamp
+- Fancy Blue Lamp
+- Fancy Red Lamp
+- Fancy Glass Lamp
+- Black Floor Lamp
+- Golden Floor Lamp
+- White Floor Lamp
+
+= TWEAKS =
+- New Crafting Category: Lighting_Indoor
+- New Crafting Category: Lighting_Outdoor
+
+= BALANCE =
+- Added Welding Mask as a requirement in many recipes
+
+
+Hammertime_Structure
+------------------
+= TWEAKS =
+- You can now disassemble all roofing tiles and eaves constructed with this mod (applies to newly constructed items only)
+
+
+Other
+------------------
+- Updated representative pictures for udpated sub-mods to showcase new items/features on the workshop.
+- Updated workshop description.
+- Updated README.md
+
+********************
+2026-03-11
+********************
 Hammertime
 ------------------
 = NEW =

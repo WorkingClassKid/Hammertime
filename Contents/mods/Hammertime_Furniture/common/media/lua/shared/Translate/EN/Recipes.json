@@ -1,4 +1,43 @@
 {
-    "BirchwoodBench": "Birchwood Bench",
+    "htMakeBlueLamp": "Make Blue Lamp",
+    "htMakeBrownLamp": "Make Brown Lamp",
+    "htMakeGrayLamp": "Make Gray Lamp",
+    "htMakeRedLamp": "Make Red Lamp",
+    "htMakeStrippedLamp": "Make Stripped Lamp",
+    "htMakeWhiteLamp": "Make White Lamp",
+
+    "htMakeFancyBlueLamp": "Make Fancy Blue Lamp",
+    "htMakeFancyGlassLamp": "Make Fancy Glass Lamp",
+    "htMakeFancyRedLamp": "Make Fancy Red Lamp",
+
+    "htMakeBlueDeskLamp": "Make Blue Desk Lamp",
+    "htMakeGrayDeskLamp": "Make Gray Desk Lamp",
+    "htMakeYellowDeskLamp": "Make Yellow Desk Lamp",
+
+    "htMakeBlackFloorLamp": "Make Black Floor Lamp",
+    "htMakeGoldenFloorLamp": "Make Golden Floor Lamp",
+    "htMakeWhiteFloorLamp": "Make White Floor Lamp",
+
+    "htMakeBlueGlassDeskLamp": "Make Blue Glass Desk Lamp",
+    "htMakeGreenGlassDeskLamp": "Make Green Glass Desk Lamp",
+
+    "htMakeGraySwingArmDeskLamp": "Make Gray Swing Arm Desk Lamp",
+    "htMakeRedSwingArmDeskLamp": "Make Red Swing Arm Desk Lamp",
+
+    "htMakeSmallBlueDeskLamp": "Make Small Blue Desk Lamp",
+    "htMakeSmallRedAndBlueDeskLamp": "Make Small Red And Blue Desk Lamp",
+    "htMakeSmallWhiteDeskLamp": "Make Small White Desk Lamp",
+
+    "htMakeDarkWallLamp": "Make Dark Wall Lamp",
+    "htMakeFancyWallLamp": "Make Fancy Wall Lamp",
+    "htMakePinkWallLamp": "Make Pink Wall Lamp",
+
+    "htMakeAntiqueOutdoorLamp": "Make Antique Outdoor Lamp",
+    "htMakeFancyOutdoorLamp": "Make Fancy Outdoor Lamp",
+    "htMakeModernOutdoorLamp": "Make Modern Outdoor Lamp",
+    "htMakeOvalOutdoorLamp": "Make Oval Outdoor Lamp",
+    "htMakeRoundOutdoorLamp": "Make Round Outdoor Lamp",
+
+    "htMakeNeonOpenSign": "Make Neon Open Sign",
 
 }

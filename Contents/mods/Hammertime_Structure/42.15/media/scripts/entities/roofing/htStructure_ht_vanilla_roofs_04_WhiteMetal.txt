@@ -1,0 +1,66 @@
+module Base
+{
+
+    xuiSkin default
+	{
+        entity ES_htWhiteMetalRoofing
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White Metal Roofing,
+			Icon = ui_roofs_04_54,
+		}
+    }
+
+    /*
+    *  White Metal Roofing
+    *  htWhiteMetalRoofing
+    *  ht_vanilla_roofs_04_54
+    *  ht_vanilla_roofs_04_55
+    */
+
+
+    entity htWhiteMetalRoofing
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWhiteMetalRoofing,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            OnIsValid = BuildRecipeCode.floor.OnIsValid,
+            OnCreate = BuildRecipeCode.floor.OnCreate,
+            face W
+            {
+                layer
+                {
+                    row = ht_vanilla_roofs_04_54,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = ht_vanilla_roofs_04_55,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildLowHammer,
+            time = 200,
+            category = Roofing,
+            SkillRequired = MetalWelding:2,
+            xpAward = MetalWelding:5,
+            Tooltip = Tooltip_ht_Roofing_Metal,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[base:pliers] mode:keep flags[MayDegradeVeryLight],
+                item 1 tags[base:smallsheetmetal] mode:destroy flags[ItemCount],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+}

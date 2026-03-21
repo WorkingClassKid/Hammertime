@@ -1,0 +1,45 @@
+module Base {
+
+    /*
+    *  htGoldenFloorLamp
+    *  Base.htGoldenFloorLamp
+    */
+
+    item htGoldenFloorLamp
+    {
+        DisplayCategory = Lighting,
+        ItemType = base:moveable,
+        Icon = ui_lighting_indoor_01_58,
+        Weight = 5.0,
+        WorldObjectSprite = lighting_indoor_01_58,
+    }
+
+    /*
+    *  htMakeGoldenFloorLamp
+    */ 
+    
+
+    craftRecipe htMakeGoldenFloorLamp
+    {
+        timedAction = MakingElectrical,
+        time = 400,
+        SkillRequired = Electricity:1;MetalWelding:1,
+        Tags = AnySurfaceCraft,
+        Category = Lighting_Indoor,
+        xpAward = Electricity:10;MetalWelding:10;Tailoring:10,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[base:metalworkingpliers] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[barstock],
+            item 1 [Base.ElectricWire],
+            item 1 [Base.SmallSheetMetal],
+            item 1 tags[base:sheet],
+            item 1 [Base.LightBulb],
+        }
+        outputs
+        {
+            item 1 Base.htGoldenFloorLamp,
+        }
+    } 
+}

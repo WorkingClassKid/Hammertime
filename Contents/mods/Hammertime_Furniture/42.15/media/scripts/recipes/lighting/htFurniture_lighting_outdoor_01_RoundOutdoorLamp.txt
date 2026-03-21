@@ -1,0 +1,43 @@
+module Base {
+
+    /*
+    *  htRoundOutdoorLamp
+    *  Base.htRoundOutdoorLamp
+    */
+
+    item htRoundOutdoorLamp
+    {
+        DisplayCategory = Lighting,
+        ItemType = base:moveable,
+        Icon = ui_lighting_outdoor_01_25,
+        Weight = 5.0,
+        WorldObjectSprite = lighting_outdoor_01_25,
+    }
+
+    /*
+    *  htMakeRoundOutdoorLamp
+    */ 
+    
+
+    craftRecipe htMakeRoundOutdoorLamp
+    {
+        timedAction = MakingElectrical,
+        time = 400,
+        SkillRequired = Electricity:1,
+        Tags = AnySurfaceCraft,
+        Category = Lighting_Outdoor,
+        xpAward = Electricity:10,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[base:metalworkingpliers] mode:keep flags[MayDegradeVeryLight],
+            item 1 [Base.SmallSheetMetal],
+            item 1 [Base.GlassPanel],
+            item 1 [Base.LightBulb],
+        }
+        outputs
+        {
+            item 1 Base.htRoundOutdoorLamp,
+        }
+    } 
+}

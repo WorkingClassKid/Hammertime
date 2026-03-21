@@ -1,0 +1,45 @@
+module Base {
+
+    /*
+    *  htBlueGlassDeskLamp
+    *  Base.htBlueGlassDeskLamp
+    */
+
+    item htBlueGlassDeskLamp
+    {
+        DisplayCategory = Lighting,
+        ItemType = base:moveable,
+        Icon = ui_lighting_indoor_02_38,
+        Weight = 5.0,
+        WorldObjectSprite = lighting_indoor_02_38,
+    }
+
+    /*
+    *  htMakeBlueGlassDeskLamp
+    */ 
+    
+
+    craftRecipe htMakeBlueGlassDeskLamp
+    {
+        timedAction = MakingElectrical,
+        time = 400,
+        SkillRequired = Electricity:1,
+        Tags = AnySurfaceCraft,
+        Category = Lighting_Indoor,
+        xpAward = Electricity:10,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[base:metalworkingpliers] mode:keep flags[MayDegradeVeryLight],
+            item 1 [Base.ElectricWire],
+            item 1 tags[base:barstockhalf],
+            item 1 [Base.SmallSheetMetal],
+            item 1 [Base.GlassPanel],
+            item 1 [Base.LightBulb],
+        }
+        outputs
+        {
+            item 1 Base.htBlueGlassDeskLamp,
+        }
+    } 
+}

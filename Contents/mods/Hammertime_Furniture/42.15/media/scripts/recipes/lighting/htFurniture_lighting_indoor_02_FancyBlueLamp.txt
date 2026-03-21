@@ -1,0 +1,44 @@
+module Base {
+
+    /*
+    *  htFancyBlueLamp
+    *  Base.htFancyBlueLamp
+    */
+
+    item htFancyBlueLamp
+    {
+        DisplayCategory = Lighting,
+        ItemType = base:moveable,
+        Icon = ui_lighting_indoor_02_70,
+        Weight = 5.0,
+        WorldObjectSprite = lighting_indoor_02_70,
+    }
+
+    /*
+    *  htMakeFancyBlueLamp
+    */ 
+    
+
+    craftRecipe htMakeFancyBlueLamp
+    {
+        timedAction = MakingElectrical,
+        time = 400,
+        SkillRequired = Electricity:1;Tailoring:1,
+        Tags = AnySurfaceCraft,
+        Category = Lighting_Indoor,
+        xpAward = Electricity:10;Tailoring:10,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[base:metalworkingpliers] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[base:barstockhalf],
+            item 1 [Base.ElectricWire],
+            item 1 tags[base:sheet],
+            item 1 [Base.LightBulb],
+        }
+        outputs
+        {
+            item 1 Base.htFancyBlueLamp,
+        }
+    } 
+}

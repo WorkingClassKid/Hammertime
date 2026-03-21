@@ -1,0 +1,43 @@
+{
+    "Base.htBlueLamp": "Blue Lamp",
+    "Base.htBrownLamp": "Brown Lamp",
+    "Base.htGrayLamp": "Gray Lamp",
+    "Base.htRedLamp": "Red Lamp",
+    "Base.htStrippedLamp": "Stripped Lamp",
+    "Base.htWhiteLamp": "White Lamp",
+
+    "Base.htFancyBlueLamp": "Fancy Blue Lamp",
+    "Base.htFancyGlassLamp": "Fancy Glass Lamp",
+    "Base.htFancyRedLamp": "Fancy Red Lamp",
+
+    "Base.htBlueDeskLamp": "Blue Desk Lamp",
+    "Base.htGrayDeskLamp": "Gray Desk Lamp",
+    "Base.htYellowDeskLamp": "Yellow Desk Lamp",
+
+    "Base.htBlackFloorLamp": "Black Floor Lamp",
+    "Base.htGoldenFloorLamp": "Golden Floor Lamp",
+    "Base.htWhiteFloorLamp": "White Floor Lamp",
+
+    "Base.htBlueGlassDeskLamp": "Blue Glass Desk Lamp",
+    "Base.htGreenGlassDeskLamp": "Green Glass Desk Lamp",
+
+    "Base.htGraySwingArmDeskLamp": "Gray Swing Arm Desk Lamp",
+    "Base.htRedSwingArmDeskLamp": "Red Swing Arm Desk Lamp",
+
+    "Base.htSmallBlueDeskLamp": "Small Blue Desk Lamp",
+    "Base.htSmallRedAndBlueDeskLamp": "Small Red And Blue Desk Lamp",
+    "Base.htSmallWhiteDeskLamp": "Small White Desk Lamp",
+
+    "Base.htDarkWallLamp": "Dark Wall Lamp",
+    "Base.htFancyWallLamp": "Fancy Wall Lamp",
+    "Base.htPinkWallLamp": "Pink Wall Lamp",
+
+    "Base.htAntiqueOutdoorLamp": "Antique Outdoor Lamp",
+    "Base.htFancyOutdoorLamp": "Fancy Outdoor Lamp",
+    "Base.htModernOutdoorLamp": "Modern Outdoor Lamp",
+    "Base.htOvalOutdoorLamp": "Oval Outdoor Lamp",
+    "Base.htRoundOutdoorLamp": "Round Outdoor Lamp",
+
+    "Base.htNeonOpenSign": "Neon Open Sign",
+
+}
