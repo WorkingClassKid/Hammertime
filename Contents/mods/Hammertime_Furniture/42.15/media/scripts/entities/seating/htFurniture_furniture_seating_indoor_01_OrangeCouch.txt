@@ -1,0 +1,92 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htOrangeCouch
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Orange Couch,
+			Icon = ui_furniture_seating_indoor_01_0,
+		}
+    }    
+    
+   /* 
+    *  Orange Couch
+    *  htOrangeCouch
+    *  furniture_seating_indoor_01_0
+    *  furniture_seating_indoor_01_1
+    *  furniture_seating_indoor_01_2
+    *  furniture_seating_indoor_01_3
+    *  furniture_seating_indoor_01_4
+    *  furniture_seating_indoor_01_5
+    *  furniture_seating_indoor_01_6
+    *  furniture_seating_indoor_01_7
+    */ 
+    
+    entity htOrangeCouch
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htOrangeCouch,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+			isThumpable = false,
+            face E
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_01_3,
+                    row = furniture_seating_indoor_01_2,
+                }
+            }
+
+            face S
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_01_0 furniture_seating_indoor_01_1,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_01_5,
+                    row = furniture_seating_indoor_01_4,
+                }
+            }
+
+            face N
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_01_6 furniture_seating_indoor_01_7,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 300,
+            SkillRequired = Woodwork:8;Tailoring:4,
+            xpAward = Woodwork:60;Tailoring:40,
+            category = Seating_Indoor,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_chairDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[base:scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+				item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+                item 4 [Base.Plank],
+                item 4 tags[base:normalpillow],
+				item 2 [Base.BurlapPiece;Base.FabricRoll_Cotton;Base.Sheet] flags[InheritColor] mappers[fabricType],
+				item 3 tags[base:thread],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+}

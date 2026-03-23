@@ -1,0 +1,92 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htFancyBlackAndWhiteStripedCouch
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Fancy Black And White Striped Couch,
+			Icon = ui_furniture_seating_indoor_03_104,
+		}
+    }    
+    
+   /* 
+    *  Fancy Black And White Striped Couch
+    *  htFancyBlackAndWhiteStripedCouch
+    *  furniture_seating_indoor_03_104
+    *  furniture_seating_indoor_03_105
+    *  furniture_seating_indoor_03_106
+    *  furniture_seating_indoor_03_107
+    *  furniture_seating_indoor_03_108
+    *  furniture_seating_indoor_03_109
+    *  furniture_seating_indoor_03_110
+    *  furniture_seating_indoor_03_111
+    */ 
+    
+    entity htFancyBlackAndWhiteStripedCouch
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htFancyBlackAndWhiteStripedCouch,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+			isThumpable = false,
+            face E
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_03_105,
+                    row = furniture_seating_indoor_03_104,
+                }
+            }
+
+            face S
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_03_106 furniture_seating_indoor_03_107,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_03_111,
+                    row = furniture_seating_indoor_03_110,
+                }
+            }
+
+            face N
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_03_108 furniture_seating_indoor_03_109,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 300,
+            SkillRequired = Woodwork:9;Tailoring:5,
+            xpAward = Woodwork:60;Tailoring:40,
+            category = Seating_Indoor,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_chairDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[base:scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+				item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+                item 4 [Base.Plank],
+                item 4 tags[base:normalpillow],
+				item 2 [Base.BurlapPiece;Base.FabricRoll_Cotton;Base.Sheet] flags[InheritColor] mappers[fabricType],
+				item 3 tags[base:thread],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+}

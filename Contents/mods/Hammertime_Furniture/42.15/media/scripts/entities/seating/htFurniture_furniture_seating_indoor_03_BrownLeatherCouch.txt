@@ -1,0 +1,92 @@
+module Base
+{
+    	xuiSkin default
+	{       
+        entity ES_htBrownLeatherCouch
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Brown Leather Couch,
+			Icon = ui_furniture_seating_indoor_03_128,
+		}
+    }    
+    
+   /* 
+    *  Brown Leather Couch
+    *  htBrownLeatherCouch
+    *  furniture_seating_indoor_03_128
+    *  furniture_seating_indoor_03_129
+    *  furniture_seating_indoor_03_130
+    *  furniture_seating_indoor_03_131
+    *  furniture_seating_indoor_03_132
+    *  furniture_seating_indoor_03_133
+    *  furniture_seating_indoor_03_134
+    *  furniture_seating_indoor_03_135
+    */ 
+    
+    entity htBrownLeatherCouch
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htBrownLeatherCouch,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+			isThumpable = false,
+            face E
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_03_129,
+                    row = furniture_seating_indoor_03_128,
+                }
+            }
+
+            face S
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_03_130 furniture_seating_indoor_03_131,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_03_135,
+                    row = furniture_seating_indoor_03_134,
+                }
+            }
+
+            face N
+            {
+                layer
+                {
+                    row = furniture_seating_indoor_03_132 furniture_seating_indoor_03_133,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildWoodenStructureMedium,
+            time = 300,
+            SkillRequired = Woodwork:8;Tailoring:6,
+            xpAward = Woodwork:60;Tailoring:40,
+            category = Seating_Indoor,
+            Tags = Carpentry;Furniture,
+            Tooltip = Tooltip_craft_chairDesc,
+            inputs
+            {
+                item 1 tags[base:hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[base:scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+				item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+                item 4 [Base.Plank],
+                item 4 tags[base:normalpillow],
+				item 4 tags[base:leatherfurtannedmedium],
+				item 3 tags[base:thread],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+}

@@ -1,4 +1,33 @@
 ********************
+2026-03-23
+********************
+
+Hammertime_Furniture
+------------------
+= NEW =
+- Black Leather Couch
+- Brown Leather Couch
+- Blue Couch
+- Brown Couch
+- Fancy Black And White Striped Couch
+- Fancy Pink Couch
+- Fancy Yellow Striped Couch
+- Fancy White Leather Couch
+- Gray Rattan Couch
+- Green Couch
+- Orange Couch
+- Purple Rattan Couch
+- White Lazy Couch
+
+= FIXES =
+- Fixed Sturdy Bench using wrong sprites for W and N
+
+
+Other
+------------------
+- Updated representative pictures for all sub-mods.
+
+********************
 2026-03-21
 ********************
 

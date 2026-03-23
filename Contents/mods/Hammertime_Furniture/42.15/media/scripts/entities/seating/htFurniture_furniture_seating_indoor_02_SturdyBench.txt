@@ -17,10 +17,10 @@ module Base
     *  furniture_seating_indoor_02_17
     *  furniture_seating_indoor_02_18
     *  furniture_seating_indoor_02_19
-    *  furniture_seating_indoor_02_52
-    *  furniture_seating_indoor_02_53
-    *  furniture_seating_indoor_02_54
-    *  furniture_seating_indoor_02_55
+    *  furniture_seating_indoor_03_52
+    *  furniture_seating_indoor_03_53
+    *  furniture_seating_indoor_03_54
+    *  furniture_seating_indoor_03_55
     */ 
     
     entity htSturdyBench
@@ -54,8 +54,8 @@ module Base
             {
                 layer
                 {
-                    row = furniture_seating_indoor_02_53,
-                    row = furniture_seating_indoor_02_52, 
+                    row = furniture_seating_indoor_03_53,
+                    row = furniture_seating_indoor_03_52,
                 }
             }
             
@@ -63,7 +63,7 @@ module Base
             {
                 layer
                 {
-                    row = furniture_seating_indoor_02_54 furniture_seating_indoor_02_55,
+                    row = furniture_seating_indoor_03_54 furniture_seating_indoor_03_55,
                 }
             }
           
