@@ -1,0 +1,58 @@
+module Base
+{
+
+    xuiSkin default
+	{       
+        entity ES_htAsphaltRoad1
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Asphalt Road 1,
+			Icon = ui_blends_street_01_0,
+		}
+    }    
+    
+    /* 
+    *  Asphalt Road 1
+    *  htAsphaltRoad1
+    *  ht_vanilla_blends_street_01_0
+    */ 
+    
+    
+    entity htAsphaltRoad1
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htAsphaltRoad1,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.floor.OnIsValid,
+            OnCreate = BuildRecipeCode.floor.OnCreate,
+            face SINGLE
+            {
+                layer
+                {
+                    row = ht_vanilla_blends_street_01_0,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildLowHammer,
+            time = 200,
+            category = Flooring_Outdoor,
+            SkillRequired = Masonry:2,
+            xpAward = Masonry:5,
+            Tooltip = Tooltip_ht_Asphalt_Floor,
+            inputs
+            {
+                item 1 tags[base:pickaxe] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.Gravelbag],
+            }
+        }
+    }
+    }
+}

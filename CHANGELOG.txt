@@ -1,4 +1,72 @@
 ********************
+2026-03-28
+********************
+
+Hammertime_Structure
+------------------
+= NEW =
+- Acacia Tiles Floor
+- Asphalt Road 1
+- Asphalt Road 2
+- Asphalt Road 3
+- Asphalt Road 4
+- Asphalt Road 5
+- Asphalt Road 6
+- Asphalt Road 7
+- Beige Tiles Floor
+- Beige Diagonal Tiles Floor
+- Beige Smooth Tiles Floor
+- Beige Squares Tiles Floor
+- Birchwood Tiles Floor
+- Black Diagonal Tiles Floor
+- Black And Gray Squares Tiles Floor
+- Black And White Tiles
+- Blue Checkered Tiles Floor
+- Blue Diagonal Tiles Floor
+- Brown Diagonal Tiles Floor
+- Brown Squares Tiles Floor
+- Brown Tiles Floor
+- Cinnamon Tiles Floor
+- Dark Brown Diagonal Tiles Floor
+- Dark Gray Diagonal Tiles Floor
+- Dark Gray Smooth Tiles Floor
+- Dark Gray Squares Tiles Floor
+- Gray Checkered Tiles Floor
+- Gray Diagonal Tiles Floor
+- Gray Fancy Tiles Floor
+- Gray And White Diagonal Tiles Floor
+- Gray Smooth Tiles Floor
+- Gray Squares Tiles Floor
+- Green And Gray Squares Tiles Floor
+- Green Diagonal Tiles Floor
+- Hardwood Tiles Floor
+- Light Brown Diagonal Tiles Floor
+- Orange Diagonal Tiles Floor
+- Pinewood Floor
+- Pink Diagonal Tiles Floor
+- Purple Squares Tiles Floor
+- White Checkered Tiles Floor
+- White Diagonal Tiles Floor
+- White Tiles Floor
+- White Smooth Tiles Floor
+- White Wooden Floor
+- White And Blue Fancy Tiles Floor
+- White And Gray Fancy Tiles Floor
+- White And Red Fancy Tiles Floor
+- Wooden High Fences Door
+- Yellow Checkered Tiles Floor
+- Yellow Diagonal Tiles Floor
+
+= TWEAKS =
+- Moved all floors to Flooring_Outdoor and Flooring_Indoor categories.
+- You can now disassemble all flooring tiles constructed with this mod (applies to newly constructed items only)
+
+
+= FIXES =
+- Fixed an issue where you couldn't walk through roofing tiles
+
+
+********************
 2026-03-23
 ********************
 

@@ -1,0 +1,58 @@
+module Base
+{
+
+    xuiSkin default
+	{       
+        entity ES_htGrayCheckeredTilesFloor
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Gray Checkered Tiles Floor,
+			Icon = ui_floors_interior_tilesandwood_01_4,
+		}
+    }    
+    
+    /* 
+    *  Gray Checkered Tiles Floor
+    *  htGrayCheckeredTilesFloor
+    *  ht_vanilla_floors_interior_tilesandwood_01_4
+    */ 
+    
+    
+    entity htGrayCheckeredTilesFloor
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htGrayCheckeredTilesFloor,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.floor.OnIsValid,
+            OnCreate = BuildRecipeCode.floor.OnCreate,
+            face SINGLE
+            {
+                layer
+                {
+                    row = ht_vanilla_floors_interior_tilesandwood_01_4,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildLowNoTool,
+            time = 200,
+            category = Flooring_Indoor,
+            SkillRequired = Masonry:2,
+            xpAward = Masonry:10,
+            Tooltip = Tooltip_craft_brickFloorDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 1 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayTile],
+            }
+        }
+    }
+}

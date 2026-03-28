@@ -25,7 +25,7 @@ module Base
         {
             timedAction = EmptyBag,
             time = 100,
-            category = Floors,
+            category = Flooring_Outdoor,
             Tooltip = Tooltip_craft_sandFloorDesc,
             inputs
             {

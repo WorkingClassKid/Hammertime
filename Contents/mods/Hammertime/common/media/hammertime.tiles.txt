@@ -1,6 +1,132 @@
 version = 1
 tileset
 {
+    file = ht_vanilla_blends_street_01
+    size = 8,14
+    id = 14
+    // ht_vanilla_blends_street_01_0
+    tile
+    {
+        xy = 0,0
+        CanScrap = 
+        FloorMaterial = Road_01
+        Material = Stone
+        ScrapSize = Small
+        ScrapUseSkill = 
+        ScrapUseTool = 
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        fireRequirement = 80
+        solidfloor = 
+    }
+    // ht_vanilla_blends_street_01_1
+    tile
+    {
+        xy = 1,0
+        FloorAttachmentN = 
+        FloorAttachmentW = 
+        FloorMaterial = Road_01
+        FloorOverlay = 
+        IsFloorAttached = 
+        Material = Stone
+        attachedFloor = 
+        fireRequirement = 80
+    }
+    // ht_vanilla_blends_street_01_2
+    tile
+    {
+        xy = 2,0
+        FloorAttachmentE = 
+        FloorAttachmentS = 
+        FloorMaterial = Road_01
+        FloorOverlay = 
+        IsFloorAttached = 
+        Material = Stone
+        attachedFloor = 
+        fireRequirement = 80
+    }
+    // ht_vanilla_blends_street_01_3
+    tile
+    {
+        xy = 3,0
+        FloorAttachmentS = 
+        FloorAttachmentW = 
+        FloorMaterial = Road_01
+        FloorOverlay = 
+        IsFloorAttached = 
+        Material = Stone
+        attachedFloor = 
+        fireRequirement = 80
+    }
+    // ht_vanilla_blends_street_01_4
+    tile
+    {
+        xy = 4,0
+        FloorAttachmentE = 
+        FloorAttachmentN = 
+        FloorMaterial = Road_01
+        FloorOverlay = 
+        IsFloorAttached = 
+        Material = Stone
+        attachedFloor = 
+        fireRequirement = 80
+    }
+    // ht_vanilla_blends_street_01_8
+    tile
+    {
+        xy = 0,1
+        FloorAttachmentN = 
+        FloorMaterial = Road_01
+        FloorOverlay = 
+        IsFloorAttached = 
+        Material = Stone
+        attachedFloor = 
+        exterior = 
+        fireRequirement = 80
+    }
+    // ht_vanilla_blends_street_01_9
+    tile
+    {
+        xy = 1,1
+        FloorAttachmentW = 
+        FloorMaterial = Road_01
+        FloorOverlay = 
+        IsFloorAttached = 
+        Material = Stone
+        attachedFloor = 
+        exterior = 
+        fireRequirement = 80
+    }
+    // ht_vanilla_blends_street_01_10
+    tile
+    {
+        xy = 2,1
+        FloorAttachmentE = 
+        FloorMaterial = Road_01
+        FloorOverlay = 
+        IsFloorAttached = 
+        Material = Stone
+        attachedFloor = 
+        exterior = 
+        fireRequirement = 80
+    }
+    // ht_vanilla_blends_street_01_11
+    tile
+    {
+        xy = 3,1
+        FloorAttachmentS = 
+        FloorMaterial = Road_01
+        FloorOverlay = 
+        IsFloorAttached = 
+        Material = Stone
+        attachedFloor = 
+        exterior = 
+        fireRequirement = 80
+    }
+}
+tileset
+{
     file = ht_vanilla_fencing_01
     size = 8,8
     id = 7
@@ -1755,6 +1881,1242 @@ tileset
 }
 tileset
 {
+    file = ht_vanilla_floors_exterior_natural_01
+    size = 8,7
+    id = 15
+    // ht_vanilla_floors_exterior_natural_01_0
+    tile
+    {
+        xy = 0,0
+        FootstepMaterial = Grass
+        attachedFloor = 
+        canBeRemoved = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_exterior_natural_01_1
+    tile
+    {
+        xy = 1,0
+        FootstepMaterial = Grass
+        attachedFloor = 
+        canBeRemoved = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_exterior_natural_01_2
+    tile
+    {
+        xy = 2,0
+        FootstepMaterial = Grass
+        attachedFloor = 
+        canBeRemoved = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_exterior_natural_01_8
+    tile
+    {
+        xy = 0,1
+        CanScrap = 
+        CustomName = Cobblestone W/ Moss 4
+        FootstepMaterial = Gravel
+        Material = Stone
+        ScrapSize = Small
+        ScrapUseSkill = 
+        ScrapUseTool = 
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_exterior_natural_01_9
+    tile
+    {
+        xy = 1,1
+        CanScrap = 
+        CustomName = Cobblestone W/ Moss 3
+        FootstepMaterial = Gravel
+        Material = Stone
+        ScrapSize = Small
+        ScrapUseSkill = 
+        ScrapUseTool = 
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_exterior_natural_01_10
+    tile
+    {
+        xy = 2,1
+        CanScrap = 
+        CustomName = Cobblestone W/ Moss 1
+        FootstepMaterial = Gravel
+        Material = Stone
+        ScrapSize = Small
+        ScrapUseSkill = 
+        ScrapUseTool = 
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_exterior_natural_01_11
+    tile
+    {
+        xy = 3,1
+        CanScrap = 
+        CustomName = Cobblestone W/ Moss 2
+        Material = Stone
+        ScrapUseTool = 
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+}
+tileset
+{
+    file = ht_vanilla_floors_interior_tilesandwood_01
+    size = 8,11
+    id = 16
+    // ht_vanilla_floors_interior_tilesandwood_01_0
+    tile
+    {
+        xy = 0,0
+        CanBreak = 
+        CanScrap = 
+        CustomName = Grey Diagonal Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_1
+    tile
+    {
+        xy = 1,0
+        CanBreak = 
+        CanScrap = 
+        CustomName = Black Diagonal Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_2
+    tile
+    {
+        xy = 2,0
+        CanBreak = 
+        CanScrap = 
+        CustomName = Blue Checkered Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_3
+    tile
+    {
+        xy = 3,0
+        CanBreak = 
+        CanScrap = 
+        CustomName = Yellow Checkered Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_4
+    tile
+    {
+        xy = 4,0
+        CanBreak = 
+        CanScrap = 
+        CustomName = Gray Checkered Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_5
+    tile
+    {
+        xy = 5,0
+        CanBreak = 
+        CanScrap = 
+        CustomName = White Checkered Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_6
+    tile
+    {
+        xy = 6,0
+        CanBreak = 
+        CanScrap = 
+        CustomName = Brown Squares Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_7
+    tile
+    {
+        xy = 7,0
+        CanBreak = 
+        CanScrap = 
+        CustomName = Black And White Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_8
+    tile
+    {
+        xy = 0,1
+        CanBreak = 
+        CanScrap = 
+        CustomName = Green Diagonal Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_9
+    tile
+    {
+        xy = 1,1
+        CanBreak = 
+        CanScrap = 
+        CustomName = Yellow Diagonal Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_10
+    tile
+    {
+        xy = 2,1
+        CanBreak = 
+        CanScrap = 
+        CustomName = Beige Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_11
+    tile
+    {
+        xy = 3,1
+        CanBreak = 
+        CanScrap = 
+        CustomName = White Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_12
+    tile
+    {
+        xy = 4,1
+        CanBreak = 
+        CanScrap = 
+        CustomName = White Diagonal Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_13
+    tile
+    {
+        xy = 5,1
+        CanBreak = 
+        CanScrap = 
+        CustomName = Brown Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_14
+    tile
+    {
+        xy = 6,1
+        CanBreak = 
+        CanScrap = 
+        CustomName = Gray Diagonal Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_15
+    tile
+    {
+        xy = 7,1
+        CanBreak = 
+        CanScrap = 
+        CustomName = Gray Smooth Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_16
+    tile
+    {
+        xy = 0,2
+        CanBreak = 
+        CanScrap = 
+        CustomName = White Smooth Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_17
+    tile
+    {
+        xy = 1,2
+        CanBreak = 
+        CanScrap = 
+        CustomName = White Smooth Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_18
+    tile
+    {
+        xy = 2,2
+        CanBreak = 
+        CanScrap = 
+        CustomName = Gray Smooth Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_19
+    tile
+    {
+        xy = 3,2
+        CanBreak = 
+        CanScrap = 
+        CustomName = Beige Smooth Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_20
+    tile
+    {
+        xy = 4,2
+        CanBreak = 
+        CanScrap = 
+        CustomName = Gray And Black Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_21
+    tile
+    {
+        xy = 5,2
+        CanBreak = 
+        CanScrap = 
+        CustomName = Gray And Green Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_22
+    tile
+    {
+        xy = 6,2
+        CanBreak = 
+        CanScrap = 
+        CustomName = Purple Squares Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_23
+    tile
+    {
+        xy = 7,2
+        CanBreak = 
+        CanScrap = 
+        CustomName = Beige Squares Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_24
+    tile
+    {
+        xy = 0,3
+        CanBreak = 
+        CanScrap = 
+        CustomName = Dark Gray Smooth Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_25
+    tile
+    {
+        xy = 1,3
+        CanBreak = 
+        CanScrap = 
+        CustomName = White And Red Fancy Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_26
+    tile
+    {
+        xy = 2,3
+        CanBreak = 
+        CanScrap = 
+        CustomName = White And Blue Fancy Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_27
+    tile
+    {
+        xy = 3,3
+        CanBreak = 
+        CanScrap = 
+        CustomName = White And Gray Fancy Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_28
+    tile
+    {
+        xy = 4,3
+        CanBreak = 
+        CanScrap = 
+        CustomName = Gray Squares
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_29
+    tile
+    {
+        xy = 5,3
+        CanBreak = 
+        CanScrap = 
+        CustomName = Dark Gray Squares
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_30
+    tile
+    {
+        xy = 6,3
+        CanBreak = 
+        CanScrap = 
+        CustomName = Gray Squares Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_31
+    tile
+    {
+        xy = 7,3
+        CanBreak = 
+        CanScrap = 
+        CustomName = Brown Squares Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_32
+    tile
+    {
+        xy = 0,4
+        CanBreak = 
+        CanScrap = 
+        CustomName = Pink Diagonal Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_33
+    tile
+    {
+        xy = 1,4
+        CanBreak = 
+        CanScrap = 
+        CustomName = Brown Diagonal Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_34
+    tile
+    {
+        xy = 2,4
+        CanBreak = 
+        CanScrap = 
+        CustomName = Dark Brown Diagonal Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_35
+    tile
+    {
+        xy = 3,4
+        CanBreak = 
+        CanScrap = 
+        CustomName = Beige Diagonal Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_36
+    tile
+    {
+        xy = 4,4
+        CanBreak = 
+        CanScrap = 
+        CustomName = Orange Diagonal Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_37
+    tile
+    {
+        xy = 5,4
+        CanBreak = 
+        CanScrap = 
+        CustomName = Light Brown Diagonal Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_38
+    tile
+    {
+        xy = 6,4
+        CanBreak = 
+        CanScrap = 
+        CustomName = Blue Diagonal Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_39
+    tile
+    {
+        xy = 7,4
+        CanBreak = 
+        CanScrap = 
+        CustomName = Dark Gray Diagonal Tiles
+        FootstepMaterial = Ceramic
+        IsMoveAble = 
+        Material = Brick
+        MoveType = FloorTile
+        PickUpLevel = 2
+        PickUpTool = Crowbar
+        PickUpWeight = 30
+        PlaceTool = Hammer
+        ScrapSize = Small
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_40
+    tile
+    {
+        xy = 0,5
+        CanBreak = 
+        CanScrap = 
+        CustomName = Hardwood Floor
+        FootstepMaterial = Wood
+        IsMoveAble = 
+        Material = Wood
+        Material2 = Nails
+        MoveType = FloorTile
+        PickUpLevel = 1
+        PickUpTool = Hammer
+        PickUpWeight = 20
+        PlaceTool = Hammer
+        ScrapSize = Small
+        ScrapUseSkill = 
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_41
+    tile
+    {
+        xy = 1,5
+        CanBreak = 
+        CanScrap = 
+        CustomName = Oakwood Floor
+        FootstepMaterial = Wood
+        IsMoveAble = 
+        Material = Wood
+        Material2 = Nails
+        MoveType = FloorTile
+        PickUpLevel = 1
+        PickUpTool = Hammer
+        PickUpWeight = 20
+        PlaceTool = Hammer
+        ScrapSize = Small
+        ScrapUseSkill = 
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_42
+    tile
+    {
+        xy = 2,5
+        CanBreak = 
+        CanScrap = 
+        CustomName = Birchwood Floor
+        FootstepMaterial = Wood
+        IsMoveAble = 
+        Material = Wood
+        Material2 = Nails
+        MoveType = FloorTile
+        PickUpLevel = 1
+        PickUpTool = Hammer
+        PickUpWeight = 20
+        PlaceTool = Hammer
+        ScrapSize = Small
+        ScrapUseSkill = 
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_43
+    tile
+    {
+        xy = 3,5
+        CanBreak = 
+        CanScrap = 
+        CustomName = Cinnamon West Floor
+        FootstepMaterial = Wood
+        IsMoveAble = 
+        Material = Wood
+        Material2 = Nails
+        MoveType = FloorTile
+        PickUpLevel = 1
+        PickUpTool = Hammer
+        PickUpWeight = 20
+        PlaceTool = Hammer
+        ScrapSize = Small
+        ScrapUseSkill = 
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_44
+    tile
+    {
+        xy = 4,5
+        CanBreak = 
+        CanScrap = 
+        CustomName = Cinnamon North Floor
+        FootstepMaterial = Wood
+        IsMoveAble = 
+        Material = Wood
+        Material2 = Nails
+        MoveType = FloorTile
+        PickUpLevel = 1
+        PickUpTool = Hammer
+        PickUpWeight = 20
+        PlaceTool = Hammer
+        ScrapSize = Small
+        ScrapUseSkill = 
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_45
+    tile
+    {
+        xy = 5,5
+        CanBreak = 
+        CanScrap = 
+        CustomName = Finewood Floor
+        FootstepMaterial = Wood
+        IsMoveAble = 
+        Material = Wood
+        Material2 = Nails
+        MoveType = FloorTile
+        PickUpLevel = 1
+        PickUpTool = Hammer
+        PickUpWeight = 20
+        PlaceTool = Hammer
+        ScrapSize = Small
+        ScrapUseSkill = 
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_46
+    tile
+    {
+        xy = 6,5
+        CanBreak = 
+        CanScrap = 
+        CustomName = Chestnut West Floor
+        FootstepMaterial = Wood
+        IsMoveAble = 
+        Material = Wood
+        Material2 = Nails
+        MoveType = FloorTile
+        PickUpLevel = 1
+        PickUpTool = Hammer
+        PickUpWeight = 20
+        PlaceTool = Hammer
+        ScrapSize = Small
+        ScrapUseSkill = 
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_47
+    tile
+    {
+        xy = 7,5
+        CanBreak = 
+        CanScrap = 
+        CustomName = Chestnut North Floor
+        FootstepMaterial = Wood
+        IsMoveAble = 
+        Material = Wood
+        Material2 = Nails
+        MoveType = FloorTile
+        PickUpLevel = 1
+        PickUpTool = Hammer
+        PickUpWeight = 20
+        PlaceTool = Hammer
+        ScrapSize = Small
+        ScrapUseSkill = 
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_48
+    tile
+    {
+        xy = 0,6
+        CanBreak = 
+        CanScrap = 
+        CustomName = Hardwood Tiles
+        FootstepMaterial = Wood
+        IsMoveAble = 
+        Material = Wood
+        Material2 = Nails
+        MoveType = FloorTile
+        PickUpLevel = 1
+        PickUpTool = Hammer
+        PickUpWeight = 20
+        PlaceTool = Hammer
+        ScrapSize = Small
+        ScrapUseSkill = 
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_49
+    tile
+    {
+        xy = 1,6
+        CanBreak = 
+        CanScrap = 
+        CustomName = Birchwood Tiles
+        FootstepMaterial = Wood
+        IsMoveAble = 
+        Material = Wood
+        Material2 = Nails
+        MoveType = FloorTile
+        PickUpLevel = 1
+        PickUpTool = Hammer
+        PickUpWeight = 20
+        PlaceTool = Hammer
+        ScrapSize = Small
+        ScrapUseSkill = 
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_50
+    tile
+    {
+        xy = 2,6
+        CanBreak = 
+        CanScrap = 
+        CustomName = Cinnamon Tiles
+        FootstepMaterial = Wood
+        IsMoveAble = 
+        Material = Wood
+        Material2 = Nails
+        MoveType = FloorTile
+        PickUpLevel = 1
+        PickUpTool = Hammer
+        PickUpWeight = 20
+        PlaceTool = Hammer
+        ScrapSize = Small
+        ScrapUseSkill = 
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_51
+    tile
+    {
+        xy = 3,6
+        CanBreak = 
+        CanScrap = 
+        CustomName = Acacia Tiles
+        FootstepMaterial = Wood
+        IsMoveAble = 
+        Material = Wood
+        Material2 = Nails
+        MoveType = FloorTile
+        PickUpLevel = 1
+        PickUpTool = Hammer
+        PickUpWeight = 20
+        PlaceTool = Hammer
+        ScrapSize = Small
+        ScrapUseSkill = 
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_52
+    tile
+    {
+        xy = 4,6
+        CanBreak = 
+        CanScrap = 
+        CustomName = Pinewood Floor
+        FootstepMaterial = Wood
+        IsMoveAble = 
+        Material = Wood
+        Material2 = Nails
+        MoveType = FloorTile
+        PickUpLevel = 1
+        PickUpTool = Hammer
+        PickUpWeight = 20
+        PlaceTool = Hammer
+        ScrapSize = Small
+        ScrapUseSkill = 
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_54
+    tile
+    {
+        xy = 6,6
+        CanBreak = 
+        CanScrap = 
+        CustomName = White Wood West Floor
+        FootstepMaterial = Wood
+        IsMoveAble = 
+        Material = Wood
+        Material2 = Nails
+        MoveType = FloorTile
+        PickUpLevel = 1
+        PickUpTool = Hammer
+        PickUpWeight = 20
+        PlaceTool = Hammer
+        ScrapSize = Small
+        ScrapUseSkill = 
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+    // ht_vanilla_floors_interior_tilesandwood_01_55
+    tile
+    {
+        xy = 7,6
+        CanBreak = 
+        CanScrap = 
+        CustomName = White Wood North Floor
+        FootstepMaterial = Wood
+        IsMoveAble = 
+        Material = Wood
+        Material2 = Nails
+        MoveType = FloorTile
+        PickUpLevel = 1
+        PickUpTool = Hammer
+        PickUpWeight = 20
+        PlaceTool = Hammer
+        ScrapSize = Small
+        ScrapUseSkill = 
+        attachedFloor = 
+        diamondFloor = 
+        solidfloor = 
+    }
+}
+tileset
+{
     file = ht_vanilla_location_business_bank_01
     size = 8,8
     id = 3
@@ -2106,24 +3468,1008 @@ tileset
     file = ht_vanilla_roofs_02
     size = 8,16
     id = 9
+    // ht_vanilla_roofs_02_6
+    tile
+    {
+        xy = 6,0
+        BurntTile = roofs_burnt_01_6
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 3
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_6
+        WestRoofT = 
+        attachedN = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_02_7
+    tile
+    {
+        xy = 7,0
+        BurntTile = roofs_burnt_01_7
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 3
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_7
+        WestRoofT = 
+        attachedW = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_02_20
+    tile
+    {
+        xy = 4,2
+        BurntTile = roofs_burnt_01_20
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 3
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_20
+        WestRoofT = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_02_21
+    tile
+    {
+        xy = 5,2
+        BurntTile = roofs_burnt_01_21
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 3
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_21
+        WestRoofT = 
+        attachedE = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_02_22
+    tile
+    {
+        xy = 6,2
+        BurntTile = roofs_burnt_01_22
+        CanScrap = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 3
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_22
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_roofs_02_23
+    tile
+    {
+        xy = 7,2
+        BurntTile = roofs_burnt_01_23
+        CanScrap = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 3
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_23
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_roofs_02_30
+    tile
+    {
+        xy = 6,3
+        BurntTile = roofs_burnt_01_30
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 3
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_30
+        WestRoofT = 
+        attachedN = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_02_31
+    tile
+    {
+        xy = 7,3
+        BurntTile = roofs_burnt_01_31
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 3
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_31
+        WestRoofT = 
+        attachedW = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_02_38
+    tile
+    {
+        xy = 6,4
+        BurntTile = roofs_burnt_01_6
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 4
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_6
+        WestRoofT = 
+        attachedN = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_02_39
+    tile
+    {
+        xy = 7,4
+        BurntTile = roofs_burnt_01_7
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 4
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_7
+        WestRoofT = 
+        attachedW = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_02_52
+    tile
+    {
+        xy = 4,6
+        BurntTile = roofs_burnt_01_20
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 4
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_20
+        WestRoofT = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_02_53
+    tile
+    {
+        xy = 5,6
+        BurntTile = roofs_burnt_01_21
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 4
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_21
+        WestRoofT = 
+        attachedE = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_02_54
+    tile
+    {
+        xy = 6,6
+        BurntTile = roofs_burnt_01_22
+        CanScrap = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 4
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_22
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_roofs_02_55
+    tile
+    {
+        xy = 7,6
+        BurntTile = roofs_burnt_01_23
+        CanScrap = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 4
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_23
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
 }
 tileset
 {
     file = ht_vanilla_roofs_03
     size = 8,16
     id = 10
+    // ht_vanilla_roofs_03_6
+    tile
+    {
+        xy = 6,0
+        BurntTile = roofs_burnt_01_6
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 5
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_6
+        WestRoofT = 
+        attachedN = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_03_7
+    tile
+    {
+        xy = 7,0
+        BurntTile = roofs_burnt_01_7
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 5
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_7
+        WestRoofT = 
+        attachedW = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_03_20
+    tile
+    {
+        xy = 4,2
+        BurntTile = roofs_burnt_01_20
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 5
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_20
+        WestRoofT = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_03_21
+    tile
+    {
+        xy = 5,2
+        BurntTile = roofs_burnt_01_21
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 5
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_21
+        WestRoofT = 
+        attachedE = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_03_22
+    tile
+    {
+        xy = 6,2
+        BurntTile = roofs_burnt_01_22
+        CanScrap = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 5
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_22
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_roofs_03_23
+    tile
+    {
+        xy = 7,2
+        BurntTile = roofs_burnt_01_23
+        CanScrap = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 5
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_23
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_roofs_03_30
+    tile
+    {
+        xy = 6,3
+        BurntTile = roofs_burnt_01_30
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 5
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_30
+        WestRoofT = 
+        attachedN = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_03_31
+    tile
+    {
+        xy = 7,3
+        BurntTile = roofs_burnt_01_31
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 5
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_31
+        WestRoofT = 
+        attachedW = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_03_38
+    tile
+    {
+        xy = 6,4
+        BurntTile = roofs_burnt_01_6
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 6
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_6
+        WestRoofT = 
+        attachedN = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_03_39
+    tile
+    {
+        xy = 7,4
+        BurntTile = roofs_burnt_01_7
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 6
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_7
+        WestRoofT = 
+        attachedW = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_03_52
+    tile
+    {
+        xy = 4,6
+        BurntTile = roofs_burnt_01_20
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 6
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_20
+        WestRoofT = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_03_53
+    tile
+    {
+        xy = 5,6
+        BurntTile = roofs_burnt_01_21
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 6
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_21
+        WestRoofT = 
+        attachedE = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_03_54
+    tile
+    {
+        xy = 6,6
+        BurntTile = roofs_burnt_01_22
+        CanScrap = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 6
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_22
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_roofs_03_55
+    tile
+    {
+        xy = 7,6
+        BurntTile = roofs_burnt_01_23
+        CanScrap = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 6
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_23
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_roofs_03_62
+    tile
+    {
+        xy = 6,7
+        BurntTile = roofs_burnt_01_30
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 6
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_30
+        WestRoofT = 
+        attachedN = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_03_63
+    tile
+    {
+        xy = 7,7
+        BurntTile = roofs_burnt_01_31
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 6
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_31
+        WestRoofT = 
+        attachedW = 
+        isEave = 
+    }
 }
 tileset
 {
     file = ht_vanilla_roofs_04 
     size = 8,14
     id = 11
+    // ht_vanilla_roofs_04 _6
+    tile
+    {
+        xy = 6,0
+        BurntTile = roofs_burnt_01_6
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 7
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_6
+        WestRoofT = 
+        attachedN = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_04 _7
+    tile
+    {
+        xy = 7,0
+        BurntTile = roofs_burnt_01_7
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 7
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_7
+        WestRoofT = 
+        attachedW = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_04 _20
+    tile
+    {
+        xy = 4,2
+        BurntTile = roofs_burnt_01_20
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 7
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_20
+        WestRoofT = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_04 _21
+    tile
+    {
+        xy = 5,2
+        BurntTile = roofs_burnt_01_21
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 7
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_21
+        WestRoofT = 
+        attachedE = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_04 _22
+    tile
+    {
+        xy = 6,2
+        BurntTile = roofs_burnt_01_22
+        CanScrap = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 7
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_22
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_roofs_04 _23
+    tile
+    {
+        xy = 7,2
+        BurntTile = roofs_burnt_01_23
+        CanScrap = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 7
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_23
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_roofs_04 _30
+    tile
+    {
+        xy = 6,3
+        BurntTile = roofs_burnt_01_30
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 7
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_30
+        WestRoofT = 
+        attachedN = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_04 _31
+    tile
+    {
+        xy = 7,3
+        BurntTile = roofs_burnt_01_31
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 7
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_31
+        WestRoofT = 
+        attachedW = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_04 _38
+    tile
+    {
+        xy = 6,4
+        BurntTile = roofs_burnt_01_6
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 8
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_6
+        WestRoofT = 
+        attachedN = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_04 _39
+    tile
+    {
+        xy = 7,4
+        BurntTile = roofs_burnt_01_7
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 8
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_7
+        WestRoofT = 
+        attachedW = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_04 _52
+    tile
+    {
+        xy = 4,6
+        BurntTile = roofs_burnt_01_20
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 8
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_20
+        WestRoofT = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_04 _53
+    tile
+    {
+        xy = 5,6
+        BurntTile = roofs_burnt_01_21
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 8
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_21
+        WestRoofT = 
+        attachedE = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_04 _54
+    tile
+    {
+        xy = 6,6
+        BurntTile = roofs_burnt_01_22
+        CanScrap = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 8
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_22
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_roofs_04 _55
+    tile
+    {
+        xy = 7,6
+        BurntTile = roofs_burnt_01_23
+        CanScrap = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 8
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_23
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_roofs_04 _62
+    tile
+    {
+        xy = 6,7
+        BurntTile = roofs_burnt_01_30
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 8
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_30
+        WestRoofT = 
+        attachedN = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_04 _63
+    tile
+    {
+        xy = 7,7
+        BurntTile = roofs_burnt_01_31
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 8
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_31
+        WestRoofT = 
+        attachedW = 
+        isEave = 
+    }
 }
 tileset
 {
     file = ht_vanilla_roofs_05
     size = 8,22
     id = 12
+    // ht_vanilla_roofs_05_6
+    tile
+    {
+        xy = 6,0
+        BurntTile = roofs_burnt_01_6
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 9
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_6
+        WestRoofT = 
+        attachedN = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_05_7
+    tile
+    {
+        xy = 7,0
+        BurntTile = roofs_burnt_01_7
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 9
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_7
+        WestRoofT = 
+        attachedW = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_05_20
+    tile
+    {
+        xy = 4,2
+        BurntTile = roofs_burnt_01_20
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 9
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_20
+        WestRoofT = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_05_21
+    tile
+    {
+        xy = 5,2
+        BurntTile = roofs_burnt_01_21
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 9
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_21
+        WestRoofT = 
+        attachedE = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_05_22
+    tile
+    {
+        xy = 6,2
+        BurntTile = roofs_burnt_01_22
+        CanScrap = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 9
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_22
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_roofs_05_23
+    tile
+    {
+        xy = 7,2
+        BurntTile = roofs_burnt_01_23
+        CanScrap = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 9
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_23
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_roofs_05_30
+    tile
+    {
+        xy = 6,3
+        BurntTile = roofs_burnt_01_30
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 9
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_30
+        WestRoofT = 
+        attachedN = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_05_31
+    tile
+    {
+        xy = 7,3
+        BurntTile = roofs_burnt_01_31
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 9
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_31
+        WestRoofT = 
+        attachedW = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_05_38
+    tile
+    {
+        xy = 6,4
+        BurntTile = roofs_burnt_01_6
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 10
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_6
+        WestRoofT = 
+        attachedN = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_05_39
+    tile
+    {
+        xy = 7,4
+        BurntTile = roofs_burnt_01_7
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 10
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_7
+        WestRoofT = 
+        attachedW = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_05_52
+    tile
+    {
+        xy = 4,6
+        BurntTile = roofs_burnt_01_20
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 10
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_20
+        WestRoofT = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_05_53
+    tile
+    {
+        xy = 5,6
+        BurntTile = roofs_burnt_01_21
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 10
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_21
+        WestRoofT = 
+        attachedE = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_05_54
+    tile
+    {
+        xy = 6,6
+        BurntTile = roofs_burnt_01_22
+        CanScrap = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 10
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_22
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_roofs_05_55
+    tile
+    {
+        xy = 7,6
+        BurntTile = roofs_burnt_01_23
+        CanScrap = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 10
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_23
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        solidfloor = 
+    }
+    // ht_vanilla_roofs_05_62
+    tile
+    {
+        xy = 6,7
+        BurntTile = roofs_burnt_01_30
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 10
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_30
+        WestRoofT = 
+        attachedN = 
+        isEave = 
+    }
+    // ht_vanilla_roofs_05_63
+    tile
+    {
+        xy = 7,7
+        BurntTile = roofs_burnt_01_31
+        CanScrap = 
+        ForceAmbient = 
+        Material = Wood
+        Material2 = Nails
+        RoofGroup = 10
+        ScrapSize = Small
+        SnowTile = e_roof_snow_1_31
+        WestRoofT = 
+        attachedW = 
+        isEave = 
+    }
 }
 tileset
 {

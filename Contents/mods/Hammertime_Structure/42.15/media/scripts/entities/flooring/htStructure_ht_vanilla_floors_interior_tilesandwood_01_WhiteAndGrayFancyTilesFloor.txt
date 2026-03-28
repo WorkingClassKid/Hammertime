@@ -1,0 +1,58 @@
+module Base
+{
+
+    xuiSkin default
+	{       
+        entity ES_htWhiteAndGrayFancyTilesFloor
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= White And Gray Fancy Tiles Floor,
+			Icon = ui_floors_interior_tilesandwood_01_27,
+		}
+    }    
+    
+    /* 
+    *  White And Gray Fancy Tiles Floor
+    *  htWhiteAndGrayFancyTilesFloor
+    *  ht_vanilla_floors_interior_tilesandwood_01_27
+    */ 
+    
+    
+    entity htWhiteAndGrayFancyTilesFloor
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htWhiteAndGrayFancyTilesFloor,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.floor.OnIsValid,
+            OnCreate = BuildRecipeCode.floor.OnCreate,
+            face SINGLE
+            {
+                layer
+                {
+                    row = ht_vanilla_floors_interior_tilesandwood_01_27,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildLowNoTool,
+            time = 200,
+            category = Flooring_Indoor,
+            SkillRequired = Masonry:4,
+            xpAward = Masonry:10,
+            Tooltip = Tooltip_craft_brickFloorDesc,
+            inputs
+            {
+                item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 1 tags[base:concrete] flags[DontRecordInput],
+                item 4 [Base.ClayTile],
+            }
+        }
+    }
+}

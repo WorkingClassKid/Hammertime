@@ -17,7 +17,7 @@ module Base
             {
                 layer
                 {
-                    row = floors_exterior_tilesandstone_01_6,
+                    row = ht_vanilla_floors_exterior_tilesandstone_01_6,
                 }
             }
         }
@@ -25,7 +25,7 @@ module Base
         {
             timedAction = BuildLowNoTool,
             time = 200,
-            category = Floors,
+            category = Flooring_Indoor,
             xpAward = Masonry:10,
             Tooltip = Tooltip_craft_brickFloorDesc,
             inputs

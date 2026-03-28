@@ -1,0 +1,56 @@
+module Base
+{
+
+    xuiSkin default
+	{       
+        entity ES_htCobblestoneWMoss1
+		{
+			LuaWindowClass = ISEntityWindow,
+			DisplayName	= Cobblestone W/ Moss 1,
+			Icon = ui_floors_exterior_natural_01_10,
+		}
+    }    
+    
+    /* 
+    *  Cobblestone W/ Moss 1
+    *  htCobblestoneWMoss1
+    *  ht_vanilla_floors_exterior_natural_01_10
+    */ 
+    
+    
+    entity htCobblestoneWMoss1
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_htCobblestoneWMoss1,
+            uiEnabled = false,
+        }
+        component SpriteConfig
+        {
+            isThumpable = false,
+            OnIsValid = BuildRecipeCode.floor.OnIsValid,
+            OnCreate = BuildRecipeCode.floor.OnCreate,
+            face W
+            {
+                layer
+                {
+                    row = ht_vanilla_floors_exterior_natural_01_10,
+                }
+            }
+        }
+        component CraftRecipe
+        {
+            timedAction = BuildLowHammer,
+            time = 200,
+            category = Flooring_Outdoor,
+            xpAward = Masonry:5,
+            Tooltip = Tooltip_ht_Cobblestone_Floor,
+            inputs
+            {
+                item 1 tags[base:pickaxe] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.Gravelbag],
+            }
+        }
+    }
+}
