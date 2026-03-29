@@ -10,6 +10,7 @@ tileset
         xy = 0,0
         CanScrap = 
         FloorMaterial = Road_01
+        FootstepMaterial = Concrete
         Material = Stone
         ScrapSize = Small
         ScrapUseSkill = 
@@ -24,12 +25,16 @@ tileset
     tile
     {
         xy = 1,0
+        CanScrap = 
         FloorAttachmentN = 
         FloorAttachmentW = 
         FloorMaterial = Road_01
         FloorOverlay = 
         IsFloorAttached = 
         Material = Stone
+        ScrapSize = Small
+        ScrapUseSkill = 
+        ScrapUseTool = 
         attachedFloor = 
         fireRequirement = 80
     }
@@ -37,12 +42,16 @@ tileset
     tile
     {
         xy = 2,0
+        CanScrap = 
         FloorAttachmentE = 
         FloorAttachmentS = 
         FloorMaterial = Road_01
         FloorOverlay = 
         IsFloorAttached = 
         Material = Stone
+        ScrapSize = Small
+        ScrapUseSkill = 
+        ScrapUseTool = 
         attachedFloor = 
         fireRequirement = 80
     }
@@ -50,12 +59,16 @@ tileset
     tile
     {
         xy = 3,0
+        CanScrap = 
         FloorAttachmentS = 
         FloorAttachmentW = 
         FloorMaterial = Road_01
         FloorOverlay = 
         IsFloorAttached = 
         Material = Stone
+        ScrapSize = Small
+        ScrapUseSkill = 
+        ScrapUseTool = 
         attachedFloor = 
         fireRequirement = 80
     }
@@ -69,6 +82,9 @@ tileset
         FloorOverlay = 
         IsFloorAttached = 
         Material = Stone
+        ScrapSize = Small
+        ScrapUseSkill = 
+        ScrapUseTool = 
         attachedFloor = 
         fireRequirement = 80
     }
@@ -81,6 +97,9 @@ tileset
         FloorOverlay = 
         IsFloorAttached = 
         Material = Stone
+        ScrapSize = Small
+        ScrapUseSkill = 
+        ScrapUseTool = 
         attachedFloor = 
         exterior = 
         fireRequirement = 80
@@ -94,6 +113,9 @@ tileset
         FloorOverlay = 
         IsFloorAttached = 
         Material = Stone
+        ScrapSize = Small
+        ScrapUseSkill = 
+        ScrapUseTool = 
         attachedFloor = 
         exterior = 
         fireRequirement = 80
@@ -107,6 +129,9 @@ tileset
         FloorOverlay = 
         IsFloorAttached = 
         Material = Stone
+        ScrapSize = Small
+        ScrapUseSkill = 
+        ScrapUseTool = 
         attachedFloor = 
         exterior = 
         fireRequirement = 80
@@ -120,9 +145,114 @@ tileset
         FloorOverlay = 
         IsFloorAttached = 
         Material = Stone
+        ScrapSize = Small
+        ScrapUseSkill = 
+        ScrapUseTool = 
         attachedFloor = 
         exterior = 
         fireRequirement = 80
+    }
+    // ht_vanilla_blends_street_01_16
+    tile
+    {
+        xy = 0,2
+        CanScrap = 
+        FloorMaterial = Road_01
+        FootstepMaterial = Concrete
+        Material = Stone
+        ScrapSize = Small
+        ScrapUseSkill = 
+        ScrapUseTool = 
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        fireRequirement = 80
+        solidfloor = 
+    }
+    // ht_vanilla_blends_street_01_32
+    tile
+    {
+        xy = 0,4
+        CanScrap = 
+        FloorMaterial = Road_02
+        FootstepMaterial = Concrete
+        Material = Stone
+        ScrapSize = Small
+        ScrapUseSkill = 
+        ScrapUseTool = 
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        fireRequirement = 80
+        solidfloor = 
+    }
+    // ht_vanilla_blends_street_01_48
+    tile
+    {
+        xy = 0,6
+        CanScrap = 
+        FloorMaterial = Road_03
+        FootstepMaterial = Concrete
+        Material = Stone
+        ScrapSize = Small
+        ScrapUseSkill = 
+        ScrapUseTool = 
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        fireRequirement = 80
+        solidfloor = 
+    }
+    // ht_vanilla_blends_street_01_64
+    tile
+    {
+        xy = 0,8
+        CanScrap = 
+        FloorMaterial = Road_04
+        FootstepMaterial = Concrete
+        Material = Stone
+        ScrapSize = Small
+        ScrapUseSkill = 
+        ScrapUseTool = 
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        fireRequirement = 80
+        solidfloor = 
+    }
+    // ht_vanilla_blends_street_01_80
+    tile
+    {
+        xy = 0,10
+        CanScrap = 
+        FloorMaterial = Road_05
+        FootstepMaterial = Concrete
+        Material = Stone
+        ScrapSize = Small
+        ScrapUseSkill = 
+        ScrapUseTool = 
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        fireRequirement = 80
+        solidfloor = 
+    }
+    // ht_vanilla_blends_street_01_96
+    tile
+    {
+        xy = 0,12
+        CanScrap = 
+        FloorMaterial = Road_06
+        FootstepMaterial = Concrete
+        Material = Stone
+        ScrapSize = Small
+        ScrapUseSkill = 
+        ScrapUseTool = 
+        attachedFloor = 
+        diamondFloor = 
+        exterior = 
+        fireRequirement = 80
+        solidfloor = 
     }
 }
 tileset

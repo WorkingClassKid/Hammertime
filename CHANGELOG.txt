@@ -1,4 +1,19 @@
 ********************
+2026-03-29
+********************
+Hammertime
+------------------
+= FIXES =
+- Fixed an issue with the tileset where some asphalt tiles had no properties. (https://discord.com/channels/1472249520263008277/1487706568949628980)
+
+Hammertime_Structure
+------------------
+= FIXES =
+- Fixed missing tooltip: Tooltip_ht_Asphalt_Floor
+
+
+
+********************
 2026-03-28
 ********************
 
